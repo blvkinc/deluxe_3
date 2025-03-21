@@ -1,0 +1,286 @@
+/* Header container */
+.header {
+  background: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  overflow: visible; /* Show overflow content */
+  height: auto; /* Auto height for the header */
+}
+
+.header:hover {
+  background-color: #ffffff;
+  color: #000000;
+  height: auto; /* Auto height on hover */
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+.header img {
+  align-items: center;
+  max-width: 17vw;
+  margin-right: 4vw;
+}
+
+.header h3,
+h5 {
+  text-align: left;
+}
+
+/* Logo */
+.header-logo img {
+  position: fixed;
+  top: 1.6rem;
+  left: auto;
+}
+
+/* Navigation menu */
+.header-nav .menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.header-nav .menu-item button {
+  margin-right: 20px;
+  position: relative;
+  color: #ffffff;
+  justify-content: space-evenly;
+  cursor: pointer;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  margin-right: 3rem;
+}
+
+.header:hover .header-nav .menu-item button {
+  color: #000000; /* Change color when menu is hovered */
+}
+.header-nav .menu-item button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0;
+  position: relative; /* Add relative position */
+}
+
+.header:hover .header-nav .menu-item button {
+  color: #000000; /* Change color when menu is hovered */
+}
+
+.menu-item.active button {
+  font-weight: 700;
+}
+
+.sub-menu-item.active-submenu {
+  font-weight: 700;
+}
+
+.nested-submenu-item.active-nested-submenu {
+  font-weight: 700;
+}
+
+.deep-nested-submenu-item.active-deep-nested-submenu {
+  font-weight: 700;
+}
+
+.menu-item a button:hover {
+  font-weight: 700;
+}
+
+/* Shared styles for sub-menu and nested-submenu */
+.sub-menu,
+.nested-submenu {
+  background-color: #ffffff;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  position: fixed;
+  top: 75px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-decoration: none;
+  color: #000000 !important;
+  pointer-events: auto;
+}
+
+/* Shared styles for sub-menu-item and nested-submenu-item */
+.sub-menu-item,
+.nested-submenu-item {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s, transform 0.3s ease;
+  margin-right: 30px;
+}
+
+/* Active state for sub-menu and nested-submenu */
+.menu-item:hover .sub-menu,
+.menu-item:hover .nested-submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+/* Active state for sub-menu-item and nested-submenu-item */
+.menu-item.active .sub-menu-item,
+.menu-item.active .nested-submenu-item {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s ease;
+}
+
+/* Specific styles for nested-submenu (applied to deep-nested-submenu as well) */
+.nested-submenu {
+  top: 122px;
+}
+
+/* Deep nested submenu inherits nested-submenu styles */
+.deep-nested-submenu {
+  background-color: #ffffff;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  position: fixed;
+  top: 170px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-decoration: none;
+  color: #000000 !important;
+  pointer-events: auto;
+}
+
+/* Deep nested submenu items */
+.deep-nested-submenu-item {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  margin-right: 30px;
+}
+
+/* Active state for deep nested submenu */
+.menu-item:hover .deep-nested-submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleY(1);
+  transition: opacity 0.5s, visibility 0.3s, transform 0.3s ease;
+}
+
+/* Active state for deep nested submenu items */
+.menu-item.active .deep-nested-submenu-item {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s ease;
+}
+
+/* Specific styles for Stormbreaker */
+.sub-menu-item .submenu-label.stormbreaker {
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+/* Specific styles for Riptide */
+.sub-menu-item .submenu-label.riptide {
+  font-weight: 700;
+  margin-left: 50px;
+}
+
+.iconh {
+  height: 27px;
+}
+
+/* Custom header styles for Maintenance and Warranty pages */
+.custom-header {
+  color: black !important;
+}
+
+.custom-header .menu-item button {
+  color: black !important;
+}
+
+.custom-header:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.custom-header:hover .menu-item button {
+  color: white !important;
+}
+
+.custom-header .sub-menu,
+.custom-header .nested-submenu,
+.custom-header .deep-nested-submenu {
+  background-color: black !important;
+  color: white !important;
+}
+
+.custom-header .sub-menu-item,
+.custom-header .nested-submenu-item,
+.custom-header .deep-nested-submenu-item {
+  color: white !important;
+}
+
+.custom-header .iconh {
+  filter: brightness(0) invert(1); /* Convert icons to white */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ffffff;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+
+  .header-nav.active {
+    display: flex;
+  }
+
+  .header-nav .menu-item {
+    margin: 10px 0;
+  }
+
+  .header-logo img {
+    position: fixed;
+    top: 1rem;
+    left: 5rem;
+  }
+}

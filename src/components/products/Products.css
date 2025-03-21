@@ -1,0 +1,234 @@
+/* Title Code */
+.Product-header {
+  color: white;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: color 0.3s ease;
+  mix-blend-mode: screen;
+}
+
+/* Button Code */
+.button-container {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.button-container h1 {
+  font-size: 68px;
+}
+
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  text-align: left;
+}
+
+.description {
+  width: 40vw; /* Adjust the width as needed */
+  margin-left: 100px;
+}
+
+.image iframe {
+  width: 60vw; /* Adjust the width as needed */
+  height: 90vh; /* Set an appropriate height for the iframe */
+  padding-top: 7%;
+}
+
+.btn-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 10px auto 35px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0px 25px 15px;
+  min-width: 150px;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.virtual-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+.virtual-btn a {
+  color: white;
+  text-decoration: underline;
+}
+
+.btn span {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn.hover-border-1::before,
+.btn.hover-border-1::after {
+  width: 10%;
+  height: 25%;
+  transition: 0.35s;
+}
+
+.btn.hover-border-1::before {
+  top: 0;
+  left: 0;
+  border-left: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+.btn.hover-border-1::after {
+  bottom: 0;
+  right: 0;
+  border-right: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.btn.hover-border-1:hover::before,
+.btn.hover-border-1:hover::after {
+  width: 99%;
+  height: 98%;
+}
+
+.background-image img {
+  opacity: 0.9;
+  max-width: 100vw;
+}
+
+.package-details {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  box-shadow: 0 0 35px 7px rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+  }
+
+  .button-container {
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+  }
+
+  .button-container h1 {
+    font-size: 30px;
+    display: flex;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 1px;
+    text-align: center;
+  }
+  .description p {
+    margin-bottom: 5vh;
+  }
+
+  .image iframe {
+    width: 100vw; /* Adjust the width as needed */
+    height: 300px; /* Set an appropriate height for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn {
+    margin: 0px 25px 15px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .package-details li {
+    text-align: left;
+  }
+}
+
+.xptech-banner {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+}
+
+.xptech-banner:hover {
+  transform: scale(1.02);
+}
+
+#xptechbanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .xptech-banner {
+    max-width: 200px;
+    margin: 8px auto;
+  }
+  
+  #xptechbanner {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .xptech-banner {
+    max-width: 150px;
+    margin: 6px auto;
+  }
+  
+  #xptechbanner {
+    padding: 6px;
+  }
+}

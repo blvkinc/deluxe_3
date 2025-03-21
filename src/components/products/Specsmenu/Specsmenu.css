@@ -1,0 +1,120 @@
+/* Container styles */
+.specs_container {
+    max-width: 80vw;
+    margin: 0 auto;
+    overflow: scroll;
+  }
+  
+  /* Accordion heading styles */
+  .accordionTitle {
+    background-color: #000000;
+    width: 80vw;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  /* Plus/minus icon for accordion headings */
+  .accordionTitle:before {
+    content: "+";
+    font-size: 1.5em;
+    line-height: 0.5em;
+    position: absolute;
+    right: 1em; /* Adjust the position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transition: -moz-transform 0.3s ease-in-out;
+    -o-transition: -o-transform 0.3s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Rest of your CSS remains the same */
+  
+  
+  /* Hover effect for accordion headings */
+  .accordionTitle:hover {
+    background-color: #cdcdcd;
+    color: #000000;
+  }
+  
+  /* Active (open) accordion heading styles */
+  .accordionTitleActive {
+    background-color: #fafafa;
+    color: #000000;
+  }
+  
+  /* Rotated plus/minus icon for active accordion headings */
+  .accordionTitleActive:before {
+    -webkit-transform: rotate(-225deg);
+    -moz-transform: rotate(-225deg);
+    transform: rotate(-225deg);
+  }
+  
+  /* Accordion content styles */
+  .accordionItem {
+    background-color: #000000;
+    color: #fafafa;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 1em 2em 1em 2em;
+    max-height: 0;
+    overflow: visible;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  /* Animation for opening accordion content */
+  .animateIn {
+    max-height: 50em;
+    animation: accordionIn 0.65s ease-in-out both;
+  }
+  
+  /* Animation for closing accordion content */
+  .animateOut {
+    max-height: 0;
+    animation: accordionOut 0.75s ease-in-out both;
+  }
+
+  .list{
+    text-align: left;
+  }
+  
+  /* Keyframes for accordion animation */
+  @keyframes accordionIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes accordionOut {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
+  
+
+
+  @media screen and (max-width: 767px) {
+    /* Adjust list item alignment for smaller screens */
+    .accordionItem {
+      margin-left: auto;
+      padding: 0em; /* Adjust padding as needed */
+      font-size: 14px;
+    }
+  }

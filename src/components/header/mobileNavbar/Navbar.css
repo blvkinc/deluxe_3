@@ -1,0 +1,197 @@
+.dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  font-size: 20px;
+}
+
+.dropdown-menu ul {
+  padding: 10px;
+}
+
+.dropdown-menu li {
+  position: relative;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+.dropdown-menu a,
+.social {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu .open-button,
+.close-button {
+  color: white;
+  font-size: larger;
+  position: absolute;
+  background-color: transparent;
+  border-color: transparent;
+  top: 30px;
+  right: 30px;
+}
+
+.dropdown-menu .close-button {
+  color: black;
+  font-size: larger;
+}
+
+.dropdown-menu .navbar-nav {
+  padding-top: 10px;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.dropdown-menu .navbar-nav .nav-item {
+  margin-bottom: 10px;
+}
+
+.dropdown-menu .navbar-nav .nav-link,
+.social {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu .social-media-list {
+  list-style: none;
+  display: flex;
+}
+
+.dropdown-menu .social-media-list li {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.dropdown-menu .social-media-list a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu .social-media-list img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-media-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: opacity 0.1s ease, transform 0.1s ease;
+}
+
+.social-media-container.show {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto; /* Allow interaction with the container */
+}
+
+.back-button {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  font-size: larger;
+  color: black;
+}
+
+.lessericon {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.greatericon {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+.subnav {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+.submenu-list li {
+  padding: 0;
+  margin: 0;
+  color: black;
+  list-style: none;
+}
+
+.submenu {
+  position: absolute;
+  left: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+.nav-item {
+  position: relative;
+}
+
+ul.submenu-list {
+  width: 100%;
+  padding: 0;
+}
+
+.submenu-list li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.submenu-list li img {
+  width: 100px;
+  height: auto;
+}
+
+.submenu-list li div {
+  flex: 1;
+}
+
+.submenu-list li p {
+  margin: 10px 0 5px;
+  font-size: 12px;
+  width: 150px;
+}
+
+.submenu-list li p:last-child {
+  margin: 0;
+  font-size: 12px;
+  color: black;
+}
+
+/* Custom styles for Maintenance and Warranty pages */
+.custom-page {
+  color: black !important;
+}
+
+.custom-page .dropdown-menu .open-button,
+.close-button {
+  color: white;
+  font-size: larger;
+  position: absolute;
+  background-color: white;
+  border-color: transparent;
+  top: 30px;
+  right: 30px;
+}

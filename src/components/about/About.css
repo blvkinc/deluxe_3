@@ -1,0 +1,87 @@
+.aboutcontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: black !important;
+  color: white !important;
+}
+
+.context {
+  max-width: 1080px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center-align the content horizontally */
+}
+
+.context p {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.context .subheader {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.context h1 {
+  font-size: 75.76px;
+  margin: 10px;
+}
+
+.context h2 {
+  font-size: 56.76px;
+  margin: 10px;
+}
+
+.context ul {
+  text-align: left;
+}
+
+.image-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Creates two evenly spaced columns */
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+}
+
+.ourval p {
+  text-transform: lowercase !important;
+}
+
+.ourval {
+}
+
+@media (max-width: 768px) {
+  .context h1 {
+    font-size: 30px;
+    margin-top: 20%;
+  }
+  .context h2 {
+    font-size: 20px;
+  }
+  .context p {
+    margin: 10px;
+    font-size: 16px;
+  }
+  .image-item h3 {
+    font-size: 15px;
+  }
+
+  .component h1 {
+    font-size: 30px;
+  }
+
+  .image-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr; /* Creates two evenly spaced columns */
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+  }
+
+  .image-container p {
+    font-size: 16px;
+  }
+}

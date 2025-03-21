@@ -1,0 +1,147 @@
+#name,
+#email,
+#message {
+  background-color: #ffffff;
+}
+
+#desc {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  margin-bottom: 3rem;
+  height: 70vh;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendly__form {
+  padding-left: 2%;
+}
+
+.popup p {
+  font-size: 30px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Change layout to column when screen width is 768px or less */
+    width: fit-content;
+  }
+  .calendly__form {
+    padding-left: 0;
+  }
+}
+
+.contact__form {
+  display: grid; /* Use grid layout for the form */
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-gap: 10px; /* Add some spacing between columns */
+  width: 600px;
+  background-color: #000000;
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.input__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.input__group label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input__group input,
+.input__group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input__group textarea {
+  resize: vertical;
+}
+
+.input__group--message {
+  grid-column: 1 / span 2; /* Make the message field span two columns */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #141414;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  grid-column: 1 / span 2; /* Make the button span two columns */
+}
+
+.book {
+  padding: 10px 20px;
+  background-color: #7a0202;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  grid-column: 1 / span 2; /* Make the button span two columns */
+}
+
+.book:hover {
+  background-color: #dedede;
+  color: #ffffff;
+  color: #7a0202;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #dedede;
+  color: #141414;
+  cursor: pointer;
+}
+
+.lineUp {
+  animation: 1s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__form {
+    width: auto;
+  }
+}

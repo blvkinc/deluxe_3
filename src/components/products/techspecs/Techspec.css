@@ -1,0 +1,82 @@
+.aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+  
+  }
+  
+  
+  .context {
+      max-width: 1080px; /* Adjust the max-width as needed */
+      margin: 0 auto; /* Center-align the content horizontally */
+    }
+    
+    .context p {
+      margin: 20px;
+      font-size: 20px;
+    }
+    
+    .context .subheader {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+  
+    .context h1{
+      font-size: 75.76px;
+      margin: 10px;
+      color: black;
+    }
+  
+    .context h2{
+      font-size: 56.76px;
+      margin: 10px;
+    }
+  
+    .context ul{
+     text-align: left;
+    }
+  
+    .ourval{
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* Creates two evenly spaced columns */
+      justify-content: center;
+      align-items: center;
+      left: 0;
+      right: 0;
+     
+    }
+  
+    .ourval p{
+      text-transform: lowercase !important;
+    }
+  
+    
+@media (max-width: 768px) {
+  .ourval{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two evenly spaced columns */
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .ourval{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+   
+  }
+}

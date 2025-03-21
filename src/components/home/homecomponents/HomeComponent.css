@@ -1,0 +1,773 @@
+.component {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 1px solid #ccc;    */
+  overflow: hidden;
+}
+
+.component2 {
+  margin-top: 30vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desccomponent {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  text-align: center;
+}
+
+.desccomponent p {
+  font-size: larger;
+}
+
+/* Video Landing styling */
+.landing_page_video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.mobile-image {
+  display: none;
+}
+
+/* Gallery Landing styling */
+.gallery_landing_container {
+  text-align: center;
+}
+
+.gallery_landing_heading {
+  font-size: 70px;
+  font-weight: normal;
+}
+
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.grid_item {
+  padding: 16px;
+  text-align: center;
+}
+
+/* Add this to your existing CSS */
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.096
+  ); /* Adjust the background color and opacity as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide any overflowing text */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect for the background-color change */
+}
+
+.link-overlay {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.link-overlay-revealUp-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 10%;
+}
+
+.text-overlay:hover {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Change the background color on hover */
+}
+
+.text-overlay h1 {
+  font-size: 75.76px; /* Adjust the font size as needed */
+  color: transparent; /* Make the text color transparent */
+  -webkit-text-stroke: 2px white;
+  transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
+  letter-spacing: 3px;
+}
+
+.component h1 {
+  position: relative;
+  font-size: 50px; /* Adjust the font size as needed */
+  color: #fff; /* Make the text color transparent */
+  transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
+  letter-spacing: 2px;
+}
+
+.text-overlay:hover h1 {
+  color: #fff;
+  /* Change the text color on hover */
+}
+
+.image-container_landing {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Creates two evenly spaced columns */
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+}
+
+.image-item {
+  text-align: center;
+  padding: 25px;
+  transition: border 0.3s ease; /* Add a transition for the border */
+  position: relative;
+  margin: 0 10px; /* Adjust the margin as needed to separate the items */
+}
+
+.image-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-item p {
+  margin-top: 8px;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+.image-item.current {
+  border: 2px solid rgb(255, 255, 255); /* Highlight the current image */
+}
+
+/* Media query for mobile screens */
+
+@media screen and (max-width: 375px) {
+  .wcontainer {
+    margin-bottom: 20vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-logo {
+    display: none;
+  }
+  .grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  .landing_page_video {
+    height: 50vh;
+  }
+  .video-overlay {
+    position: relative;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .text-overlay h1 {
+    font-size: 30px;
+    -webkit-text-stroke: 1px white;
+    /* margin-top: 15%; */
+  }
+  .btn {
+    /* top: 15%; */
+    padding: 6px !important;
+    font-size: 15px !important;
+  }
+  .component h1 {
+    font-size: 30px;
+  }
+  .desccomponent p {
+    font-size: 16px;
+    width: 45vh;
+  }
+
+  .mobile_landing_Page_video_container {
+    height: 50vh;
+  }
+  .link-overlay {
+    bottom: auto;
+    margin-top: 20%;
+  }
+  .desccomponent {
+    min-height: auto;
+    padding: 10px;
+    width: 50vh;
+  }
+  .component {
+    min-height: auto;
+    height: fit-content;
+    justify-content: normal;
+  }
+  .image-item img {
+    max-width: 30%;
+  }
+  .image-item p {
+    font-size: 16px;
+  }
+  .image-item {
+    padding: 10px;
+  }
+
+  .gallerycomponent {
+    margin-bottom: 200px;
+  }
+
+  .image-container_landing {
+    grid-template-columns: 1fr;
+    height: 100vh;
+    margin-bottom: 20vh;
+  }
+  .wcontainer {
+    margin-bottom: 20vh;
+  }
+
+  .doswOh {
+    font-size: 20px !important;
+  }
+  .ucJFR {
+    font-size: 10px;
+  }
+  .component2 {
+    margin-top: 30%;
+    margin-bottom: 10%;
+    padding: 20px;
+    min-height: auto;
+    height: 60vh;
+    justify-content: normal;
+  }
+  .partners-heading {
+    font-size: 20px !important;
+  }
+  .es-review-content-text {
+    font-size: 10px !important;
+  }
+  .australian-made-banner span {
+    font-size: 12px;
+  }
+}
+
+/* gallery */
+
+/* HomeComponent.css */
+
+.waterfall-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: auto;
+  min-height: 100vh; /* Adjust the maximum width as needed */
+  overflow: hidden;
+}
+
+.waterfall-item {
+  flex-basis: 33.33%; /* 3 columns in a row, adjust as needed */
+  width: 40vh;
+  padding-bottom: 33.33%; /* Maintain aspect ratio, adjust as needed */
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: waterfall-animation 4s linear infinite;
+}
+
+.current {
+  border: 2px solid rgb(255, 255, 255); /* Highlight the current image */
+}
+
+@keyframes waterfall-animation {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Reviews */
+/* Testimonials */
+.testimonials-container {
+  display: grid;
+  height: 100vh;
+  text-align: center;
+  margin-top: 1vh;
+  border-radius: 40px;
+}
+
+.testimonials-container h2 {
+  font-size: 56.83px; /* Adjust the font size as needed */
+  color: #fff; /* Make the text color transparent */
+  letter-spacing: 2px;
+}
+
+/*Our Partners*/
+.partners-heading {
+  font-size: 56.83px; /* Adjust the font size as needed */
+  color: #fff; /* Make the text color transparent */
+  letter-spacing: 2px;
+}
+.slide__item {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  padding: 20px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.slide__heading {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.slide__quote a {
+  font-family: "Roboto";
+  text-transform: lowercase !important;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 600px;
+  color: white;
+}
+
+.slide__cite {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Splide Styles */
+
+.reviewhead {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left !important;
+  padding: 10px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border-radius: 10px;
+  margin-bottom: 2vh;
+  color: white;
+  max-width: 60%;
+}
+
+.reviewhead p {
+  font-size: 28px;
+  margin-top: 0%;
+}
+.revstar {
+  color: #fcbf02;
+}
+.reviewdesc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  overflow: visible;
+}
+
+.slide__heading {
+  color: #fcbf02;
+  font-size: 30px;
+}
+
+.slide__quote {
+  font-size: 20px;
+}
+
+.google-text {
+  font-size: 24px; /* Adjust the font size as needed */
+}
+
+.google-text span:nth-child(1) {
+  color: #4285f4; /* Color for 'G' */
+}
+
+.google-text span:nth-child(2) {
+  color: #ea4335; /* Color for 'o' */
+}
+
+.google-text span:nth-child(3) {
+  color: #fbbc05; /* Color for 'o' */
+}
+
+.google-text span:nth-child(4) {
+  color: #4285f4; /* Color for 'g' */
+}
+
+.google-text span:nth-child(5) {
+  color: #34a853; /* Color for 'l' */
+}
+
+.google-text span:nth-child(6) {
+  color: #ea4335; /* Color for 'e' */
+}
+
+/* Button Code */
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+::before,
+::after {
+  position: absolute;
+  content: "";
+}
+
+.btn-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 10px auto 35px;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0px 25px 15px;
+  min-width: 150px;
+  transition: 0.3s;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.btn span {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.btn.hover-border-1::before,
+.btn.hover-border-1::after {
+  width: 10%;
+  height: 25%;
+  transition: 0.35s;
+}
+.btn.hover-border-1::before {
+  top: 0;
+  left: 0;
+  border-left: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(255, 255, 255);
+}
+.btn.hover-border-1::after {
+  bottom: 0;
+  right: 0;
+  border-right: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.btn.hover-border-1:hover::before,
+.btn.hover-border-1:hover::after {
+  width: 99%;
+  height: 98%;
+}
+
+/*partner slide*/
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-250px * 3)
+    ); /* Adjust the multiplier to suit your number of slides */
+  }
+}
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: auto !important;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  display: flex;
+
+  &::before,
+  &::after {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    width: calc(250px * 7);
+    transition: transform 1s linear;
+  }
+
+  .slide {
+    height: auto;
+    width: 35vw;
+  }
+
+  /* Media query for screens with a width less than 768px */
+  @media (max-width: 768px) {
+    .slide {
+      margin-right: 5vw;
+      width: 200vw;
+    }
+
+    .carousel-button {
+      font-size: 24px; /* Increased font size */
+    }
+  }
+
+  /* Media query for screens with a width between 768px and 1200px */
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .slide {
+      margin-right: 15vw;
+    }
+
+    .carousel-button {
+      font-size: 24px; /* Increased font size */
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .link-overlay {
+    margin-top: 40%;
+  }
+
+  .carousel-button {
+    font-size: 24px; /* Increased font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .slide__quote a {
+    font-size: 14px;
+  }
+
+  .slide__item {
+    height: max-content;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reviewdesc {
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    overflow: visible;
+  }
+
+  .carousel-button {
+    font-size: 24px; /* Increased font size */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .carousel-button {
+    font-size: 24px; /* Increased font size */
+  }
+}
+
+.swiper-slide {
+  transition: transform 0.3s;
+  transform-origin: center center;
+  opacity: 1;
+  position: relative;
+}
+
+.vContainer {
+  height: 100%;
+  width: 100%;
+  padding-top: 10%;
+}
+
+.swiper-slide iframe {
+  height: 100%;
+  width: 100%; /* Ensure the iframe fits the container */
+  z-index: 0;
+  border: none; /* Remove border from iframe */
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  transform: scale(0.8); /* Only scale the slides */
+  opacity: 0.7;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 8px 16px;
+  border-radius: 100%;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 990px) {
+  .swiper-slide {
+    transform: none !important;
+  }
+
+  .swiper-slide-prev,
+  .swiper-slide-next {
+    transform: none;
+    opacity: 1;
+  }
+
+  .swiper-container {
+    height: auto;
+  }
+}
+
+.australian-made-banner {
+  position: absolute;
+  left: 5%;
+  top: 90%;
+  transform: translateY(-50%);
+  background-color: black;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.australian-made-banner span {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 1px;
+  display: block;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .australian-made-banner {
+    top: 100%;
+  }
+  .australian-made-banner span {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .link-overlay {
+    margin-top: 55%;
+  }
+  .australian-made-banner {
+    top: 100%;
+  }
+  .australian-made-banner span {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+  }
+}

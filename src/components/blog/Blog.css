@@ -1,0 +1,12 @@
+.blog_title {
+  margin: 70px;
+}
+
+.blog_component {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  min-height: 50px;
+  height: auto;
+}

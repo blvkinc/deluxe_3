@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px; /* Optional: Add padding to the components */
+  min-height: 50px; /* Increase the minimum height to create more spacing */
+  height: 100vh;
+}
+
+.partnercomponent {
+  margin-top: auto;
+}
+
+.slider {
+  height: 35vh !important;
+}
