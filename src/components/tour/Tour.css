@@ -87,3 +87,10 @@
     padding-top: 10vh;
   }
 }
+
+/* Responsive height for even smaller screens */
+@media (max-width: 768px) {
+  .virtualcomponent {
+    padding: 0;
+  }
+}

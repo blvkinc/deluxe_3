@@ -8,7 +8,7 @@ import Partners from "./homecomponents/Partners";
 import HomeDesc from "./homecomponents/HomeDescription";
 import CarouselSection from "./homecomponents/CarouselSection";
 import Model from "../popup-ad/model";
-import Promovid from "./homecomponents/Promovid"
+import Promovid from "./homecomponents/Promovid";
 
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +19,10 @@ function Home() {
       const currentTime = Date.now();
       const ONE_MINUTE = 60 * 1000;
 
-      if (!lastShownTimestamp || currentTime - lastShownTimestamp >= ONE_MINUTE) {
+      if (
+        !lastShownTimestamp ||
+        currentTime - lastShownTimestamp >= ONE_MINUTE
+      ) {
         setIsOpen(true);
         localStorage.setItem("adLastShownTimestamp", currentTime);
       }
