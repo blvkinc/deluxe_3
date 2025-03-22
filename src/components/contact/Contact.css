@@ -121,6 +121,7 @@ button:hover {
 
 .lineUp {
   animation: 1s anim-lineUp ease-out;
+  margin-top: 100px;
 }
 @keyframes anim-lineUp {
   0% {
@@ -143,5 +144,8 @@ button:hover {
 @media (max-width: 768px) {
   .contact__form {
     width: auto;
+  }
+  .lineUp {
+    margin-top: 100px;
   }
 }

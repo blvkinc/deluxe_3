@@ -5,7 +5,6 @@
   overflow: scroll;
 }
 
-/* Accordion heading styles */
 .accordionTitle {
   background-color: #fff;
   width: 80vw;
@@ -20,7 +19,6 @@
   position: relative;
 }
 
-/* Plus/minus icon for accordion headings */
 .accordionTitle:before {
   content: "+";
   font-size: 1.5em;
@@ -35,28 +33,22 @@
   transition: transform 0.3s ease-in-out;
 }
 
-/* Rest of your CSS remains the same */
-
-/* Hover effect for accordion headings */
 .accordionTitle:hover {
   background-color: #cdcdcd;
   color: #000000;
 }
 
-/* Active (open) accordion heading styles */
 .accordionTitleActive {
   background-color: #fafafa;
   color: #000000;
 }
 
-/* Rotated plus/minus icon for active accordion headings */
 .accordionTitleActive:before {
   -webkit-transform: rotate(-225deg);
   -moz-transform: rotate(-225deg);
   transform: rotate(-225deg);
 }
 
-/* Accordion content styles */
 .accordionItem {
   background-color: #fafafa;
   color: #000;
