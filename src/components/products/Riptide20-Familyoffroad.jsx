@@ -63,7 +63,7 @@ const Riptide20FamilyOffRoad = () => {
       <div className="component">
         <div className="background-image">
           <img
-            src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20Exterior-min.webp"
+            src="https://deluxcaravan.b-cdn.net/assets/Rip20/Riptide%20Exterior-min.webp"
             alt=""
           />
           <div className="image-overlay">
@@ -99,14 +99,7 @@ const Riptide20FamilyOffRoad = () => {
         >
           <div className="description">
             <p>
-              The Riptide 20` offers the perfect balance of comfort and
-              functionality for your family adventures. This model combines
-              spacious living areas with practical features, making it an ideal
-              choice for families seeking a reliable and comfortable caravan.
-              With its well-thought-out layout and premium finishes, the Riptide
-              20` provides all the amenities you need for memorable journeys.
-              Experience the perfect blend of style and substance with this
-              versatile family caravan.
+              The Riptide 20` offers the perfect balance of comfort and functionality for your family adventures. This model combines spacious living areas with practical features, making it an ideal choice for families seeking a reliable and comfortable caravan. With its well-thought-out layout and premium finishes, the Riptide 20` provides all the amenities you need for memorable journeys. Experience the perfect blend of style and substance with this versatile family caravan.
             </p>
             <p>
               <button className="virtual-btn">
@@ -142,4 +135,4 @@ const Riptide20FamilyOffRoad = () => {
   );
 };
 
-export default React.memo(Riptide20FamilyOffRoad);
+export default React.memo(Riptide20FamilyOffRoad); 

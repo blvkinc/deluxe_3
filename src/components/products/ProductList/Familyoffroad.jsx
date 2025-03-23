@@ -38,16 +38,14 @@ const productriptide = [
     id: 1,
     name: "Riptide 20FT",
     price: "FULL OFF-ROAD: $96,900",
-    image:
-      "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp",
+    image: "https://deluxcaravan.b-cdn.net/assets/Rip20/Riptide%20header-min.webp",
     link: "/riptide20familyoffroad",
   },
   {
     id: 2,
     name: "Riptide 22FT",
     price: "FULL OFF-ROAD: $98,900",
-    image:
-      "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp",
+    image: "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp",
     link: "/riptide22familyoffroad",
   },
 ];

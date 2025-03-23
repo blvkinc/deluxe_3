@@ -159,7 +159,7 @@ const Header = () => {
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Rip20/Riptide%20header-min.webp"
                         alt="Riptide20"
                       />
                     ),
@@ -243,7 +243,7 @@ const Header = () => {
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Rip20/Riptide%20header-min.webp"
                         alt="Riptide20"
                       />
                     ),

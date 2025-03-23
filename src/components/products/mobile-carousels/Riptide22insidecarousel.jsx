@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import "./Strombreaker18insidecarousel.css";
 
+
 const sections = [
   {
     name: "Exterior",
     images: [
-      "https://deluxcaravan.b-cdn.net/assets/E22/1-min.webp",
-      "https://deluxcaravan.b-cdn.net/assets/E22/2-min.webp",
-      "https://deluxcaravan.b-cdn.net/assets/E22/3-min.webp",
-      "https://deluxcaravan.b-cdn.net/assets/E22/4-min.webp",
-      "https://deluxcaravan.b-cdn.net/assets/E22/5-min.webp",
-      "https://deluxcaravan.b-cdn.net/assets/E22/6-min.webp",
+      "https://deluxcaravan.b-cdn.net/assets/E22/1-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/2-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/3-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/4-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/5-min.webp","https://deluxcaravan.b-cdn.net/assets/E22/6-min.webp",,
     ],
     description: "",
   },
@@ -27,13 +23,13 @@ const sections = [
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20layout%202-min.webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20layout-min.webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20layout%202-min.webp",
+     
     ],
     description: "",
   },
   {
     name: "Inside",
-    images: [
-      "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(1).webp",
+    images: ["https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(1).webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(2).webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(4).webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(5).webp",
@@ -42,10 +38,11 @@ const sections = [
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(8).webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Ripin9.webp",
       "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20(10).webp",
-    ],
+],
     description: "",
   },
-];
+];;
+
 
 const Slider21 = () => {
   const [activeImageIndices, setActiveImageIndices] = useState(

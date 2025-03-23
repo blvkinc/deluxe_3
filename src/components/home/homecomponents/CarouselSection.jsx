@@ -89,6 +89,12 @@ const CarouselSection = () => {
         link: '/riptide22familyxptech'
       },
       {
+        name: 'Riptide 20 XP Tech',
+        // price: '$138,900',
+        image: 'https://deluxcaravan.b-cdn.net/assets/Rip20/rip20.webp',
+        link: '/riptide20familyxptech'
+      },
+      {
         name: 'Eclipse 21 Couples XP Tech',
         // price: '$89,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/186.webp',
@@ -103,50 +109,7 @@ const CarouselSection = () => {
     ]
   };
 
-  const xptecCaravans = [
-    {
-      id: "stormbreaker23-familyxptech",
-      name: "Stormbreaker 23 Family XP Tec",
-      image: "https://deluxcaravan.b-cdn.net/assets/stormbreaker23-familyxptech/Stormbreaker23-Familyxptech-1.jpg",
-      // price: "$89,990",
-      link: "/products/stormbreaker23-familyxptech",
-    },
-    {
-      id: "stormbreaker21-familyxptech",
-      name: "Stormbreaker 21 Family XP Tec",
-      image: "https://deluxcaravan.b-cdn.net/assets/stormbreaker21-familyxptech/Stormbreaker21-Familyxptech-1.jpg",
-      // price: "$79,990",
-      link: "/products/stormbreaker21-familyxptech",
-    },
-    {
-      id: "stormbreaker19-familyxptech",
-      name: "Stormbreaker 19 Family XP Tec",
-      image: "https://deluxcaravan.b-cdn.net/assets/stormbreaker19-familyxptech/Stormbreaker19-Familyxptech-1.jpg",
-      // price: "$69,990",
-      link: "/products/stormbreaker19-familyxptech",
-    },
-    {
-      id: "stormbreaker18-familyxptech",
-      name: "Stormbreaker 18 Family XP Tec",
-      image: "https://deluxcaravan.b-cdn.net/assets/stormbreaker18-familyxptech/Stormbreaker18-Familyxptech-1.jpg",
-      price: "$64,990",
-      link: "/products/stormbreaker18-familyxptech",
-    },
-    {
-      id: "eclipse22-couplesxptech",
-      name: "Eclipse 22 Couples XP Tec",
-      image: "https://deluxcaravan.b-cdn.net/assets/eclipse22-couplesxptech/Eclipse22-Couplesxptech-1.jpg",
-      // price: "$59,990",
-      link: "/products/eclipse22-couplesxptech",
-    },
-    {
-      id: "eclipse21-couplesxptech",
-      name: "Eclipse 21 Couples XP Tec",
-      image: "https://deluxcaravan.b-cdn.net/assets/eclipse21-couplesxptech/Eclipse21-Couplesxptech-1.jpg",
-      // price: "$54,990",
-      link: "/products/eclipse21-couplesxptech",
-    },
-  ];
+ 
 
   const nextSlide = () => {
     setCurrentSlide((prev) => 
