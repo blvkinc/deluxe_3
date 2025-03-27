@@ -14,7 +14,7 @@ const SpecsRiptide20 = () => {
   const data = [
     {
       title: "INTERIOR",
-      content: `Bed - Queen Island with Lift-Up Storage 
+      content: `Bed-East-West
         Niche - Bedside - Both Sides
         Bunks - 2 Bunks (Length: Top Bunk - 2.0m, Middle Bunk 2.0m )
         Mattress - Innerspring with Pillow-Top 

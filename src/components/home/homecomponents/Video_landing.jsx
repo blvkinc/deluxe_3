@@ -19,7 +19,7 @@ function VideoLanding() {
               trigger: elem,
               start: "top 80%",
               end: "bottom 20%",
-              markers: false, // Set this to true for debug markers
+              markers: false,
             },
           }
         );
@@ -42,19 +42,36 @@ function VideoLanding() {
         delay: 0.5,
       }
     );
+
+    // Load Vimeo Player API
+    const script = document.createElement('script');
+    script.src = 'https://player.vimeo.com/api/player.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, [revealUpAnimation]);
 
   return (
     <div className="landing_Page_video_container">
       <div className="video-overlay">
         <div className="video-container">
-          <div className="video-background">
+          <div className="video-background" style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
             <iframe
               className="landing_page_video"
-              src="https://player.vimeo.com/video/1068017438?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;controls=0&amp;loop=1&amp;muted=1&amp;background=1"
+              src="https://player.vimeo.com/video/1069631317?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&title=0&byline=0&portrait=0&background=1"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-              title="2 MIN Landscape 4K_1"
+              title="deluxe landing"
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%'
+              }}
             ></iframe>
           </div>
           <div className="australian-made-banner">
