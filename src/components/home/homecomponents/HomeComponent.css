@@ -36,6 +36,7 @@
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .mobile-image {
@@ -186,9 +187,11 @@
 
   .landing_page_video {
     height: 50vh;
+    overflow: hidden; 
   }
   .video-overlay {
     position: relative;
+    overflow: hidden;
   }
   .text-overlay {
     position: absolute;
