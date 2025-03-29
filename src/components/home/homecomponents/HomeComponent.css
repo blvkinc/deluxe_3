@@ -167,6 +167,14 @@
   .wcontainer {
     margin-bottom: 20vh;
   }
+  .text-overlay {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text-overlay {
+    height: 50vh;
+  }
 }
 @media screen and (max-width: 768px) {
   .header-logo {
@@ -751,11 +759,14 @@
 
 @media screen and (max-width: 768px) {
   .australian-made-banner {
-    top: 100%;
+    margin-top: 50px;
   }
   .australian-made-banner span {
     font-size: 18px;
     letter-spacing: 0.5px;
+  }
+  .vContainer {
+    padding-top: 100px;
   }
 }
 
