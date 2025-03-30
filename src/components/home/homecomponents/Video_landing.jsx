@@ -44,8 +44,8 @@ function VideoLanding() {
     );
 
     // Load Vimeo Player API
-    const script = document.createElement('script');
-    script.src = 'https://player.vimeo.com/api/player.js';
+    const script = document.createElement("script");
+    script.src = "https://player.vimeo.com/api/player.js";
     script.async = true;
     document.body.appendChild(script);
 
@@ -58,7 +58,10 @@ function VideoLanding() {
     <div className="landing_Page_video_container">
       <div className="video-overlay">
         <div className="video-container">
-          <div className="video-background" style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+          <div
+            className="video-background"
+            style={{ padding: "56.25% 0 0 0", position: "relative" }}
+          >
             <iframe
               className="landing_page_video"
               src="https://player.vimeo.com/video/1069631317?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&title=0&byline=0&portrait=0&background=1"
@@ -66,11 +69,12 @@ function VideoLanding() {
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
               title="deluxe landing"
               style={{
-                position: 'absolute',
+                position: "absolute",
                 top: 0,
                 left: 0,
-                width: '100%',
-                height: '100%'
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
               }}
             ></iframe>
           </div>
