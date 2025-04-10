@@ -120,7 +120,7 @@ const Stormbreaker18FamilyXPTech = () => {
               <ul>
                 <li>DOMETIC FRESH JET AIRCON</li>
                 <li>188L DOMETIC COMPRESSOR FRIDGE</li>
-                <li>3 X 170W SOLAR PANELS</li>
+                <li>4 X 200W SOLAR PANELS</li>
                 <li>2 X 100AH LITHIUM BATTERIES</li>
               </ul>
             </div>
@@ -160,9 +160,9 @@ const Stormbreaker18FamilyXPTech = () => {
       </div>
       <div className="component" id="xptechbanner">
         <Link to="/xptec">
-          <img 
-            src="https://deluxcaravan.b-cdn.net/assets/xp%20tec/Find%20out%20More%20About%20Xp%20tec.png" 
-            alt="XP Tech Banner" 
+          <img
+            src="https://deluxcaravan.b-cdn.net/assets/xp%20tec/Find%20out%20More%20About%20Xp%20tec.png"
+            alt="XP Tech Banner"
             className="xptech-banner"
           />
         </Link>

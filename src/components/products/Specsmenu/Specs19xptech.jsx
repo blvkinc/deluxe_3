@@ -1,5 +1,5 @@
-import React, { useState, useCallback } from 'react';
-import './Specsmenu.css';
+import React, { useState, useCallback } from "react";
+import "./Specsmenu.css";
 
 const Specs19xptech = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -11,10 +11,10 @@ const Specs19xptech = () => {
     [setActiveIndex]
   );
 
-    const data = [
-      {
-        title: 'INTERIOR',
-        content: `Bed - Queen East - West
+  const data = [
+    {
+      title: "INTERIOR",
+      content: `Bed - Queen East - West
         Niche - Bedside - Both Sides
         Bunks - 2 or 3 x with Windows ( Length: Top Bunk – 1.9m, Middle Bunk 1.9m)
         Mattress - Innerspring with Pillow-Top
@@ -30,18 +30,18 @@ const Specs19xptech = () => {
         Hinges - Piano
         Pantry - Half (Slide-Out)
         Frame – Meranti/ CNC`,
-      },
-      {
-        title: 'SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY',
-        content: `Bench Top - Premium Laminate 
+    },
+    {
+      title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
+      content: `Bench Top - Premium Laminate 
         Bench Top Lid - Over Stove
         Splashback Kitchen - Full Height
         Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) 
         Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) `,
-      },
-      {
-        title: 'ELECTRICAL - INTERNAL',
-        content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC & 3000W Inverter)
+    },
+    {
+      title: "ELECTRICAL - INTERNAL",
+      content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC & 3000W Inverter)
         Projecta 7 Inch Touch Display Bluetooth & Light Control
         Lighting - LED Down lights 
         TV - Co-Ax Point  
@@ -53,10 +53,10 @@ const Specs19xptech = () => {
         Sirocco Fans - Bunks
         Wireless Multi Switches
         Bug Lights`,
-      },
-      {
-        title: 'ELECTRICAL - EXTERNAL',
-        content: `2 x LED Annexe Lights
+    },
+    {
+      title: "ELECTRICAL - EXTERNAL",
+      content: `2 x LED Annexe Lights
         1 x LED Annexe Light over Tunnel Boot
         LED Tunnel Boot Light
         Door Handle
@@ -72,10 +72,10 @@ const Specs19xptech = () => {
         Side Markers with Reflector
         Starlink Port
         Anderson plug for solar blanket`,
-      },
-      {
-        title: 'APPLIANCES',
-        content: `Air Conditioning - DOMETIC FRESH JET AIRCON
+    },
+    {
+      title: "APPLIANCES",
+      content: `Air Conditioning - DOMETIC FRESH JET AIRCON
         Front Load Washing Machine
         Instant Hot Water
         Rangehood: 12V LED with Twin Fans
@@ -84,10 +84,10 @@ const Specs19xptech = () => {
         25L Microwave
         Stereo/Speaker System
         24" TV`,
-      },
-      {
-        title: 'PLUMBING',
-        content: `ABS Shower
+    },
+    {
+      title: "PLUMBING",
+      content: `ABS Shower
         Thetford Toilet
         Premium Black Kitchen Tap
         Black Round Basin
@@ -98,10 +98,10 @@ const Specs19xptech = () => {
         Tap on A-frame
         2 x 95-Litre Water Tanks
         110-Litre Grey Water Tank`,
-      },
-      {
-        title: 'EXTERIOR',
-        content: `Awning - Electric Carefree
+    },
+    {
+      title: "EXTERIOR",
+      content: `Awning - Electric Carefree
         Storage Compartment Hatch (Rear, Off-Side)
         Foldable Picnic Table
         Tunnel Boot – Front ( Dual Access )
@@ -111,19 +111,19 @@ const Specs19xptech = () => {
         Custom Toolbox with Double Slide Out & Wood box
         Front Dual Bike Rack
         Dometic DRS`,
-      },
-      {
-        title: 'PROTECTION',
-        content: `Raptor Coated Front 900mm (Black)
+    },
+    {
+      title: "PROTECTION",
+      content: `Raptor Coated Front 900mm (Black)
         Raptor Coated Sides 700mm (Black)
         Raptor Coated Back 900mm (Black)
         Fiberglass
         Mudflaps
         12" Electric Brake System`,
-      },
-      {
-        title: 'CHASSIS',
-        content: `Dual Axle
+    },
+    {
+      title: "CHASSIS",
+      content: `Dual Axle
         Hitch: D035
         A-Frame: 6″
         Chassis: 6″ Dura-Gal
@@ -135,20 +135,20 @@ const Specs19xptech = () => {
         Jack: CNR Supports (Drop-Down)
         Bos Jack - A-Frame
         Storage Mesh Plate`,
-      },
-      {
-        title: 'OVERALL',
-        content: `Approx Ball Weight: 160 kg
-        Approx Tare Weight: 2500 kg
+    },
+    {
+      title: "OVERALL",
+      content: `Approx Ball Weight: 160 kg
+        Approx Tare Weight: 2600 kg
         ATM: 3500 kg`,
-      },
-      {
-        title: 'SUSPENSION',
-        content: `FULL OFF-ROAD - INDEPENDENT – 3.5T`,
-      },
-    ];
+    },
+    {
+      title: "SUSPENSION",
+      content: `FULL OFF-ROAD - INDEPENDENT – 3.5T`,
+    },
+  ];
 
-   return (
+  return (
     <div className="specs_container">
       <div className="accordion">
         <dl>
@@ -157,7 +157,7 @@ const Specs19xptech = () => {
               <dt>
                 <button
                   className={`accordionTitle ${
-                    activeIndex === index ? 'accordionTitleActive' : ''
+                    activeIndex === index ? "accordionTitleActive" : ""
                   }`}
                   onClick={() => toggleAccordion(index)}
                 >
@@ -167,12 +167,12 @@ const Specs19xptech = () => {
               <dd
                 className={`accordionItem ${
                   activeIndex === index
-                    ? 'animateIn'
-                    : 'accordionItemCollapsed animateOut'
+                    ? "animateIn"
+                    : "accordionItemCollapsed animateOut"
                 }`}
               >
                 <ul className="list">
-                  {item.content.split('\n').map((listItem, subIndex) => (
+                  {item.content.split("\n").map((listItem, subIndex) => (
                     <li key={subIndex}>{listItem.trim()}</li>
                   ))}
                 </ul>
@@ -185,4 +185,4 @@ const Specs19xptech = () => {
   );
 };
 
-export default React.memo(Specs19xptech); 
+export default React.memo(Specs19xptech);

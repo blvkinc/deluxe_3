@@ -1,5 +1,5 @@
-import React, { useState, useCallback } from 'react';
-import './Specsmenu.css';
+import React, { useState, useCallback } from "react";
+import "./Specsmenu.css";
 
 const SpecsRiptide20xptech = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -11,10 +11,10 @@ const SpecsRiptide20xptech = () => {
     [setActiveIndex]
   );
 
-    const data = [
-      {
-        title: 'INTERIOR',
-        content: `Bed - Queen East - West
+  const data = [
+    {
+      title: "INTERIOR",
+      content: `Bed - Queen East - West
         Niche - Bedside - Both Sides
         Mattress - Innerspring with Pillow-Top
         L - Shape Lounge - with Drop Down Table with TIC Cushion
@@ -29,18 +29,18 @@ const SpecsRiptide20xptech = () => {
         Hinges - Piano
         Pantry - Half (Slide-Out)
         Frame – Meranti/ CNC`,
-      },
-      {
-        title: 'SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY',
-        content: `Bench Top - Premium Laminate 
+    },
+    {
+      title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
+      content: `Bench Top - Premium Laminate 
         Bench Top Lid - Over Stove
         Splashback Kitchen - Full Height
         Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) 
         Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) `,
-      },
-      {
-        title: 'ELECTRICAL - INTERNAL',
-        content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC & 3000W Inverter)
+    },
+    {
+      title: "ELECTRICAL - INTERNAL",
+      content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC & 3000W Inverter)
         Projecta 7 Inch Touch Display Bluetooth & Light Control
         Lighting - LED Down lights 
         TV - Co-Ax Point  
@@ -51,19 +51,19 @@ const SpecsRiptide20xptech = () => {
         Sirocco Fan – Main bed
         Wireless Multi Switches
         Bug Lights`,
-      },
-      {
-        title: 'PROTECTION',
-        content: `Raptor Coated Front 900mm (Black)
+    },
+    {
+      title: "PROTECTION",
+      content: `Raptor Coated Front 900mm (Black)
         Raptor Coated Sides 700mm (Black)
         Raptor Coated Back 900mm (Black)
         Fiberglass
         Mudflaps
         12" Electric Brake System`,
-      },
-      {
-        title: 'CHASSIS',
-        content: `Dual Axle
+    },
+    {
+      title: "CHASSIS",
+      content: `Dual Axle
         Hitch: D035
         A-Frame: 6″
         Chassis: 6″ Dura-Gal
@@ -75,20 +75,20 @@ const SpecsRiptide20xptech = () => {
         Jack: CNR Supports (Drop-Down)
         Bos Jack - A-Frame
         Storage Mesh Plate`,
-      },
-      {
-        title: 'OVERALL',
-        content: `Approx Ball Weight: 160 kg
-        Approx Tare Weight: 2750 kg
+    },
+    {
+      title: "OVERALL",
+      content: `Approx Ball Weight: 180 kg
+        Approx Tare Weight: 2600 kg
         ATM: 3500 kg`,
-      },
-      {
-        title: 'SUSPENSION',
-        content: `FULL OFF-ROAD - INDEPENDENT – 3.5T`,
-      },
-    ];
+    },
+    {
+      title: "SUSPENSION",
+      content: `FULL OFF-ROAD - INDEPENDENT – 3.5T`,
+    },
+  ];
 
-   return (
+  return (
     <div className="specs_container">
       <div className="accordion">
         <dl>
@@ -97,7 +97,7 @@ const SpecsRiptide20xptech = () => {
               <dt>
                 <button
                   className={`accordionTitle ${
-                    activeIndex === index ? 'accordionTitleActive' : ''
+                    activeIndex === index ? "accordionTitleActive" : ""
                   }`}
                   onClick={() => toggleAccordion(index)}
                 >
@@ -107,12 +107,12 @@ const SpecsRiptide20xptech = () => {
               <dd
                 className={`accordionItem ${
                   activeIndex === index
-                    ? 'animateIn'
-                    : 'accordionItemCollapsed animateOut'
+                    ? "animateIn"
+                    : "accordionItemCollapsed animateOut"
                 }`}
               >
                 <ul className="list">
-                  {item.content.split('\n').map((listItem, subIndex) => (
+                  {item.content.split("\n").map((listItem, subIndex) => (
                     <li key={subIndex}>{listItem.trim()}</li>
                   ))}
                 </ul>
@@ -125,4 +125,4 @@ const SpecsRiptide20xptech = () => {
   );
 };
 
-export default React.memo(SpecsRiptide20xptech); 
+export default React.memo(SpecsRiptide20xptech);

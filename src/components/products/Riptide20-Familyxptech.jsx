@@ -94,7 +94,7 @@ const Riptide20FamilyXPTech = () => {
             <ul>
               <li>DOMETIC FRESH JET AIRCON</li>
               <li>188L DOMETIC COMPRESSOR FRIDGE</li>
-              <li>3 X 170W SOLAR PANELS</li>
+              <li>4 X 200W SOLAR PANELS</li>
               <li>2 X 100AH LITHIUM BATTERIES</li>
             </ul>
           </div>

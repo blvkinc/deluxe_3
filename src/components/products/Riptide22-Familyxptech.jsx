@@ -6,7 +6,7 @@ import Riptide22inside from "./SlideShows/Riptide22gallery";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
 import Rip22specs from "./Specsmenu/SpecsRiptide22xptech";
-import TechspecRiptide22 from "./techspecs/TechspecRiptide22";
+import TechspecRiptide22xptech from "./techspecs/TechspecRiptide22xptech";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 import { Link } from "react-router-dom";
 
@@ -139,14 +139,14 @@ const Riptide22FamilyXPTech = () => {
             <ul>
               <li>DOMETIC FRESH JET AIRCON</li>
               <li>188L DOMETIC COMPRESSOR FRIDGE</li>
-              <li>3 X 170W SOLAR PANELS</li>
+              <li>4 X 200W SOLAR PANELS</li>
               <li>2 X 100AH LITHIUM BATTERIES</li>
             </ul>
           </div>
         </div>
       </div>
       <div className="component" id="specs">
-        <TechspecRiptide22 />
+        <TechspecRiptide22xptech />
       </div>
       <div className="component" id="specs">
         <h1>Specs Menu</h1>
@@ -154,9 +154,9 @@ const Riptide22FamilyXPTech = () => {
       </div>
       <div className="component" id="xptechbanner">
         <Link to="/xptec">
-          <img 
-            src="https://deluxcaravan.b-cdn.net/assets/xp%20tec/Find%20out%20More%20About%20Xp%20tec.png" 
-            alt="XP Tech Banner" 
+          <img
+            src="https://deluxcaravan.b-cdn.net/assets/xp%20tec/Find%20out%20More%20About%20Xp%20tec.png"
+            alt="XP Tech Banner"
             className="xptech-banner"
           />
         </Link>
