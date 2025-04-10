@@ -199,7 +199,7 @@ const Header = () => {
                     ),
                     link: "/stormbreaker18familyxptech",
                     text: "Stormbreaker 18`6",
-                    // price: "FULL OFF-ROAD: $129,900",
+                    price: "FULL OFF-ROAD: $129,900",
                   },
                   {
                     label: (
@@ -210,7 +210,7 @@ const Header = () => {
                     ),
                     link: "/stormbreaker19familyxptech",
                     text: "Stormbreaker 19`6",
-                    // price: "FULL OFF-ROAD: $132,900",
+                    price: "FULL OFF-ROAD: $132,900",
                   },
                   {
                     label: (
@@ -221,7 +221,7 @@ const Header = () => {
                     ),
                     link: "/stormbreaker21familyxptech",
                     text: "Stormbreaker 21`6",
-                    // price: "FULL OFF-ROAD: $134,900",
+                    price: "FULL OFF-ROAD: $134,900",
                   },
                   {
                     label: (
@@ -232,7 +232,7 @@ const Header = () => {
                     ),
                     link: "/stormbreaker23familyxptech",
                     text: "Stormbreaker 23`11",
-                    // price: "FULL OFF-ROAD: $136,900",
+                    price: "FULL OFF-ROAD: $136,900",
                   },
                 ],
               },
@@ -249,7 +249,7 @@ const Header = () => {
                     ),
                     link: "/riptide20familyxptech",
                     text: "Riptide 20",
-                    // price: "FULL OFF-ROAD: $136,900",
+                    price: "FULL OFF-ROAD: $136,900",
                   },
                   {
                     label: (
@@ -260,7 +260,7 @@ const Header = () => {
                     ),
                     link: "/riptide22familyxptech",
                     text: "Riptide 22",
-                    // price: "FULL OFF-ROAD: $138,900",
+                    price: "FULL OFF-ROAD: $138,900",
                   },
                 ],
               },
