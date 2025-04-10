@@ -60,37 +60,37 @@ const CarouselSection = () => {
     xptech: [
       {
         name: 'Stormbreaker 18\'6 XP Tech',
-        // price: '$129,900',
+        price: '$129,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/186.webp',
         link: '/stormbreaker18familyxptech'
       },
       {
         name: 'Stormbreaker 19\'6 XP Tech',
-        // price: '$132,900',
+        price: '$132,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
         link: '/stormbreaker19familyxptech'
       },
       {
         name: 'Stormbreaker 21\'6 XP Tech',
-        // price: '$134,900',
+        price: '$134,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/216.webp',
         link: '/stormbreaker21familyxptech'
       },
       {
         name: 'Stormbreaker 23\'11 XP Tech',
-        // price: '$136,900',
+        price: '$136,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/2311.webp',
         link: '/stormbreaker23familyxptech'
       },
       {
         name: 'Riptide 22 XP Tech',
-        // price: '$138,900',
+        price: '$138,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp',
         link: '/riptide22familyxptech'
       },
       {
         name: 'Riptide 20 XP Tech',
-        // price: '$138,900',
+        price: '$136,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Rip20/rip20.webp',
         link: '/riptide20familyxptech'
       },
