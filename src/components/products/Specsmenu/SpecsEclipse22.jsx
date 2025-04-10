@@ -1,5 +1,5 @@
-import React, { useState, useCallback } from 'react';
-import './Specsmenu.css';
+import React, { useState, useCallback } from "react";
+import "./Specsmenu.css";
 
 const SpecsEclipse22 = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -11,11 +11,10 @@ const SpecsEclipse22 = () => {
     [setActiveIndex]
   );
 
-
-    const data = [
-      {
-        title: 'INTERIOR',
-        content: `Bed - Queen Island with Lift-up Storage 
+  const data = [
+    {
+      title: "INTERIOR",
+      content: `Bed - Queen Island with Lift-up Storage 
         Niche - Bedside (Both Sides) 
         Mattress - Innerspring with Pillow-top 
         Club Lounge - with Drop Down Table & Tic Cushion
@@ -30,18 +29,18 @@ const SpecsEclipse22 = () => {
         Pantry - Half (Slide-Out) 
         TV - Bracket 
         Frame – Meranti  `,
-      },
-        {
-          title: 'SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY',
-          content: `Bench Top - Laminate 
+    },
+    {
+      title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
+      content: `Bench Top - Laminate 
           Bench Top Lid - Over Stove 
           Splashback Kitchen - Full Height 
           Cupboard Doors - Premium Laminate (Scratch & UV Resistant) 
           Upholstery - Faux Leather Vinyl `,
-      },
-        {
-          title: 'ELECTRICAL - INTERNAL',
-          content: `Projecta 30A charger 
+    },
+    {
+      title: "ELECTRICAL - INTERNAL",
+      content: `Projecta 30A charger 
           Projecta Display w Bluetooth 
           Lighting - LED Down lights
           TV - Co-Ax Point
@@ -50,10 +49,10 @@ const SpecsEclipse22 = () => {
           USB Ports - 2 x Bedside & 1 x Lounge
           Reading Lights
           Sirocco Fan – Main bed`,
-      },
-        {
-            title: 'ELECTRICAL - EXTERNAL',
-            content: `Light - 3 x LED Annexe 
+    },
+    {
+      title: "ELECTRICAL - EXTERNAL",
+      content: `Light - 3 x LED Annexe 
             Light - LED Tunnel Boot 
             Light - Blue LED Door Handle 
             Plug Car - 12 Pin 
@@ -63,10 +62,11 @@ const SpecsEclipse22 = () => {
             3 x Water Tank Level Probes 
             Antenna - (Reads Horizontal & Vertical Signals) 
             Reverse Camera 
-            Battery - 2 x 100AH `,},
-          {
-            title: 'APPLIANCES',
-            content: `Air Conditioning – Dometic Fresh Jet 
+            Battery - 2 x 100AH `,
+    },
+    {
+      title: "APPLIANCES",
+      content: `Air Conditioning – Dometic Fresh Jet 
             Full Oven - 3 Gas / 1 Electric Burner & Grill 
             Range hood - 12v LED with Twin Fans 
             Fridge / Freezer – Compressor 188L (Dometic) 
@@ -75,10 +75,10 @@ const SpecsEclipse22 = () => {
             Stereo CD/DVD/MP3/Radio System 
             Smart TV - 24" 
             3.2KG Top Load Washing Machine `,
-          },
-          {
-            title: 'PLUMBING',
-            content: `Shower 
+    },
+    {
+      title: "PLUMBING",
+      content: `Shower 
             Toilet - Thetford 
             Taps - 3 Way Premium Tap 
             Basin ●
@@ -88,10 +88,10 @@ const SpecsEclipse22 = () => {
             External Shower
             Water Tanks - 2 x 95Ltr 
             Grey Water Tank - 1 x 95Ltr `,
-          },
-          {
-            title: 'EXTERIOR',
-            content: `Awning - Roll-Out (Charcoal) 
+    },
+    {
+      title: "EXTERIOR",
+      content: `Awning - Roll-Out (Charcoal) 
             Hatch - Storage Compartment
             Picnic Table - Fold-Out 
             Tunnel Boot - Front (Dual Access) 
@@ -100,18 +100,18 @@ const SpecsEclipse22 = () => {
             Large Toolbox with Dual Slide Out 
             Stone Mesh Guard 
             Dual Bike Rack`,
-          },
-          {
-            title: 'PROTECTION',
-            content: `Checker Plate Front & Back 900mm (Black) 
+    },
+    {
+      title: "PROTECTION",
+      content: `Checker Plate Front & Back 900mm (Black) 
             Checker Plate Sides 900mm (Black) 
             Cladding - Aluminium Composite
             Mudflaps 
             Brakes – 12” Electric Brakeaway System `,
-          },
-          {
-            title: 'CHASSIS',
-            content: `Axle - Double 
+    },
+    {
+      title: "CHASSIS",
+      content: `Axle - Double 
             Hitch - D035 
             A-Frame - 6" 
             Chassis - 6" Dura-Gal 
@@ -122,21 +122,20 @@ const SpecsEclipse22 = () => {
             Jack – CNR Supports (Drop Down) 
             Jockey Wheel - A-Frame 
             Storage Mesh Plate- A-Frame`,
-          },
-          {
-            title: 'OVERALL',
-            content: `Ball Weight: 220 kg
-            Tare Weight: 2860 kg
+    },
+    {
+      title: "OVERALL",
+      content: `Ball Weight: 220 kg
+            Tare Weight: 2700 kg
             ATM: 3500 kg`,
-          },
-          {
-            title: 'SUSPENSION',
-            content: `Tuff Ride - 3.5T`,
-          },
-      ];
-      
+    },
+    {
+      title: "SUSPENSION",
+      content: `Tuff Ride - 3.5T`,
+    },
+  ];
 
-   return (
+  return (
     <div className="specs_container">
       <div className="accordion">
         <dl>
@@ -145,7 +144,7 @@ const SpecsEclipse22 = () => {
               <dt>
                 <button
                   className={`accordionTitle ${
-                    activeIndex === index ? 'accordionTitleActive' : ''
+                    activeIndex === index ? "accordionTitleActive" : ""
                   }`}
                   onClick={() => toggleAccordion(index)}
                 >
@@ -155,12 +154,12 @@ const SpecsEclipse22 = () => {
               <dd
                 className={`accordionItem ${
                   activeIndex === index
-                    ? 'animateIn'
-                    : 'accordionItemCollapsed animateOut'
+                    ? "animateIn"
+                    : "accordionItemCollapsed animateOut"
                 }`}
               >
                 <ul className="list">
-                  {item.content.split('\n').map((listItem, subIndex) => (
+                  {item.content.split("\n").map((listItem, subIndex) => (
                     <li key={subIndex}>{listItem.trim()}</li>
                   ))}
                 </ul>

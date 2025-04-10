@@ -1,6 +1,6 @@
-import React, { useCallback, useMemo } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React, { useCallback, useMemo } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import "../../home/Home.css";
 import "../../home/homecomponents/HomeComponent.css";
 import "./Techspec.css";
@@ -23,7 +23,7 @@ const Techspec23xptech = () => {
         className="image-item"
         variants={imageVariants}
         initial="initial"
-        animate={inViewTechSpec ? 'animate' : 'initial'}
+        animate={inViewTechSpec ? "animate" : "initial"}
       >
         <img
           src={src}
@@ -40,12 +40,36 @@ const Techspec23xptech = () => {
 
   const images = useMemo(() => {
     return [
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/kilogram.webp", 'Bespokemodels', 'Tare Approx: 2750kg'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/chain.webp", 'Ecofriendly', 'ATM: 3500kg'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/height.webp", 'Experience', 'Internal Height: 2000mm'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/length.webp", 'Ratings', 'External Length: 9800mm'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/aim%20(1).webp", 'Ratings', 'Ball Approx: 160kg'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/exheight.webp", 'Ratings', 'External Height: 3200mm'),
+      animatedImage(
+        "https://deluxcaravan.b-cdn.net/assets/techspec/kilogram.webp",
+        "Bespokemodels",
+        "Tare Approx: 2750kg"
+      ),
+      animatedImage(
+        "https://deluxcaravan.b-cdn.net/assets/techspec/chain.webp",
+        "Ecofriendly",
+        "ATM: 3500kg"
+      ),
+      animatedImage(
+        "https://deluxcaravan.b-cdn.net/assets/techspec/height.webp",
+        "Experience",
+        "Internal Height: 2000mm"
+      ),
+      animatedImage(
+        "https://deluxcaravan.b-cdn.net/assets/techspec/length.webp",
+        "Ratings",
+        "External Length: 9800mm"
+      ),
+      animatedImage(
+        "https://deluxcaravan.b-cdn.net/assets/techspec/aim%20(1).webp",
+        "Ratings",
+        "Ball Approx: 200kg"
+      ),
+      animatedImage(
+        "https://deluxcaravan.b-cdn.net/assets/techspec/exheight.webp",
+        "Ratings",
+        "External Height: 3200mm"
+      ),
     ];
   }, [animatedImage]);
 
@@ -57,4 +81,4 @@ const Techspec23xptech = () => {
   );
 };
 
-export default React.memo(Techspec23xptech); 
+export default React.memo(Techspec23xptech);

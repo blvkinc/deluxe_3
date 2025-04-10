@@ -132,7 +132,7 @@ const SpecsEclipse21 = () => {
     {
       title: "OVERALL",
       content: `Ball Weight: 200 kg
-            Tare Weight: 2900 kg
+            Tare Weight: 2650 kg
             ATM: 3500 kg`,
     },
     {

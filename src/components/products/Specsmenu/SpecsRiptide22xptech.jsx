@@ -137,7 +137,7 @@ const SpecsRiptide22xptech = () => {
     {
       title: "OVERALL",
       content: `Approx Ball Weight: 200 kg
-        Approx Tare Weight: 2920 kg
+        Approx Tare Weight: 2720 kg
         ATM: 3500 kg`,
     },
     {
