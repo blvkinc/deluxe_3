@@ -33,7 +33,7 @@ const Specs18xptech = () => {
     },
     {
       title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
-      content: `Bench Top - Premium Laminate 
+      content: `Bench Top - Corian Stone 
         Bench Top Lid - Over Stove
         Splashback Kitchen - Full Height
         Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) 
@@ -68,7 +68,7 @@ const Specs18xptech = () => {
         3 x water Tank Level Probes
         Reverse Camera & Display
         An Antenna
-        Battery - 1 x 200AH Lithium
+        Battery - 1 x 200AH Projecta Lithium 
         Side Markers with Reflector
         Starlink Port
         Anderson plug for solar blanket`,
