@@ -32,7 +32,7 @@ const SpecsEclipse21xptech = () => {
     },
     {
       title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
-      content: `Bench Top - Premium Laminate 
+      content: `Bench Top Lid - Corian Stone 
         Bench Top Lid - Over Stove
         Splashback Kitchen - Full Height
         Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) 
@@ -40,7 +40,7 @@ const SpecsEclipse21xptech = () => {
     },
     {
       title: "ELECTRICAL - INTERNAL",
-      content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC & 3000W Inverter)
+      content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC- DC & 3000W Inverter)
         Projecta 7 Inch Touch Display Bluetooth & Light Control
         Lighting - LED Down lights 
         TV - Co-Ax Point  
@@ -124,6 +124,7 @@ const SpecsEclipse21xptech = () => {
       content: `Dual Axle
         Hitch: D035
         A-Frame: 6″
+        Truss Chassis ( 6' Raiser )
         Chassis: 6″ Dura-Gal
         2" Raiser
         Wheels: 16″ Alloy
@@ -132,7 +133,8 @@ const SpecsEclipse21xptech = () => {
         2 x Jerry Can Holders (Rear Bumper)
         Jack: CNR Supports (Drop-Down)
         Bos Jack - A-Frame
-        Storage Mesh Plate`,
+        Storage Mesh Plate
+        Raptor Coated Chassis`,
     },
     {
       title: "OVERALL",
