@@ -32,7 +32,7 @@ const SpecsEclipse21xptech = () => {
     },
     {
       title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
-      content: ` Bench Top Lid - Corian Stone 
+      content: `Bench Top Lid - Corian Stone 
         Bench Top Lid - Over Stove
         Splashback Kitchen - Full Height
         Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) 
