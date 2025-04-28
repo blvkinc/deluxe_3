@@ -32,7 +32,7 @@ const SpecsRiptide22xptech = () => {
     },
     {
       title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
-      content: `Bench Top - Premium Laminate 
+      content: `Benchtop - Corian Stone
         Bench Top Lid - Over Stove
         Splashback Kitchen - Full Height
         Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) 
@@ -40,7 +40,7 @@ const SpecsRiptide22xptech = () => {
     },
     {
       title: "ELECTRICAL - INTERNAL",
-      content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC & 3000W Inverter)
+      content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC- DC & 3000W Inverter)
         Projecta 7 Inch Touch Display Bluetooth & Light Control
         Lighting - LED Down lights 
         TV - Co-Ax Point  
@@ -66,7 +66,7 @@ const SpecsRiptide22xptech = () => {
         3 x water Tank Level Probes
         Reverse Camera & Display
         An Antenna
-        Battery - 1 x 200AH Lithium
+        Battery - 1 x 200AH Projecta Lithium 
         Side Markers with Reflector
         Starlink Port
         Anderson plug for solar blanket`,
@@ -132,7 +132,9 @@ const SpecsRiptide22xptech = () => {
         2 x Jerry Can Holders (Rear Bumper)
         Jack: CNR Supports (Drop-Down)
         Bos Jack - A-Frame
-        Storage Mesh Plate`,
+        Raptor Coated Chassis
+        Storage Mesh Plate
+        Truss Chassis ( 6' Raiser )`,
     },
     {
       title: "OVERALL",

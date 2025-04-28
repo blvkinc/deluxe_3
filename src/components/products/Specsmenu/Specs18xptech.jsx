@@ -34,14 +34,14 @@ const Specs18xptech = () => {
     {
       title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
       content: `Bench Top - Corian Stone 
-        Bench Top Lid - Over Stove
+        Bench Top Lid - Corian Stone
         Splashback Kitchen - Full Height
         Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) 
         Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) `,
     },
     {
       title: "ELECTRICAL - INTERNAL",
-      content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC & 3000W Inverter)
+      content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC- DC & 3000W Inverter)
         Projecta 7 Inch Touch Display Bluetooth & Light Control
         Lighting - LED Down lights 
         TV - Co-Ax Point  
@@ -127,14 +127,15 @@ const Specs18xptech = () => {
         Hitch: D035
         A-Frame: 6″
         Chassis: 6″ Dura-Gal
-        2" Raiser
+        Truss Chassis ( 6' Raiser )
         Wheels: 16″ Alloy
         Heavy-Duty Off-Road Tires
         1 x Spare Wheel (Mounted On Rear Bumper)
         2 x Jerry Can Holders (Rear Bumper)
         Jack: CNR Supports (Drop-Down)
         Bos Jack - A-Frame
-        Storage Mesh Plate`,
+        Storage Mesh Plate
+        Raptor Coated Chassis`,
     },
     {
       title: "OVERALL",
