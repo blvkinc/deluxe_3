@@ -54,6 +54,65 @@ const SpecsRiptide20xptech = () => {
         Bug Lights`,
     },
     {
+      title: "ELECTRICAL - EXTERNAL",
+      content: `2 x LED Annexe Lights
+            1 x LED Annexe Light over Tunnel Boot
+            LED Tunnel Boot Light
+            Starlink Port
+            Door Handle
+            Blue LED Light Bar ( Front & Back)
+            12-Pin Car Plug
+            12V Weatherproof Cig Socket
+            240V Weatherproof Outlet
+            Solar - 800W
+            3 x water Tank Level Probes
+            Reverse Camera & Display
+            An Antenna
+            Battery - 1 x 200AH Projecta Lithium 
+            Side Markers with Reflector
+            Anderson plug for solar blanket`,
+    },
+    {
+      title: "APPLIANCES",
+      content: `Air Conditioning - DOMETIC Series 7 AIRCON
+            Front Load Washing Machine
+            Instant Hot Water
+            Rangehood: 12V LED with Twin Fans
+            Oven (3 x Gas | 1 x Electric Burner and Grill)
+            Fridge and Freezer: 188L DOMETIC COMPRESSOR FRIDGE
+            25L Microwave
+            Stereo/Speaker System
+            24” TV`,
+    },
+    {
+      title: "PLUMBING",
+      content: `ABS Shower
+            Thetford Toilet
+            Premium Black Kitchen Tap
+            Black Round Basin
+            Single Bowl Black Sink
+            3-Way Tap with Water Filter
+            Gas Bayonet
+            External Shower
+            Tap on A-frame
+            2 x 95-Litre Water Tanks
+            110-Litre Grey Water Tank`,
+    },
+    {
+      title: "EXTERIOR",
+      content: `17Ft Roll-Out Awning
+      Awning - Electric Carefree
+            Storage Compartment Hatch (Rear, Off-Side)
+            Foldable Picnic Table
+            2 x Tunnel Boot – ( Dual Access )
+            2 x 9KG Gas Bottles
+            Double Pull-Out Step
+            Stone Mesh Guard
+            Custom Toolbox with Double Slide Out & Wood box
+            Front Dual Bike Rack
+            Dometic DRS`,
+    },
+    {
       title: "PROTECTION",
       content: `Raptor Coated Front 900mm (Black)
         Raptor Coated Sides 700mm (Black)

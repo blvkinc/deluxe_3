@@ -14,21 +14,22 @@ const SpecsRiptide22xptech = () => {
   const data = [
     {
       title: "INTERIOR",
-      content: `Bed - Queen East - West
-        Niche - Bedside - Both Sides
-        Mattress - Innerspring with Pillow-Top
-        L - Shape Lounge - with Drop Down Table with TIC Cushion
-        Storage - Drawers
-        Windows - Double-Glazed
-        Door - Triple Lock with Separate Security Screen
-        Drawers - On Rollers
-        Floor Vinyl - Durable Modern Design
-        Hatch Roof - 700mm x 500mm
-        Hatch Roof - 450mm x 400mm
-        TV - Bracket
-        Hinges - Piano
-        Pantry - Half (Slide-Out)
-        Frame – Meranti/ CNC`,
+      content: `Bed - Queen Island with Lift-Up Storage 
+      Niche - Bedside - Both Sides
+      Bunks - 2 Bunks (Length: Top Bunk - 2.0m, Middle Bunk 2.0m )
+      Mattress - Innerspring with Pillow-Top 
+      L - Shape Lounge - with Drop Down Table with TIC Cushion
+      Storage - Drawers 
+      Windows - Double-Glazed 
+      Door - Triple Lock with Separate Security Screen 
+      Drawers - On Rollers 
+      Floor Vinyl - Durable Modern Design 
+      Hatch Roof - 700mm x 500mm 
+      Hatch Roof - 450mm x 400mm 
+      TV - Bracket 
+      Hinges  
+      Pantry - Half (Slide-Out) 
+      Frame – Meranti`,
     },
     {
       title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
