@@ -29,7 +29,7 @@ const SpecsRiptide22xptech = () => {
       TV - Bracket 
       Hinges  
       Pantry - Half (Slide-Out) 
-      Frame – Meranti`,
+      Frame – Composite Fiberglass Sandwich Panels`,
     },
     {
       title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",

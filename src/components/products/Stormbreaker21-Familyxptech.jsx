@@ -8,6 +8,7 @@ import GoToTop from "../functions/GoToTop";
 import Storm21specs from "./Specsmenu/Specs21xptech";
 import Techspec21xptech from "./techspecs/Techspec21xptech";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
+import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
 const scrollToSpecs = () => {
@@ -89,6 +90,19 @@ const Stormbreaker21FamilyXPTech = () => {
       <div className="slideshowcomopnent">
         <Strom21inside />
       </div>
+      <div className="component" id="xptechbanner">
+        <Link to="/xptec">
+          <h1 style={{ color: "white", fontSize: "8vw" }}>
+            <span style={{ textTransform: "uppercase" }}>F</span>
+            <span style={{ textTransform: "lowercase" }}>ind out </span>
+            <span style={{ textTransform: "uppercase" }}>m</span>
+            <span style={{ textTransform: "lowercase" }}>ore</span>
+            <br /> <span style={{ textTransform: "uppercase" }}>a</span>
+            <span style={{ textTransform: "lowercase" }}>bout</span>{" "}
+            <span style={{ textTransform: "uppercase" }}>XP-TECH</span>
+          </h1>
+        </Link>
+      </div>
       {/* <div className='slideshowcomopnent'>
     </div> */}
       <div className="component">
@@ -156,14 +170,8 @@ const Stormbreaker21FamilyXPTech = () => {
         <h1>Specs Menu</h1>
         <Storm21specs />
       </div>
-      <div className="component" id="xptechbanner">
-        <Link to="/xptec">
-          <img 
-            src="https://deluxcaravan.b-cdn.net/assets/xp%20tec/Find%20out%20More%20About%20Xp%20tec.png" 
-            alt="XP Tech Banner" 
-            className="xptech-banner"
-          />
-        </Link>
+      <div>
+        <ResponsiveTable />
       </div>
       <GoToTop />
     </div>
