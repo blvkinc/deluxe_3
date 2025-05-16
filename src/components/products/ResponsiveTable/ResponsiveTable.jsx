@@ -139,7 +139,17 @@ const tableData = [
 const ResponsiveTable = () => {
   return (
     <div className="table-wrapper">
-      <h1 className="main-heading">XP-TECH Specification Difference</h1>
+      <h1 className="main-heading">
+        Compare Off-Road vs XP-TECH Specifications
+      </h1>
+      <p
+        className="sub-heading"
+        style={{ textAlign: "center", marginTop: "-10px" }}
+      >
+        Explore the detailed differences between the off-road model and the
+        XP-TECH upgrade.
+      </p>
+
       <div className="table-container">
         <table className="custom-table">
           <thead>

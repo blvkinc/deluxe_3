@@ -1,3 +1,8 @@
+.table-wrapper {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 .specs-section {
   color: white;
   padding: 40px 20px;
@@ -26,6 +31,7 @@
   display: flex;
   justify-content: center;
   overflow-x: auto;
+  margin-top: 5%;
 }
 
 .custom-table {
