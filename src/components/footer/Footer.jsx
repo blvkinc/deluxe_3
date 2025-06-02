@@ -52,7 +52,7 @@ const Footer = React.memo(() => {
           <Link to="/maintenance" className="footer-link">
             Service & Maintenance
           </Link>
-          <Link to="/xptech" className="footer-link">
+          <Link to="/Xptec" className="footer-link">
             XP TECH
           </Link>
         </div>
