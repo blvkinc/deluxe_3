@@ -29,7 +29,7 @@ const XpTech = () => {
       What good is a caravan if you are overweight and struggling to stay within your legal limits?`,
     },
     {
-      title: "WATERPROOF",
+      title: "WATERPROOF AND ROTPROOF",
       content: `XP-TECH composite panles are built using a seamless one-piece construction, minimizing the risk of water leaks. This design enhances durability, ensuring your caravan can withstand Australia’s tough conditions.
       If you have dealt with water damage in the past, this is the ultimate solution for long-lasting protection.`,
     },
@@ -38,7 +38,7 @@ const XpTech = () => {
       content: `XP-TECH composite material delivers superior insulation, helping maintain a cooler interior in summer and a warmer one in winter. Its enhanced thermal efficiency allows you to achieve your ideal temperature faster while using less energy—especially beneficial for off-grid adventures.`,
     },
     {
-      title: "ROTPROOF",
+      title: "COST EFFECTIVE",
       content: `XP-TECH composite material makes the caravan lighter, reducing fuel consumption for your tow vehicle. This not only saves you money but also helps minimize environmental impact.`,
     },
   ];
