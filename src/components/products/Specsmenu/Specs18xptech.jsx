@@ -123,7 +123,7 @@ const Specs18xptech = () => {
     },
     {
       title: "CHASSIS",
-      content: `Dual Axle
+      content: `Axle - Single
         Hitch: D035
         A-Frame: 6″
         Chassis: 6″ Dura-Gal

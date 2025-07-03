@@ -136,6 +136,8 @@ const Stormbreaker18FamilyXPTech = () => {
                 <li>188L DOMETIC COMPRESSOR FRIDGE</li>
                 <li>4 X 200W SOLAR PANELS</li>
                 <li>2 X 100AH LITHIUM BATTERIES</li>
+                <li>Raptor Painted Chassis</li>
+                <li>AuFocus Diesel Heater</li>
               </ul>
             </div>
             <p>
