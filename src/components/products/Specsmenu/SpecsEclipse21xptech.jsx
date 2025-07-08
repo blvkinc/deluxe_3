@@ -139,7 +139,7 @@ const SpecsEclipse21xptech = () => {
     {
       title: "OVERALL",
       content: `Approx Ball Weight: 200 kg
-        Approx Tare Weight: 2650 kg
+        Approx Tare Weight: 2700 kg
         ATM: 3500 kg`,
     },
     {
