@@ -43,7 +43,7 @@ const Techspec18xptech = () => {
       animatedImage(
         "https://deluxcaravan.b-cdn.net/assets/techspec/kilogram.webp",
         "Bespokemodels",
-        "Tare Approx: 2200kg"
+        "Tare Approx: 2250kg"
       ),
       animatedImage(
         "https://deluxcaravan.b-cdn.net/assets/techspec/chain.webp",
