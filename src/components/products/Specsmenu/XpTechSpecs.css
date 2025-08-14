@@ -1,11 +1,11 @@
-/* Container styles */
-.specs_container {
+/* XP-Tech Container styles - Unique class names */
+.xptech_specs_container {
   max-width: 90vw;
   margin: 0 auto;
   overflow: scroll;
 }
 
-.accordionTitle {
+.xptech_accordionTitle {
   background-color: #fff;
   width: 80vw;
   color: #000;
@@ -19,7 +19,7 @@
   position: relative;
 }
 
-.accordionTitle:before {
+.xptech_accordionTitle:before {
   content: "+";
   font-size: 1.5em;
   line-height: 0.5em;
@@ -33,23 +33,23 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.accordionTitle:hover {
+.xptech_accordionTitle:hover {
   background-color: #cdcdcd;
   color: #000000;
 }
 
-.accordionTitleActive {
+.xptech_accordionTitleActive {
   background-color: #fafafa;
   color: #000000;
 }
 
-.accordionTitleActive:before {
+.xptech_accordionTitleActive:before {
   -webkit-transform: rotate(-225deg);
   -moz-transform: rotate(-225deg);
   transform: rotate(-225deg);
 }
 
-.accordionItem {
+.xptech_accordionItem {
   background-color: #fafafa;
   color: #000;
   font-size: 1em;
@@ -60,24 +60,24 @@
   transition: max-height 0.5s ease-in-out;
 }
 
-/* Animation for opening accordion content */
-.animateIn {
+/* XP-Tech Animation for opening accordion content */
+.xptech_animateIn {
   max-height: 50em;
-  animation: accordionIn 0.65s ease-in-out both;
+  animation: xptech_accordionIn 0.65s ease-in-out both;
 }
 
-/* Animation for closing accordion content */
-.animateOut {
+/* XP-Tech Animation for closing accordion content */
+.xptech_animateOut {
   max-height: 0;
-  animation: accordionOut 0.75s ease-in-out both;
+  animation: xptech_accordionOut 0.75s ease-in-out both;
 }
 
-.list {
+.xptech_list {
   text-align: left;
 }
 
-/* Keyframes for accordion animation */
-@keyframes accordionIn {
+/* XP-Tech Keyframes for accordion animation */
+@keyframes xptech_accordionIn {
   0% {
     opacity: 0;
     transform: scale(0.8);
@@ -88,7 +88,7 @@
   }
 }
 
-@keyframes accordionOut {
+@keyframes xptech_accordionOut {
   0% {
     opacity: 1;
     transform: scale(1);
@@ -101,18 +101,18 @@
 
 @media screen and (max-width: 768px) {
   /* Adjust list item alignment for smaller screens */
-  .accordionItem {
+  .xptech_accordionItem {
     margin-left: auto;
     padding: 0em; /* Adjust padding as needed */
     font-size: 14px;
   }
-  .specs_container {
+  .xptech_specs_container {
     max-width: 90vw;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .specs_container {
+  .xptech_specs_container {
     max-width: none;
   }
 }

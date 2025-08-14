@@ -1,81 +1,413 @@
-/* WarrantyPolicy container styles */
+/* XP-TECH Container */
+.xptech-container {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Hero Section */
+.xptech-hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+  padding: 120px 0 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.xptech-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.xptech-title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.xptech-subtitle {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+  color: #e0e0e0;
+  letter-spacing: 2px;
+}
+
+.hero-tagline {
+  font-size: 1.3rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+/* Main Container */
 .warrantycontainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+/* Introduction Section */
+.intro-section {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 60px 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #2d2d2d;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border-radius: 2px;
+}
+
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.tech-intro {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #007bff;
+  margin-top: 40px;
+}
+
+/* Technology Sections */
+.tech-section {
+  margin-bottom: 80px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.tech-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  padding: 60px;
+}
+
+.tech-content.reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
+.tech-content.reverse .tech-text {
+  order: 2;
+}
+
+.tech-content.reverse .tech-image {
+  order: 1;
+}
+
+.tech-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #2d2d2d;
+}
+
+.tech-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.tech-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.tech-image img:hover {
+  transform: scale(1.02);
+}
+
+/* Advantages List */
+.advantages-list {
   display: flex;
   flex-direction: column;
-  padding-top: 10vh;
+  gap: 15px;
 }
 
-.warrantycontainer img {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  margin: 20px auto;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.advantage-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
-/* WarrantyPolicy component styles */
-.warrantycomponent {
-  display: grid;
-  grid-template-columns: 1fr; /* Display components in a single column */
-  gap: 20px; /* Add spacing between components */
-  padding: 20px; /* Optional: Add padding to the components */
-  min-height: 50px; /* Increase the minimum height to create more spacing */
-  height: auto; /* Remove fixed height to allow components to expand as needed */
-  text-align: left;
-  padding-left: 10vw;
-  padding-right: 10vw;
+.advantage-item:hover {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  transform: translateX(10px);
 }
 
-.warrantycomponent img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.checkmark {
+  color: #28a745;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
 }
 
-/* Style heading and paragraph elements within the components */
-.warrantycomponent h2 {
-  margin-top: 10vh;
-  font-size: 1.5rem; /* Increase the font size for headings */
-  margin-bottom: 10px; /* Add space below headings */
+.advantage-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2d2d2d;
 }
 
-.warrantycomponent p {
-  font-size: 1rem; /* Set a standard font size for paragraphs */
-  margin-bottom: 10px; /* Add space below paragraphs */
+/* Value Section - Consistent with other tech sections */
+.value-section {
+  margin-bottom: 80px;
 }
 
-/* Style unordered lists within the components */
-.warrantycomponent ul {
-  list-style-type: disc; /* Use disc bullets for lists */
-  padding-left: 20px; /* Add left padding to lists for indentation */
+.single-column {
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding: 60px;
 }
 
-/* Style list items within unordered lists */
-.warrantycomponent li {
-  font-size: 1rem; /* Set a font size for list items */
-  margin-bottom: 5px; /* Add space between list items */
+.value-text-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.value-subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.highlights-wrapper {
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top: 2px solid #e9ecef;
+}
+
+.highlights-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #2d2d2d;
+  position: relative;
+}
+
+.highlights-subtitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border-radius: 2px;
+}
+
+.xptech-highlights {
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .tech-content {
+    gap: 40px;
+    padding: 40px;
+  }
+  
+  .xptech-title {
+    font-size: 3.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .warrantycontainer img {
-    max-width: 100%;
+  .xptech-hero {
+    padding: 80px 0 60px;
   }
-
-  .warrantycomponent img {
-    max-width: 100%;
+  
+  .xptech-title {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
   }
-
-  .warrantycomponent {
-    padding-left: 5vw;
-    padding-right: 5vw;
+  
+  .xptech-subtitle {
+    font-size: 1.3rem;
   }
-
-  .warrantycontainer h2 {
+  
+  .hero-tagline {
+    font-size: 1.1rem;
+  }
+  
+  .warrantycontainer {
+    padding: 40px 15px;
+  }
+  
+  .tech-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+  
+  .tech-content.reverse .tech-text,
+  .tech-content.reverse .tech-image {
+    order: unset;
+  }
+  
+  .intro-section {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .tech-title {
+    font-size: 1.5rem;
+  }
+  
+  .tech-description,
+  .intro-text {
     font-size: 1rem;
   }
+  
+  .single-column {
+    padding: 40px 30px;
+  }
+  
+  .advantage-item {
+    padding: 12px 15px;
+  }
+  
+  .advantage-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .xptech-title {
+    font-size: 2rem;
+  }
+  
+  .xptech-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .hero-tagline {
+    font-size: 1rem;
+  }
+  
+  .tech-content {
+    padding: 20px 15px;
+  }
+  
+  .intro-section {
+    padding: 30px 15px;
+  }
+  
+  .single-column {
+    padding: 30px 20px;
+  }
+  
+  .highlights-subtitle {
+    font-size: 1.4rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .tech-title {
+    font-size: 1.3rem;
+  }
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tech-section {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
 }

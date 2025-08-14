@@ -44,15 +44,15 @@ const XpTech = () => {
   ];
 
   return (
-    <div className="specs_container">
+    <div className="xptech_specs_container">
       <div className="accordion">
         <dl>
           {data.map((item, index) => (
             <React.Fragment key={index}>
               <dt>
                 <button
-                  className={`accordionTitle ${
-                    activeIndex === index ? "accordionTitleActive" : ""
+                  className={`xptech_accordionTitle ${
+                    activeIndex === index ? "xptech_accordionTitleActive" : ""
                   }`}
                   onClick={() => toggleAccordion(index)}
                 >
@@ -60,13 +60,13 @@ const XpTech = () => {
                 </button>
               </dt>
               <dd
-                className={`accordionItem ${
+                className={`xptech_accordionItem ${
                   activeIndex === index
-                    ? "animateIn"
-                    : "accordionItemCollapsed animateOut"
+                    ? "xptech_animateIn"
+                    : "accordionItemCollapsed xptech_animateOut"
                 }`}
               >
-                <ul className="list">
+                <ul className="xptech_list">
                   {item.content.split("\n").map((listItem, subIndex) => (
                     <li key={subIndex}>{listItem.trim()}</li>
                   ))}

@@ -43,6 +43,9 @@ h5 {
   position: fixed;
   top: 1.6rem;
   left: auto;
+  height: 50px;
+  width: auto;
+  max-width: 200px;
 }
 
 /* Navigation menu */
@@ -281,6 +284,8 @@ h5 {
   .header-logo img {
     position: fixed;
     top: 1rem;
-    left: 5rem;
+    left: 2rem;
+    height: 40px;
+    max-width: 150px;
   }
 }

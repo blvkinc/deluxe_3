@@ -59,14 +59,14 @@ const Video = React.memo(() => {
               <div key={index} className="video-card">
                 <iframe
                   title="YouTube Video"
-                  width="300"
-                  height="169"
                   src={`https://www.youtube.com/embed/${video.videoId}`}
                   frameBorder="0"
                   allowFullScreen
                 ></iframe>
-                <h3>{video.title}</h3>
-                <p>{video.description}</p>
+                <div className="video-card-content">
+                  <h3>{video.title}</h3>
+                  <p>{video.description}</p>
+                </div>
               </div>
             ))}
           </div>

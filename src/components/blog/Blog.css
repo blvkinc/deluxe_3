@@ -1,12 +1,92 @@
-.blog_title {
-  margin: 70px;
+/* Blog Page - Modern Design */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding-top: 100px;
 }
 
 .blog_component {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 20px;
-  min-height: 50px;
-  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.blog_title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2d2d2d;
+  position: relative;
+  display: inline-block;
+}
+
+.blog_title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border-radius: 2px;
+}
+
+.blog_subtitle {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #666;
+  margin-bottom: 60px;
+  font-style: italic;
+}
+
+/* ElfSight Widget Container */
+.elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5 {
+  margin-top: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border: 1px solid #e9ecef;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding-top: 80px;
+  }
+  
+  .blog_component {
+    padding: 30px 15px;
+  }
+  
+  .blog_title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .blog_subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+  
+  .elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5 {
+    padding: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog_title {
+    font-size: 2rem;
+  }
+  
+  .blog_subtitle {
+    font-size: 1rem;
+  }
+  
+  .elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5 {
+    padding: 15px;
+  }
 }

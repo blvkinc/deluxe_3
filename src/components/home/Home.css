@@ -1,22 +1,117 @@
+/* Modern Homepage Styling */
 .container {
   display: flex;
   flex-direction: column;
+  background: var(--primary-bg);
+  color: var(--text-primary);
+  overflow-x: hidden;
 }
 
 .component {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 20px;
+  justify-content: center;
+  padding: 80px 40px;
   align-items: center;
-  min-height: 50px;
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
+  background: var(--primary-bg);
 }
 
+.component:nth-child(even) {
+  background: linear-gradient(135deg, var(--primary-bg) 0%, rgba(10, 10, 10, 0.3) 100%);
+}
+
+.component::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  opacity: 0.3;
+}
+
+.component::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Partners Section - White Background */
 .partnercomponent {
-  margin-top: auto;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  padding: 80px 40px;
+  position: relative;
+  box-shadow: 
+    0 -10px 30px rgba(0, 0, 0, 0.1),
+    0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.slider {
-  height: 35vh !important;
+.partnercomponent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #000000, #333333, #000000);
+}
+
+/* Video Component Enhancements */
+.videocomponent {
+  position: relative;
+  overflow: visible;
+  background: var(--primary-bg);
+}
+
+.videocomponent::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, var(--primary-bg));
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Modern Section Transitions */
+.component + .component {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .component {
+    padding: 60px 20px;
+    min-height: 80vh;
+  }
+  
+  .partnercomponent {
+    padding: 60px 20px;
+  }
+  
+  .component::before {
+    left: 5%;
+    right: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .component {
+    padding: 40px 15px;
+    min-height: 70vh;
+  }
+  
+  .partnercomponent {
+    padding: 40px 15px;
+  }
 }

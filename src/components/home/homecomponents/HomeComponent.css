@@ -71,17 +71,18 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.096
-  ); /* Adjust the background color and opacity as needed */
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.15) 100%
+  );
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Hide any overflowing text */
-  transition: background-color 0.3s ease; /* Add a smooth transition effect for the background-color change */
+  overflow: hidden;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(0.5px);
 }
 
 .link-overlay {
@@ -90,6 +91,11 @@
   left: 0;
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .link-overlay-revealUp-mobile {
@@ -100,12 +106,13 @@
 }
 
 .text-overlay:hover {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Change the background color on hover */
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  backdrop-filter: blur(1px);
 }
 
 .text-overlay h1 {
@@ -118,10 +125,23 @@
 
 .component h1 {
   position: relative;
-  font-size: 50px; /* Adjust the font size as needed */
-  color: #fff; /* Make the text color transparent */
-  transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
+  font-size: 50px;
+  color: #fff;
+  transition: all 0.3s ease;
   letter-spacing: 2px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.component h1::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
 }
 
 .text-overlay:hover h1 {
@@ -202,9 +222,15 @@
     /* margin-top: 15%; */
   }
   .btn {
-    /* top: 15%; */
-    padding: 6px !important;
-    font-size: 15px !important;
+    padding: 15px 20px !important;
+    font-size: 16px !important;
+    min-width: 140px !important;
+    margin: 5px !important;
+  }
+  
+  .link-overlay {
+    gap: 20px !important;
+    flex-direction: column;
   }
   .component h1 {
     font-size: 30px;
@@ -332,19 +358,51 @@
   text-align: center;
   margin-top: 1vh;
   border-radius: 40px;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(20, 20, 20, 0.05) 100%);
+  backdrop-filter: blur(10px);
+  padding: 40px;
 }
 
 .testimonials-container h2 {
-  font-size: 56.83px; /* Adjust the font size as needed */
-  color: #fff; /* Make the text color transparent */
+  font-size: 56.83px;
+  color: #fff;
   letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.testimonials-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
 }
 
 /*Our Partners*/
 .partners-heading {
-  font-size: 56.83px; /* Adjust the font size as needed */
-  color: #fff; /* Make the text color transparent */
+  font-size: 56.83px;
+  color: #000000;
   letter-spacing: 2px;
+  margin-bottom: 60px;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+}
+
+.partners-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #000000, #333333, #000000);
 }
 .slide__item {
   position: relative;
@@ -490,16 +548,22 @@
   display: inline-block;
   width: auto;
   height: auto;
-  background-color: transparent;
+  background: rgba(255, 255, 255, 0.1);
   color: white;
-  border: none;
+  border: 2px solid rgba(255, 255, 255, 0.4);
   cursor: pointer;
-  padding: 20px;
-  margin: 0px 25px 15px;
-  min-width: 150px;
-  transition: 0.3s;
-  font-size: 20px;
+  padding: 20px 30px;
+  margin: 0;
+  min-width: 180px;
+  transition: all 0.4s ease;
+  font-size: 18px;
   text-decoration: none;
+  border-radius: 12px;
+  backdrop-filter: blur(15px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  overflow: hidden;
 }
 
 .btn span {
@@ -515,28 +579,33 @@
   padding: 15px 20px;
 }
 
-.btn.hover-border-1::before,
-.btn.hover-border-1::after {
-  width: 10%;
-  height: 25%;
-  transition: 0.35s;
-}
-.btn.hover-border-1::before {
+.btn::before {
+  content: '';
+  position: absolute;
   top: 0;
-  left: 0;
-  border-left: 1px solid rgb(255, 255, 255);
-  border-top: 1px solid rgb(255, 255, 255);
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
 }
-.btn.hover-border-1::after {
-  bottom: 0;
-  right: 0;
-  border-right: 1px solid rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(255, 255, 255);
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-.btn.hover-border-1:hover::before,
-.btn.hover-border-1:hover::after {
-  width: 99%;
-  height: 98%;
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:active {
+  transform: translateY(-1px);
 }
 
 /*partner slide*/
@@ -553,51 +622,73 @@
 }
 
 .slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
   height: auto !important;
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 100vw;
   display: flex;
+  border-radius: 20px;
+  padding: 40px 0;
+}
 
-  &::before,
-  &::after {
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-  }
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
 
-  &::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
 
-  &::before {
-    left: 0;
-    top: 0;
-  }
+.slider::before {
+  left: 0;
+  top: 0;
+}
 
-  .slide-track {
-    animation: scroll 20s linear infinite;
-    display: flex;
-    width: calc(250px * 7);
-    transition: transform 1s linear;
-  }
+.slide-track {
+  animation: scroll 25s linear infinite;
+  display: flex;
+  width: calc(250px * 7);
+  transition: transform 1s linear;
+  align-items: center;
+}
 
-  .slide {
-    height: auto;
-    width: 35vw;
-  }
+.slide {
+  height: auto;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.slide img {
+  filter: grayscale(100%) opacity(0.7);
+  transition: all 0.3s ease;
+  max-height: 80px;
+  width: auto;
+}
+
+.slide:hover img {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.05);
+}
 
   /* Media query for screens with a width less than 768px */
   @media (max-width: 768px) {
@@ -621,7 +712,6 @@
       font-size: 24px; /* Increased font size */
     }
   }
-}
 @media screen and (max-width: 480px) {
   .link-overlay {
     margin-top: 40%;
@@ -744,15 +834,25 @@
 .australian-made-banner {
   position: absolute;
   left: 5%;
-  top: 90%;
-  transform: translateY(-50%);
-  background-color: black;
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: 1px solid #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  z-index: 3;
+  bottom: 10%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 
+    0 8px 25px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  z-index: 10;
   transition: all 0.3s ease;
+  backdrop-filter: blur(15px);
+}
+
+.australian-made-banner:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 
+    0 12px 35px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .australian-made-banner span {
@@ -766,7 +866,9 @@
 
 @media screen and (max-width: 768px) {
   .australian-made-banner {
-    margin-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
   }
   .australian-made-banner span {
     font-size: 18px;
@@ -782,10 +884,155 @@
     margin-top: 55%;
   }
   .australian-made-banner {
-    top: 100%;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .australian-made-banner span {
     font-size: 14px;
     letter-spacing: 0.3px;
   }
+}
+
+/* Modern Enhancements */
+.modern-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-btn span {
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.modern-btn:hover span {
+  color: #000000;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Modern card effects for components */
+.component {
+  transition: all 0.3s ease;
+}
+
+.component:hover {
+  transform: translateY(-2px);
+}
+
+/* Enhanced video container */
+.video-container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Video Container */
+.landing_Page_video_container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+}
+
+/* Modern gradient overlays */
+.landing_Page_video_container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Enhanced partner logos */
+.slide img {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slide:hover img {
+  filter: grayscale(0%) opacity(1) brightness(1.1);
+  transform: scale(1.1) translateY(-5px);
+}
+
+/* Modern loading animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.revealUp {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Enhanced section separators */
+.component::before {
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.1) 20%, 
+    var(--accent-color) 50%, 
+    rgba(255, 255, 255, 0.1) 80%, 
+    transparent 100%
+  );
+  height: 3px;
+  opacity: 0.6;
+}
+
+/* Modern focus states */
+.btn:focus {
+  outline: none;
+  box-shadow: 
+    0 12px 35px rgba(0, 0, 0, 0.4),
+    0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* Enhanced mobile experience */
+@media (max-width: 768px) {
+  .component {
+    border-radius: 0;
+  }
+  
+  .video-container {
+    border-radius: 0;
+  }
+  
+  .slider {
+    border-radius: 0;
+    margin: 0;
+  }
+  
+  .partners-heading {
+    font-size: 36px !important;
+  }
+  
+  .testimonials-container h2 {
+    font-size: 36px !important;
+  }
+}
+
+/* Performance optimizations */
+.slide-track {
+  will-change: transform;
+}
+
+.btn {
+  will-change: transform, box-shadow;
+}
+
+.text-overlay {
+  will-change: background, backdrop-filter;
 }

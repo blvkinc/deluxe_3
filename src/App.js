@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
+import LoadingSpinner from "./components/common/LoadingSpinner";
 
 const About = lazy(() => import("./components/about/About"));
 const Blog = lazy(() => import("./components/blog/Blog"));
@@ -102,7 +103,7 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/">
         <MemoizedHeader />
-        <Suspense fallback={<div className="viewport-filler"></div>}>
+        <Suspense fallback={<LoadingSpinner />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

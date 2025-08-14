@@ -1,14 +1,15 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React, { useEffect } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import Strom23inside from "./SlideShows/Stormbreaker23inside";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
 import Storm23specs from "./Specsmenu/Specs23";
 import Techspec23 from "./techspecs/Techspec23";
-import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
-import { Link } from "react-router-dom";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -25,8 +26,6 @@ const scrollToLayout = () => {
 };
 
 const Stormbreaker23FamilyOffRoad = () => {
-  const containerRef = useRef(null);
-
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -48,16 +47,6 @@ const Stormbreaker23FamilyOffRoad = () => {
     });
   }, []);
 
-  const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
-
-  const openWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(true);
-  }, []);
-
-  const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(false);
-  }, []);
-
   return (
     <div className="container">
       <div className="component">
@@ -69,25 +58,69 @@ const Stormbreaker23FamilyOffRoad = () => {
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">Stormbreaker23`11</h1>
-              <button
-                onClick={scrollToLayout}
-                className="btn hover-border-1 revealUp"
-              >
-                Layout
-              </button>
-              <button
-                onClick={scrollToSpecs}
-                className="btn hover-border-1 revealUp"
-              >
-                Specs
-              </button>
+              <div className="btn-holder">
+                <button
+                  onClick={scrollToLayout}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Layout
+                </button>
+                <button
+                  onClick={scrollToSpecs}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Specs
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="slideshowcomopnent">
-        <Strom23inside />
+        <EnhancedGallery 
+          sections={[
+            {
+              name: "Exterior",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/23des.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%201.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%202.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%203.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%204.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%205.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%206.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%207.webp"
+              ],
+              description: "Explore the stunning exterior design and features",
+            },
+            {
+              name: "Layout",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/23lay2.webp"
+              ],
+              description: "Detailed floor plans and layout configurations",
+            },
+            {
+              name: "Inside",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_1-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_3-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_4-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_5-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_6-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_7-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_8-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_9-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_10-min.webp"
+              ],
+              description: "Interior features and luxury amenities",
+            },
+          ]}
+          productName="Stormbreaker 23'11"
+        />
       </div>
       {/* <div className='slideshowcomopnent'>
     </div> */}

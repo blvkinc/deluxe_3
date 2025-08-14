@@ -27,7 +27,8 @@ function Blog() {
     <div className="container">
       <div className="blog_component">
         <div>
-          <h1 className='blog_title'>Our Stories..</h1>
+          <h1 className='blog_title'>Our Stories</h1>
+          <p className='blog_subtitle'>Stay updated with our latest news, adventures, and caravan insights</p>
         </div>
         {/* Embed ElfSight widget */}
         <div className="elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5"></div>

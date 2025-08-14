@@ -1,87 +1,241 @@
+/* About Page - Modern Design */
 .aboutcontainer {
-  display: flex;
-  flex-direction: column;
-  background-color: black !important;
-  color: white !important;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+}
+
+.component {
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.component:first-child {
+  padding-top: 120px;
 }
 
 .context {
-  max-width: 1080px; /* Adjust the max-width as needed */
-  margin: 0 auto; /* Center-align the content horizontally */
-}
-
-.context p {
-  margin: 20px;
-  font-size: 20px;
-}
-
-.context .subheader {
-  margin-bottom: 30px;
-  font-size: 16px;
+  text-align: center;
 }
 
 .context h1 {
-  font-size: 75.76px;
-  margin: 10px;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .context h2 {
-  font-size: 56.76px;
-  margin: 10px;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+  position: relative;
+}
+
+.context h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border-radius: 2px;
+}
+
+.subheader {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+  color: #b0b0b0;
+  font-style: italic;
+}
+
+.context p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 25px 0;
+  color: #e0e0e0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .context ul {
   text-align: left;
+  max-width: 600px;
+  margin: 30px auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.image-container {
+.context ul li {
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #e0e0e0;
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Creates two evenly spaced columns */
-  justify-content: center;
-  align-items: center;
+  padding-left: 25px;
+}
+
+.context ul li::before {
+  content: '✓';
+  position: absolute;
   left: 0;
-  right: 0;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-.ourval p {
-  text-transform: lowercase !important;
+/* Values Section */
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+  padding: 0 20px;
 }
 
-.ourval {
+.image-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.image-item:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(0, 123, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.galleryoverlayimage {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 25px;
+  filter: brightness(0) invert(1);
+  transition: all 0.3s ease;
+}
+
+.image-item:hover .galleryoverlayimage {
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(200deg);
+  transform: scale(1.1);
+}
+
+.image-item h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.image-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .component {
+    padding: 60px 30px;
+  }
+  
+  .context h1 {
+    font-size: 3rem;
+  }
+  
+  .context h2 {
+    font-size: 2rem;
+  }
+  
+  .image-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
 }
 
 @media (max-width: 768px) {
+  .component {
+    padding: 40px 20px;
+  }
+  
+  .component:first-child {
+    padding-top: 100px;
+  }
+  
   .context h1 {
-    font-size: 30px;
-    margin-top: 20%;
+    font-size: 2.5rem;
+    margin-top: 0;
   }
+  
   .context h2 {
-    font-size: 20px;
+    font-size: 1.8rem;
   }
+  
   .context p {
-    margin: 10px;
-    font-size: 16px;
+    font-size: 1rem;
+    margin: 20px 0;
   }
-  .image-item h3 {
-    font-size: 15px;
+  
+  .subheader {
+    font-size: 1.1rem;
   }
-
-  .component h1 {
-    font-size: 30px;
-  }
-
+  
   .image-container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr; /* Creates two evenly spaced columns */
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    right: 0;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 40px;
   }
+  
+  .image-item {
+    padding: 30px 25px;
+  }
+  
+  .image-item h3 {
+    font-size: 1.1rem;
+  }
+  
+  .image-item p {
+    font-size: 0.9rem;
+  }
+}
 
-  .image-container p {
-    font-size: 16px;
+@media (max-width: 480px) {
+  .context h1 {
+    font-size: 2rem;
+  }
+  
+  .context h2 {
+    font-size: 1.5rem;
+  }
+  
+  .context ul {
+    padding: 20px;
+  }
+  
+  .image-item {
+    padding: 25px 20px;
+  }
+  
+  .galleryoverlayimage {
+    width: 60px;
+    height: 60px;
   }
 }

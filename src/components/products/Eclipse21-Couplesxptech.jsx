@@ -1,15 +1,17 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React, { useEffect } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import Eclipse21gallery from "../products/SlideShows/Eclipse21gallery";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 import GoToTop from "../functions/GoToTop";
 import SpecsEclipse21 from "./Specsmenu/SpecsEclipse21xptech";
 import TechspecEclipse21xptech from "./techspecs/TechspecEclipse21xptech";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
-import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
-import { Link } from "react-router-dom";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -26,8 +28,6 @@ const scrollToLayout = () => {
 };
 
 const Eclipse21CouplesXPTech = () => {
-  const containerRef = useRef(null);
-
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -49,16 +49,6 @@ const Eclipse21CouplesXPTech = () => {
     });
   }, []);
 
-  const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
-
-  const openWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(true);
-  }, []);
-
-  const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(false);
-  }, []);
-
   return (
     <div className="container">
       <div className="component">
@@ -70,25 +60,66 @@ const Eclipse21CouplesXPTech = () => {
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">Eclipse 21`6</h1>
-              <button
-                onClick={scrollToLayout}
-                className="btn hover-border-1 revealUp"
-              >
-                Layout
-              </button>
-              <button
-                onClick={scrollToSpecs}
-                className="btn hover-border-1 revealUp"
-              >
-                Specs
-              </button>
+              <div className="btn-holder">
+                <button
+                  onClick={scrollToLayout}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Layout
+                </button>
+                <button
+                  onClick={scrollToSpecs}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Specs
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="slideshowcomopnent">
-        <Eclipse21gallery />
+        <EnhancedGallery 
+          sections={[
+            {
+              name: "Exterior",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%201.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%202.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%203.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%204.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%205.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%206.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%207.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%208.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%209.webp"
+              ],
+              description: "Explore the stunning exterior design and features",
+            },
+            {
+              name: "Layout",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216layout.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216layouttop.webp"
+              ],
+              description: "Detailed floor plans and layout configurations",
+            },
+            {
+              name: "Inside",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%201.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%202.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%203.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%204.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20in%205.webp"
+              ],
+              description: "Interior features and luxury amenities",
+            },
+          ]}
+          productName="Eclipse 21'6 XP-Tech"
+        />
       </div>
       <div className="component" id="xptechbanner">
         <Link to="/xptec">

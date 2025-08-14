@@ -1,14 +1,15 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React, { useEffect } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import Riptide20inside from "./SlideShows/Riptide20gallery";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
 import Rip20specs from "./Specsmenu/SpecsRiptide20";
 import TechspecRiptide20 from "./techspecs/TechspecRiptide20";
-import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
-import { Link } from "react-router-dom";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -25,8 +26,6 @@ const scrollToLayout = () => {
 };
 
 const Riptide20FamilyOffRoad = () => {
-  const containerRef = useRef(null);
-
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -48,16 +47,6 @@ const Riptide20FamilyOffRoad = () => {
     });
   }, []);
 
-  const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
-
-  const openWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(true);
-  }, []);
-
-  const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(false);
-  }, []);
-
   return (
     <div className="container">
       <div className="component">
@@ -69,25 +58,65 @@ const Riptide20FamilyOffRoad = () => {
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">RIPTIDE 20`</h1>
-              <button
-                onClick={scrollToLayout}
-                className="btn hover-border-1 revealUp"
-              >
-                Layout
-              </button>
-              <button
-                onClick={scrollToSpecs}
-                className="btn hover-border-1 revealUp"
-              >
-                Specs
-              </button>
+              <div className="btn-holder">
+                <button
+                  onClick={scrollToLayout}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Layout
+                </button>
+                <button
+                  onClick={scrollToSpecs}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Specs
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="slideshowcomopnent">
-        <Riptide20inside />
+        <EnhancedGallery 
+          sections={[
+            {
+              name: "Exterior",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(1).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(2).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(3).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(4).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(5).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(6).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(7).webp"
+              ],
+              description: "Explore the stunning exterior design and features",
+            },
+            {
+              name: "Layout",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/rip20layout.webp"
+              ],
+              description: "Detailed floor plans and layout configurations",
+            },
+            {
+              name: "Inside",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(1).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(2).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(3).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(4).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(5).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(6).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(7).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(8).webp"
+              ],
+              description: "Interior features and luxury amenities",
+            },
+          ]}
+          productName="Riptide 20'"
+        />
       </div>
       <div className="component">
         <div

@@ -1,13 +1,15 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React, { useEffect } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import Eclipse22gallery from "../products/SlideShows/Eclipse22gallery";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
 import SpecsEclipse22 from "./Specsmenu/SpecsEclipse22";
 import TechspecEclipse22 from "./techspecs/TechspecEclipse22";
-import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -24,8 +26,6 @@ const scrollToLayout = () => {
 };
 
 const Eclipse22CouplesOffRoad = () => {
-  const containerRef = useRef(null);
-
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -47,16 +47,6 @@ const Eclipse22CouplesOffRoad = () => {
     });
   }, []);
 
-  const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
-
-  const openWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(true);
-  }, []);
-
-  const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(false);
-  }, []);
-
   return (
     <div className="container">
       <div className="component">
@@ -68,25 +58,64 @@ const Eclipse22CouplesOffRoad = () => {
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">Eclipse 22`</h1>
-              <button
-                onClick={scrollToLayout}
-                className="btn hover-border-1 revealUp"
-              >
-                Layout
-              </button>
-              <button
-                onClick={scrollToSpecs}
-                className="btn hover-border-1 revealUp"
-              >
-                Specs
-              </button>
+              <div className="btn-holder">
+                <button
+                  onClick={scrollToLayout}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Layout
+                </button>
+                <button
+                  onClick={scrollToSpecs}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Specs
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="slideshowcomopnent">
-        <Eclipse22gallery />
+        <EnhancedGallery 
+          sections={[
+            {
+              name: "Exterior",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_1-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_3-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_4-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_5-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_6-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_7-min.webp"
+              ],
+              description: "Explore the stunning exterior design and features",
+            },
+            {
+              name: "Layout",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/E22/Eclipse22layout.webp"
+              ],
+              description: "Detailed floor plans and layout configurations",
+            },
+            {
+              name: "Inside",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_1-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_3-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_4-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_5-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_6-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_in_7-min.webp"
+              ],
+              description: "Interior features and luxury amenities",
+            },
+          ]}
+          productName="Eclipse 22'"
+        />
       </div>
       {/* <div className='slideshowcomopnent'>
     </div> */}
@@ -111,15 +140,7 @@ const Eclipse22CouplesOffRoad = () => {
               layout, complete with all the amenities you'd expect
               from a luxury RV.
             </p>
-            {/* <button
-              className="btn hover-border-1 revealUp"
-              onClick={openWarrantyPopupWarrantyPolicy}
-            >
-              Download Our Brochure and Upgrade List
-            </button>
-            {isWarrantyPopupOpen && (
-              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
-            )} */}
+
           </div>
           <div className="package-details">
             <p>

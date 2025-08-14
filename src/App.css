@@ -40,36 +40,76 @@
 
 
 :root{
-  background-color: black !important;
-  color: rgb(255, 255, 255) !important;
+  --primary-bg: #000000;
+  --secondary-bg: #141414;
+  --text-primary: #ffffff;
+  --text-secondary: #ababab;
+  --accent-color: #ffffff;
+  --border-color: rgba(255, 255, 255, 0.2);
+  --overlay-bg: rgba(0, 0, 0, 0.7);
+  background-color: var(--primary-bg) !important;
+  color: var(--text-primary) !important;
 }
-
 
 h1,h2,a{
   text-transform: uppercase !important;
 }
+
 ::-webkit-scrollbar{
-  width:10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track{
-  background: #141414;
+  background: var(--secondary-bg);
 }
 
 ::-webkit-scrollbar-thumb{
+  background: var(--accent-color);
+  border-radius: 4px;
+}
 
-  background: #ffffff;
+::-webkit-scrollbar-thumb:hover{
+  background: var(--text-secondary);
 }
 
 html{
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
+
 body {
   font-family: 'ITC Avant Garde Gothic Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Performance optimizations */
+* {
+  will-change: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .App {
   text-align: center;
+  min-height: 100vh;
+  background: var(--primary-bg);
 }
 
 .App-logo {
@@ -83,11 +123,20 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000; 
+  background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {

@@ -1,4 +1,10 @@
 /* Common Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .Product-header,
 .button-container,
 .product-container,
@@ -17,10 +23,10 @@
 .Product-header {
   color: white;
   letter-spacing: 3px;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 68px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  text-align: center;
   z-index: 2;
   transition: color 0.3s ease;
   mix-blend-mode: screen;
@@ -34,10 +40,21 @@
   transform: translateX(-50%);
   z-index: 2;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
 }
 
-.button-container h1 {
-  font-size: 68px;
+/* Remove duplicate styling - handled by Product-header class */
+
+.button-container .btn-holder {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Product Container */
@@ -67,23 +84,41 @@
   justify-content: center;
   max-width: 1000px;
   margin: 10px auto 35px;
+  gap: 25px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-container .btn {
+  margin: 0 15px;
 }
 
 .btn,
 .virtual-btn {
   display: inline-block;
   background-color: transparent;
-  color: white;
-  border: none;
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
   cursor: pointer;
-  padding: 20px;
-  transition: 0.3s;
+  padding: 20px 30px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
 }
 
 .btn {
-  margin: 0 25px 15px;
+  margin: 0;
   min-width: 150px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .virtual-btn {
@@ -91,7 +126,7 @@
 }
 
 .virtual-btn a {
-  color: white;
+  color: var(--text-primary);
   text-decoration: underline;
 }
 
@@ -100,33 +135,34 @@
   font-weight: bold;
   letter-spacing: 2px;
   text-transform: uppercase;
+  position: relative;
+  z-index: 2;
 }
 
-.btn.hover-border-1::before,
-.btn.hover-border-1::after {
-  width: 10%;
-  height: 25%;
-  transition: 0.35s;
-}
-
-.btn.hover-border-1::before {
+.btn::before {
+  content: '';
+  position: absolute;
   top: 0;
-  left: 0;
-  border-left: 1px solid white;
-  border-top: 1px solid white;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
 }
 
-.btn.hover-border-1::after {
-  bottom: 0;
-  right: 0;
-  border-right: 1px solid white;
-  border-bottom: 1px solid white;
+.btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
 }
 
-.btn.hover-border-1:hover::before,
-.btn.hover-border-1:hover::after {
-  width: 99%;
-  height: 98%;
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:active {
+  transform: translateY(0);
 }
 
 /* Background Image */
@@ -137,12 +173,40 @@
 
 /* Package Details */
 .package-details {
-  background-color: white;
-  color: black;
-  border: 1px solid white;
-  box-shadow: 0 0 35px 7px rgba(255, 255, 255, 0.5);
-  padding: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  color: #000000;
+  border: 2px solid var(--accent-color);
+  box-shadow: 
+    0 0 35px 7px rgba(255, 255, 255, 0.3),
+    0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 30px;
   border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-details::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffffff, #cccccc, #ffffff);
+  animation: shimmer 2s infinite;
+}
+
+.package-details:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 0 45px 10px rgba(255, 255, 255, 0.4),
+    0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 /* XPTech Banner */
@@ -178,10 +242,17 @@
 
   .button-container {
     bottom: 50% !important;
+    gap: 20px;
   }
 
-  .button-container h1 {
-    font-size: 30px;
+  .Product-header {
+    font-size: 30px !important;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .button-container .btn-holder {
+    gap: 15px;
   }
 
   .description {
@@ -193,6 +264,7 @@
 
   .description p {
     margin-bottom: 5vh;
+    line-height: 1.6;
   }
 
   .image iframe {
@@ -202,10 +274,18 @@
 
   .btn {
     font-size: 15px;
+    padding: 15px 20px;
+    min-width: 120px;
+  }
+
+  .package-details {
+    padding: 20px;
+    margin: 20px 10px;
   }
 
   .package-details li {
     text-align: left;
+    margin-bottom: 8px;
   }
 
   .xptech-banner {
@@ -219,8 +299,9 @@
 }
 
 @media (max-width: 425px) {
-  .button-container h1 {
+  .Product-header {
     font-size: 20px !important;
+    text-align: center;
   }
 
   .button-container {

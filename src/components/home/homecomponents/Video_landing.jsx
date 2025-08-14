@@ -86,11 +86,11 @@ function VideoLanding() {
           <h1 className="revealUp"></h1>
           {/* DELUXE CARAVANS */}
           <div className="link-overlay revealUp">
-            <Link to="/blog" className="btn hover-border-1">
-              Latest Insights
+            <Link to="/blog" className="btn modern-btn">
+              <span>Latest Insights</span>
             </Link>
-            <Link to="/appointment" className="btn hover-border-1">
-              Schedule a visit
+            <Link to="/appointment" className="btn modern-btn">
+              <span>Schedule a visit</span>
             </Link>
           </div>
         </div>
