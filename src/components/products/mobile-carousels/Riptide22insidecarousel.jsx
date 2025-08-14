@@ -6,9 +6,7 @@ const sections = [
   {
     name: "Exterior",
     images: [
-      "https://deluxcaravan.b-cdn.net/assets/Rip22/ex%20(1).webp",
-      "https://deluxcaravan.b-cdn.net/assets/Rip22/ex%20(2).webp",
-      "https://deluxcaravan.b-cdn.net/assets/Rip22/ex%20(3).webp",
+     
     "https://deluxcaravan.b-cdn.net/assets/E22/1-min.webp",
     "https://deluxcaravan.b-cdn.net/assets/E22/2-min.webp",
     "https://deluxcaravan.b-cdn.net/assets/E22/3-min.webp",
