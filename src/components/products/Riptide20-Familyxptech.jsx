@@ -41,7 +41,7 @@ const Riptide20FamilyXPTech = () => {
       <div className="component">
         <div className="background-image">
           <img
-            src="https://deluxcaravan.b-cdn.net/assets/Rip20/Riptide%20Exterior-min.webp"
+            src="https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(7).webp"
             alt=""
           />
           <div className="image-overlay">

@@ -55,35 +55,37 @@ h5 {
 }
 
 .header-nav .menu-item button {
-  margin-right: 20px;
-  position: relative;
-  color: #ffffff;
-  justify-content: space-evenly;
-  cursor: pointer;
-  transition: color 0.3s ease, font-weight 0.3s ease;
-  margin-right: 3rem;
-}
-
-.header:hover .header-nav .menu-item button {
-  color: #000000; /* Change color when menu is hovered */
-}
-.header-nav .menu-item button {
   background: none;
   border: none;
-  color: inherit;
-  font-size: 18px; /* Adjust the font size as needed */
   color: #ffffff;
+  font-size: 18px;
   cursor: pointer;
   padding: 0;
-  position: relative; /* Add relative position */
+  position: relative;
+  margin-right: 3rem;
+  transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 .header:hover .header-nav .menu-item button {
-  color: #000000; /* Change color when menu is hovered */
+  color: #000000 !important; /* Ensure text is visible on white background */
+}
+
+/* Fix for active menu items on hover */
+.header:hover .menu-item button {
+  color: #000000 !important;
+}
+
+.header:hover .menu-item.active button {
+  color: #000000 !important;
+  font-weight: 700;
 }
 
 .menu-item.active button {
   font-weight: 700;
+}
+
+.header:hover .menu-item.active button {
+  color: #000000 !important;
 }
 
 .sub-menu-item.active-submenu {
@@ -135,6 +137,16 @@ h5 {
   transform: translateY(-10px);
   transition: opacity 0.5s, transform 0.3s ease;
   margin-right: 30px;
+  color: #000000 !important;
+}
+
+/* Hover styles for submenu items */
+.sub-menu-item:hover,
+.nested-submenu-item:hover,
+.deep-nested-submenu-item:hover {
+  color: #007bff !important; /* Blue color on hover for better visibility */
+  font-weight: 700;
+  cursor: pointer;
 }
 
 /* Active state for sub-menu and nested-submenu */
@@ -188,6 +200,7 @@ h5 {
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   margin-right: 30px;
+  color: #000000 !important;
 }
 
 /* Active state for deep nested submenu */

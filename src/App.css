@@ -47,8 +47,22 @@
   --accent-color: #ffffff;
   --border-color: rgba(255, 255, 255, 0.2);
   --overlay-bg: rgba(0, 0, 0, 0.7);
-  background-color: var(--primary-bg) !important;
-  color: var(--text-primary) !important;
+}
+
+/* Force black background on body and html */
+html, body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Reset any white backgrounds that might persist */
+* {
+  background-color: inherit;
+}
+
+/* Specific resets for common elements that might retain white backgrounds */
+div, section, article, main, aside, nav, header, footer {
+  background-color: transparent;
 }
 
 h1,h2,a{
@@ -87,6 +101,21 @@ body {
 /* Performance optimizations */
 * {
   will-change: auto;
+}
+
+/* Podium Widget Styles */
+#podium-bubble, 
+#podium-widget, 
+[data-podium-widget],
+.podium-widget-container {
+  z-index: 2147483647 !important;
+  position: fixed !important;
+}
+
+/* Ensure Podium widget is visible */
+#podium-bubble {
+  bottom: 20px !important;
+  right: 20px !important;
 }
 
 img {

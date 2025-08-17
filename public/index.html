@@ -28,9 +28,16 @@
     <meta name="robots" content="index, follow">
     <script src="https://player.vimeo.com/api/player.js"></script>
     
-    <script defer src="https://connect.podium.com/widget.js#ORG_TOKEN=cf270be8-0d54-4e1f-94e3-8b6e41f2d003" id="podium-widget" data-organization-api-token="cf270be8-0d54-4e1f-94e3-8b6e41f2d003"></script>
   </head>
   <body>
-    <div id="root"></div>  
+    <div id="root"></div>
+    
+    <!-- Podium Widget Script -->
+    <script>
+      !function(t,e,n,s,a,c,i,o,p){t.PodiumWebChat=a,t[a]=t[a]||function(){(t[a].q=t[a].q||[]).push(arguments)},t[a].l=1*new Date,c=e.createElement(n),i=e.getElementsByTagName(n)[0],c.async=1,c.src=s,i.parentNode.insertBefore(c,i)}(window,document,"script","https://connect.podium.com/widget.js","PodiumWebChat");
+      PodiumWebChat('init', {
+        "organizationToken": "cf270be8-0d54-4e1f-94e3-8b6e41f2d003"
+      });
+    </script>
   </body>
 </html>

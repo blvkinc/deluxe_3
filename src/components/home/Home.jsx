@@ -10,6 +10,7 @@ import CarouselSection from "./homecomponents/CarouselSection";
 import Model from "../popup-ad/model";
 import Promovid from "./homecomponents/Promovid";
 
+
 function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -42,6 +43,7 @@ function Home() {
           <Model isOpen={isOpen} onClose={handleCloseModal} />
         </div>
       )} */}
+      
       <div className="videocomponent">
         <Video />
       </div>
@@ -63,7 +65,7 @@ function Home() {
       <div className="partnercomponent">
         <Partners />
       </div>
-      <GoToTop />
+   
     </div>
   );
 }
