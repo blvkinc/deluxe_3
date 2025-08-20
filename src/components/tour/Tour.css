@@ -1,7 +1,7 @@
 /* Virtual Tours - Modern Design */
 .virtual-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  /*background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);*/
   color: #333;
 }
 
@@ -16,13 +16,17 @@
 }
 
 .virtual-hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 50%
+  );
   pointer-events: none;
 }
 
@@ -187,8 +191,12 @@
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .loading-overlay p {
@@ -202,11 +210,11 @@
   .virtual-title {
     font-size: 3rem;
   }
-  
+
   .tour-selector h2 {
     font-size: 2rem;
   }
-  
+
   .tour-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
@@ -217,34 +225,34 @@
   .virtual-hero {
     padding: 80px 0 60px;
   }
-  
+
   .virtual-title {
     font-size: 2.5rem;
   }
-  
+
   .virtual-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .virtual-content {
     padding: 60px 15px;
   }
-  
+
   .tour-selector h2 {
     font-size: 1.8rem;
   }
-  
+
   .tour-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .viewer-header {
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .iframe-container {
     height: 60vh;
     min-height: 400px;
@@ -255,19 +263,19 @@
   .virtual-title {
     font-size: 2rem;
   }
-  
+
   .virtual-subtitle {
     font-size: 1rem;
   }
-  
+
   .tour-selector h2 {
     font-size: 1.5rem;
   }
-  
+
   .tour-info {
     padding: 20px;
   }
-  
+
   .iframe-container {
     height: 50vh;
     min-height: 350px;

@@ -140,13 +140,18 @@
 }
 
 .btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
@@ -176,8 +181,7 @@
   background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
   color: #000000;
   border: 2px solid var(--accent-color);
-  box-shadow: 
-    0 0 35px 7px rgba(255, 255, 255, 0.3),
+  box-shadow: 0 0 35px 7px rgba(255, 255, 255, 0.3),
     0 10px 30px rgba(0, 0, 0, 0.2);
   padding: 30px;
   border-radius: 20px;
@@ -187,7 +191,7 @@
 }
 
 .package-details::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -199,14 +203,17 @@
 
 .package-details:hover {
   transform: translateY(-5px);
-  box-shadow: 
-    0 0 45px 10px rgba(255, 255, 255, 0.4),
+  box-shadow: 0 0 45px 10px rgba(255, 255, 255, 0.4),
     0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes shimmer {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* XPTech Banner */
@@ -241,18 +248,21 @@
   }
 
   .button-container {
-    bottom: 50% !important;
+    bottom: 20% !important;
     gap: 20px;
   }
 
   .Product-header {
     font-size: 30px !important;
-    margin-bottom: 15px;
+    margin-bottom: 10px !important;
     text-align: center;
   }
 
   .button-container .btn-holder {
     gap: 15px;
+  }
+  .btn-holder {
+    margin: 10px !important;
   }
 
   .description {
@@ -305,7 +315,7 @@
   }
 
   .button-container {
-    bottom: 60% !important;
+    bottom: 20% !important;
   }
 }
 
@@ -319,3 +329,20 @@
     padding: 6px;
   }
 }
+/* @media (max-width: 768px) {
+  .component {
+    padding: 60px 20px !important;
+    min-height: 80vh !important;
+  }
+  .component::before {
+    left: 5% !important;
+    right: 5% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .component {
+    padding: 40px 15px !important;
+    min-height: 70vh !important;
+  }
+} */

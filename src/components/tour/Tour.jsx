@@ -13,41 +13,43 @@ const Tour = React.memo(() => {
       name: "Eclipse 22' FT",
       url: "https://sh.smartviewmedia.com.au/m/prb7275/?v=prb7275",
       description: "Experience the luxury and comfort of our Eclipse 22' model",
-      image: "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_1-min.webp"
+      image:
+        "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_1-min.webp",
     },
     {
       name: "Riptide 22' FT",
       url: "https://sh.smartviewmedia.com.au/m/kyd7182/?v=kyd7182",
       description: "Explore the spacious family-friendly Riptide 22' layout",
-      image: "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp"
+      image:
+        "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp",
     },
     {
       name: "Storm Breaker 23'11 FT",
       url: "https://sh.smartviewmedia.com.au/m/xmc7473/?v=xmc7473",
       description: "Our largest Storm Breaker model with maximum space",
-      image: "https://deluxcaravan.b-cdn.net/assets/header/2311.webp"
+      image: "https://deluxcaravan.b-cdn.net/assets/header/2311.webp",
     },
     {
       name: "Storm Breaker 21'6 FT",
       url: "https://sh.smartviewmedia.com.au/m/ghk6493/?v=ghk6493",
       description: "The perfect balance of size and functionality",
-      image: "https://deluxcaravan.b-cdn.net/assets/header/216.webp"
+      image: "https://deluxcaravan.b-cdn.net/assets/header/216.webp",
     },
     {
       name: "Storm Breaker 19'6 FT",
       url: "https://sh.smartviewmedia.com.au/m/xre6796/?v=xre6796",
       description: "Compact yet feature-rich Storm Breaker model",
-      image: "https://deluxcaravan.b-cdn.net/assets/header/196.webp"
+      image: "https://deluxcaravan.b-cdn.net/assets/header/196.webp",
     },
     {
       name: "Storm Breaker 18'6 FT",
       url: "https://sh.smartviewmedia.com.au/m/yni6491/?v=yni6491",
       description: "Our most compact Storm Breaker with all essentials",
-      image: "https://deluxcaravan.b-cdn.net/assets/header/186.webp"
+      image: "https://deluxcaravan.b-cdn.net/assets/header/186.webp",
     },
   ];
 
-  const currentTour = tourData.find(tour => tour.name === selectedTour);
+  const currentTour = tourData.find((tour) => tour.name === selectedTour);
 
   const handleTourChange = (tourName) => {
     setIsLoading(true);
@@ -62,10 +64,13 @@ const Tour = React.memo(() => {
   }, [selectedTour]);
 
   return (
-    <div className="virtual-container">
+    <div
+      className="virtual-container"
+      style={{ backgroundColor: "#fff", color: "#000" }}
+    >
       <div className="virtual-hero">
         <div className="hero-content">
-          <motion.h1 
+          <motion.h1
             className="virtual-title"
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -73,7 +78,7 @@ const Tour = React.memo(() => {
           >
             Virtual Tours
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="virtual-subtitle"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -88,9 +93,9 @@ const Tour = React.memo(() => {
         <div className="tour-selector">
           <div className="dropdown-container">
             <label htmlFor="tour-select">Choose Your Virtual Experience:</label>
-            <select 
+            <select
               id="tour-select"
-              value={selectedTour} 
+              value={selectedTour}
               onChange={(e) => handleTourChange(e.target.value)}
               className="tour-dropdown"
             >
@@ -107,10 +112,12 @@ const Tour = React.memo(() => {
           <div className="viewer-header">
             <h3>Now Viewing: {currentTour?.name}</h3>
             <div className="viewer-controls">
-              <span className="control-hint">Use mouse to navigate • Click and drag to look around</span>
+              <span className="control-hint">
+                Use mouse to navigate • Click and drag to look around
+              </span>
             </div>
           </div>
-          
+
           <div className="iframe-container">
             <AnimatePresence mode="wait">
               {isLoading ? (
@@ -144,7 +151,7 @@ const Tour = React.memo(() => {
           </div>
         </div>
       </div>
-      
+
       <GoToTop />
     </div>
   );

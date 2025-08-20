@@ -7,10 +7,8 @@ import Navbar from "./mobileNavbar/Navbar";
 
 const Header = () => {
   const location = useLocation();
-  const isCustomHeaderPage =
-    location.pathname === "/maintenance" ||
-    location.pathname === "/warranty" ||
-    location.pathname === "/Xptec";
+  const CUSTOM_HEADER_PAGES = ["/maintenance", "/warranty"];
+  const isCustomHeaderPage = CUSTOM_HEADER_PAGES.includes(location.pathname);
 
   const [activeMenu, setActiveMenu] = useState(null);
   const [isMobile, setIsMobile] = useState(
@@ -92,6 +90,23 @@ const Header = () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
+  // const getColorSettings = useCallback(() => {
+  //   if (isCustomHeaderPage) {
+  //     return {
+  //       backgroundColor: "black",
+  //       color: "white",
+  //     };
+  //   }
+  //   return {
+  //     backgroundColor: "transparent",
+  //     color: "black",
+  //     hoverBackground: "white",
+  //     hoverColor: "black",
+  //   };
+  // }, [isCustomHeaderPage]);
+
+  //const colorSettings = getColorSettings();
 
   const menuData = useMemo(
     () => [
@@ -438,20 +453,26 @@ const Header = () => {
         <motion.header
           className={`header ${visible ? "" : "hidden"} ${
             isCustomHeaderPage ? "custom-header" : ""
-          }`} // Add custom-header class for Maintenance and Warranty pages
-          initial={{ backgroundColor: "transparent" }}
-          whileHover={{
-            backgroundColor: isCustomHeaderPage ? "black" : "white",
-            color: isCustomHeaderPage ? "white" : "black",
-          }} // Conditional hover styles
-          animate={
-            activeMenu
-              ? {
-                  backgroundColor: isCustomHeaderPage ? "black" : "white",
-                  color: isCustomHeaderPage ? "white" : "black",
-                } // Conditional active menu styles
-              : { backgroundColor: "transparent" }
-          }
+          }`}
+          // initial={{
+          //   backgroundColor: colorSettings.backgroundColor,
+          //   color: colorSettings.color,
+          // }}
+          // whileHover={{
+          //   backgroundColor: colorSettings.hoverBackground,
+          //   color: colorSettings.hoverColor,
+          // }}
+          // animate={
+          //   activeMenu
+          //     ? {
+          //         backgroundColor: colorSettings.hoverBackground,
+          //         color: colorSettings.hoverColor,
+          //       }
+          //     : {
+          //         backgroundColor: colorSettings.backgroundColor,
+          //         color: colorSettings.color,
+          //       }
+          // }
           transition={{ duration: 0.5 }}
           onMouseLeave={handleMenuLeave}
         >
@@ -464,10 +485,7 @@ const Header = () => {
               />
             </Link>
           </div>
-          <nav
-            className="header-nav"
-            onMouseLeave={handleMenuLeave} // Reset states when leaving the entire menu
-          >
+          <nav className="header-nav" onMouseLeave={handleMenuLeave}>
             <ul className="menu">
               {menuData.map((menu, index) => (
                 <motion.li

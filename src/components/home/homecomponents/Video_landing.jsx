@@ -78,9 +78,6 @@ function VideoLanding() {
               }}
             ></iframe>
           </div>
-          <div className="australian-made-banner">
-            <span>AUSTRALIAN MADE</span>
-          </div>
         </div>
         <div className="text-overlay">
           <h1 className="revealUp"></h1>
@@ -92,6 +89,9 @@ function VideoLanding() {
             <Link to="/appointment" className="btn modern-btn">
               <span>Schedule a visit</span>
             </Link>
+          </div>
+          <div className="australian-made-banner">
+            <span>AUSTRALIAN MADE</span>
           </div>
         </div>
       </div>
