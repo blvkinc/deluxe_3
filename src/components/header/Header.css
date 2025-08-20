@@ -18,7 +18,7 @@
 
 .header:hover {
   background-color: #ffffff;
-  color: #000000;
+  /* color: #000000; */
   height: auto; /* Auto height on hover */
 }
 
@@ -66,26 +66,41 @@ h5 {
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
-.header:hover .header-nav .menu-item button {
-  color: #000000 !important; /* Ensure text is visible on white background */
-}
-
-/* Fix for active menu items on hover */
-.header:hover .menu-item button {
+/* .header:hover .header-nav .menu-item button {
   color: #000000 !important;
 }
 
 .header:hover .menu-item.active button {
   color: #000000 !important;
   font-weight: 700;
+} */
+
+/* General header hover rules (for non-custom headers only) */
+.header:not(.custom-header):hover .header-nav .menu-item button {
+  color: #000000 !important;
 }
 
-.menu-item.active button {
+.header:not(.custom-header):hover .menu-item.active button {
+  color: #000000 !important;
   font-weight: 700;
 }
 
-.header:hover .menu-item.active button {
-  color: #000000 !important;
+/* Custom header rules (more specific) */
+.header.custom-header:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+/* More specific selector to override the general header rule */
+.header.custom-header:hover .header-nav .menu-item button,
+.header.custom-header:hover .menu-item button {
+  color: white !important;
+}
+
+/* Make sure active menu items also stay white in custom header */
+.header.custom-header:hover .menu-item.active button {
+  color: white !important;
+  font-weight: 700;
 }
 
 .sub-menu-item.active-submenu {
@@ -100,9 +115,9 @@ h5 {
   font-weight: 700;
 }
 
-.menu-item a button:hover {
+/* .menu-item a button:hover {
   font-weight: 700;
-}
+} */
 
 /* Shared styles for sub-menu and nested-submenu */
 .sub-menu,
@@ -236,21 +251,22 @@ h5 {
 
 /* Custom header styles for Maintenance and Warranty pages */
 .custom-header {
-  color: black !important;
+  background-color: transparent !important;
+  color: white !important;
 }
 
 .custom-header .menu-item button {
   color: black !important;
 }
 
-.custom-header:hover {
+/* .custom-header:hover {
   background-color: black !important;
   color: white !important;
 }
 
 .custom-header:hover .menu-item button {
   color: white !important;
-}
+} */
 
 .custom-header .sub-menu,
 .custom-header .nested-submenu,

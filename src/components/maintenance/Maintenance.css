@@ -1,7 +1,7 @@
 /* Maintenance Page - Modern Design */
 .maintenance-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  /*background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);*/
   padding: 120px 20px 80px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .maintenance-content h1::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -72,7 +72,7 @@
 }
 
 .service-type h3::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -144,15 +144,15 @@
     font-size: 2.5rem;
     padding: 50px 30px;
   }
-  
+
   .maintenance-section {
     padding: 50px 30px;
   }
-  
+
   .service-type {
     padding: 30px;
   }
-  
+
   .service-type ul {
     grid-template-columns: 1fr;
   }
@@ -162,29 +162,29 @@
   .maintenance-container {
     padding: 100px 15px 60px;
   }
-  
+
   .maintenance-content h1 {
     font-size: 2rem;
     padding: 40px 20px;
   }
-  
+
   .maintenance-section {
     padding: 40px 20px;
   }
-  
+
   .service-type {
     padding: 25px 20px;
   }
-  
+
   .service-type h3 {
     font-size: 1.3rem;
   }
-  
+
   .service-note {
     font-size: 1rem;
     padding: 12px 15px;
   }
-  
+
   .service-type ul li {
     font-size: 0.9rem;
     padding: 12px 15px 12px 40px;
@@ -193,28 +193,58 @@
 
 @media (max-width: 480px) {
   .maintenance-content h1 {
-    font-size: 1.8rem;
-    padding: 30px 15px;
+    font-size: 1.8rem !important;
+    padding: 30px 15px !important;
   }
-  
+
   .maintenance-section {
-    padding: 30px 15px;
+    padding: 15px 5px !important;
   }
-  
+
   .service-type {
-    padding: 20px 15px;
+    padding: 20px 15px !important;
   }
-  
+
   .service-type h3 {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
   }
-  
+
   .service-note {
     font-size: 0.95rem;
   }
-  
+
   .service-type ul li {
     font-size: 0.85rem;
-    padding: 10px 12px 10px 35px;
+    padding: 10px 12px 10px 35px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .maintenance-content h1::after {
+    bottom: 10px !important;
+  }
+  .maintenance-content h1 {
+    font-size: 1.2rem;
+    padding: 15px 15px !important;
+  }
+
+  .maintenance-content {
+    padding: 15px 15px !important;
+  }
+
+  .maintenance-section {
+    padding: 15px 5px !important;
+  }
+
+  .service-type {
+    padding: 15px 10px !important;
+  }
+
+  .service-type h3 {
+    font-size: 1rem;
+  }
+
+  .service-note {
+    font-size: 0.95rem;
   }
 }

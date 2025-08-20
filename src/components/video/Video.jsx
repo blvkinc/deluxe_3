@@ -1,6 +1,6 @@
-import React from 'react';
-import './video.css';
-import GoToTop from '../functions/GoToTop';
+import React from "react";
+import "./video.css";
+import GoToTop from "../functions/GoToTop";
 
 const Video = React.memo(() => {
   const videos = [
@@ -23,23 +23,27 @@ const Video = React.memo(() => {
       videoId: "a_KE1CVPT48?si=xmPrmqL9fsyB3OIr",
     },
     {
-      title: "OUR SMALLEST FAMILY BUNK CARAVAN I FULL 4K VERSION I 18.6FT Deluxe Caravan - Stormbreaker",
+      title:
+        "OUR SMALLEST FAMILY BUNK CARAVAN I FULL 4K VERSION I 18.6FT Deluxe Caravan - Stormbreaker",
       description: "18.6 FT Deluxe Caravan - Stormbreaker",
       videoId: "SpcMnSexZ7E?si=w5l_1XhZaWJ-NuIF",
     },
     {
       title: "Sustainable And Dirt Resistant Caravan Interior?",
-      description: "Have you heard about the eco-friendly features that @vanlifestraya is super excited about on their new Deluxe Caravan?",
+      description:
+        "Have you heard about the eco-friendly features that @vanlifestraya is super excited about on their new Deluxe Caravan?",
       videoId: "FDPZOYnzK-4?si=oXM-HGVpUKpjeqe8",
     },
     {
       title: "THE ULTIMATE BATTERY POWER FOR OFF-GRID LIVING.",
-      description: "This video by @AVanARamNoPlan , takes you through the Victron Battery Management System and how it powers off-grid living on their 23Ft Stormbreaker by Deluxe Caravans Australia. Check it out !!",
+      description:
+        "This video by @AVanARamNoPlan , takes you through the Victron Battery Management System and how it powers off-grid living on their 23Ft Stormbreaker by Deluxe Caravans Australia. Check it out !!",
       videoId: "3vnXmXMpJvg?si=74DDJUEOpZL4e9gC",
     },
     {
       title: "CARAVAN TOUR I 23FT Deluxe Caravans - Stormbreaker",
-      description: "This video by  @AVanARamNoPlan , takes you through a tour and features of the 23FT Stormbreaker by Deluxe Caravans Australia. Check it out !!",
+      description:
+        "This video by  @AVanARamNoPlan , takes you through a tour and features of the 23FT Stormbreaker by Deluxe Caravans Australia. Check it out !!",
       videoId: "lYee_55yghM?si=rz-3SYc5qfeSVOFQ",
     },
     {
@@ -50,7 +54,10 @@ const Video = React.memo(() => {
   ];
 
   return (
-    <div className="vidcontainer">
+    <div
+      className="vidcontainer"
+      style={{ backgroundColor: "#fff", color: "#000" }}
+    >
       <div className="vidcomponent">
         <h1>Our Videos</h1>
         <div className="video-gallery">

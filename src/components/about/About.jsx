@@ -6,7 +6,6 @@ import "../home/homecomponents/HomeComponent.css";
 import "./About.css";
 import GoToTop from "../functions/GoToTop";
 
-
 function About() {
   const [refCaravans, inViewCaravans] = useInView({
     triggerOnce: true,
@@ -25,7 +24,10 @@ function About() {
   };
 
   return (
-    <div className="aboutcontainer">
+    <div
+      className="aboutcontainer"
+      style={{ backgroundColor: "#fff", color: "#000" }}
+    >
       <div className="component">
         <div className="context">
           <h1>About Us</h1>
@@ -42,7 +44,7 @@ function About() {
             parts of the country and an active part of the caravan industry, we
             know what it takes to create top-of-the-line, bespoke caravans that
             meet your every expectation.
-            </p>
+          </p>
         </div>
       </div>
       <div className="component" ref={refCaravans}>
@@ -77,7 +79,7 @@ function About() {
             allowed us to adapt and create the ultimate OFF-ROAD caravans
             Australia has to offer. Our Eco-Friendly, Bespoke options give us
             the edge in the competitive market.
-            </p>
+          </p>
         </div>
       </div>
       <div className="component" ref={refValues}>
@@ -198,7 +200,7 @@ function About() {
             </p>
           </motion.div>
         </div>
-        </div>
+      </div>
       <GoToTop />
     </div>
   );

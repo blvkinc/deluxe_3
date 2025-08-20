@@ -1,7 +1,7 @@
 /* Blog Page - Modern Design */
 .container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  /*background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);*/
   padding-top: 100px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .blog_title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -56,21 +56,22 @@
   .container {
     padding-top: 80px;
   }
-  
+
   .blog_component {
     padding: 30px 15px;
+    max-width: 600px;
   }
-  
+
   .blog_title {
     font-size: 2.5rem;
     margin-bottom: 15px;
   }
-  
+
   .blog_subtitle {
     font-size: 1.1rem;
     margin-bottom: 40px;
   }
-  
+
   .elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5 {
     padding: 20px;
     margin-top: 30px;
@@ -81,12 +82,20 @@
   .blog_title {
     font-size: 2rem;
   }
-  
+
   .blog_subtitle {
     font-size: 1rem;
   }
-  
+
   .elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5 {
     padding: 15px;
+  }
+  .blog_component {
+    max-width: 400px;
+  }
+}
+@media (max-width: 375px) {
+  .blog_component {
+    max-width: 300px;
   }
 }

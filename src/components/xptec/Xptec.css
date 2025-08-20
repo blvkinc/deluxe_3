@@ -1,6 +1,6 @@
 /* XP-TECH Container */
 .xptech-container {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  /*background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);*/
   min-height: 100vh;
   color: #333;
 }
@@ -16,13 +16,17 @@
 }
 
 .xptech-hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 50%
+  );
   pointer-events: none;
 }
 
@@ -85,7 +89,7 @@
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -258,7 +262,7 @@
 }
 
 .highlights-subtitle::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -279,11 +283,11 @@
     gap: 40px;
     padding: 40px;
   }
-  
+
   .xptech-title {
     font-size: 3.5rem;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
@@ -293,61 +297,61 @@
   .xptech-hero {
     padding: 80px 0 60px;
   }
-  
+
   .xptech-title {
     font-size: 2.5rem;
     letter-spacing: 1px;
   }
-  
+
   .xptech-subtitle {
     font-size: 1.3rem;
   }
-  
+
   .hero-tagline {
     font-size: 1.1rem;
   }
-  
+
   .warrantycontainer {
     padding: 40px 15px;
   }
-  
+
   .tech-content {
     grid-template-columns: 1fr;
     gap: 30px;
     padding: 30px 20px;
   }
-  
+
   .tech-content.reverse .tech-text,
   .tech-content.reverse .tech-image {
     order: unset;
   }
-  
+
   .intro-section {
     padding: 40px 20px;
     margin-bottom: 40px;
   }
-  
+
   .section-title {
     font-size: 1.8rem;
   }
-  
+
   .tech-title {
     font-size: 1.5rem;
   }
-  
+
   .tech-description,
   .intro-text {
     font-size: 1rem;
   }
-  
+
   .single-column {
     padding: 40px 30px;
   }
-  
+
   .advantage-item {
     padding: 12px 15px;
   }
-  
+
   .advantage-text {
     font-size: 1rem;
   }
@@ -357,35 +361,35 @@
   .xptech-title {
     font-size: 2rem;
   }
-  
+
   .xptech-subtitle {
     font-size: 1.1rem;
   }
-  
+
   .hero-tagline {
     font-size: 1rem;
   }
-  
+
   .tech-content {
     padding: 20px 15px;
   }
-  
+
   .intro-section {
     padding: 30px 15px;
   }
-  
+
   .single-column {
     padding: 30px 20px;
   }
-  
+
   .highlights-subtitle {
     font-size: 1.4rem;
   }
-  
+
   .section-title {
     font-size: 1.5rem;
   }
-  
+
   .tech-title {
     font-size: 1.3rem;
   }
