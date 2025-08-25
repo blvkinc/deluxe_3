@@ -61,28 +61,28 @@ function Promovid() {
           }}
           slidesPerView={isTabScreen ? 1.5 : 2}
           centeredSlides
-          initialSlide={1}  // Set the second video to be selected by default
+          initialSlide={1} // Set the second video to be selected by default
           style={{
             height: isMobileScreen ? "auto" : isTabScreen ? "300px" : "500px",
           }}
           modules={[Navigation, Pagination, EffectCoverflow]}
           className="swiper-container"
         >
-            <SwiperSlide className="swiper-slide">
+          <SwiperSlide className="swiper-slide">
             <iframe
               title="Video 1"
               src="https://player.vimeo.com/video/945631996?h=7774de72a1&badge=0&autopause=0&player_id=0&app_id=58479"
               allowFullScreen
             ></iframe>
           </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
+          <SwiperSlide className="swiper-slide">
             <iframe
               title="Video 2"
               src="https://player.vimeo.com/video/1053997518"
               allowFullScreen
             ></iframe>
           </SwiperSlide>
-        
+
           <SwiperSlide className="swiper-slide">
             <iframe
               title="Video 3"
@@ -94,6 +94,13 @@ function Promovid() {
             <iframe
               title="Video 4"
               src="https://player.vimeo.com/video/976350631?h=699f53a950"
+              allowFullScreen
+            ></iframe>
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide">
+            <iframe
+              title="Video 5"
+              src="https://player.vimeo.com/video/1111652526"
               allowFullScreen
             ></iframe>
           </SwiperSlide>
