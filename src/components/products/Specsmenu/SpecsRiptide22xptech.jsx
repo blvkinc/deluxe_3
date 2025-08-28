@@ -41,8 +41,8 @@ const SpecsRiptide22xptech = () => {
     },
     {
       title: "ELECTRICAL - INTERNAL",
-      content: `Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC- DC & 3000W Inverter)
-        Projecta 7 Inch Touch Display Bluetooth & Light Control
+      content: `Victron Management System ( 3000W Inverter, 120A Charger, 2 x 30A MPPT & 30A DC-DC )
+        Cerbo GX 70, 7 Inch Screen
         Lighting - LED Down lights 
         TV - Co-Ax Point  
         TV - Aerial Point

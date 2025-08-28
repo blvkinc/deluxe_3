@@ -21,11 +21,11 @@ const tableData = [
       {
         spec: "Projecta 30A Charger + 30A Solar Regulator",
         value:
-          "Projecta Intell Grid Compact ( 180A AC Charger, 60A MPPT, 40 A DC- DC & 3000W Inverter)",
+          "Victron Management System ( 3000W Inverter, 120A Charger, 2 x 30A MPPT & 30A DC-DC )",
       },
       {
         spec: "Projecta Display Bluetooth",
-        value: "Projecta 7 Inch Touch Display Bluetooth & Light Control",
+        value: "Cerbo GX 70, 7 Inch Screen",
       },
       {
         spec: "",

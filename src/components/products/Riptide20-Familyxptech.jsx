@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState, useCallback } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import Riptide20gallery from "../products/SlideShows/Riptide20gallery";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
 import SpecsRiptide20xptech from "./Specsmenu/SpecsRiptide20xptech";
@@ -65,7 +65,45 @@ const Riptide20FamilyXPTech = () => {
       </div>
 
       <div className="slideshowcomopnent">
-        <Riptide20gallery />
+        <EnhancedGallery
+          sections={[
+            {
+              name: "Exterior",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(1).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(2).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(3).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(4).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(5).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(6).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(7).webp",
+              ],
+              description: "",
+            },
+            {
+              name: "Layout",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/rip20layout.webp",
+              ],
+              description: "",
+            },
+            {
+              name: "Inside",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(1).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(2).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(3).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(4).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(5).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(6).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(7).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(8).webp",
+              ],
+              description: "",
+            },
+          ]}
+          productName="Riptide 20'"
+        />
       </div>
       <div className="component" id="xptechbanner">
         <Link to="/xptec">
