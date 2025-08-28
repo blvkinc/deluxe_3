@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState, useCallback } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import Riptide22inside from "./SlideShows/Riptide22gallery";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
 import Rip22specs from "./Specsmenu/SpecsRiptide22xptech";
@@ -88,7 +88,60 @@ const Riptide22FamilyXPTech = () => {
       </div>
 
       <div className="slideshowcomopnent">
-        <Riptide22inside />
+        <EnhancedGallery
+          sections={[
+            {
+              name: "Exterior",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/E22/1-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/3-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/4-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/5-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/6-min.webp",
+              ],
+              description: "",
+            },
+            {
+              name: "Layout",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
+              ],
+              description: "",
+            },
+            {
+              name: "Inside",
+
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/in%20(1).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/in%20(2).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/in%20(3).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/in%20(4).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/in%20(5).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(1).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(2).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(4).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(5).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(6).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(7).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20%20(8).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/Ripin9.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip22/Rip%20In%20(10).webp",
+              ],
+              description: "",
+            },
+          ]}
+          productName="Riptide 20'"
+        />
       </div>
       <div className="component" id="xptechbanner">
         <Link to="/xptec">

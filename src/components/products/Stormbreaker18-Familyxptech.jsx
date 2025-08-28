@@ -9,6 +9,7 @@ import Storm18specs from "./Specsmenu/Specs18xptech";
 import Techspec18xptech from "./techspecs/Techspec18xptech";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 import LayoutPopUp from "./popup/LayoutPopUp";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -87,9 +88,51 @@ const Stormbreaker18FamilyXPTech = () => {
           </div>
         </div>
       </div>
-
       <div className="slideshowcomopnent">
-        <Strom18inside />
+        <EnhancedGallery
+          sections={[
+            {
+              name: "Exterior",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/18des.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%201.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%202.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%203.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%204.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%205.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%206.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%207.webp",
+              ],
+              description: "",
+            },
+            {
+              name: "Layout",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB18%20layout.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/18laydes.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/18lay2.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB18%20layout.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/18lay2.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB18%20layout.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/18lay2.webp",
+              ],
+              description: "",
+            },
+            {
+              name: "Inside",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20in%201.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20in%202.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20in%203.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20in%204.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20in%205.webp",
+                "https://deluxcaravan.b-cdn.net/assets/18/18%20in%206.webp",
+              ],
+              description: "",
+            },
+          ]}
+          productName="Riptide 20'"
+        />
       </div>
       <div className="component" id="xptechbanner">
         <Link to="/xptec">

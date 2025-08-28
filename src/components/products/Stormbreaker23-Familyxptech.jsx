@@ -2,14 +2,13 @@ import React, { useRef, useEffect, useState, useCallback } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import Strom23inside from "./SlideShows/Stormbreaker23inside";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
 import Storm23specs from "./Specsmenu/Specs23xptech";
 import Techspec23xptech from "./techspecs/Techspec23xptech";
-import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -88,7 +87,55 @@ const Stormbreaker23FamilyXPTech = () => {
       </div>
 
       <div className="slideshowcomopnent">
-        <Strom23inside />
+        <EnhancedGallery
+          sections={[
+            {
+              name: "Exterior",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/23des.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%201.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%202.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%203.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%204.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%205.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%206.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%207.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%201.webp",
+              ],
+              description: "",
+            },
+            {
+              name: "Layout",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/23lay2.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/23lay2.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/23lay2.webp",
+                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311layout.webp",
+              ],
+              description: "",
+            },
+            {
+              name: "Inside",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_1-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_3-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_4-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_5-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_6-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_7-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_8-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_9-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_10-min.webp",
+              ],
+              description: "",
+            },
+          ]}
+          productName="Riptide 20'"
+        />
       </div>
       <div className="component" id="xptechbanner">
         <Link to="/xptec">
