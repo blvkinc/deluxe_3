@@ -61,49 +61,49 @@ const CarouselSection = () => {
       {
         name: 'Stormbreaker 18\'6 XP Tech',
         price: '$129,900',
-        image: 'https://deluxcaravan.b-cdn.net/assets/header/186.webp',
+        image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/stormbreaker18familyxptech'
       },
       {
         name: 'Stormbreaker 19\'6 XP Tech',
         price: '$132,900',
-        image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
+        image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/stormbreaker19familyxptech'
       },
       {
         name: 'Stormbreaker 21\'6 XP Tech',
         price: '$134,900',
-        image: 'https://deluxcaravan.b-cdn.net/assets/header/216.webp',
+        image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/stormbreaker21familyxptech'
       },
       {
         name: 'Stormbreaker 23\'11 XP Tech',
         price: '$136,900',
-        image: 'https://deluxcaravan.b-cdn.net/assets/header/2311.webp',
+        image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/stormbreaker23familyxptech'
       },
       {
         name: 'Riptide 22 XP Tech',
         price: '$138,900',
-        image: 'https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp',
+        image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/riptide22familyxptech'
       },
       {
         name: 'Riptide 20 XP Tech',
         price: '$136,900',
-        image: 'https://deluxcaravan.b-cdn.net/assets/Rip20/rip20.webp',
+        image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/riptide20familyxptech'
       },
       {
         name: 'Eclipse 21 Couples XP Tech',
         // price: '$89,900',
-        image: 'https://deluxcaravan.b-cdn.net/assets/header/186.webp',
+        image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/eclipse21couplesxptech'
       },
       {
         name: 'Eclipse 22 Couples XP Tech',
         // price: '$92,900',
-        image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
+        image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/eclipse22couplesxptech'
       }
     ]
