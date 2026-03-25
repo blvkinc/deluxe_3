@@ -54,12 +54,12 @@ const Eclipse22CouplesXPTech = () => {
       <div className="component">
         <div className="background-image">
           <img
-            src="https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_6-min.webp"
+            src="https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
             alt=""
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">Eclipse 22`</h1>
+              <h1 className="Product-header revealUp">E22</h1>
               <div className="btn-holder">
                 <button
                   onClick={scrollToLayout}
@@ -167,18 +167,20 @@ const Eclipse22CouplesXPTech = () => {
           </div>
           <div className="package-details">
             <p>
-              <h2>NOW WITH ALL 2025 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
+              <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
             </p>
             <p>
-              <h3>WORTH $5000 !</h3>
+              <h3>WORTH $7000 !</h3>
             </p>
             <ul>
               <li>DOMETIC FRESH JET AIRCON</li>
               <li>188L DOMETIC COMPRESSOR FRIDGE</li>
               <li>4 X 200W SOLAR PANELS</li>
-              <li>2 X 100AH LITHIUM BATTERIES</li>
+              <li>2 X 200AH LITHIUM BATTERIES</li>
               <li>Raptor Painted Chassis</li>
               <li>AuFocus Diesel Heater</li>
+              <li>2 X RECOVERY POINTS</li>
+             <li>AIRBAG READY SUSPENSION</li>
             </ul>
           </div>
         </div>

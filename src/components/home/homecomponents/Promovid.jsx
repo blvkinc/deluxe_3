@@ -78,7 +78,7 @@ function Promovid() {
           <SwiperSlide className="swiper-slide">
             <iframe
               title="Video 2"
-              src="https://player.vimeo.com/video/1053997518"
+                            src="https://player.vimeo.com/video/1159488333?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
               allowFullScreen
             ></iframe>
           </SwiperSlide>
@@ -93,7 +93,7 @@ function Promovid() {
           <SwiperSlide className="swiper-slide">
             <iframe
               title="Video 4"
-              src="https://player.vimeo.com/video/976350631?h=699f53a950"
+              src="https://player.vimeo.com/video/1053997518"
               allowFullScreen
             ></iframe>
           </SwiperSlide>

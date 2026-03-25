@@ -139,16 +139,18 @@ const Stormbreaker21FamilyOffRoad = () => {
             </p>
             <div className="package-details">
               <p>
-                <h2>NOW WITH ALL 2025 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
+                <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
               </p>
               <p>
-                <h3>WORTH $5000 !</h3>
+                <h3>WORTH $7000 !</h3>
               </p>
               <ul>
                 <li>DOMETIC FRESH JET AIRCON</li>
                 <li>188L DOMETIC COMPRESSOR FRIDGE</li>
                 <li>3 X 170W SOLAR PANELS</li>
                 <li>2 X 100AH LITHIUM BATTERIES</li>
+                <li>2 X RECOVERY POINTS</li>
+               <li>AIRBAG READY SUSPENSION</li>
               </ul>
             </div>
             <p>

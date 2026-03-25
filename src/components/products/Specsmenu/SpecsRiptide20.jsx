@@ -139,7 +139,7 @@ const SpecsRiptide20 = () => {
     },
     {
       title: "SUSPENSION",
-      content: `FULL OFF-ROAD - INDEPENDENT – 3.7T`,
+      content: `FULL OFF-ROAD - INDEPENDENT – 3.5T`,
     },
   ];
 

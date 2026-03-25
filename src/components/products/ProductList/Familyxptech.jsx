@@ -7,30 +7,30 @@ import "../../home/homecomponents/HomeComponent.css";
 const productstormbreaker = [
   {
     id: 1,
-    name: "STORMBREAKER 18`6FT",
+    name: "S186",
     price: "FULL OFF-ROAD: $129,900",
-    image: "https://deluxcaravan.b-cdn.net/assets/header/186.webp",
+    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp",
     link: "/stormbreaker18familyxptech",
   },
   {
     id: 2,
-    name: "STORMBREAKER 19`6FT",
+    name: "S196",
     price: "FULL OFF-ROAD: $132,900",
-    image: "https://deluxcaravan.b-cdn.net/assets/header/196.webp",
+    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp",
     link: "/stormbreaker19familyxptech",
   },
   {
     id: 3,
-    name: "STORMBREAKER 21`6FT",
+    name: "S216",
     price: "FULL OFF-ROAD: $134,900",
-    image: "https://deluxcaravan.b-cdn.net/assets/header/216.webp",
+    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/stormbreaker21familyxptech",
   },
   {
     id: 4,
-    name: "STORMBREAKER 23`11FT",
+    name: "S2311",
     price: "FULL OFF-ROAD: $136,900",
-    image: "https://deluxcaravan.b-cdn.net/assets/header/2311.webp",
+    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/stormbreaker23familyxptech",
   },
 ];
@@ -38,16 +38,16 @@ const productstormbreaker = [
 const productriptide = [
   {
     id: 1,
-    name: "Riptide 20FT",
+    name: "R20",
     price: "FULL OFF-ROAD: $136,900",
-    image: "https://deluxcaravan.b-cdn.net/assets/Rip20/Riptide%20header-min.webp",
+    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp",
     link: "/riptide20familyxptech",
   },
   {
     id: 2,
-    name: "Riptide 22FT",
+    name: "R22",
     price: "FULL OFF-ROAD: $138,900",
-    image: "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp",
+    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/riptide22familyxptech",
   },
 ];

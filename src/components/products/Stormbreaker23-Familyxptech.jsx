@@ -63,12 +63,12 @@ const Stormbreaker23FamilyXPTech = () => {
       <div className="component">
         <div className="background-image">
           <img
-            src="https://deluxcaravan.b-cdn.net/assets/Product%20renders/SB2311Exterior.webp"
+            src="https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
             alt=""
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">Stormbreaker23`11</h1>
+              <h1 className="Product-header revealUp">S2311</h1>
               <button
                 onClick={scrollToLayout}
                 className="btn hover-border-1 revealUp"
@@ -92,15 +92,13 @@ const Stormbreaker23FamilyXPTech = () => {
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/23des.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%201.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%202.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%203.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%204.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%205.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%206.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%207.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/23%20ex%201.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(1).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(2).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(3).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(5).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(6).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(7).webp",
+                
               ],
               description: "",
             },
@@ -120,16 +118,18 @@ const Stormbreaker23FamilyXPTech = () => {
             {
               name: "Inside",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_1-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_3-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_4-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_5-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_6-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_7-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_8-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_9-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/newin/2311_in_10-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newin/2311%20in%20(4).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newin/2311%20in%20(1).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newin/2311%20in%20(2).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newin/2311%20in%20(3).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newin/2311%20in%20(5).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newin/2311%20in%20(6).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newin/2311%20in%20(7).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newin/2311%20in%20(8).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newin/2311%20in%20(9).webp",
+                "https://deluxcaravan.b-cdn.net/assets/23/2311newin/2311%20in%20(10).webp",
+                
+                
               ],
               description: "",
             },
@@ -185,18 +185,20 @@ const Stormbreaker23FamilyXPTech = () => {
           </div>
           <div className="package-details">
             <p>
-              <h2>NOW WITH ALL 2025 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
+              <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
             </p>
             <p>
-              <h3>WORTH $5000 !</h3>
+              <h3>WORTH $7000 !</h3>
             </p>
             <ul>
               <li>DOMETIC FRESH JET AIRCON</li>
               <li>188L DOMETIC COMPRESSOR FRIDGE</li>
               <li>4 X 200W SOLAR PANELS</li>
-              <li>2 X 100AH LITHIUM BATTERIES</li>
+              <li>2 X 200AH LITHIUM BATTERIES</li>
               <li>Raptor Painted Chassis</li>
               <li>AuFocus Diesel Heater</li>
+              <li>2 X RECOVERY POINTS</li>
+              <li>AIRBAG READY SUSPENSION</li>
             </ul>
           </div>
         </div>

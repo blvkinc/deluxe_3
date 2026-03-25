@@ -64,12 +64,12 @@ const Riptide22FamilyXPTech = () => {
       <div className="component">
         <div className="background-image">
           <img
-            src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20Exterior-min.webp"
+            src="https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
             alt=""
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">RIPTIDE 22`</h1>
+              <h1 className="Product-header revealUp">R22</h1>
               <button
                 onClick={scrollToLayout}
                 className="btn hover-border-1 revealUp"
@@ -198,18 +198,20 @@ const Riptide22FamilyXPTech = () => {
           </div>
           <div className="package-details">
             <p>
-              <h2>NOW WITH ALL 2025 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
+              <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
             </p>
             <p>
-              <h3>WORTH $5000 !</h3>
+              <h3>WORTH $7000 !</h3>
             </p>
             <ul>
               <li>DOMETIC FRESH JET AIRCON</li>
               <li>188L DOMETIC COMPRESSOR FRIDGE</li>
               <li>4 X 200W SOLAR PANELS</li>
-              <li>2 X 100AH LITHIUM BATTERIES</li>
+              <li>2 X 200AH LITHIUM BATTERIES</li>
               <li>Raptor Painted Chassis</li>
               <li>AuFocus Diesel Heater</li>
+              <li>2 X RECOVERY POINTS</li>
+         <li>AIRBAG READY SUSPENSION</li>
             </ul>
           </div>
         </div>

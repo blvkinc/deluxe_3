@@ -59,49 +59,49 @@ const CarouselSection = () => {
     ],
     xptech: [
       {
-        name: 'Stormbreaker 18\'6 XP Tech',
+        name: 'S186',
         price: '$129,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/stormbreaker18familyxptech'
       },
       {
-        name: 'Stormbreaker 19\'6 XP Tech',
+        name: 'S196',
         price: '$132,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/stormbreaker19familyxptech'
       },
       {
-        name: 'Stormbreaker 21\'6 XP Tech',
+        name: 'S216',
         price: '$134,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/stormbreaker21familyxptech'
       },
       {
-        name: 'Stormbreaker 23\'11 XP Tech',
+        name: 'S2311',
         price: '$136,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/stormbreaker23familyxptech'
       },
       {
-        name: 'Riptide 22 XP Tech',
+        name: 'R22',
         price: '$138,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/riptide22familyxptech'
       },
       {
-        name: 'Riptide 20 XP Tech',
+        name: 'R20',
         price: '$136,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/riptide20familyxptech'
       },
       {
-        name: 'Eclipse 21 Couples XP Tech',
+        name: 'E21',
         // price: '$89,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/eclipse21couplesxptech'
       },
       {
-        name: 'Eclipse 22 Couples XP Tech',
+        name: 'E22',
         // price: '$92,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/eclipse22couplesxptech'

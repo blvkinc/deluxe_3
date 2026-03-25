@@ -208,45 +208,45 @@ const Header = () => {
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/header/186.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp"
                         alt="stormbreaker18"
                       />
                     ),
                     link: "/stormbreaker18familyxptech",
-                    text: "Stormbreaker 18`6",
+                    text: "S186",
                     price: "FULL OFF-ROAD: $129,900",
                   },
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/header/196.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp"
                         alt="stormbreaker19"
                       />
                     ),
                     link: "/stormbreaker19familyxptech",
-                    text: "Stormbreaker 19`6",
+                    text: "S196",
                     price: "FULL OFF-ROAD: $132,900",
                   },
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp"
                         alt="stormbreaker21"
                       />
                     ),
                     link: "/stormbreaker21familyxptech",
-                    text: "Stormbreaker 21`6",
+                    text: "S216",
                     price: "FULL OFF-ROAD: $134,900",
                   },
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/header/2311.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp"
                         alt="stormbreaker23"
                       />
                     ),
                     link: "/stormbreaker23familyxptech",
-                    text: "Stormbreaker 23`11",
+                    text: "S2311",
                     price: "FULL OFF-ROAD: $136,900",
                   },
                 ],
@@ -258,23 +258,23 @@ const Header = () => {
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/Rip20/Riptide%20header-min.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp"
                         alt="Riptide20"
                       />
                     ),
                     link: "/riptide20familyxptech",
-                    text: "Riptide 20",
+                    text: "R20",
                     price: "FULL OFF-ROAD: $136,900",
                   },
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp"
                         alt="Riptide22"
                       />
                     ),
                     link: "/riptide22familyxptech",
-                    text: "Riptide 22",
+                    text: "R22",
                     price: "FULL OFF-ROAD: $138,900",
                   },
                 ],
@@ -326,17 +326,22 @@ const Header = () => {
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp"
                         alt="Eclipse 216"
                       />
                     ),
                     link: "/eclipse21couplesxptech",
-                    text: "ECLIPSE - 21`6FT",
+                    text: "E216",
                     // price: "$92,900",
                   },
-                  {
+                  {  label: (
+                    <img
+                      src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp"
+                      alt="Eclipse 216"
+                    />
+                  ),
                     link: "/eclipse22couplesxptech",
-                    text: "ECLIPSE - 22FT",
+                    text: "E22",
                     // price: "$98,900",
                   },
                 ],

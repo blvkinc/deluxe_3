@@ -40,11 +40,10 @@ const Model = ({ isOpen, onClose }) => {
               </button>
             </div>
             <div className="model-title">
-              <h1> Once In A Lifetime Offer - 8K Off The First 5 XP-TECH Builds</h1>
-              {/* <p className="model-disc2">
-                OUR CHRISTMAS GIFT TO YOU <b>19'6</b> AND{" "}
-                <b>21'6 STORMBREAKER</b>
-              </p> */}
+              <h1>  2026 Limited Time Offer</h1>
+              <p className="model-disc2">
+                Save $5000 Across The XP-TECH Range Including A Free Upgrade to 400Ah Lithium Batteries
+              </p>
             </div>
             <div className="model-content">
               {/* <img src="https://deluxcaravan.b-cdn.net/assets/Ads/popup2.webp" className="model-ad-image"></img> */}
