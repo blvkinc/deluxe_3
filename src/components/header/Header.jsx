@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import _ from "lodash"; // Import lodash for debounce
 import "./Header.css";
 import Navbar from "./mobileNavbar/Navbar";
@@ -520,14 +520,13 @@ const Header = () => {
                   <button>
                     <span>{menu.label}</span>
                   </button>
-                  <AnimatePresence>
-                    {activeMenu === menu.label && menu.submenu && (
+                  {menu.submenu && (
                       <motion.div
                         className="sub-menu"
-                        initial={{ opacity: 1, scaleY: 0 }}
-                        animate={{ opacity: 1, scaleY: 1 }}
-                        exit={{ opacity: 0, scaleY: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        initial={false}
+                        animate={{ opacity: activeMenu === menu.label ? 1 : 0 }}
+                        transition={{ duration: 0.2, ease: "easeInOut" }}
+                        style={{ pointerEvents: activeMenu === menu.label ? "auto" : "none" }}
                       >
                         {menu.submenu.map((subitem, subIndex) => (
                           <div
@@ -565,11 +564,11 @@ const Header = () => {
                                   subitem.submenu && (
                                     <motion.div
                                       className="nested-submenu"
-                                      initial={{ opacity: 1, scaleY: 0 }}
-                                      animate={{ opacity: 1, scaleY: 1 }}
-                                      exit={{ opacity: 0, scaleY: 0 }}
+                                      initial={{ opacity: 0 }}
+                                      animate={{ opacity: 1 }}
+                                      exit={{ opacity: 0 }}
                                       transition={{
-                                        duration: 0.3,
+                                        duration: 0.2,
                                         ease: "easeInOut",
                                       }}
                                     >
@@ -611,20 +610,11 @@ const Header = () => {
                                                   nestedSubitem.submenu && (
                                                     <motion.div
                                                       className="deep-nested-submenu"
-                                                      initial={{
-                                                        opacity: 1,
-                                                        scaleY: 0,
-                                                      }}
-                                                      animate={{
-                                                        opacity: 1,
-                                                        scaleY: 1,
-                                                      }}
-                                                      exit={{
-                                                        opacity: 0,
-                                                        scaleY: 0,
-                                                      }}
+                                                      initial={{ opacity: 0 }}
+                                                      animate={{ opacity: 1 }}
+                                                      exit={{ opacity: 0 }}
                                                       transition={{
-                                                        duration: 0.3,
+                                                        duration: 0.2,
                                                         ease: "easeInOut",
                                                       }}
                                                       onMouseLeave={() =>
@@ -700,8 +690,7 @@ const Header = () => {
                           </div>
                         ))}
                       </motion.div>
-                    )}
-                  </AnimatePresence>
+                  )}
                 </motion.li>
               ))}
               <li className="menu-item">
