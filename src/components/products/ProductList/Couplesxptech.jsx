@@ -25,7 +25,7 @@ const Couplesxptech = React.memo(() => {
   return (
     <div className="productgrid-container">
       <div className="productgrid-component">
-        <h1 className="product-grid-heading">Couples XP Tech</h1>
+        <h1 className="product-grid-heading">Couples XP-TECH</h1>
         <h2 className="product-grid-subheading">Eclipse</h2>
         <div className="product-grid">
           {products.map((product) => (

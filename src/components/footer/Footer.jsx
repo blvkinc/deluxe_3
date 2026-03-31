@@ -23,13 +23,13 @@ const Footer = React.memo(() => {
             Family Off-Road
           </Link>
           <Link to="/familyxptech" className="footer-link">
-            Family XP Tech
+            Family XP-TECH
           </Link>
           <Link to="/couplesoffroad" className="footer-link">
             Couples Off-Road
           </Link>
           <Link to="/couplesxptech" className="footer-link">
-            Couples XP Tech
+            Couples XP-TECH
           </Link>
         </div>
         <div className="footer-links-column">
@@ -53,7 +53,7 @@ const Footer = React.memo(() => {
             Service & Maintenance
           </Link>
           <Link to="/Xptec" className="footer-link">
-            XP TECH
+            XP-TECH
           </Link>
         </div>
         <div className="footer-links-column">
