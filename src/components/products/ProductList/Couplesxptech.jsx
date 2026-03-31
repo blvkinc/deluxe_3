@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 const products = [
   {
     id: 1,
-    name: "E216",
+    name: "ECLIPSE 21' 6\"",
     // price: "$92,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/eclipse21couplesxptech",
   },
   {
     id: 2,
-    name: "E22",
+    name: "ECLIPSE 22'",
     // price: "$98,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/eclipse22couplesxptech",

@@ -63,6 +63,12 @@ const Header = () => {
     }, 100);
   }, []);
 
+  const handleMenuClose = useCallback(() => {
+    setActiveMenu(null);
+    setHoveredSubMenu(null);
+    setNestedSubMenu(null);
+  }, []);
+
   useEffect(() => {
     const handleScroll = _.debounce(() => {
       const currentScrollPos = window.pageYOffset;
@@ -129,7 +135,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker18familyoffroad",
-                    text: "Stormbreaker 18`6",
+                    text: "Stormbreaker 18'6",
                     price: "FULL OFF-ROAD: $89,900",
                   },
                   {
@@ -140,7 +146,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker19familyoffroad",
-                    text: "Stormbreaker 19`6",
+                    text: "Stormbreaker 19'6",
                     price: "FULL OFF-ROAD: $92,900",
                   },
                   {
@@ -151,7 +157,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker21familyoffroad",
-                    text: "Stormbreaker 21`6",
+                    text: "Stormbreaker 21'6",
                     price: "FULL OFF-ROAD: $94,900",
                   },
                   {
@@ -162,7 +168,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker23familyoffroad",
-                    text: "Stormbreaker 23`11",
+                    text: "Stormbreaker 23'11",
                     price: "FULL OFF-ROAD: $96,900",
                   },
                 ],
@@ -174,12 +180,12 @@ const Header = () => {
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/Rip20/Riptide%20header-min.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp"
                         alt="Riptide20"
                       />
                     ),
                     link: "/riptide20familyoffroad",
-                    text: "Riptide 20",
+                    text: "Riptide 20'",
                     price: "FULL OFF-ROAD: $96,900",
                   },
                   {
@@ -190,7 +196,7 @@ const Header = () => {
                       />
                     ),
                     link: "/riptide22familyoffroad",
-                    text: "Riptide 22",
+                    text: "Riptide 22'",
                     price: "FULL OFF-ROAD: $98,900",
                   },
                 ],
@@ -213,7 +219,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker18familyxptech",
-                    text: "S186",
+                    text: "S18'6",
                     price: "FULL OFF-ROAD: $129,900",
                   },
                   {
@@ -224,7 +230,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker19familyxptech",
-                    text: "S196",
+                    text: "S19'6",
                     price: "FULL OFF-ROAD: $132,900",
                   },
                   {
@@ -235,7 +241,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker21familyxptech",
-                    text: "S216",
+                    text: "S21'6",
                     price: "FULL OFF-ROAD: $134,900",
                   },
                   {
@@ -246,7 +252,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker23familyxptech",
-                    text: "S2311",
+                    text: "S23'11",
                     price: "FULL OFF-ROAD: $136,900",
                   },
                 ],
@@ -258,12 +264,12 @@ const Header = () => {
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp"
                         alt="Riptide20"
                       />
                     ),
                     link: "/riptide20familyxptech",
-                    text: "R20",
+                    text: "R20'",
                     price: "FULL OFF-ROAD: $136,900",
                   },
                   {
@@ -274,7 +280,7 @@ const Header = () => {
                       />
                     ),
                     link: "/riptide22familyxptech",
-                    text: "R22",
+                    text: "R22'",
                     price: "FULL OFF-ROAD: $138,900",
                   },
                 ],
@@ -303,12 +309,18 @@ const Header = () => {
                       />
                     ),
                     link: "/eclipse21couplesoffroad",
-                    text: "ECLIPSE - 21`6FT",
+                    text: "ECLIPSE 21' 6\"",
                     price: "$92,900",
                   },
                   {
+                    label: (
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
+                        alt="Eclipse 22"
+                      />
+                    ),
                     link: "/eclipse22couplesoffroad",
-                    text: "ECLIPSE - 22FT",
+                    text: "ECLIPSE 22'",
                     price: "$98,900",
                   },
                 ],
@@ -331,17 +343,18 @@ const Header = () => {
                       />
                     ),
                     link: "/eclipse21couplesxptech",
-                    text: "E216",
+                    text: "ECLIPSE 21' 6\"",
                     // price: "$92,900",
                   },
-                  {  label: (
-                    <img
-                      src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp"
-                      alt="Eclipse 216"
-                    />
-                  ),
+                  {
+                    label: (
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp"
+                        alt="Eclipse 22"
+                      />
+                    ),
                     link: "/eclipse22couplesxptech",
-                    text: "E22",
+                    text: "ECLIPSE 22'",
                     // price: "$98,900",
                   },
                 ],
@@ -523,7 +536,7 @@ const Header = () => {
                               handleSubMenuHover(subitem.label)
                             }
                           >
-                            <Link to={subitem.link || "#"}>
+                            <Link to={subitem.link || "#"} onClick={handleMenuClose}>
                               <motion.div
                                 className={`sub-menu-item ${
                                   hoveredSubMenu === subitem.label
@@ -572,6 +585,7 @@ const Header = () => {
                                           >
                                             <Link
                                               to={nestedSubitem.link || "#"}
+                                              onClick={handleMenuClose}
                                             >
                                               <motion.div
                                                 className="nested-submenu-item"
@@ -628,6 +642,7 @@ const Header = () => {
                                                               deepNestedSubitem.link ||
                                                               "#"
                                                             }
+                                                            onClick={handleMenuClose}
                                                           >
                                                             <motion.div
                                                               className="deep-nested-submenu-item"

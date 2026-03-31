@@ -38,14 +38,14 @@ const productstormbreaker = [
 const productriptide = [
   {
     id: 1,
-    name: "R20",
+    name: "R20'",
     price: "FULL OFF-ROAD: $136,900",
-    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp",
+    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/riptide20familyxptech",
   },
   {
     id: 2,
-    name: "R22",
+    name: "R22'",
     price: "FULL OFF-ROAD: $138,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/riptide22familyxptech",
