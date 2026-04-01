@@ -17,6 +17,7 @@ const Header = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [hoveredSubMenu, setHoveredSubMenu] = useState(null);
   const [nestedSubMenu, setNestedSubMenu] = useState(null);
 
@@ -84,6 +85,14 @@ const Header = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
+
+  useEffect(() => {
+    const handleScrollBg = () => {
+      setIsScrolled(window.pageYOffset > 10);
+    };
+    window.addEventListener("scroll", handleScrollBg);
+    return () => window.removeEventListener("scroll", handleScrollBg);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -471,7 +480,7 @@ const Header = () => {
         <motion.header
           className={`header ${visible ? "" : "hidden"} ${
             isCustomHeaderPage ? "custom-header" : ""
-          }`}
+          } ${isScrolled ? "scrolled" : ""}`}
           // initial={{
           //   backgroundColor: colorSettings.backgroundColor,
           //   color: colorSettings.color,

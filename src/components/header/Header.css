@@ -27,6 +27,20 @@
   transition: transform 0.3s ease, visibility 0.3s ease;
 }
 
+.header.scrolled {
+  background-color: black !important;
+}
+
+.header.scrolled:hover {
+  background-color: black !important;
+}
+
+.header.scrolled .menu-item button,
+.header.scrolled:hover .menu-item button,
+.header:not(.custom-header).scrolled:hover .header-nav .menu-item button {
+  color: white !important;
+}
+
 .header img {
   align-items: center;
   max-width: 17vw;
