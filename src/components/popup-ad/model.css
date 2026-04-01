@@ -78,6 +78,14 @@ p {
   color: white;
   text-decoration: none;
 }
+
+.model-inqurie:hover {
+  background-color: #333;
+}
+
+.model-inqurie:hover a {
+  color: white;
+}
 @media (max-width: 768px) {
   .model {
     width: 80vw; /* Adjust the width for smaller screens */
