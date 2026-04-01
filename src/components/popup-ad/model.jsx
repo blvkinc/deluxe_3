@@ -42,7 +42,7 @@ const Model = ({ isOpen, onClose }) => {
             <div className="model-title">
               <h1>  2026 Limited-Time Offer</h1>
               <p className="model-disc2">
-                Save $5000 Across The XP-TECH Range, Including A Free Upgrade to 400Ah Lithium Batteries
+                Save $5000 Across The <a href="/Xptec">XP-TECH</a> Range, Including A Free Upgrade to 400Ah Lithium Batteries
               </p>
             </div>
             <div className="model-content">
@@ -67,7 +67,7 @@ const Model = ({ isOpen, onClose }) => {
               {/* <h2>"Stock Demo OFF-GRID 19'6 Stormbreaker - 2 Bunks Available Now. Save 14K!"</h2> */}
             </div>
             <button className="model-button model-inqurie">
-              <a href="/Xptec">&#128073;Contact us</a>
+              <a href="/contact">&#128073;Contact us</a>
             </button>
           </motion.div>
         </div>
