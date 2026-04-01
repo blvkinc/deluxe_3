@@ -67,7 +67,7 @@ const Model = ({ isOpen, onClose }) => {
               {/* <h2>"Stock Demo OFF-GRID 19'6 Stormbreaker - 2 Bunks Available Now. Save 14K!"</h2> */}
             </div>
             <button className="model-button model-inqurie">
-              <a href="/contact">&#128073;Contact us</a>
+              <a href="/Xptec">&#128073;Contact us</a>
             </button>
           </motion.div>
         </div>

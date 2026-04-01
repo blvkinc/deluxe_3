@@ -52,7 +52,7 @@ const Eclipse22CouplesOffRoad = () => {
       <div className="component">
         <div className="background-image">
           <img
-            src="https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_6-min.webp"
+            src="https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216.webp"
             alt=""
           />
           <div className="image-overlay">
