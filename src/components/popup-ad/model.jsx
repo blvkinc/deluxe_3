@@ -40,9 +40,9 @@ const Model = ({ isOpen, onClose }) => {
               </button>
             </div>
             <div className="model-title">
-              <h1>  2026 Limited Time Offer</h1>
+              <h1>  2026 Limited-Time Offer</h1>
               <p className="model-disc2">
-                Save $5000 Across The XP-TECH Range Including A Free Upgrade to 400Ah Lithium Batteries
+                Save $5000 Across The <a href="/Xptec">XP-TECH</a> Range, Including A Free Upgrade to 400Ah Lithium Batteries
               </p>
             </div>
             <div className="model-content">

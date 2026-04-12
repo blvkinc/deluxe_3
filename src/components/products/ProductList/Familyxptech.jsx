@@ -38,21 +38,14 @@ const productstormbreaker = [
 const productriptide = [
   {
     id: 1,
-    name: "R20",
+    name: "R20'",
     price: "FULL OFF-ROAD: $136,900",
-    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp",
+    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/riptide20familyxptech",
   },
   {
     id: 2,
-    name: "R20'6\"",
-    price: "FULL OFF-ROAD: $137,900",
-    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp",
-    link: "/riptide206familyxptech",
-  },
-  {
-    id: 3,
-    name: "R22",
+    name: "R22'",
     price: "FULL OFF-ROAD: $138,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/riptide22familyxptech",
@@ -63,7 +56,7 @@ const Familyxptech = React.memo(() => {
   return (
     <div className="productgrid-container">
       <div className="productgrid-component">
-        <h1 className="product-grid-heading">FAMILY XP TECH</h1>
+        <h1 className="product-grid-heading">FAMILY XP-TECH</h1>
         <h2 className="product-grid-subheading">STORMBREAKER</h2>
         <div className="product-grid">
           {productstormbreaker.map((productstormbreaker) => (

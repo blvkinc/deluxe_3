@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import Home from "./components/home/Home";
 import Footer from "./components/footer/Footer";
 import LoadingSpinner from "./components/common/LoadingSpinner";
+import GoToTop from "./components/functions/GoToTop";
 
 const About = lazy(() => import("./components/about/About"));
 const Blog = lazy(() => import("./components/blog/Blog"));
@@ -108,6 +109,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter basename="/">
+        <GoToTop />
         <MemoizedHeader />
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>

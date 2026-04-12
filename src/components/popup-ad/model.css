@@ -38,6 +38,17 @@ p {
   font-size: 28px;
 }
 
+.model-disc2 a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.model-disc2 a:hover {
+  color: #007bff;
+  font-weight: 700;
+}
+
 .model-disc3 {
   color: black;
   font-size: 18px;
@@ -77,6 +88,14 @@ p {
 .model-inqurie a {
   color: white;
   text-decoration: none;
+}
+
+.model-inqurie:hover {
+  background-color: #333;
+}
+
+.model-inqurie:hover a {
+  color: white;
 }
 @media (max-width: 768px) {
   .model {
