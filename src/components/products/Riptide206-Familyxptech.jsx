@@ -1,0 +1,180 @@
+import React, { useState } from "react";
+import "./Products.css";
+import "../home/Home.css";
+import "../home/homecomponents/HomeComponent.css";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
+import GoToTop from "../functions/GoToTop";
+import SpecsRiptide206xptech from "./Specsmenu/SpecsRiptide206xptech";
+import TechspecRiptide206xptech from "./techspecs/TechspecRiptide206xptech";
+import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
+import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
+import { Link } from "react-router-dom";
+
+const scrollToSpecs = () => {
+  const specsDiv = document.getElementById("specs");
+  if (specsDiv) {
+    specsDiv.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+const scrollToLayout = () => {
+  const layoutDiv = document.getElementById("layout");
+  if (layoutDiv) {
+    layoutDiv.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
+const Riptide206FamilyXPTech = () => {
+  const [isWarrantyPopupOpen, setIsWarrantyPopupOpen] = useState(false);
+
+  const openWarrantyPopupWarrantyPolicy = () => {
+    setIsWarrantyPopupOpen(true);
+  };
+
+  const closeWarrantyPopupWarrantyPolicy = () => {
+    setIsWarrantyPopupOpen(false);
+  };
+
+  return (
+    <div className="container">
+      <div className="component">
+        <div className="background-image">
+          <img
+            src="https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20small%20window-min.webp"
+            alt=""
+          />
+          <div className="image-overlay">
+            <div className="button-container">
+              <h1 className="Product-header revealUp">R20'6"</h1>
+              <button
+                onClick={scrollToLayout}
+                className="btn hover-border-1 revealUp"
+              >
+                Layout
+              </button>
+              <button
+                onClick={scrollToSpecs}
+                className="btn hover-border-1 revealUp"
+              >
+                Specs
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="slideshowcomopnent">
+        <EnhancedGallery
+          sections={[
+            {
+              name: "Exterior",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(1).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(2).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(3).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(4).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(5).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(6).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(7).webp",
+              ],
+              description: "",
+            },
+            {
+              name: "Layout",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/rip20layout.webp",
+              ],
+              description: "",
+            },
+            {
+              name: "Inside",
+              images: [
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(1).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(2).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(3).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(4).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(5).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(6).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(7).webp",
+                "https://deluxcaravan.b-cdn.net/assets/Rip20/in%20(8).webp",
+              ],
+              description: "",
+            },
+          ]}
+          productName={`Riptide 20' 6"`}
+        />
+      </div>
+      <div className="component" id="xptechbanner">
+        <Link to="/xptec">
+          <h1 style={{ color: "white", fontSize: "8vw" }}>
+            <span style={{ textTransform: "uppercase" }}>F</span>
+            <span style={{ textTransform: "lowercase" }}>ind out </span>
+            <span style={{ textTransform: "uppercase" }}>m</span>
+            <span style={{ textTransform: "lowercase" }}>ore</span>
+            <br /> <span style={{ textTransform: "uppercase" }}>a</span>
+            <span style={{ textTransform: "lowercase" }}>bout</span>{" "}
+            <span style={{ textTransform: "uppercase" }}>XP-TECH</span>
+          </h1>
+        </Link>
+      </div>
+      <div className="component">
+        <div
+          className="product-container"
+          id="layout"
+          style={{
+            gridGap: "100px",
+          }}
+        >
+          <div className="description">
+            <p>
+              The Riptide 20' 6" offers the perfect balance of comfort and
+              functionality for your family adventures. This model combines
+              spacious living areas with practical features, making it an ideal
+              choice for families seeking a reliable and comfortable caravan.
+              With its well-thought-out layout and premium finishes, the Riptide
+              20' 6" provides all the amenities you need for memorable journeys.
+              Experience the perfect blend of style and substance with this
+              versatile family caravan.
+            </p>
+            <p>
+              <button className="virtual-btn">
+                <a href="/tour">Have a look at RIPTIDE 20' 6"</a>
+              </button>
+            </p>
+          </div>
+          <div className="package-details">
+            <p>
+              <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
+            </p>
+            <p>
+              <h3>WORTH $7000 !</h3>
+            </p>
+            <ul>
+              <li>DOMETIC FRESH JET AIRCON</li>
+              <li>188L DOMETIC COMPRESSOR FRIDGE</li>
+              <li>3 X 170W SOLAR PANELS</li>
+              <li>2 X 110AH LITHIUM BATTERIES</li>
+              <li>Raptor Painted Chassis</li>
+              <li>AuFocus Diesel Heater</li>
+              <li>2 X RECOVERY POINTS</li>
+              <li>AIRBAG READY SUSPENSION</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="component" id="specs">
+        <TechspecRiptide206xptech />
+      </div>
+      <div className="component" id="specs">
+        <h1>Specs Menu</h1>
+        <SpecsRiptide206xptech />
+      </div>
+      <div>
+        <ResponsiveTable />
+      </div>
+      <GoToTop />
+    </div>
+  );
+};
+
+export default React.memo(Riptide206FamilyXPTech);

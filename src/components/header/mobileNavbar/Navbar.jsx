@@ -159,7 +159,7 @@ const Navbar = () => {
 
                             <ul className="range-list">
                               {/* FAMILY OFF-ROAD SUBMENU */}
-                              <li className="nav-item">
+                              <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/familyoffroad">
                                   {" "}
                                   <p className="social">FAMILY OFF-ROAD </p>
@@ -167,7 +167,7 @@ const Navbar = () => {
                               </li>
 
                               {/* FAMILY XP-TECH SUBMENU */}
-                              <li className="nav-item">
+                              <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/familyxptech">
                                   <p className="social">FAMILY XP-TECH </p>
                                 </a>
@@ -220,14 +220,14 @@ const Navbar = () => {
 
                             <ul className="range-list">
                               {/* COUPLES OFF-ROAD SUBMENU */}
-                              <li className="nav-item">
+                              <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/couplesoffroad">
                                   <p className="social">COUPLES OFF-ROAD </p>
                                 </a>
                               </li>
 
                               {/* COUPLES XP-TECH SUBMENU */}
-                              <li className="nav-item">
+                              <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/couplesxptech">
                                   <p className="social">COUPLES XP-TECH </p>
                                 </a>

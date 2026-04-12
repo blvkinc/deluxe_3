@@ -35,6 +35,12 @@ const Riptide20FamilyXPTech = lazy(() =>
 const Riptide22FamilyXPTech = lazy(() =>
   import("./components/products/Riptide22-Familyxptech")
 );
+const Riptide206FamilyOffRoad = lazy(() =>
+  import("./components/products/Riptide206-Familyoffroad")
+);
+const Riptide206FamilyXPTech = lazy(() =>
+  import("./components/products/Riptide206-Familyxptech")
+);
 const Stormbreaker18FamilyOffRoad = lazy(() =>
   import("./components/products/Stormbreaker18-Familyoffroad")
 );
@@ -143,6 +149,14 @@ function App() {
             <Route
               path="/riptide22familyxptech"
               element={<Riptide22FamilyXPTech />}
+            />
+            <Route
+              path="/riptide206familyoffroad"
+              element={<Riptide206FamilyOffRoad />}
+            />
+            <Route
+              path="/riptide206familyxptech"
+              element={<Riptide206FamilyXPTech />}
             />
             <Route
               path="/stormbreaker18familyoffroad"
