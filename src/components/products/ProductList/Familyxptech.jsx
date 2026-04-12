@@ -45,6 +45,13 @@ const productriptide = [
   },
   {
     id: 2,
+    name: "R20'6\"",
+    price: "FULL OFF-ROAD: $137,900",
+    image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp",
+    link: "/riptide206familyxptech",
+  },
+  {
+    id: 3,
     name: "R22",
     price: "FULL OFF-ROAD: $138,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",

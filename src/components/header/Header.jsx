@@ -174,13 +174,24 @@ const Header = () => {
                   {
                     label: (
                       <img
-                        src="https://deluxcaravan.b-cdn.net/assets/Rip20/Riptide%20header-min.webp"
+                        src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp"
                         alt="Riptide20"
                       />
                     ),
                     link: "/riptide20familyoffroad",
                     text: "Riptide 20",
                     price: "FULL OFF-ROAD: $96,900",
+                  },
+                  {
+                    label: (
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp"
+                        alt="Riptide206"
+                      />
+                    ),
+                    link: "/riptide206familyoffroad",
+                    text: "Riptide 20'6\"",
+                    price: "FULL OFF-ROAD: $97,900",
                   },
                   {
                     label: (
@@ -265,6 +276,17 @@ const Header = () => {
                     link: "/riptide20familyxptech",
                     text: "R20",
                     price: "FULL OFF-ROAD: $136,900",
+                  },
+                  {
+                    label: (
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp"
+                        alt="Riptide206"
+                      />
+                    ),
+                    link: "/riptide206familyxptech",
+                    text: "R20'6\"",
+                    price: "FULL OFF-ROAD: $137,900",
                   },
                   {
                     label: (
@@ -628,6 +650,7 @@ const Header = () => {
                                                               deepNestedSubitem.link ||
                                                               "#"
                                                             }
+                                                            onClick={handleMenuLeave}
                                                           >
                                                             <motion.div
                                                               className="deep-nested-submenu-item"
