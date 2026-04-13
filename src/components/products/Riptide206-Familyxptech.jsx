@@ -45,7 +45,7 @@ const Riptide206FamilyXPTech = () => {
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">R20'6"</h1>
+              <h1 className="Product-header revealUp">R206</h1>
               <button
                 onClick={scrollToLayout}
                 className="btn hover-border-1 revealUp"
@@ -82,7 +82,7 @@ const Riptide206FamilyXPTech = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/rip20layout.webp",
+                "https://deluxcaravan.b-cdn.net/assets/20%606/20%606.png",
               ],
               description: "",
             },
@@ -101,7 +101,7 @@ const Riptide206FamilyXPTech = () => {
               description: "",
             },
           ]}
-          productName={`Riptide 20' 6"`}
+          productName={`Riptide 20'6"`}
         />
       </div>
       <div className="component" id="xptechbanner">
@@ -127,18 +127,18 @@ const Riptide206FamilyXPTech = () => {
         >
           <div className="description">
             <p>
-              The Riptide 20' 6" offers the perfect balance of comfort and
+              The Riptide 20'6" offers the perfect balance of comfort and
               functionality for your family adventures. This model combines
               spacious living areas with practical features, making it an ideal
               choice for families seeking a reliable and comfortable caravan.
               With its well-thought-out layout and premium finishes, the Riptide
-              20' 6" provides all the amenities you need for memorable journeys.
+              20'6" provides all the amenities you need for memorable journeys.
               Experience the perfect blend of style and substance with this
               versatile family caravan.
             </p>
             <p>
               <button className="virtual-btn">
-                <a href="/tour">Have a look at RIPTIDE 20' 6"</a>
+                <a href="/tour">Have a look at RIPTIDE 20'6"</a>
               </button>
             </p>
           </div>
