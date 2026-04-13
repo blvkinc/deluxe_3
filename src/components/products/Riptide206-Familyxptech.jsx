@@ -82,7 +82,7 @@ const Riptide206FamilyXPTech = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/rip20layout.webp",
+                "https://deluxcaravan.b-cdn.net/assets/20%606/20%606.png",
               ],
               description: "",
             },
