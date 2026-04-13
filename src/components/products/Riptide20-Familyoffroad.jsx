@@ -83,13 +83,12 @@ const Riptide20FamilyOffRoad = () => {
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(1).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(2).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(3).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(4).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(5).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(6).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(7).webp"
+                "https://deluxcaravan.b-cdn.net/assets/E22/1-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/3-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/4-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/5-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/6-min.webp"
               ],
               description: "Explore the stunning exterior design and features",
             },

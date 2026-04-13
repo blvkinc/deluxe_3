@@ -52,7 +52,7 @@ const Riptide206FamilyOffRoad = () => {
       <div className="component">
         <div className="background-image">
           <img
-            src="https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(7).webp"
+            src="https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20Exterior-min.webp"
             alt=""
           />
           <div className="image-overlay">
@@ -83,13 +83,12 @@ const Riptide206FamilyOffRoad = () => {
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(1).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(2).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(3).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(4).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(5).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(6).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(7).webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/1-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/3-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/4-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/5-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/E22/6-min.webp",
               ],
               description: "Explore the stunning exterior design and features",
             },
@@ -115,7 +114,7 @@ const Riptide206FamilyOffRoad = () => {
               description: "Interior features and luxury amenities",
             },
           ]}
-          productName={`Riptide 20' 6"`}
+          productName={`Riptide 20'6"`}
         />
       </div>
       <div className="component">
@@ -128,18 +127,18 @@ const Riptide206FamilyOffRoad = () => {
         >
           <div className="description">
             <p>
-              The Riptide 20' 6" offers the perfect balance of comfort and
+              The Riptide 20'6" offers the perfect balance of comfort and
               functionality for your family adventures. This model combines
               spacious living areas with practical features, making it an ideal
               choice for families seeking a reliable and comfortable caravan.
               With its well-thought-out layout and premium finishes, the Riptide
-              20' 6" provides all the amenities you need for memorable journeys.
+              20'6" provides all the amenities you need for memorable journeys.
               Experience the perfect blend of style and substance with this
               versatile family caravan.
             </p>
             <p>
               <button className="virtual-btn">
-                <a href="/tour">Have a look at RIPTIDE 20' 6"</a>
+                <a href="/tour">Have a look at RIPTIDE 20'6"</a>
               </button>
             </p>
           </div>
