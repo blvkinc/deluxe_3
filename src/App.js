@@ -11,6 +11,12 @@ const About = lazy(() => import("./components/about/About"));
 const Blog = lazy(() => import("./components/blog/Blog"));
 const Video = lazy(() => import("./components/video/Video"));
 const Maintenance = lazy(() => import("./components/maintenance/Maintenance"));
+const Eclipse18CouplesOffRoad = lazy(() =>
+  import("./components/products/Eclipse18-Couplesoffroad")
+);
+const Eclipse18CouplesXPTech = lazy(() =>
+  import("./components/products/Eclipse18-Couplesxptech")
+);
 const Eclipse21CouplesOffRoad = lazy(() =>
   import("./components/products/Eclipse21-Couplesoffroad")
 );
@@ -118,6 +124,14 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/video" element={<Video />} />
             <Route path="/maintenance" element={<Maintenance />} />
+            <Route
+              path="/eclipse18couplesoffroad"
+              element={<Eclipse18CouplesOffRoad />}
+            />
+            <Route
+              path="/eclipse18couplesxptech"
+              element={<Eclipse18CouplesXPTech />}
+            />
             <Route
               path="/eclipse21couplesoffroad"
               element={<Eclipse21CouplesOffRoad />}

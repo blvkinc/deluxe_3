@@ -7,13 +7,20 @@ import "../../home/homecomponents/HomeComponent.css";
 const products = [
   {
     id: 1,
+    name: "ECLIPSE 18' 6\"",
+    price: "$84,900",
+    image: "https://deluxcaravan.b-cdn.net/assets/header/216.webp",
+    link: "/eclipse18couplesoffroad",
+  },
+  {
+    id: 2,
     name: "ECLIPSE 21' 6\"",
     price: "$92,900",
     image: "https://deluxcaravan.b-cdn.net/assets/header/216.webp",
     link: "/eclipse21couplesoffroad",
   },
   {
-    id: 2,
+    id: 3,
     name: "ECLIPSE 22'",
     price: "$98,900",
     image: "https://deluxcaravan.b-cdn.net/assets/header/216.webp",
