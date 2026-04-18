@@ -341,7 +341,7 @@ const Header = () => {
                     ),
                     link: "/eclipse18couplesoffroad",
                     text: "ECLIPSE 18' 6\"",
-                    price: "$84,900",
+                    price: "$89,000",
                   },
                   {
                     label: (

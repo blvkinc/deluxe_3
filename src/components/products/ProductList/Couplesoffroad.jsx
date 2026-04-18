@@ -8,7 +8,7 @@ const products = [
   {
     id: 1,
     name: "ECLIPSE 18' 6\"",
-    price: "$84,900",
+    price: "$89,000",
     image: "https://deluxcaravan.b-cdn.net/assets/header/216.webp",
     link: "/eclipse18couplesoffroad",
   },
