@@ -336,6 +336,17 @@ const Header = () => {
                     label: (
                       <img
                         src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
+                        alt="Eclipse 186"
+                      />
+                    ),
+                    link: "/eclipse18couplesoffroad",
+                    text: "ECLIPSE 18' 6\"",
+                    price: "$89,000",
+                  },
+                  {
+                    label: (
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/header/216.webp"
                         alt="Eclipse 216"
                       />
                     ),
@@ -366,6 +377,17 @@ const Header = () => {
                 label: "ECLIPSE",
                 link: "",
                 submenu: [
+                  {
+                    label: (
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp"
+                        alt="Eclipse 186"
+                      />
+                    ),
+                    link: "/eclipse18couplesxptech",
+                    text: "ECLIPSE 18' 6\"",
+                    // price: "",
+                  },
                   {
                     label: (
                       <img
