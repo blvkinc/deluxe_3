@@ -52,7 +52,7 @@ const CarouselSection = () => {
       },
       {
         name: 'Eclipse 18\'6" Couples',
-        price: '$89,900',
+        price: '$89,000',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
         link: '/eclipse18couplesoffroad'
       },
@@ -105,6 +105,12 @@ const CarouselSection = () => {
         price: '$136,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/riptide20familyxptech'
+      },
+      {
+        name: "R20'6\"",
+        price: '$137,900',
+        image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
+        link: '/riptide206familyxptech'
       },
       {
         name: 'E186',
