@@ -423,7 +423,8 @@ const Header = () => {
         submenu: [
           { label: "ABOUT US", link: "/about" },
           { label: "BLOGS", link: "/blog" },
-          { label: "VIDEOS", link: "/video" },
+          { label: "MEDIA", link: "/media" },
+          { label: "BROCHURES", link: "/brochures" },
           { label: "WARRANTY POLICY", link: "/warranty" },
           { label: "VIRTUAL TOURS", link: "/tour" },
         ],

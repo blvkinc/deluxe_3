@@ -279,7 +279,10 @@ const Navbar = () => {
                               <a href="/blog">BLOGS</a>
                             </li>
                             <li>
-                              <a href="/video">VIDEOS</a>
+                              <a href="/media">MEDIA</a>
+                            </li>
+                            <li>
+                              <a href="/brochures">BROCHURES</a>
                             </li>
                             <li>
                               <a href="/warranty">WARRANTY POLICY</a>
