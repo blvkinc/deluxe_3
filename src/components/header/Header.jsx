@@ -290,7 +290,7 @@ const Header = () => {
                     ),
                     link: "/riptide20familyxptech",
                     text: "R20'",
-                    price: "FULL OFF-ROAD: $136,900",
+                    price: "FULL OFF-ROAD: $138,900",
                   },
                   {
                     label: (
@@ -397,7 +397,7 @@ const Header = () => {
                     ),
                     link: "/eclipse21couplesxptech",
                     text: "ECLIPSE 21' 6\"",
-                    // price: "$92,900",
+                    price: "$136,900",
                   },
                   {
                     label: (
@@ -408,7 +408,7 @@ const Header = () => {
                     ),
                     link: "/eclipse22couplesxptech",
                     text: "ECLIPSE 22'",
-                    // price: "$98,900",
+                    price: "$138,900",
                   },
                 ],
               },

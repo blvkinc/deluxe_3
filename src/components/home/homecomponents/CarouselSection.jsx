@@ -102,31 +102,31 @@ const CarouselSection = () => {
       },
       {
         name: 'R20',
-        price: '$136,900',
+        price: '$138,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/riptide20familyxptech'
       },
       {
         name: "R20'6\"",
-        price: '$137,900',
+        price: '$138,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/riptide206familyxptech'
       },
       {
         name: 'E186',
-        // price: '$89,900',
+        price: '$129,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/eclipse18couplesxptech'
       },
       {
         name: 'E21',
-        // price: '$89,900',
+        price: '$136,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/eclipse21couplesxptech'
       },
       {
         name: 'E22',
-        // price: '$92,900',
+        price: '$138,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/eclipse22couplesxptech'
       }
