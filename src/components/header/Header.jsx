@@ -206,7 +206,7 @@ const Header = () => {
                     ),
                     link: "/riptide206familyoffroad",
                     text: "Riptide 20'6\"",
-                    price: "FULL OFF-ROAD: $97,900",
+                    price: "FULL OFF-ROAD: $98,900",
                   },
                   {
                     label: (
@@ -301,7 +301,7 @@ const Header = () => {
                     ),
                     link: "/riptide206familyxptech",
                     text: "R20'6\"",
-                    price: "FULL OFF-ROAD: $137,900",
+                    price: "FULL OFF-ROAD: $138,900",
                   },
                   {
                     label: (
@@ -352,7 +352,7 @@ const Header = () => {
                     ),
                     link: "/eclipse21couplesoffroad",
                     text: "ECLIPSE 21' 6\"",
-                    price: "$92,900",
+                    price: "$96,900",
                   },
                   {
                     label: (
@@ -386,7 +386,7 @@ const Header = () => {
                     ),
                     link: "/eclipse18couplesxptech",
                     text: "ECLIPSE 18' 6\"",
-                    // price: "",
+                    price: "$129,900",
                   },
                   {
                     label: (
@@ -397,7 +397,7 @@ const Header = () => {
                     ),
                     link: "/eclipse21couplesxptech",
                     text: "ECLIPSE 21' 6\"",
-                    // price: "$92,900",
+                    price: "$136,900",
                   },
                   {
                     label: (
@@ -408,7 +408,7 @@ const Header = () => {
                     ),
                     link: "/eclipse22couplesxptech",
                     text: "ECLIPSE 22'",
-                    // price: "$98,900",
+                    price: "$138,900",
                   },
                 ],
               },

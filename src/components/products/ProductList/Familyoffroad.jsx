@@ -44,7 +44,7 @@ const productriptide = [
   {
     id: 2,
     name: "Riptide 20'6\"",
-    price: "FULL OFF-ROAD: $97,900",
+    price: "FULL OFF-ROAD: $98,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp",
     link: "/riptide206familyoffroad",
   },
