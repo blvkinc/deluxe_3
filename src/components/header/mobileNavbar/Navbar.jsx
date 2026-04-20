@@ -8,7 +8,8 @@ const Navbar = () => {
   const isCustomPage =
     location.pathname === "/maintenance" ||
     location.pathname === "/warranty" ||
-    location.pathname === "/Xptec";
+    location.pathname === "/Xptec" ||
+    location.pathname.startsWith("/blog/");
 
   const [isOpen, setIsOpen] = useState(false);
   const navbarRef = useRef();
@@ -275,16 +276,13 @@ const Navbar = () => {
                               <a href="/about">ABOUT US</a>
                             </li>
                             <li>
-                              <a href="/blog">UPDATES</a>
+                              <a href="/blog">BLOGS</a>
                             </li>
                             <li>
                               <a href="/video">VIDEOS</a>
                             </li>
                             <li>
                               <a href="/warranty">WARRANTY POLICY</a>
-                            </li>
-                            <li>
-                              <a href="/maintenance">SERVICE & MAINTENANCE</a>
                             </li>
                             <li>
                               <a href="/tour">VIRTUAL TOURS</a>

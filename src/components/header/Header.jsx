@@ -8,7 +8,9 @@ import Navbar from "./mobileNavbar/Navbar";
 const Header = () => {
   const location = useLocation();
   const CUSTOM_HEADER_PAGES = ["/maintenance", "/warranty"];
-  const isCustomHeaderPage = CUSTOM_HEADER_PAGES.includes(location.pathname);
+  const isCustomHeaderPage =
+    CUSTOM_HEADER_PAGES.includes(location.pathname) ||
+    location.pathname.startsWith("/blog/");
 
   const [activeMenu, setActiveMenu] = useState(null);
   const [isMobile, setIsMobile] = useState(
@@ -420,10 +422,9 @@ const Header = () => {
         label: "RESOURCES",
         submenu: [
           { label: "ABOUT US", link: "/about" },
-          { label: "UPDATES", link: "/blog" },
+          { label: "BLOGS", link: "/blog" },
           { label: "VIDEOS", link: "/video" },
           { label: "WARRANTY POLICY", link: "/warranty" },
-          { label: "SERVICE & MAINTENANCE", link: "/maintenance" },
           { label: "VIRTUAL TOURS", link: "/tour" },
         ],
       },
