@@ -64,7 +64,7 @@ const CarouselSection = () => {
       },
       {
         name: 'Eclipse 22 Couples',
-        price: '$92,900',
+        price: '$98,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
         link: '/eclipse22couplesoffroad'
       }
