@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -8,6 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
 import SpecsEclipse21 from "./Specsmenu/SpecsEclipse21";
 import TechspecEclipse21 from "./techspecs/TechspecEclipse21";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Eclipse21OffroadPdf from "../../assets/pdfs/Eclipse 21'6_ Couples Off-Road — Deluxe Caravans.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,6 +28,8 @@ const scrollToLayout = () => {
 };
 
 const Eclipse21CouplesOffRoad = () => {
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
+
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -140,7 +144,19 @@ const Eclipse21CouplesOffRoad = () => {
               you'll be treated to an exceptionally roomy layout, complete
               with all the amenities you'd expect from a luxury RV.
             </p>
-
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
+            >
+              Download Our Brochure and Upgrade List
+            </button>
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Eclipse 21'6 Couples Off-Road"
+                pdfUrl={Eclipse21OffroadPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>

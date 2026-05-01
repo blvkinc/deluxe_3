@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 import GoToTop from "../functions/GoToTop";
 import SpecsEclipse18 from "./Specsmenu/SpecsEclipse18";
 import TechspecEclipse18 from "./techspecs/TechspecEclipse18";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Eclipse18XptechPdf from "../../assets/pdfs/Eclipse 18'6_ Couples XP-Tech — Deluxe Caravans.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -28,6 +30,8 @@ const scrollToLayout = () => {
 };
 
 const Eclipse18CouplesXPTech = () => {
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
+
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -153,6 +157,19 @@ const Eclipse18CouplesXPTech = () => {
               you'll be treated to an exceptionally roomy layout, complete with
               all the amenities you'd expect from a luxury RV.
             </p>
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
+            >
+              Download Our Brochure and Upgrade List
+            </button>
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Eclipse 18'6 Couples XP-Tech"
+                pdfUrl={Eclipse18XptechPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>

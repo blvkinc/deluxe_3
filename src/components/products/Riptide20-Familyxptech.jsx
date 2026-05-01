@@ -8,6 +8,8 @@ import GoToTop from "../functions/GoToTop";
 import SpecsRiptide20xptech from "./Specsmenu/SpecsRiptide20xptech";
 import TechspecRiptide20xptech from "./techspecs/TechspecRiptide20xptech";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Riptide20XptechPdf from "../../assets/pdfs/Riptide R20 Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -27,6 +29,7 @@ const scrollToLayout = () => {
 
 const Riptide20FamilyXPTech = () => {
   const [isWarrantyPopupOpen, setIsWarrantyPopupOpen] = useState(false);
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   const openWarrantyPopupWarrantyPolicy = () => {
     setIsWarrantyPopupOpen(true);
@@ -142,6 +145,19 @@ const Riptide20FamilyXPTech = () => {
                 <a href="/tour">Have a look at RIPTIDE 20`</a>
               </button>
             </p>
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
+            >
+              Download Our Brochure and Upgrade List
+            </button>
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Riptide 20 Family XP-Tech"
+                pdfUrl={Riptide20XptechPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>

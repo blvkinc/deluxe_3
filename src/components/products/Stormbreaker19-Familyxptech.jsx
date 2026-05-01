@@ -8,6 +8,8 @@ import { gsap } from "gsap";
 import Storm19specs from "./Specsmenu/Specs19xptech";
 import Techspec19xptech from "./techspecs/Techspec19xptech";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Storm19XptechPdf from "../../assets/pdfs/Stormbreaker 19'6_ Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -58,6 +60,8 @@ const Stormbreaker19FamilyXPTech = () => {
   const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
     setWarrantyPopupOpen(false);
   }, []);
+
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   return (
     <div className="container">
@@ -192,15 +196,19 @@ const Stormbreaker19FamilyXPTech = () => {
                 <a href="/tour">Have a look at STORMBREAKER 19`6</a>
               </button>
             </p>
-            {/* <button
-              className="btn hover-border-1 revealUp"
-              onClick={openWarrantyPopupWarrantyPolicy}
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
             >
-                Download Our Brochure and Upgrade List
+              Download Our Brochure and Upgrade List
             </button>
-            {isWarrantyPopupOpen && (
-              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
-            )} */}
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Stormbreaker 19'6 Family XP-Tech"
+                pdfUrl={Storm19XptechPdf}
+              />
+            )}
           </div>
           <div className="image">
             <iframe

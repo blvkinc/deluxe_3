@@ -1,0 +1,135 @@
+import React, { useState, useEffect, useMemo } from "react";
+import { Helmet } from "react-helmet";
+import GoToTop from "../functions/GoToTop";
+import "./Media.css";
+
+const videos = [
+  {
+    title: "Deluxe Caravans - Stormbreaker",
+    description:
+      "Hitting the road for a cross-country adventure or a quick escape from suburbia should be an experience you enjoy.",
+    videoId: "ISuFS0leNzA?si=b2q9NWYR6FnnMDCM",
+  },
+  {
+    title: "GORV TV REVIEW I 18.6 FT Deluxe Caravans Stormbreaker",
+    description:
+      "Don't forget to also like, subscribe and follow Deluxe Caravans",
+    videoId: "5P6fmJuoTjU?si=nKhV6QA8maLXZWQU",
+  },
+  {
+    title: "We Built A $120,000 CARAVAN - Storm breaker.. Launch Video!!",
+    description:
+      "Our first look at the most eco-friendly optioned caravan in the market. We offer more than just a great-looking caravan.",
+    videoId: "a_KE1CVPT48?si=xmPrmqL9fsyB3OIr",
+  },
+  {
+    title:
+      "OUR SMALLEST FAMILY BUNK CARAVAN I FULL 4K VERSION I 18.6FT Deluxe Caravan - Stormbreaker",
+    description: "18.6 FT Deluxe Caravan - Stormbreaker",
+    videoId: "SpcMnSexZ7E?si=w5l_1XhZaWJ-NuIF",
+  },
+  {
+    title: "Sustainable And Dirt Resistant Caravan Interior?",
+    description:
+      "Have you heard about the eco-friendly features that @vanlifestraya is super excited about on their new Deluxe Caravan?",
+    videoId: "FDPZOYnzK-4?si=oXM-HGVpUKpjeqe8",
+  },
+  {
+    title: "THE ULTIMATE BATTERY POWER FOR OFF-GRID LIVING.",
+    description:
+      "This video takes you through the Victron Battery Management System and how it powers off-grid living on a 23Ft Stormbreaker.",
+    videoId: "3vnXmXMpJvg?si=74DDJUEOpZL4e9gC",
+  },
+  {
+    title: "CARAVAN TOUR I 23FT Deluxe Caravans - Stormbreaker",
+    description:
+      "A full tour of the 23FT Stormbreaker by Deluxe Caravans Australia.",
+    videoId: "lYee_55yghM?si=rz-3SYc5qfeSVOFQ",
+  },
+  {
+    title: "EXTERIOR CARAVAN TOUR I 21.6 FT Deluxe Caravans - Stormbreaker",
+    description: "Check out our Stormbreaker 21'6 caravan's exterior.",
+    videoId: "ICG-86pUr-g?si=dVW1psZGbV3h9KKN",
+  },
+];
+
+const TABS = ["VIDEOS", "UPDATES"];
+
+const Media = () => {
+  const [activeTab, setActiveTab] = useState("VIDEOS");
+
+  const elfSightScript = useMemo(() => {
+    const script = document.createElement("script");
+    script.src = "https://static.elfsight.com/platform/platform.js";
+    script.setAttribute("data-use-service-core", "");
+    script.async = true;
+    return script;
+  }, []);
+
+  useEffect(() => {
+    document.body.appendChild(elfSightScript);
+    return () => {
+      document.body.removeChild(elfSightScript);
+    };
+  }, [elfSightScript]);
+
+  return (
+    <div className="media-page">
+      <div className="media-hero">
+        <h1 className="media-heading">MEDIA</h1>
+        <p className="media-subheading">Videos and latest updates</p>
+      </div>
+
+      <div className="media-tabs">
+        {TABS.map((tab) => (
+          <button
+            key={tab}
+            className={`media-tab${activeTab === tab ? " media-tab--active" : ""}`}
+            onClick={() => setActiveTab(tab)}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
+
+      {activeTab === "VIDEOS" && (
+        <div className="media-videos">
+          <div className="media-video-grid">
+            {videos.map((video, index) => (
+              <div key={index} className="media-video-card">
+                <iframe
+                  title={video.title}
+                  src={`https://www.youtube.com/embed/${video.videoId}`}
+                  frameBorder="0"
+                  allowFullScreen
+                />
+                <div className="media-video-info">
+                  <h3>{video.title}</h3>
+                  <p>{video.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {activeTab === "UPDATES" && (
+        <div className="media-updates">
+          <div className="elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5" />
+        </div>
+      )}
+
+      <Helmet>
+        <script
+          src="https://static.elfsight.com/platform/platform.js"
+          data-use-service-core
+          defer
+        />
+      </Helmet>
+
+      <GoToTop />
+    </div>
+  );
+};
+
+export default React.memo(Media);

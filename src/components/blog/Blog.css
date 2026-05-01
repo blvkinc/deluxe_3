@@ -1,101 +1,152 @@
-/* Blog Page - Modern Design */
-.container {
+.blog-page {
   min-height: 100vh;
-  /*background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);*/
+  background: #000;
+  color: #fff;
   padding-top: 100px;
+  padding-bottom: 80px;
 }
 
-.blog_component {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
+.blog-hero {
   text-align: center;
+  padding: 60px 20px 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 60px;
 }
 
-.blog_title {
-  font-size: 3.5rem;
+.blog-heading {
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 20px;
-  color: #2d2d2d;
+  letter-spacing: 6px;
+  color: #fff;
+  margin-bottom: 16px;
   position: relative;
   display: inline-block;
 }
 
-.blog_title::after {
+.blog-heading::after {
   content: "";
   position: absolute;
   bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;
-  height: 4px;
-  background: linear-gradient(90deg, #007bff, #0056b3);
+  width: 60px;
+  height: 3px;
+  background: #fff;
   border-radius: 2px;
 }
 
-.blog_subtitle {
-  font-size: 1.3rem;
-  font-weight: 300;
+.blog-subheading {
+  font-size: 0.85rem;
+  color: #ababab;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 28px;
+}
+
+.blog-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2px;
+}
+
+.blog-card {
+  display: block;
+  text-decoration: none;
+  background: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 36px;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.blog-card:hover {
+  background: #1a1a1a;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.blog-card-category {
+  font-size: 0.65rem;
+  letter-spacing: 4px;
   color: #666;
-  margin-bottom: 60px;
-  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 18px;
 }
 
-/* ElfSight Widget Container */
-.elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5 {
-  margin-top: 40px;
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border: 1px solid #e9ecef;
+.blog-card-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.4;
+  letter-spacing: 1px;
 }
 
-/* Responsive Design */
+.blog-card-excerpt {
+  font-size: 0.88rem;
+  color: #ababab;
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
+
+.blog-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+}
+
+.blog-card-date {
+  font-size: 0.7rem;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.blog-card-cta {
+  font-size: 0.7rem;
+  color: #fff;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
 @media (max-width: 768px) {
-  .container {
+  .blog-page {
     padding-top: 80px;
   }
 
-  .blog_component {
-    padding: 30px 15px;
-    max-width: 600px;
-  }
-
-  .blog_title {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-  }
-
-  .blog_subtitle {
-    font-size: 1.1rem;
+  .blog-hero {
+    padding: 40px 20px 40px;
     margin-bottom: 40px;
   }
 
-  .elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5 {
-    padding: 20px;
-    margin-top: 30px;
+  .blog-heading {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .blog-grid {
+    padding: 0 20px;
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+
+  .blog-card {
+    padding: 32px 24px;
   }
 }
 
 @media (max-width: 480px) {
-  .blog_title {
-    font-size: 2rem;
+  .blog-heading {
+    font-size: 1.6rem;
   }
 
-  .blog_subtitle {
-    font-size: 1rem;
+  .blog-hero {
+    padding: 30px 15px 35px;
   }
 
-  .elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5 {
-    padding: 15px;
-  }
-  .blog_component {
-    max-width: 400px;
-  }
-}
-@media (max-width: 375px) {
-  .blog_component {
-    max-width: 300px;
+  .blog-grid {
+    padding: 0 15px;
   }
 }

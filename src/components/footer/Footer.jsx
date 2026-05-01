@@ -16,6 +16,8 @@ const Footer = React.memo(() => {
               width="120px"
             />
           </Link>
+          <div className="footer-partnership">Deluxe Caravans X Infinite RV</div>
+          <div className="footer-tagline">A partnership creating infinite possibilities</div>
         </div>
         <div className="footer-links-column">
           <div className="footer-links-header">Caravans</div>
@@ -55,6 +57,9 @@ const Footer = React.memo(() => {
           <Link to="/Xptec" className="footer-link">
             XP-TECH
           </Link>
+          <Link to="/buildjourney" className="footer-link">
+            The Build Journey
+          </Link>
         </div>
         <div className="footer-links-column">
           <div className="footer-links-header">Contact</div>
@@ -77,7 +82,7 @@ const Footer = React.memo(() => {
 
       <div className="copyright-and-social">
         <div className="copyright">
-          © {new Date().getFullYear()} Copyright: Deluxe Caravans
+          © {new Date().getFullYear()} Copyright: Deluxe Caravans X Infinite RV
         </div>
         <div className="social-icons">
           <div className="social-links">

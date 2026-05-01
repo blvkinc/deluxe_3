@@ -1,0 +1,377 @@
+.br-page {
+  min-height: 100vh;
+  background: #000;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.br-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+/* Header */
+.br-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.br-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fff;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.br-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.br-header p {
+  font-size: 0.88rem;
+  color: #ababab;
+  margin: 1.2rem 0 0;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+/* Brochure grid */
+.br-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.br-card {
+  background: #0a0a0a;
+  border: none;
+  padding: 1.4rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  user-select: none;
+  outline: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.br-card:hover {
+  background: #141414;
+}
+
+.br-card--selected {
+  background: #141414;
+  outline: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.br-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.br-card-icon {
+  width: 40px;
+  height: 40px;
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.br-card-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.br-check {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.br-check--active {
+  background: #fff;
+  border-color: #fff;
+}
+
+.br-card h3 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+}
+
+.br-card p {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Error message */
+.br-error-msg {
+  font-size: 0.78rem;
+  color: #ababab;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px;
+}
+
+/* Form wrapper */
+.br-form-wrapper {
+  background: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+}
+
+.br-form-area h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.4rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.br-form-area > p {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0 0 1.5rem;
+  line-height: 1.65;
+}
+
+.br-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.br-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.br-field label {
+  font-size: 0.68rem;
+  color: #666;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.br-field input,
+.br-field select {
+  font-size: 0.85rem;
+  padding: 9px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #141414;
+  color: #fff;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.br-field input::placeholder {
+  color: #333;
+}
+
+.br-field input:focus,
+.br-field select:focus {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.br-input--error {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.br-field select option {
+  background: #141414;
+  color: #fff;
+}
+
+.br-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 14px 0 18px;
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.br-consent input[type="checkbox"] {
+  margin-top: 2px;
+  accent-color: #fff;
+  flex-shrink: 0;
+}
+
+.br-btn {
+  width: 100%;
+  padding: 13px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: #fff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.br-btn:hover {
+  background: #e8e8e8;
+}
+
+.br-btn:active {
+  transform: scale(0.99);
+}
+
+.br-btn:disabled {
+  background: #222;
+  color: #555;
+  cursor: not-allowed;
+}
+
+/* Success state */
+.br-success {
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+.br-tick {
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.4rem;
+}
+
+.br-success h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 0.6rem;
+}
+
+.br-success p {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0 0 1.5rem;
+  line-height: 1.65;
+}
+
+.br-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.br-link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background: #141414;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.br-link-btn:hover {
+  background: #1a1a1a;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Footer note */
+.br-note {
+  font-size: 0.7rem;
+  color: #333;
+  text-align: center;
+  margin-top: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .br-page {
+    padding-top: 80px;
+  }
+
+  .br-section {
+    padding: 32px 20px;
+  }
+
+  .br-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .br-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .br-section {
+    padding: 24px 16px;
+  }
+
+  .br-header h2 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  .br-row {
+    grid-template-columns: 1fr;
+  }
+
+  .br-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+  }
+}

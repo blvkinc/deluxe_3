@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -8,6 +8,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Storm18specs from "./Specsmenu/Specs18";
 import Techspec18 from "./techspecs/Techspec18";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Storm18OffroadPdf from "../../assets/pdfs/Stormbreaker 18'6_ Family Offroad — Deluxe Caravans × Infinite RV.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,6 +28,8 @@ const scrollToLayout = () => {
 };
 
 const Stormbreaker18FamilyOffRoad = () => {
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
+
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -160,15 +164,19 @@ const Stormbreaker18FamilyOffRoad = () => {
                 <a href="/tour">Have a look at STORMBREAKER 18`6</a>
               </button>
             </p>
-            {/* <button
-              className="btn hover-border-1 revealUp"
-              onClick={openWarrantyPopupWarrantyPolicy}
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
             >
               Download Our Brochure and Upgrade List
             </button>
-            {isWarrantyPopupOpen && (
-              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
-            )} */}
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Stormbreaker 18'6 Family Off-Road"
+                pdfUrl={Storm18OffroadPdf}
+              />
+            )}
           </div>
           <div className="image">
             <iframe

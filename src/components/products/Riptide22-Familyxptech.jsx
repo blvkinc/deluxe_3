@@ -8,6 +8,8 @@ import GoToTop from "../functions/GoToTop";
 import Rip22specs from "./Specsmenu/SpecsRiptide22xptech";
 import TechspecRiptide22xptech from "./techspecs/TechspecRiptide22xptech";
 import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Riptide22XptechPdf from "../../assets/pdfs/Riptide R22 Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -50,6 +52,7 @@ const Riptide22FamilyXPTech = () => {
   }, []);
 
   const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   const openWarrantyPopupWarrantyPolicy = useCallback(() => {
     setWarrantyPopupOpen(true);
@@ -186,15 +189,19 @@ const Riptide22FamilyXPTech = () => {
                 <a href="/tour">Have a look at RIPTIDE 22`</a>
               </button>
             </p>
-            {/* <button
-              className="btn hover-border-1 revealUp"
-              onClick={openWarrantyPopupWarrantyPolicy}
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
             >
               Download Our Brochure and Upgrade List
             </button>
-            {isWarrantyPopupOpen && (
-              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
-            )} */}
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Riptide 22 Family XP-Tech"
+                pdfUrl={Riptide22XptechPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>
