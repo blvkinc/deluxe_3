@@ -7,6 +7,7 @@ import Footer from "./components/footer/Footer";
 import LoadingSpinner from "./components/common/LoadingSpinner";
 import GoToTop from "./components/functions/GoToTop";
 
+const BuildJourney = lazy(() => import("./components/buildjourney/BuildJourney"));
 const About = lazy(() => import("./components/about/About"));
 const Blog = lazy(() => import("./components/blog/Blog"));
 const BlogPost = lazy(() => import("./components/blog/BlogPost"));
@@ -217,6 +218,7 @@ function App() {
             <Route path="/eclipse21" element={<Eclipse21 />} />
             <Route path="/eclipse22" element={<Eclipse22 />} />
             <Route path="/riptide22" element={<Riptide22 />} />*/}
+            <Route path="/buildjourney" element={<BuildJourney />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/tour" element={<Tour />} />

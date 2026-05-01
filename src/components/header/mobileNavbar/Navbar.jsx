@@ -290,6 +290,9 @@ const Navbar = () => {
                             <li>
                               <a href="/tour">VIRTUAL TOURS</a>
                             </li>
+                            <li>
+                              <a href="/buildjourney">THE BUILD JOURNEY</a>
+                            </li>
                           </ul>
                         </motion.div>
                       )}

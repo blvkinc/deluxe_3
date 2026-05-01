@@ -427,6 +427,7 @@ const Header = () => {
           { label: "BROCHURES", link: "/brochures" },
           { label: "WARRANTY POLICY", link: "/warranty" },
           { label: "VIRTUAL TOURS", link: "/tour" },
+          { label: "THE BUILD JOURNEY", link: "/buildjourney" },
         ],
       },
       {
