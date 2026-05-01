@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Brochures.css";
+import LayoutPdf from "../../assets/pdfs/Layout.pdf";
+import UpgradeListPdf from "../../assets/pdfs/UpgradeList.pdf";
+import InteriorColoursPdf from "../../assets/pdfs/Interior-Colours-2026-Deluxe Caravans-Infinite RV.pdf";
 
 const SERVICE_ID = "service_he9ijfd";
 const TEMPLATE_ID = "template_ygh58ti";
@@ -18,7 +21,7 @@ const brochureItems = [
         <path d="M1 18h2M7 18h10M21 18h2M3 10l2-6h14l2 6M3 10h18" />
       </svg>
     ),
-    pdfUrl: "#",
+    pdfUrl: LayoutPdf,
   },
   {
     id: "xptech",
@@ -29,7 +32,7 @@ const brochureItems = [
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
       </svg>
     ),
-    pdfUrl: "#",
+    pdfUrl: UpgradeListPdf,
   },
   {
     id: "interior",
@@ -42,7 +45,7 @@ const brochureItems = [
         <path d="M12 8v4l3 3" />
       </svg>
     ),
-    pdfUrl: "#",
+    pdfUrl: InteriorColoursPdf,
   },
   {
     id: "xptech-deep",
@@ -54,7 +57,7 @@ const brochureItems = [
         <path d="M8 21h8M12 17v4" />
       </svg>
     ),
-    pdfUrl: "#",
+    pdfUrl: UpgradeListPdf,
   },
 ];
 
@@ -116,6 +119,9 @@ const Brochures = () => {
         },
         PUBLIC_KEY
       );
+      selectedBrochures.forEach((b) => {
+        if (b.pdfUrl) window.open(b.pdfUrl, "_blank", "noopener,noreferrer");
+      });
       setSubmitted(true);
     } catch (err) {
       console.error(err);
