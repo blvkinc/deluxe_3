@@ -1,5 +1,13 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Brochures.css";
+import LayoutPdf from "../../assets/pdfs/Layout.pdf";
+import UpgradeListPdf from "../../assets/pdfs/UpgradeList.pdf";
+import InteriorColoursPdf from "../../assets/pdfs/Interior-Colours-2026-Deluxe Caravans-Infinite RV.pdf";
+
+const SERVICE_ID = "service_he9ijfd";
+const TEMPLATE_ID = "template_ygh58ti";
+const PUBLIC_KEY = "W61evKNsxeHvEgUlN";
 
 const brochureItems = [
   {
@@ -13,7 +21,7 @@ const brochureItems = [
         <path d="M1 18h2M7 18h10M21 18h2M3 10l2-6h14l2 6M3 10h18" />
       </svg>
     ),
-    pdfUrl: "#",
+    pdfUrl: LayoutPdf,
   },
   {
     id: "xptech",
@@ -24,7 +32,7 @@ const brochureItems = [
         <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
       </svg>
     ),
-    pdfUrl: "#",
+    pdfUrl: UpgradeListPdf,
   },
   {
     id: "interior",
@@ -37,7 +45,7 @@ const brochureItems = [
         <path d="M12 8v4l3 3" />
       </svg>
     ),
-    pdfUrl: "#",
+    pdfUrl: InteriorColoursPdf,
   },
   {
     id: "xptech-deep",
@@ -49,7 +57,7 @@ const brochureItems = [
         <path d="M8 21h8M12 17v4" />
       </svg>
     ),
-    pdfUrl: "#",
+    pdfUrl: UpgradeListPdf,
   },
 ];
 
@@ -84,15 +92,42 @@ const Brochures = () => {
     return e;
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const e = validate();
     setErrors(e);
     if (Object.keys(e).length > 0) return;
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+
+    const selectedTitles = brochureItems
+      .filter((b) => selected.has(b.id))
+      .map((b) => b.title)
+      .join(", ");
+
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          customer_fname: form.fname.trim(),
+          customer_lname: form.lname.trim(),
+          customer_email: form.email.trim(),
+          customer_phone: form.phone.trim() || "Not provided",
+          customer_state: form.state || "Not specified",
+          customer_timeframe: form.timeframe || "Not specified",
+          selected_brochures: selectedTitles,
+          optin: form.optin ? "Yes" : "No",
+        },
+        PUBLIC_KEY
+      );
+      selectedBrochures.forEach((b) => {
+        if (b.pdfUrl) window.open(b.pdfUrl, "_blank", "noopener,noreferrer");
+      });
       setSubmitted(true);
-    }, 1200);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const selectedBrochures = brochureItems.filter((b) => selected.has(b.id));
