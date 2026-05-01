@@ -9,6 +9,7 @@ import Techspec21xptech from "./techspecs/Techspec21xptech";
 import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
+import BrochurePopUp from "./popup/BrochurePopUp";
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -57,6 +58,8 @@ const Stormbreaker21FamilyXPTech = () => {
   const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
     setWarrantyPopupOpen(false);
   }, []);
+
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   return (
     <div className="container">
@@ -193,15 +196,19 @@ const Stormbreaker21FamilyXPTech = () => {
                 <a href="/tour">Have a look at STORMBREAKER 21`6</a>
               </button>
             </p>
-            {/* <button
-              className="btn hover-border-1 revealUp"
-              onClick={openWarrantyPopupWarrantyPolicy}
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
             >
-               Download Our Brochure and Upgrade List
+              Download Our Brochure and Upgrade List
             </button>
-            {isWarrantyPopupOpen && (
-              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
-            )} */}
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Stormbreaker 21'6 Family XP-Tech"
+                pdfUrl={null}
+              />
+            )}
           </div>
           <div className="image">
             <iframe

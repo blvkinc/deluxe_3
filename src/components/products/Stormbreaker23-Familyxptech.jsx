@@ -9,6 +9,7 @@ import Techspec23xptech from "./techspecs/Techspec23xptech";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
+import BrochurePopUp from "./popup/BrochurePopUp";
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -57,6 +58,8 @@ const Stormbreaker23FamilyXPTech = () => {
   const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
     setWarrantyPopupOpen(false);
   }, []);
+
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   return (
     <div className="container">
@@ -173,15 +176,19 @@ const Stormbreaker23FamilyXPTech = () => {
               roomy layout, complete with all the amenities you&#39;d expect
               from a luxury RV.
             </p>
-            {/* <button
-              className="btn hover-border-1 revealUp"
-              onClick={openWarrantyPopupWarrantyPolicy}
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
             >
               Download Our Brochure and Upgrade List
             </button>
-            {isWarrantyPopupOpen && (
-              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
-            )} */}
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Stormbreaker 23'11 Family XP-Tech"
+                pdfUrl={null}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>
