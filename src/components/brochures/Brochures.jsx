@@ -1,5 +1,10 @@
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Brochures.css";
+
+const SERVICE_ID = "service_he9ijfd";
+const TEMPLATE_ID = "template_ygh58ti";
+const PUBLIC_KEY = "W61evKNsxeHvEgUlN";
 
 const brochureItems = [
   {
@@ -84,15 +89,39 @@ const Brochures = () => {
     return e;
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const e = validate();
     setErrors(e);
     if (Object.keys(e).length > 0) return;
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+
+    const selectedTitles = brochureItems
+      .filter((b) => selected.has(b.id))
+      .map((b) => b.title)
+      .join(", ");
+
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          customer_fname: form.fname.trim(),
+          customer_lname: form.lname.trim(),
+          customer_email: form.email.trim(),
+          customer_phone: form.phone.trim() || "Not provided",
+          customer_state: form.state || "Not specified",
+          customer_timeframe: form.timeframe || "Not specified",
+          selected_brochures: selectedTitles,
+          optin: form.optin ? "Yes" : "No",
+        },
+        PUBLIC_KEY
+      );
       setSubmitted(true);
-    }, 1200);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const selectedBrochures = brochureItems.filter((b) => selected.has(b.id));
