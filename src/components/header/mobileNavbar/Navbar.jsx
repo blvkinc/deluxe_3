@@ -114,7 +114,7 @@ const Navbar = () => {
                       <img
                         src="https://deluxcaravan.b-cdn.net/assets/Logo.webp"
                         alt=""
-                        height={50}
+                        style={{ height: "50px", width: "auto" }}
                       />
                     </Link>
                   </li>

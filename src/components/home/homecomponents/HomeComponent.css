@@ -70,7 +70,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(
     135deg,
     rgba(0, 0, 0, 0.15) 0%,
@@ -78,31 +78,11 @@
     rgba(0, 0, 0, 0.15) 100%
   );
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   transition: all 0.4s ease;
   backdrop-filter: blur(0.5px);
-}
-
-.link-overlay {
-  position: absolute;
-  bottom: 20%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.link-overlay-revealUp-mobile {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  top: 10%;
 }
 
 .text-overlay:hover {
@@ -115,11 +95,54 @@
   backdrop-filter: blur(1px);
 }
 
-.text-overlay h1 {
-  font-size: 75.76px; /* Adjust the font size as needed */
-  color: transparent; /* Make the text color transparent */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  color: transparent;
   -webkit-text-stroke: 2px white;
-  transition: color 0.3s ease; /* Add a smooth transition effect for the color change */
+  letter-spacing: 3px;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.text-overlay:hover .hero-title {
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: clamp(0.95rem, 2vw, 1.4rem);
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 16px 0 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 36px;
+}
+
+.link-overlay-revealUp-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-overlay h1 {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  transition: color 0.3s ease;
   letter-spacing: 3px;
 }
 
@@ -188,25 +211,54 @@
 
 /* Media query for mobile screens */
 
+/* Tablet: buttons stay in a row */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .hero-buttons {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .hero-title {
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px white;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    letter-spacing: 1px;
+    -webkit-text-stroke: 1px white;
+  }
+  .hero-subtitle {
+    font-size: 0.85rem;
+    margin-top: 10px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 24px;
+    width: 100%;
+  }
+  .btn {
+    width: 80%;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .wcontainer {
     margin-bottom: 20vh;
   }
-  .text-overlay {
-    height: 50vh;
+  .hero-title {
+    letter-spacing: 0.5px;
   }
-  .landing_Page_video_container {
-    height: 40vh !important;
-  }
-}
-@media screen and (max-width: 480px) {
-  .text-overlay {
-    height: 50vh;
-  }
-  .landing_Page_video_container {
-    height: 45vh !important;
+  .hero-buttons {
+    gap: 12px;
+    margin-top: 20px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .header-logo {
     display: none;
@@ -214,33 +266,10 @@
   .grid_container {
     grid-template-columns: 1fr;
   }
-  /* 
-  .landing_page_video {
-    height: 50vh;
-  } */
-  .video-overlay {
-    position: relative;
-  }
-  .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .text-overlay h1 {
-    font-size: 30px;
-    -webkit-text-stroke: 1px white;
-    /* margin-top: 15%; */
-  }
   .btn {
     padding: 15px 20px !important;
     font-size: 16px !important;
-    margin: 5px !important;
-  }
-
-  .link-overlay {
-    gap: 20px !important;
-    flex-direction: column;
+    margin: 0 !important;
   }
   .component h1 {
     font-size: 30px;
@@ -248,14 +277,6 @@
   .desccomponent p {
     font-size: 16px;
     width: 45vh;
-  }
-
-  /* .mobile_landing_Page_video_container {
-    height: 50vh;
-  } */
-  .link-overlay {
-    bottom: auto;
-    margin-top: 20%;
   }
   .desccomponent {
     min-height: auto;
@@ -729,10 +750,6 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .link-overlay {
-    margin-top: 10%;
-  }
-
   .carousel-button {
     font-size: 24px; /* Increased font size */
   }
@@ -911,10 +928,6 @@
 }
 
 @media screen and (max-width: 375px) {
-  .link-overlay {
-    margin-top: 40%;
-  }
-
   .australian-made-banner span {
     font-size: 14px;
     letter-spacing: 0.3px;
@@ -959,20 +972,40 @@ html {
   transform: translateY(-2px);
 }
 
-/* Enhanced video container */
-.video-container {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-}
-
 /* Video Container */
 .landing_Page_video_container {
   position: relative;
   width: 100%;
   height: 100dvh;
-  overflow: visible;
+  overflow: hidden;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.video-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.video-background {
+  position: absolute;
+  inset: 0;
+}
+
+.landing_page_video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.78vh;
+  transform: translate(-50%, -50%);
+  border: 0;
 }
 
 /* Modern gradient overlays */

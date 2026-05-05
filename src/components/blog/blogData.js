@@ -9,7 +9,6 @@ export const blogPosts = [
     excerpt:
       "XP-TECH construction is Deluxe Caravans' composite fibre panel build system — frameless, bonded, and engineered for serious Australian off-grid travel. Here's what makes it different.",
     date: "May 2026",
-    image: require("../../assets/blogs/Off-road and off-grid caravans Built to last.jpg"),
     sections: [
       {
         note: "At Deluxe Caravans, we're not just building caravans. We're rethinking how they should be built.",

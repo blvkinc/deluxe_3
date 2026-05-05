@@ -58,39 +58,28 @@ function VideoLanding() {
     <div className="landing_Page_video_container">
       <div className="video-overlay">
         <div className="video-container">
-          <div
-            className="video-background"
-            style={{ padding: "56.25% 0 0 0", position: "relative" }}
-          >
+          <div className="video-background">
             <iframe
               className="landing_page_video"
               src="https://player.vimeo.com/video/1069631317?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&title=0&byline=0&portrait=0&background=1"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
               title="deluxe landing"
-              style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
             ></iframe>
           </div>
         </div>
         <div className="text-overlay">
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
-            <h1 className="revealUp">Deluxe Caravans X Infinite RV</h1>
-            <h2 className="revealUp">A partnership creating infinite possibilities</h2>
-          </div>
-          <div className="link-overlay revealUp">
-            <Link to="/blog" className="btn modern-btn">
-              <span>Latest Insights</span>
-            </Link>
-            <Link to="/appointment" className="btn modern-btn">
-              <span>Schedule a visit</span>
-            </Link>
+          <div className="hero-content">
+            <h1 className="hero-title revealUp">Deluxe Caravans X Infinite RV</h1>
+            <h2 className="hero-subtitle revealUp">A partnership creating infinite possibilities</h2>
+            <div className="hero-buttons revealUp">
+              <Link to="/media" className="btn modern-btn">
+                <span>Latest Insights</span>
+              </Link>
+              <Link to="/appointment" className="btn modern-btn">
+                <span>Schedule a visit</span>
+              </Link>
+            </div>
           </div>
           <div className="australian-made-banner">
             <span>AUSTRALIAN MADE</span>

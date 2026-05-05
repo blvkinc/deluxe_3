@@ -71,8 +71,11 @@ h5 {
 
 .header.scrolled .header-logo-deluxe,
 .header.scrolled .header-logo-infiniterv,
-.header.scrolled .header-logo-tagline {
-  color: #ffffff;
+.header.scrolled .header-logo-tagline,
+.header.scrolled:hover .header-logo-deluxe,
+.header.scrolled:hover .header-logo-infiniterv,
+.header.scrolled:hover .header-logo-tagline {
+  color: #ffffff !important;
 }
 
 .header-logo img {
