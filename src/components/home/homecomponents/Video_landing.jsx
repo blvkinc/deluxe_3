@@ -80,7 +80,7 @@ function VideoLanding() {
           </div>
         </div>
         <div className="text-overlay">
-          <h1 className="revealUp"></h1>
+          <h1 className="revealUp" aria-hidden="true"></h1>
           {/* DELUXE CARAVANS */}
           <div className="link-overlay revealUp">
             <Link to="/blog" className="btn modern-btn">

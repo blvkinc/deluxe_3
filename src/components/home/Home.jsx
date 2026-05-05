@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import GoToTop from "../functions/GoToTop";
 import Video from "./homecomponents/Video_landing";
 import Gallery from "./homecomponents/Gallery_landing";
 import Reviews from "./homecomponents/CustomerReviews";

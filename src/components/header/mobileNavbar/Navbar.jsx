@@ -239,6 +239,13 @@ const Navbar = () => {
                       )}
                     </AnimatePresence>
                   </li>
+                  <li className="nav-item" onClick={toggleMenu}>
+                    <p className="social">
+                      <Link to="/buildjourney" className="nav-link">
+                        BUILD THE JOURNEY
+                      </Link>
+                    </p>
+                  </li>
                   <li className="nav-item">
                     <p className="social" onClick={showResources}>
                       RESOURCES{" "}
@@ -282,16 +289,10 @@ const Navbar = () => {
                               <a href="/media">MEDIA</a>
                             </li>
                             <li>
-                              <a href="/brochures">BROCHURES</a>
-                            </li>
-                            <li>
                               <a href="/warranty">WARRANTY POLICY</a>
                             </li>
                             <li>
                               <a href="/tour">VIRTUAL TOURS</a>
-                            </li>
-                            <li>
-                              <a href="/buildjourney">THE BUILD JOURNEY</a>
                             </li>
                           </ul>
                         </motion.div>

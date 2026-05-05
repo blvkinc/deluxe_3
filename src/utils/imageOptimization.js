@@ -41,7 +41,6 @@ export const getOptimizedImageUrl = (originalUrl, options = {}) => {
     width,
     height,
     quality = 85,
-    format = 'webp'
   } = options;
 
   // If it's already a CDN URL, add optimization parameters

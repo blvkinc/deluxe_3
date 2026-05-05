@@ -16,17 +16,16 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(
     useMemo(() => window.innerWidth <= 768, [])
   );
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [hoveredSubMenu, setHoveredSubMenu] = useState(null);
   const [nestedSubMenu, setNestedSubMenu] = useState(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleResize = useCallback(
     _.debounce(() => {
       const newWidth = window.innerWidth;
-      setWindowWidth(newWidth);
       setIsMobile(newWidth <= 768);
     }, 200),
     []
@@ -419,15 +418,17 @@ const Header = () => {
         ],
       },
       {
+        label: "BUILD THE JOURNEY",
+        link: "/buildjourney",
+      },
+      {
         label: "RESOURCES",
         submenu: [
           { label: "ABOUT US", link: "/about" },
           { label: "BLOGS", link: "/blog" },
           { label: "MEDIA", link: "/media" },
-          { label: "BROCHURES", link: "/brochures" },
           { label: "WARRANTY POLICY", link: "/warranty" },
           { label: "VIRTUAL TOURS", link: "/tour" },
-          { label: "THE BUILD JOURNEY", link: "/buildjourney" },
         ],
       },
       {
@@ -573,9 +574,17 @@ const Header = () => {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
-                  <button>
-                    <span>{menu.label}</span>
-                  </button>
+                  {menu.link ? (
+                    <Link to={menu.link} onClick={handleMenuClose}>
+                      <button>
+                        <span>{menu.label}</span>
+                      </button>
+                    </Link>
+                  ) : (
+                    <button>
+                      <span>{menu.label}</span>
+                    </button>
+                  )}
                   {menu.submenu && (
                       <motion.div
                         className="sub-menu"
