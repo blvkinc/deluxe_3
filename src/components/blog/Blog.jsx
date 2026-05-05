@@ -13,12 +13,14 @@ function Blog() {
       <div className="blog-grid">
         {blogPosts.map((post) => (
           <Link to={`/blog/${post.slug}`} key={post.id} className="blog-card">
-            <div className="blog-card-category">{post.category}</div>
-            <h2 className="blog-card-title">{post.title}</h2>
-            <p className="blog-card-excerpt">{post.excerpt}</p>
-            <div className="blog-card-footer">
-              <span className="blog-card-date">{post.date}</span>
-              <span className="blog-card-cta">READ MORE →</span>
+            <div className="blog-card-body">
+              <div className="blog-card-category">{post.category}</div>
+              <h2 className="blog-card-title">{post.title}</h2>
+              <p className="blog-card-excerpt">{post.excerpt}</p>
+              <div className="blog-card-footer">
+                <span className="blog-card-date">{post.date}</span>
+                <span className="blog-card-cta">READ MORE →</span>
+              </div>
             </div>
           </Link>
         ))}

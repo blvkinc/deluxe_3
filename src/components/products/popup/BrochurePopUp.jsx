@@ -56,7 +56,7 @@ const BrochurePopUp = ({ onClose, productName, pdfUrl }) => {
         <button className="brochure-close" onClick={onClose} aria-label="Close">
           &#x2715;
         </button>
-        <h2 className="brochure-title">Download Our Brochure &amp; Upgrade List</h2>
+        <h2 className="brochure-title">Download Our Brochure</h2>
         <p className="brochure-subtitle">
           Enter your details below and the PDF will open instantly.
         </p>

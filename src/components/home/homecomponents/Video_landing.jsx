@@ -80,8 +80,10 @@ function VideoLanding() {
           </div>
         </div>
         <div className="text-overlay">
-          <h1 className="revealUp" aria-hidden="true"></h1>
-          {/* DELUXE CARAVANS */}
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
+            <h1 className="revealUp">Deluxe Caravans X Infinite RV</h1>
+            <h2 className="revealUp">A partnership creating infinite possibilities</h2>
+          </div>
           <div className="link-overlay revealUp">
             <Link to="/blog" className="btn modern-btn">
               <span>Latest Insights</span>

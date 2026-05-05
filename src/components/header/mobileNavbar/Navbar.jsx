@@ -242,7 +242,7 @@ const Navbar = () => {
                   <li className="nav-item" onClick={toggleMenu}>
                     <p className="social">
                       <Link to="/buildjourney" className="nav-link">
-                        BUILD THE JOURNEY
+                        BUILD JOURNEY
                       </Link>
                     </p>
                   </li>

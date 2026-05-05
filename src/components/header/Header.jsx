@@ -418,7 +418,7 @@ const Header = () => {
         ],
       },
       {
-        label: "BUILD THE JOURNEY",
+        label: "BUILD JOURNEY",
         link: "/buildjourney",
       },
       {
@@ -551,14 +551,21 @@ const Header = () => {
           transition={{ duration: 0.5 }}
           onMouseLeave={handleMenuLeave}
         >
-          <div className="header-logo">
-            <Link to="/">
-              <img
-                src="https://deluxcaravan.b-cdn.net/assets/Logo.webp"
-                alt="Deluxe Caravan Logo"
-                height={50}
-              />
-            </Link>
+          <div className="header-logo" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+              <span className="header-logo-deluxe" style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em", whiteSpace: "nowrap" }}>DELUXE CARAVANS</span>
+              <Link to="/">
+                <img
+                  src="https://deluxcaravan.b-cdn.net/assets/Logo.webp"
+                  alt="Deluxe Caravan Logo"
+                  height={50}
+                />
+              </Link>
+              <span className="header-logo-infiniterv" style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em", whiteSpace: "nowrap" }}>INFINITE RV</span>
+            </div>
+            <span className="header-logo-tagline" style={{ fontSize: "9px", letterSpacing: "0.04em", whiteSpace: "nowrap", opacity: 0.7 }}>
+              A partnership creating infinite possibilities
+            </span>
           </div>
           <nav className="header-nav" onMouseLeave={handleMenuLeave}>
             <ul className="menu">

@@ -44,7 +44,7 @@
 .header img {
   align-items: center;
   max-width: 17vw;
-  margin-right: 4vw;
+  /* margin-right: 4vw; */
 }
 
 .header h3,
@@ -53,10 +53,30 @@ h5 {
 }
 
 /* Logo */
+.header-logo-deluxe,
+.header-logo-infiniterv {
+  color: #ffffff;
+}
+
+.header-logo-tagline {
+  color: #ffffff;
+}
+
+
+.header:not(.custom-header):hover .header-logo-deluxe,
+.header:not(.custom-header):hover .header-logo-infiniterv,
+.header:not(.custom-header):hover .header-logo-tagline {
+  color: #000000;
+}
+
+.header.scrolled .header-logo-deluxe,
+.header.scrolled .header-logo-infiniterv,
+.header.scrolled .header-logo-tagline {
+  color: #ffffff;
+}
+
 .header-logo img {
-  position: fixed;
-  top: 1.6rem;
-  left: auto;
+  position: relative;
   height: 50px;
   width: auto;
   max-width: 200px;
