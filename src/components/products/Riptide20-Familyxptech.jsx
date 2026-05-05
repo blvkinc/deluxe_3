@@ -1,13 +1,11 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React, { useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
-import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
 import SpecsRiptide20xptech from "./Specsmenu/SpecsRiptide20xptech";
 import TechspecRiptide20xptech from "./techspecs/TechspecRiptide20xptech";
-import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 import BrochurePopUp from "./popup/BrochurePopUp";
 import Riptide20XptechPdf from "../../assets/pdfs/Riptide R20 Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
@@ -28,16 +26,7 @@ const scrollToLayout = () => {
 };
 
 const Riptide20FamilyXPTech = () => {
-  const [isWarrantyPopupOpen, setIsWarrantyPopupOpen] = useState(false);
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
-
-  const openWarrantyPopupWarrantyPolicy = () => {
-    setIsWarrantyPopupOpen(true);
-  };
-
-  const closeWarrantyPopupWarrantyPolicy = () => {
-    setIsWarrantyPopupOpen(false);
-  };
 
   return (
     <div className="container">
@@ -149,7 +138,7 @@ const Riptide20FamilyXPTech = () => {
               className="btn hover-border-1"
               onClick={() => setIsBrochureOpen(true)}
             >
-              Download Our Brochure and Upgrade List
+              Download Our Brochure
             </button>
             {isBrochureOpen && (
               <BrochurePopUp

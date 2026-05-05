@@ -6,7 +6,6 @@ import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import GoToTop from "../functions/GoToTop";
 import SpecsRiptide206xptech from "./Specsmenu/SpecsRiptide206xptech";
 import TechspecRiptide206xptech from "./techspecs/TechspecRiptide206xptech";
-import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
 import BrochurePopUp from "./popup/BrochurePopUp";
 import Riptide206XptechPdf from "../../assets/pdfs/Riptide R206 Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
@@ -27,16 +26,7 @@ const scrollToLayout = () => {
 };
 
 const Riptide206FamilyXPTech = () => {
-  const [isWarrantyPopupOpen, setIsWarrantyPopupOpen] = useState(false);
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
-
-  const openWarrantyPopupWarrantyPolicy = () => {
-    setIsWarrantyPopupOpen(true);
-  };
-
-  const closeWarrantyPopupWarrantyPolicy = () => {
-    setIsWarrantyPopupOpen(false);
-  };
 
   return (
     <div className="container">
@@ -148,7 +138,7 @@ const Riptide206FamilyXPTech = () => {
               className="btn hover-border-1"
               onClick={() => setIsBrochureOpen(true)}
             >
-              Download Our Brochure and Upgrade List
+              Download Our Brochure
             </button>
             {isBrochureOpen && (
               <BrochurePopUp
