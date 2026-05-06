@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, color } from "framer-motion";
 
 const Navbar = () => {
   const location = useLocation(); // Get the current route
@@ -117,6 +117,8 @@ const Navbar = () => {
                         style={{ height: "50px", width: "auto" }}
                       />
                     </Link>
+                    <p style={{ color: "black" , fontSize: "14px" }}>DELUXE CARAVANS X INFINITE RV</p>
+                    <p style={{ color: "black" , fontSize: "12px" }}>A partnership creating infinite possibilities</p>
                   </li>
 
                   {/* FAMILY MENU */}
