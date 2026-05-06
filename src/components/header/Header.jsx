@@ -567,7 +567,7 @@ const Header = () => {
               A partnership creating infinite possibilities
             </span>
           </div>
-          <nav className="header-nav" onMouseLeave={handleMenuLeave}>
+          <nav className="header-nav">
             <ul className="menu">
               {menuData.map((menu, index) => (
                 <motion.li

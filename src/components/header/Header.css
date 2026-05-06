@@ -162,8 +162,8 @@ h5 {
   background-color: #ffffff;
   z-index: 999;
   width: 100%;
-  position: fixed;
-  top: 75px;
+  position: absolute;
+  top: 80%;
   left: 0;
   right: 0;
   display: flex;
@@ -207,7 +207,7 @@ h5 {
 
 /* Specific styles for nested-submenu (applied to deep-nested-submenu as well) */
 .nested-submenu {
-  top: 122px;
+  top: 80%;
 }
 
 /* Deep nested submenu inherits nested-submenu styles */
@@ -215,8 +215,8 @@ h5 {
   background-color: #ffffff;
   z-index: 999;
   width: 100%;
-  position: fixed;
-  top: 170px;
+  position: absolute;
+  top: 90%;
   left: 0;
   right: 0;
   display: flex;
