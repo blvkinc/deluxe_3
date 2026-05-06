@@ -7,6 +7,7 @@ import InteriorColoursPdf from "../../assets/pdfs/Interior-Colours-2026-Deluxe C
 
 const SERVICE_ID = "service_he9ijfd";
 const TEMPLATE_ID = "template_ygh58ti";
+const CUSTOMER_TEMPLATE_ID = ""; // paste your customer-facing template ID here
 const PUBLIC_KEY = "W61evKNsxeHvEgUlN";
 
 const brochureItems = [
@@ -103,22 +104,23 @@ const Brochures = () => {
       .map((b) => b.title)
       .join(", ");
 
+    const templateVars = {
+      customer_fname: form.fname.trim(),
+      customer_lname: form.lname.trim(),
+      customer_email: form.email.trim(),
+      customer_phone: form.phone.trim() || "Not provided",
+      customer_state: form.state || "Not specified",
+      customer_timeframe: form.timeframe || "Not specified",
+      selected_brochures: selectedTitles,
+      optin: form.optin ? "Yes" : "No",
+    };
+
     try {
-      await emailjs.send(
-        SERVICE_ID,
-        TEMPLATE_ID,
-        {
-          customer_fname: form.fname.trim(),
-          customer_lname: form.lname.trim(),
-          customer_email: form.email.trim(),
-          customer_phone: form.phone.trim() || "Not provided",
-          customer_state: form.state || "Not specified",
-          customer_timeframe: form.timeframe || "Not specified",
-          selected_brochures: selectedTitles,
-          optin: form.optin ? "Yes" : "No",
-        },
-        PUBLIC_KEY
-      );
+      const sends = [emailjs.send(SERVICE_ID, TEMPLATE_ID, templateVars, PUBLIC_KEY)];
+      if (CUSTOMER_TEMPLATE_ID) {
+        sends.push(emailjs.send(SERVICE_ID, CUSTOMER_TEMPLATE_ID, templateVars, PUBLIC_KEY));
+      }
+      await Promise.all(sends);
       selectedBrochures.forEach((b) => {
         if (b.pdfUrl) window.open(b.pdfUrl, "_blank", "noopener,noreferrer");
       });

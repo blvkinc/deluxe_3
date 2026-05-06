@@ -16,17 +16,16 @@ const Header = () => {
   const [isMobile, setIsMobile] = useState(
     useMemo(() => window.innerWidth <= 768, [])
   );
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [hoveredSubMenu, setHoveredSubMenu] = useState(null);
   const [nestedSubMenu, setNestedSubMenu] = useState(null);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const handleResize = useCallback(
     _.debounce(() => {
       const newWidth = window.innerWidth;
-      setWindowWidth(newWidth);
       setIsMobile(newWidth <= 768);
     }, 200),
     []
@@ -419,15 +418,17 @@ const Header = () => {
         ],
       },
       {
+        label: "BUILD JOURNEY",
+        link: "/buildjourney",
+      },
+      {
         label: "RESOURCES",
         submenu: [
           { label: "ABOUT US", link: "/about" },
           { label: "BLOGS", link: "/blog" },
           { label: "MEDIA", link: "/media" },
-          { label: "BROCHURES", link: "/brochures" },
           { label: "WARRANTY POLICY", link: "/warranty" },
           { label: "VIRTUAL TOURS", link: "/tour" },
-          { label: "THE BUILD JOURNEY", link: "/buildjourney" },
         ],
       },
       {
@@ -550,14 +551,21 @@ const Header = () => {
           transition={{ duration: 0.5 }}
           onMouseLeave={handleMenuLeave}
         >
-          <div className="header-logo">
-            <Link to="/">
-              <img
-                src="https://deluxcaravan.b-cdn.net/assets/Logo.webp"
-                alt="Deluxe Caravan Logo"
-                height={50}
-              />
-            </Link>
+          <div className="header-logo" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+              <span className="header-logo-deluxe" style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em", whiteSpace: "nowrap" }}>DELUXE CARAVANS</span>
+              <Link to="/">
+                <img
+                  src="https://deluxcaravan.b-cdn.net/assets/Logo.webp"
+                  alt="Deluxe Caravan Logo"
+                  height={50}
+                />
+              </Link>
+              <span className="header-logo-infiniterv" style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em", whiteSpace: "nowrap" }}>INFINITE RV</span>
+            </div>
+            <span className="header-logo-tagline" style={{ fontSize: "9px", letterSpacing: "0.04em", whiteSpace: "nowrap", opacity: 0.7 }}>
+              A partnership creating infinite possibilities
+            </span>
           </div>
           <nav className="header-nav" onMouseLeave={handleMenuLeave}>
             <ul className="menu">
@@ -573,9 +581,17 @@ const Header = () => {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
-                  <button>
-                    <span>{menu.label}</span>
-                  </button>
+                  {menu.link ? (
+                    <Link to={menu.link} onClick={handleMenuClose}>
+                      <button>
+                        <span>{menu.label}</span>
+                      </button>
+                    </Link>
+                  ) : (
+                    <button>
+                      <span>{menu.label}</span>
+                    </button>
+                  )}
                   {menu.submenu && (
                       <motion.div
                         className="sub-menu"

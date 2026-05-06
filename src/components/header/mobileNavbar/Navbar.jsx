@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, color } from "framer-motion";
 
 const Navbar = () => {
   const location = useLocation(); // Get the current route
@@ -114,9 +114,11 @@ const Navbar = () => {
                       <img
                         src="https://deluxcaravan.b-cdn.net/assets/Logo.webp"
                         alt=""
-                        height={50}
+                        style={{ height: "50px", width: "auto" }}
                       />
                     </Link>
+                    <p style={{ color: "black" , fontSize: "14px" }}>DELUXE CARAVANS X INFINITE RV</p>
+                    <p style={{ color: "black" , fontSize: "12px" }}>A partnership creating infinite possibilities</p>
                   </li>
 
                   {/* FAMILY MENU */}
@@ -239,6 +241,13 @@ const Navbar = () => {
                       )}
                     </AnimatePresence>
                   </li>
+                  <li className="nav-item" onClick={toggleMenu}>
+                    <p className="social">
+                      <Link to="/buildjourney" className="nav-link">
+                        BUILD JOURNEY
+                      </Link>
+                    </p>
+                  </li>
                   <li className="nav-item">
                     <p className="social" onClick={showResources}>
                       RESOURCES{" "}
@@ -282,16 +291,10 @@ const Navbar = () => {
                               <a href="/media">MEDIA</a>
                             </li>
                             <li>
-                              <a href="/brochures">BROCHURES</a>
-                            </li>
-                            <li>
                               <a href="/warranty">WARRANTY POLICY</a>
                             </li>
                             <li>
                               <a href="/tour">VIRTUAL TOURS</a>
-                            </li>
-                            <li>
-                              <a href="/buildjourney">THE BUILD JOURNEY</a>
                             </li>
                           </ul>
                         </motion.div>

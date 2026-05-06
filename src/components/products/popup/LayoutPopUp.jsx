@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import "./PopUp.css";
-import Layout from "../../../assets/pdfs/Layout.pdf";
 
 const LayoutPopUp = ({ onClose, popupIdentifier }) => {
   const MAILCHIMP_FORM_ACTION_URL = process.env.REACT_APP_MAILCHIMP_URL;

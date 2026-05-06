@@ -8,7 +8,6 @@ const WarrantyPolicyPopup = ({ onClose }) => {
   const [phone, setPhone] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(false);
   const [isPhoneValid, setIsPhoneValid] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(false);
 
   const alertRef = useRef(null);
   const downloadRef = useRef(null);

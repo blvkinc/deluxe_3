@@ -105,8 +105,7 @@ const Eclipse21CouplesXPTech = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216layout.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216layouttop.webp"
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/eclipse%2021-6.webp",
               ],
               description: "Detailed floor plans and layout configurations",
             },
@@ -163,7 +162,7 @@ const Eclipse21CouplesXPTech = () => {
               className="btn hover-border-1"
               onClick={() => setIsBrochureOpen(true)}
             >
-              Download Our Brochure and Upgrade List
+              Download Our Brochure
             </button>
             {isBrochureOpen && (
               <BrochurePopUp

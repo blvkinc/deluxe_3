@@ -100,7 +100,7 @@ const Eclipse22CouplesOffRoad = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/E22/Eclipse22layout.webp"
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/eclipse%2022.webp"
               ],
               description: "Detailed floor plans and layout configurations",
             },
@@ -148,7 +148,7 @@ const Eclipse22CouplesOffRoad = () => {
               className="btn hover-border-1"
               onClick={() => setIsBrochureOpen(true)}
             >
-              Download Our Brochure and Upgrade List
+              Download Our Brochure
             </button>
             {isBrochureOpen && (
               <BrochurePopUp

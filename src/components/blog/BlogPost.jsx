@@ -24,13 +24,28 @@ const BlogPost = () => {
           <div className="blogpost-section">
             {post.sections.map((section, i) => (
               <div key={i} className="blogpost-service-type">
-                <h3>{section.title}</h3>
-                <p className="blogpost-service-note">{section.note}</p>
-                <ul>
-                  {section.items.map((item, j) => (
-                    <li key={j}>{item}</li>
-                  ))}
-                </ul>
+                {section.title && <h3>{section.title}</h3>}
+                {section.note && <p className="blogpost-service-note">{section.note}</p>}
+                {section.paragraphs && section.paragraphs.map((p, j) => (
+                  <p key={j}>{p}</p>
+                ))}
+                {section.items && (
+                  <ul>
+                    {section.items.map((item, j) => (
+                      <li key={j}>{item}</li>
+                    ))}
+                  </ul>
+                )}
+                {section.cta && (
+                  <p className="blogpost-cta">
+                    {section.cta.map((link, j) => (
+                      <span key={j}>
+                        {j > 0 && " | "}
+                        <a href={link.href}>{link.label}</a>
+                      </span>
+                    ))}
+                  </p>
+                )}
               </div>
             ))}
           </div>

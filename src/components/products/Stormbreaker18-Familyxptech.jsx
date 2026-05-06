@@ -1,14 +1,11 @@
-import React, { useEffect, useRef, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import GoToTop from "../functions/GoToTop";
-import Strom18inside from "./SlideShows/Stormbreaker18inside";
 import { gsap } from "gsap";
 import Storm18specs from "./Specsmenu/Specs18xptech";
 import Techspec18xptech from "./techspecs/Techspec18xptech";
-import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
-import LayoutPopUp from "./popup/LayoutPopUp";
 import BrochurePopUp from "./popup/BrochurePopUp";
 import Storm18XptechPdf from "../../assets/pdfs/Stormbreaker 18'6_ Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
@@ -30,8 +27,6 @@ const scrollToLayout = () => {
 };
 
 const Stormbreaker18FamilyXPTech = () => {
-  const containerRef = useRef(null);
-
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -51,16 +46,6 @@ const Stormbreaker18FamilyXPTech = () => {
         }
       );
     });
-  }, []);
-
-  const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
-
-  const openWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(true);
-  }, []);
-
-  const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(false);
   }, []);
 
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
@@ -198,7 +183,7 @@ const Stormbreaker18FamilyXPTech = () => {
               className="btn hover-border-1"
               onClick={() => setIsBrochureOpen(true)}
             >
-              Download Our Brochure and Upgrade List
+              Download Our Brochure
             </button>
             {isBrochureOpen && (
               <BrochurePopUp

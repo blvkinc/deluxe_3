@@ -12,7 +12,6 @@ const About = lazy(() => import("./components/about/About"));
 const Blog = lazy(() => import("./components/blog/Blog"));
 const BlogPost = lazy(() => import("./components/blog/BlogPost"));
 const Media = lazy(() => import("./components/media/Media"));
-const Brochures = lazy(() => import("./components/brochures/Brochures"));
 const Video = lazy(() => import("./components/video/Video"));
 const Maintenance = lazy(() => import("./components/maintenance/Maintenance"));
 const Eclipse18CouplesOffRoad = lazy(() =>
@@ -128,7 +127,6 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/media" element={<Media />} />
-            <Route path="/brochures" element={<Brochures />} />
             <Route path="/video" element={<Video />} />
             <Route path="/maintenance" element={<Maintenance />} />
             <Route

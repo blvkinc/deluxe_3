@@ -74,6 +74,18 @@
   color: #666;
 }
 
+.blogpost-hero-image-wrap {
+  width: 100%;
+}
+
+.blogpost-hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+  display: block;
+}
+
 .blogpost-section {
   padding: 60px 40px;
 }

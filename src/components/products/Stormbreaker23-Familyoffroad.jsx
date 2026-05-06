@@ -9,6 +9,7 @@ import GoToTop from "../functions/GoToTop";
 import Storm23specs from "./Specsmenu/Specs23";
 import Techspec23 from "./techspecs/Techspec23";
 import BrochurePopUp from "./popup/BrochurePopUp";
+import Stormbreaker23OffroadPdf from "../../assets/pdfs/Stormbreaker 23'11_ Family Offroad — Deluxe Caravans × Infinite RV.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -152,13 +153,13 @@ const Stormbreaker23FamilyOffRoad = () => {
               className="btn hover-border-1"
               onClick={() => setIsBrochureOpen(true)}
             >
-              Download Our Brochure and Upgrade List
+              Download Our Brochure
             </button>
             {isBrochureOpen && (
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Stormbreaker 23'11 Family Off-Road"
-                pdfUrl={null}
+                pdfUrl={Stormbreaker23OffroadPdf}
               />
             )}
           </div>
