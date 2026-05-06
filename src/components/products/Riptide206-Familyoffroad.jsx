@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -8,6 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
 import SpecsRiptide206 from "./Specsmenu/SpecsRiptide206";
 import TechspecRiptide206 from "./techspecs/TechspecRiptide206";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Riptide206OffroadPdf from "../../assets/pdfs/Riptide 20'6_ Family Offroad — Deluxe Caravans × Infinite RV.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,6 +28,8 @@ const scrollToLayout = () => {
 };
 
 const Riptide206FamilyOffRoad = () => {
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
+
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -83,19 +87,17 @@ const Riptide206FamilyOffRoad = () => {
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/E22/1-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/3-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/4-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/5-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/6-min.webp",
+              "https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(11).webp",
+"https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(6).webp",
+"https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(7).webp",
+"https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(8).webp"
               ],
               description: "Explore the stunning exterior design and features",
             },
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/20%606/20%606.png",
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/riptide%2020-6.webp",
               ],
               description: "Detailed floor plans and layout configurations",
             },
@@ -141,6 +143,19 @@ const Riptide206FamilyOffRoad = () => {
                 <a href="/tour">Have a look at RIPTIDE 20'6"</a>
               </button>
             </p>
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
+            >
+              Download Our Brochure
+            </button>
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Riptide 20'6 Family Off-Road"
+                pdfUrl={Riptide206OffroadPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>

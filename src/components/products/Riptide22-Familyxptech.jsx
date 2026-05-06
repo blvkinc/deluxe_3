@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -7,7 +7,8 @@ import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
 import Rip22specs from "./Specsmenu/SpecsRiptide22xptech";
 import TechspecRiptide22xptech from "./techspecs/TechspecRiptide22xptech";
-import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Riptide22XptechPdf from "../../assets/pdfs/Riptide R22 Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -26,8 +27,6 @@ const scrollToLayout = () => {
 };
 
 const Riptide22FamilyXPTech = () => {
-  const containerRef = useRef(null);
-
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -49,15 +48,7 @@ const Riptide22FamilyXPTech = () => {
     });
   }, []);
 
-  const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
-
-  const openWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(true);
-  }, []);
-
-  const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(false);
-  }, []);
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   return (
     <div className="container">
@@ -105,16 +96,7 @@ const Riptide22FamilyXPTech = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/riptide%2022.webp",
               ],
               description: "",
             },
@@ -186,15 +168,19 @@ const Riptide22FamilyXPTech = () => {
                 <a href="/tour">Have a look at RIPTIDE 22`</a>
               </button>
             </p>
-            {/* <button
-              className="btn hover-border-1 revealUp"
-              onClick={openWarrantyPopupWarrantyPolicy}
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
             >
-              Download Our Brochure and Upgrade List
+              Download Our Brochure
             </button>
-            {isWarrantyPopupOpen && (
-              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
-            )} */}
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Riptide 22 Family XP-Tech"
+                pdfUrl={Riptide22XptechPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>

@@ -7,8 +7,11 @@ import Footer from "./components/footer/Footer";
 import LoadingSpinner from "./components/common/LoadingSpinner";
 import GoToTop from "./components/functions/GoToTop";
 
+const BuildJourney = lazy(() => import("./components/buildjourney/BuildJourney"));
 const About = lazy(() => import("./components/about/About"));
 const Blog = lazy(() => import("./components/blog/Blog"));
+const BlogPost = lazy(() => import("./components/blog/BlogPost"));
+const Media = lazy(() => import("./components/media/Media"));
 const Video = lazy(() => import("./components/video/Video"));
 const Maintenance = lazy(() => import("./components/maintenance/Maintenance"));
 const Eclipse18CouplesOffRoad = lazy(() =>
@@ -122,6 +125,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/media" element={<Media />} />
             <Route path="/video" element={<Video />} />
             <Route path="/maintenance" element={<Maintenance />} />
             <Route
@@ -211,6 +216,7 @@ function App() {
             <Route path="/eclipse21" element={<Eclipse21 />} />
             <Route path="/eclipse22" element={<Eclipse22 />} />
             <Route path="/riptide22" element={<Riptide22 />} />*/}
+            <Route path="/buildjourney" element={<BuildJourney />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/tour" element={<Tour />} />

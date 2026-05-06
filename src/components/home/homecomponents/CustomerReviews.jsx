@@ -116,7 +116,7 @@ const Testimonials = () => {
           <SplideSlide key={index}>
           <div className="slide__item">
             <p className="slide__heading">{testimonial.rating}</p>
-            <blockquote className="slide__quote"><a href={testimonial.glink} target="_blank">
+            <blockquote className="slide__quote"><a href={testimonial.glink} target="_blank" rel="noopener noreferrer">
               {testimonial.quote.split('\n').map((line, lineIndex) => (
                 <React.Fragment key={lineIndex}>
                   {line}

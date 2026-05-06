@@ -12,8 +12,14 @@
 }
 
 /* Logo */
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .footer-logo {
-  width: 80px; /* Adjust the width as needed */
+  width: 80px;
   margin-right: 2vw;
 }
 
@@ -46,6 +52,19 @@
   margin-right: 4vw;
 }
 
+.footer-partnership {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin-top: 8px;
+}
+
+.footer-tagline {
+  font-size: 12px;
+  color: #aaaaaa;
+  margin-top: 4px;
+}
+
 /* Footer Links Section */
 .footer-links {
   display: flex;
@@ -74,6 +93,8 @@
   margin-bottom: 5px;
   font-size: 14px;
   margin-bottom: 0.5rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Copyright Section */
@@ -108,9 +129,22 @@
     padding: 10px;
   }
 
+  .logo {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   .footer-logo {
-    width: auto; /* Decrease logo size for smaller screens */
-    margin-right: 0; /* Remove margin for smaller screens */
+    width: auto;
+    margin-right: 0;
+  }
+
+  .footer-partnership {
+    text-align: center;
+  }
+
+  .footer-tagline {
+    text-align: center;
   }
 
   .footer-links {
@@ -123,6 +157,8 @@
   .footer-links-column {
     margin-bottom: 20px; /* Add margin between columns on smaller screens */
     align-items: center;
+    max-width: 90vw;
+    text-align: center;
   }
 
   .footer hr {

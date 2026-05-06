@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -8,6 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
 import SpecsEclipse22 from "./Specsmenu/SpecsEclipse22xptech";
 import TechspecEclipse22xptech from "./techspecs/TechspecEclipse22xptech";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Eclipse22XptechPdf from "../../assets/pdfs/Eclipse 22' Couples XP-Tech — Deluxe Caravans.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -28,6 +30,8 @@ const scrollToLayout = () => {
 };
 
 const Eclipse22CouplesXPTech = () => {
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
+
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -98,7 +102,7 @@ const Eclipse22CouplesXPTech = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/E22/Eclipse22layout.webp"
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/eclipse%2022.webp"
               ],
               description: "Detailed floor plans and layout configurations",
             },
@@ -155,15 +159,19 @@ const Eclipse22CouplesXPTech = () => {
               layout, complete with all the amenities you'd expect
               from a luxury RV.
             </p>
-            {/* <button
-              className="btn hover-border-1 revealUp"
-              onClick={openWarrantyPopupWarrantyPolicy}
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
             >
-              Download Our Brochure and Upgrade List
+              Download Our Brochure
             </button>
-            {isWarrantyPopupOpen && (
-              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
-            )} */}
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Eclipse 22 Couples XP-Tech"
+                pdfUrl={Eclipse22XptechPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>

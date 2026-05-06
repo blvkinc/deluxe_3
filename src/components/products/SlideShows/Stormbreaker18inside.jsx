@@ -114,7 +114,7 @@ function Strombreaker18inside() {
                       <div className="mySlides active">
                         <img
                           src={section.images[activeImageIndex]}
-                          alt={`Image ${activeImageIndex + 1}`}
+                          alt={`Stormbreaker 18'6 interior view ${activeImageIndex + 1}`}
                         />
                       </div>
                     </div>

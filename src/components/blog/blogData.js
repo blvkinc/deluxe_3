@@ -1,0 +1,146 @@
+export const blogPosts = [
+  {
+    id: "xptech-construction",
+    slug: "xptech-construction",
+    title: "Off-road and off-grid caravans: Built to last",
+    category: "CONSTRUCTION",
+    metaDescription:
+      "XP-TECH construction is Deluxe Caravans' composite fibre panel build system — frameless, bonded, and engineered for serious Australian off-grid travel. Here's what makes it different.",
+    excerpt:
+      "XP-TECH construction is Deluxe Caravans' composite fibre panel build system — frameless, bonded, and engineered for serious Australian off-grid travel. Here's what makes it different.",
+    date: "May 2026",
+    sections: [
+      {
+        note: "At Deluxe Caravans, we're not just building caravans. We're rethinking how they should be built.",
+        paragraphs: [
+          "XP-TECH construction isn't a label we put on a spec sheet. It's a fundamentally different way of building — for the kind of travel that puts real demands on a van. Red dirt. Corrugated tracks. Creek crossings. Remote camps where the nearest town is hours away. For that kind of travel, the way your caravan is built matters enormously.",
+        ],
+      },
+      {
+        title: "What Is XP-TECH Construction?",
+        paragraphs: [
+          "XP-TECH is Deluxe Caravans' composite fibre panel build system. Instead of a traditional timber or aluminium frame with cladding screwed or riveted over the top, every XP-TECH van is constructed from high-density composite sandwich panels that form a rigid, self-supporting shell.",
+          "Each panel is made of three bonded layers: a tough fibreglass outer skin, a thick XPS foam core, and a hard inner fibreglass layer — all compressed and bonded together into a single seamless panel. No frame running through the middle. No gaps. No joins down the walls.",
+          "The result is a monocoque-style structure that is lighter, stronger, and more thermally efficient than anything a framed build can deliver. It's not just a different material. It's a different philosophy.",
+        ],
+      },
+      {
+        title: "No Timber. No Rot. No Compromise.",
+        paragraphs: [
+          "Traditional framed caravans — even well-built ones — carry an inherent long-term risk: timber. Meranti frames are strong and flexible, but they are vulnerable to moisture. Once water finds its way into a framed wall, it gets absorbed into the timber silently. By the time you notice the damage, the rot has usually been there for months.",
+          "XP-TECH composite panels contain no timber. There is nothing to absorb moisture, nothing to rot, nothing to warp. If any water ever finds its way in, it dries out — because the foam core doesn't hold it. Your van stays structurally sound for the long haul.",
+        ],
+      },
+      {
+        title: "Fewer Joins Means Fewer Problems",
+        paragraphs: [
+          "A traditionally cladded caravan has dozens of horizontal sheet joins running down its walls. Every one of those joins is sealed with silicone or tape that degrades over time — especially under the UV punishment of the Australian sun and the constant vibration of corrugated outback roads.",
+          "XP-TECH composite panels are one piece from top to bottom. Far fewer joins means far fewer points where dust, moisture, and fine silt can work their way inside. Less maintenance. Less worry. More time enjoying wherever you've travelled to.",
+        ],
+      },
+      {
+        title: "Insulation That Actually Works",
+        paragraphs: [
+          "In a framed caravan, insulation is cut and placed between the frame uprights. Those frame members — whether timber or aluminium — act as thermal bridges, transferring heat and cold directly through the wall regardless of what sits alongside them.",
+          "In an XP-TECH composite panel, the high-density XPS foam core runs continuously across the entire wall with no interruptions. XPS foam has excellent thermal resistance, and because it's bonded rather than packed, it performs consistently across the life of the van.",
+          "The practical payoff: your van stays cooler in the Australian summer and warmer on cold nights — without running your air conditioning or heating as hard. That directly extends your off-grid battery life and reduces fuel consumption from the generator you hopefully never need to start.",
+        ],
+      },
+      {
+        title: "Bonded Interiors — Built as One",
+        paragraphs: [
+          "The XP-TECH build philosophy doesn't stop at the walls. Interior cabinetry and furniture is bonded directly to the composite shell using high-strength polymer adhesives — the same type used in truck and bus body manufacturing. Every internal fitting becomes part of the structure, adding rigidity to the whole van rather than just sitting inside it.",
+          "Fewer screws. Fewer rattles. A van that feels solid because it genuinely is.",
+        ],
+      },
+      {
+        title: "Built in Melbourne. One Van at a Time.",
+        paragraphs: [
+          "Every Deluxe Caravans XP-TECH van is built in our Campbellfield, Victoria factory — in partnership with Infinite RV. We limit production deliberately, to one van per week, because composite construction done right demands time and attention that volume production simply doesn't allow.",
+          "That means when your van leaves our factory, every panel, every bond line, every seal has been placed by someone who knows exactly what it needs to do. There are no shortcuts in composite construction. We don't take any.",
+          "Each XP-TECH van is backed by a 12-month manufacturer's warranty and a 3-year structural warranty — because we build with enough confidence to stand behind it.",
+        ],
+      },
+      {
+        title: "XP-TECH Is the Platform. The Power Is What Lives Inside It.",
+        paragraphs: [
+          "The composite shell is the foundation. What we build into it takes things further. Every XP-TECH van ships with the Projecta Intelli-Grid fully integrated power system — 800W of rooftop solar, 200Ah of lithium batteries, a 3,000W inverter, and a 7-inch Bluetooth touchscreen to manage it all. Combined with up to 285 litres of fresh water on the Riptide and serious off-road hardware throughout, the XP-TECH range is built to keep you self-sufficient in the places most vans simply shouldn't follow.",
+        ],
+      },
+      {
+        title: "Built With Strength. Finished With Care. Backed for Life.",
+        paragraphs: [
+          "That's the XP-TECH promise. Not a van built for the showroom — a van built for Australia.",
+          "If you want to see what that looks like up close, come and visit us.",
+        ],
+        cta: [
+          { label: "Contact Deluxe Caravans / Infinite RV", href: "/appointment" },
+          { label: "View the XP-TECH Riptide", href: "/familyxptech" },
+          { label: "View the XP-TECH Stormbreaker", href: "/familyoffroad" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "service-maintenance",
+    slug: "service-maintenance",
+    title: "Service & Maintenance",
+    category: "MAINTENANCE",
+    excerpt:
+      "Essential servicing requirements to keep your Deluxe Caravan in peak condition — from first service intervals to comprehensive annual checks.",
+    date: "April 2024",
+    sections: [
+      {
+        title: "First service and every 3000km service",
+        note: "Should cover the below at a minimum:",
+        items: [
+          "Wheel bearing check and adjust",
+          "Wheel nut tension",
+          "Tyre pressure and wear pattern",
+          "Visual inspection of suspension",
+          "Visual inspection of under carriage",
+          "Check brakes",
+          "Check operation of external 12 Volt lights",
+          "Check operation of interior lights",
+          "Check operation of appliances",
+          "Check for any exterior seals that show signs of deterioration or gaps that needs resealing",
+          "Check adjustment of doors, windows and hatches",
+          "Grease shackle and coupling nipples",
+          "Remove, Clean, Inspect, Repack of wheel Bearings",
+          "Inspect Drum for wearing",
+          "Inspect Magnet Face for wearing",
+          "Remove magnet & check for wearing on ARM & MAGNET",
+          "Inspect Brake Shoes and Oil Backing Plate",
+          "Inspect Bushes for Movement",
+          "Grease shackle and coupling nipples",
+          "Test Brake-Away",
+        ],
+      },
+      {
+        title: "Major service at 12 month or 10,000km",
+        note: "Should cover the following at a minimum:",
+        items: [
+          "Remove, Clean, Inspect, Repack of wheel Bearings",
+          "Inspect Drum for wearing",
+          "Inspect Magnet Face for wearing",
+          "Remove Magnet & check for wearing on ARM & MAGNET",
+          "Inspect Brake Shoes and Oil Backing Plate",
+          "Inspect Bushes for Movement",
+          "Inspect springs & Suspension System (Shock Absorbers)",
+          "Check Tyre Wear and Tyre pressures (INCLUDE SPARE/S)",
+          "Check wind down legs and lubricate",
+          "Check tail light etc.",
+          "Grease Coupling & Adjust",
+          "Adjust Hand Brake",
+          "Grease shackle and coupling nipples",
+          "Check Anode",
+          "Run hot water Tap & Check HWS is full",
+          "Check if Pump",
+          "Test Brakes",
+          "Check for any exterior seals that show signs of deterioration or gaps that needs resealing",
+          "Check Battery Condition and Report",
+        ],
+      },
+    ],
+  },
+];

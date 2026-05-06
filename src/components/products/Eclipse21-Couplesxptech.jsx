@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 import GoToTop from "../functions/GoToTop";
 import SpecsEclipse21 from "./Specsmenu/SpecsEclipse21xptech";
 import TechspecEclipse21xptech from "./techspecs/TechspecEclipse21xptech";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Eclipse21XptechPdf from "../../assets/pdfs/Eclipse 21'6_ Couples XP-Tech — Deluxe Caravans.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -28,6 +30,8 @@ const scrollToLayout = () => {
 };
 
 const Eclipse21CouplesXPTech = () => {
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
+
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -101,8 +105,7 @@ const Eclipse21CouplesXPTech = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216layout.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216layouttop.webp"
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/eclipse%2021-6.webp",
               ],
               description: "Detailed floor plans and layout configurations",
             },
@@ -155,15 +158,19 @@ const Eclipse21CouplesXPTech = () => {
               you'll be treated to an exceptionally roomy layout, complete with
               all the amenities you'd expect from a luxury RV.
             </p>
-            {/* <button
-              className="btn hover-border-1 revealUp"
-              onClick={openWarrantyPopupWarrantyPolicy}
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
             >
-              Download Our Brochure and Upgrade List
+              Download Our Brochure
             </button>
-            {isWarrantyPopupOpen && (
-              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
-            )} */}
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Eclipse 21'6 Couples XP-Tech"
+                pdfUrl={Eclipse21XptechPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>

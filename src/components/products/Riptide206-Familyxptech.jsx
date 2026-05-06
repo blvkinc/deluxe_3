@@ -6,7 +6,8 @@ import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import GoToTop from "../functions/GoToTop";
 import SpecsRiptide206xptech from "./Specsmenu/SpecsRiptide206xptech";
 import TechspecRiptide206xptech from "./techspecs/TechspecRiptide206xptech";
-import WarrantyPolicyPopup from "./popup/WarrantyPolicyPopUp";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Riptide206XptechPdf from "../../assets/pdfs/Riptide R206 Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -25,15 +26,7 @@ const scrollToLayout = () => {
 };
 
 const Riptide206FamilyXPTech = () => {
-  const [isWarrantyPopupOpen, setIsWarrantyPopupOpen] = useState(false);
-
-  const openWarrantyPopupWarrantyPolicy = () => {
-    setIsWarrantyPopupOpen(true);
-  };
-
-  const closeWarrantyPopupWarrantyPolicy = () => {
-    setIsWarrantyPopupOpen(false);
-  };
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   return (
     <div className="container">
@@ -82,7 +75,7 @@ const Riptide206FamilyXPTech = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/20%606/20%606.png",
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/riptide%2020-6.webp",
               ],
               description: "",
             },
@@ -141,6 +134,19 @@ const Riptide206FamilyXPTech = () => {
                 <a href="/tour">Have a look at RIPTIDE 20'6"</a>
               </button>
             </p>
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
+            >
+              Download Our Brochure
+            </button>
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Riptide 20'6 Family XP-Tech"
+                pdfUrl={Riptide206XptechPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>

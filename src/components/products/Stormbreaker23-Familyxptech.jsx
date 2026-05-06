@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -9,6 +9,8 @@ import Techspec23xptech from "./techspecs/Techspec23xptech";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Stormbreaker23XptechPdf from "../../assets/pdfs/Stormbreaker 23'11_ Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -25,8 +27,6 @@ const scrollToLayout = () => {
 };
 
 const Stormbreaker23FamilyXPTech = () => {
-  const containerRef = useRef(null);
-
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -48,15 +48,7 @@ const Stormbreaker23FamilyXPTech = () => {
     });
   }, []);
 
-  const [isWarrantyPopupOpen, setWarrantyPopupOpen] = useState(false);
-
-  const openWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(true);
-  }, []);
-
-  const closeWarrantyPopupWarrantyPolicy = useCallback(() => {
-    setWarrantyPopupOpen(false);
-  }, []);
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   return (
     <div className="container">
@@ -173,15 +165,19 @@ const Stormbreaker23FamilyXPTech = () => {
               roomy layout, complete with all the amenities you&#39;d expect
               from a luxury RV.
             </p>
-            {/* <button
-              className="btn hover-border-1 revealUp"
-              onClick={openWarrantyPopupWarrantyPolicy}
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
             >
-              Download Our Brochure and Upgrade List
+              Download Our Brochure
             </button>
-            {isWarrantyPopupOpen && (
-              <WarrantyPolicyPopup onClose={closeWarrantyPopupWarrantyPolicy} />
-            )} */}
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Stormbreaker 23'11 Family XP-Tech"
+                pdfUrl={Stormbreaker23XptechPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>

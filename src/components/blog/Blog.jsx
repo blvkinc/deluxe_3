@@ -1,52 +1,30 @@
-import React, { useEffect, useMemo } from "react";
-import "../home/Home.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import { blogPosts } from "./blogData";
 import "./Blog.css";
-import GoToTop from "../functions/GoToTop";
-import { Helmet } from "react-helmet";
 
 function Blog() {
-  const elfSightScript = useMemo(() => {
-    const script = document.createElement("script");
-    script.src = "https://static.elfsight.com/platform/platform.js";
-    script.setAttribute("data-use-service-core", "");
-    script.async = true;
-    return script;
-  }, []);
-
-  useEffect(() => {
-    // Append the ElfSight script when the component mounts
-    document.body.appendChild(elfSightScript);
-
-    return () => {
-      // Remove the script when the component unmounts
-      document.body.removeChild(elfSightScript);
-    };
-  }, [elfSightScript]);
-
   return (
-    <div
-      className="container"
-      style={{ backgroundColor: "#fff", color: "#000" }}
-    >
-      <div className="blog_component">
-        <div>
-          <h1 className="blog_title">Our Stories</h1>
-          <p className="blog_subtitle">
-            Stay updated with our latest news, adventures, and caravan insights
-          </p>
-        </div>
-        {/* Embed ElfSight widget */}
-        <div className="elfsight-app-7d26f6be-2b62-44e3-a913-7a9421fc54e5"></div>
+    <div className="blog-page">
+      <div className="blog-hero">
+        <h1 className="blog-heading">BLOGS</h1>
+        <p className="blog-subheading">News, guides and caravan insights</p>
       </div>
-      {/* Add the ElfSight script to the head using Helmet */}
-      <Helmet>
-        <script
-          src="https://static.elfsight.com/platform/platform.js"
-          data-use-service-core
-          defer
-        />
-      </Helmet>
-      <GoToTop />
+      <div className="blog-grid">
+        {blogPosts.map((post) => (
+          <Link to={`/blog/${post.slug}`} key={post.id} className="blog-card">
+            <div className="blog-card-body">
+              <div className="blog-card-category">{post.category}</div>
+              <h2 className="blog-card-title">{post.title}</h2>
+              <p className="blog-card-excerpt">{post.excerpt}</p>
+              <div className="blog-card-footer">
+                <span className="blog-card-date">{post.date}</span>
+                <span className="blog-card-cta">READ MORE →</span>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

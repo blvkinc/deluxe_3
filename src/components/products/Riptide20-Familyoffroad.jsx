@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -8,6 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
 import Rip20specs from "./Specsmenu/SpecsRiptide20";
 import TechspecRiptide20 from "./techspecs/TechspecRiptide20";
+import BrochurePopUp from "./popup/BrochurePopUp";
+import Riptide20OffroadPdf from "../../assets/pdfs/Riptide 20' Family Offroad — Deluxe Caravans × Infinite RV.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,6 +28,8 @@ const scrollToLayout = () => {
 };
 
 const Riptide20FamilyOffRoad = () => {
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
+
   useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
@@ -95,7 +99,7 @@ const Riptide20FamilyOffRoad = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/rip20layout.webp"
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/riptide%2020.webp"
               ],
               description: "Detailed floor plans and layout configurations",
             },
@@ -134,6 +138,19 @@ const Riptide20FamilyOffRoad = () => {
                 <a href="/tour">Have a look at RIPTIDE 20`</a>
               </button>
             </p>
+            <button
+              className="btn hover-border-1"
+              onClick={() => setIsBrochureOpen(true)}
+            >
+              Download Our Brochure
+            </button>
+            {isBrochureOpen && (
+              <BrochurePopUp
+                onClose={() => setIsBrochureOpen(false)}
+                productName="Riptide 20 Family Off-Road"
+                pdfUrl={Riptide20OffroadPdf}
+              />
+            )}
           </div>
           <div className="package-details">
             <p>
