@@ -9,6 +9,7 @@ import GoToTop from "../functions/GoToTop";
 import Storm21specs from "./Specsmenu/Specs21";
 import Techspec21 from "./techspecs/Techspec21";
 import BrochurePopUp from "./popup/BrochurePopUp";
+import Stormbreaker21OffroadPdf from "../../assets/pdfs/Stormbreaker 21'6_ Family Offroad — Deluxe Caravans × Infinite RV.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -171,7 +172,7 @@ const Stormbreaker21FamilyOffRoad = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Stormbreaker 21'6 Family Off-Road"
-                pdfUrl={null}
+                pdfUrl={Stormbreaker21OffroadPdf}
               />
             )}
           </div>
