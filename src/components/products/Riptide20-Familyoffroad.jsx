@@ -99,7 +99,7 @@ const Riptide20FamilyOffRoad = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/rip20layout.webp"
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/riptide%2020.webp"
               ],
               description: "Detailed floor plans and layout configurations",
             },

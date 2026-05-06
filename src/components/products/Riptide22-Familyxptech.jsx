@@ -96,16 +96,7 @@ const Riptide22FamilyXPTech = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip22/riptide%20layout%20new2-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/riptide%2022.webp",
               ],
               description: "",
             },

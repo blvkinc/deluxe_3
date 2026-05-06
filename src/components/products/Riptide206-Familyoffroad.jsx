@@ -87,19 +87,17 @@ const Riptide206FamilyOffRoad = () => {
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/E22/1-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/3-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/4-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/5-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/6-min.webp",
+              "https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(11).webp",
+"https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(6).webp",
+"https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(7).webp",
+"https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(8).webp"
               ],
               description: "Explore the stunning exterior design and features",
             },
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/20%606/20%606.png",
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/riptide%2020-6.webp",
               ],
               description: "Detailed floor plans and layout configurations",
             },

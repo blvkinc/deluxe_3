@@ -105,7 +105,7 @@ const Eclipse18CouplesXPTech = () => {
             {
               name: "Layout",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/18/18-6.webp",
+                "https://deluxcaravan.b-cdn.net/assets/interior-new/eclipse%2018-6.webp",
               ],
               description: "Detailed floor plans and layout configurations",
             },
