@@ -10,7 +10,6 @@ import GoToTop from "../functions/GoToTop";
 import SpecsEclipse18 from "./Specsmenu/SpecsEclipse18";
 import TechspecEclipse18 from "./techspecs/TechspecEclipse18";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Eclipse18XptechPdf from "../../assets/pdfs/Eclipse 18'6_ Couples XP-Tech — Deluxe Caravans.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -83,22 +82,13 @@ const Eclipse18CouplesXPTech = () => {
         </div>
       </div>
 
-      <div className="slideshowcomopnent">
+      <div className="slideshowcomopnent" id="layout">
         <EnhancedGallery
           sections={[
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%201.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%202.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%203.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%204.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%205.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%206.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%207.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%208.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%209.webp",
+                "https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
               ],
               description: "Explore the stunning exterior design and features",
             },
@@ -141,7 +131,6 @@ const Eclipse18CouplesXPTech = () => {
       <div className="component">
         <div
           className="product-container"
-          id="layout"
           style={{
             gridGap: "100px",
           }}
@@ -167,7 +156,7 @@ const Eclipse18CouplesXPTech = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Eclipse 18'6 Couples XP-Tech"
-                pdfUrl={Eclipse18XptechPdf}
+                pdfUrl="/brochures/XPTECH_Eclipse_18-6_brochure_2026.html"
               />
             )}
           </div>

@@ -64,11 +64,18 @@
   justify-content: center;
   max-width: 100vw;
   text-align: left;
+  gap: 60px;
 }
 
 .description {
   width: 40vw;
   margin-left: 100px;
+  flex-shrink: 0;
+}
+
+.product-container > .package-details {
+  width: 45vw;
+  margin-right: 60px;
 }
 
 .image iframe {

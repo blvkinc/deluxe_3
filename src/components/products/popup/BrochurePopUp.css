@@ -78,7 +78,7 @@
 }
 
 .brochure-field input:focus {
-  border-color: #7a0202;
+  border-color: #3c4c5a;
 }
 
 .brochure-error {
@@ -90,7 +90,7 @@
 .brochure-submit {
   width: 100%;
   padding: 12px;
-  background: #7a0202;
+  background: #3c4c5a;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -102,7 +102,7 @@
 }
 
 .brochure-submit:hover:not(.disabled) {
-  background: #5c0101;
+  background: #000000;
 }
 
 .brochure-submit.disabled {

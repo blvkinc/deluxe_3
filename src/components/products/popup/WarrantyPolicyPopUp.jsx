@@ -28,7 +28,7 @@ const WarrantyPolicyPopup = ({ onClose }) => {
 
       if (response.ok) {
         console.log("Form submitted successfully");
-        setFormSubmitted(true);
+        
       } else {
         console.error("Form submission failed:", response.statusText);
       }

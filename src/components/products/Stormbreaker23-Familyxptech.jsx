@@ -61,36 +61,32 @@ const Stormbreaker23FamilyXPTech = () => {
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">S2311</h1>
-              <button
-                onClick={scrollToLayout}
-                className="btn hover-border-1 revealUp"
-              >
-                Layout
-              </button>
-              <button
-                onClick={scrollToSpecs}
-                className="btn hover-border-1 revealUp"
-              >
-                Specs
-              </button>
+              <div className="btn-holder">
+                <button
+                  onClick={scrollToLayout}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Layout
+                </button>
+                <button
+                  onClick={scrollToSpecs}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Specs
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="slideshowcomopnent">
+      <div className="slideshowcomopnent" id="layout">
         <EnhancedGallery
           sections={[
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(1).webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(2).webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(3).webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(5).webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(6).webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(7).webp",
-                
+                "https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
               ],
               description: "",
             },
@@ -126,7 +122,7 @@ const Stormbreaker23FamilyXPTech = () => {
               description: "",
             },
           ]}
-          productName="Riptide 20'"
+          productName="Stormbreaker 23'11 Family XP-Tech"
         />
       </div>
       <div className="component" id="xptechbanner">
@@ -147,7 +143,6 @@ const Stormbreaker23FamilyXPTech = () => {
       <div className="component">
         <div
           className="product-container"
-          id="layout"
           style={{
             gridGap: "100px",
           }}

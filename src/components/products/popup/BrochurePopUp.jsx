@@ -41,7 +41,13 @@ const BrochurePopUp = ({ onClose, productName, pdfUrl }) => {
       );
 
       if (pdfUrl) {
-        window.open(pdfUrl, "_blank", "noopener,noreferrer");
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        const ext = pdfUrl.split(".").pop();
+        link.download = `${productName}-brochure.${ext}`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
       }
       onClose();
     } catch (err) {
@@ -59,7 +65,7 @@ const BrochurePopUp = ({ onClose, productName, pdfUrl }) => {
         </button>
         <h2 className="brochure-title">Download Our Brochure</h2>
         <p className="brochure-subtitle">
-          Enter your details below and the PDF will open instantly.
+          Enter your details below and the brochure will download instantly.
         </p>
         <form onSubmit={handleSubmit} noValidate>
           <div className="brochure-field">
@@ -92,7 +98,7 @@ const BrochurePopUp = ({ onClose, productName, pdfUrl }) => {
             className={`brochure-submit${!isFormValid || sending ? " disabled" : ""}`}
             disabled={!isFormValid || sending}
           >
-            {sending ? "Sending…" : "Send & Download PDF"}
+            {sending ? "Sending…" : "Send & Download Brochure"}
           </button>
         </form>
       </div>

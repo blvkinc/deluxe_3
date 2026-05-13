@@ -9,7 +9,6 @@ import GoToTop from "../functions/GoToTop";
 import Rip22specs from "./Specsmenu/SpecsRiptide22";
 import TechspecRiptide22 from "./techspecs/TechspecRiptide22";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Riptide22OffroadPdf from "../../assets/pdfs/Riptide 22' Family Offroad — Deluxe Caravans × Infinite RV.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -81,8 +80,8 @@ const Riptide22FamilyOffRoad = () => {
         </div>
       </div>
 
-      <div className="slideshowcomopnent">
-        <EnhancedGallery 
+      <div className="slideshowcomopnent" id="layout">
+        <EnhancedGallery
           sections={[
             {
               name: "Exterior",
@@ -128,7 +127,6 @@ const Riptide22FamilyOffRoad = () => {
       <div className="component">
         <div
           className="product-container"
-          id="layout"
           style={{
             gridGap: "100px",
           }}
@@ -163,7 +161,7 @@ const Riptide22FamilyOffRoad = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Riptide 22 Family Off-Road"
-                pdfUrl={Riptide22OffroadPdf}
+                pdfUrl="/brochures/Offroad_Riptide_22_brochure_2026.html"
               />
             )}
           </div>

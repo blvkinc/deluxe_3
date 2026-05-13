@@ -10,7 +10,6 @@ import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Stormbreaker21XptechPdf from "../../assets/pdfs/Stormbreaker 21'6_ Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -60,39 +59,33 @@ const Stormbreaker21FamilyXPTech = () => {
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">S216</h1>
-              <button
-                onClick={scrollToLayout}
-                className="btn hover-border-1 revealUp"
-              >
-                Layout
-              </button>
-              <button
-                onClick={scrollToSpecs}
-                className="btn hover-border-1 revealUp"
-              >
-                Specs
-              </button>
+              <h1 className="Product-header revealUp">STORMBREAKER S216</h1>
+              <div className="btn-holder">
+                <button
+                  onClick={scrollToLayout}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Layout
+                </button>
+                <button
+                  onClick={scrollToSpecs}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Specs
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="slideshowcomopnent">
+      <div className="slideshowcomopnent" id="layout">
         <EnhancedGallery
           sections={[
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/21des.webp",
-                "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%201.webp",
-                "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%202.webp",
-                "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%203.webp",
-                "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%204.webp",
-                "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%205.webp",
-                "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%203.webp",
-                "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%202.webp",
-                "https://deluxcaravan.b-cdn.net/assets/21/21%20ex%201.webp",
+                "https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
               ],
               description: "",
             },
@@ -127,7 +120,7 @@ const Stormbreaker21FamilyXPTech = () => {
               description: "",
             },
           ]}
-          productName="Riptide 20'"
+          productName="Stormbreaker 21'6 Family XP-Tech"
         />
       </div>
       <div className="component" id="xptechbanner">
@@ -146,7 +139,7 @@ const Stormbreaker21FamilyXPTech = () => {
       {/* <div className='slideshowcomopnent'>
     </div> */}
       <div className="component">
-        <div className="product-container" id="layout">
+        <div className="product-container">
           <div className="description">
             <p>
               Are you on the hunt for a more spacious family bunk caravan? Your
@@ -162,27 +155,9 @@ const Stormbreaker21FamilyXPTech = () => {
               features, you can travel without guilt and experience all the joy
               you deserve.
             </p>
-            <div className="package-details">
-              <p>
-                <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
-              </p>
-              <p>
-                <h3>WORTH $7000 !</h3>
-              </p>
-              <ul>
-                <li>DOMETIC FRESH JET AIRCON</li>
-                <li>188L DOMETIC COMPRESSOR FRIDGE</li>
-                <li>4 X 200W SOLAR PANELS</li>
-                <li>2 X 200AH LITHIUM BATTERIES</li>
-                <li>Raptor Painted Chassis</li>
-                <li>AuFocus Diesel Heater</li>
-                <li>2 X RECOVERY POINTS</li>
-           <li>AIRBAG READY SUSPENSION</li>
-              </ul>
-            </div>
             <p>
               <button className="virtual-btn">
-                <a href="/tour">Have a look at STORMBREAKER 21`6</a>
+                <a href="/tour">Have a look at STORMBREAKER S216</a>
               </button>
             </p>
             <button
@@ -195,19 +170,27 @@ const Stormbreaker21FamilyXPTech = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Stormbreaker 21'6 Family XP-Tech"
-                pdfUrl={Stormbreaker21XptechPdf}
+                pdfUrl="/brochures/XPTECH_Stormbreaker_21-6_brochure_2026.html"
               />
             )}
           </div>
-          <div className="image">
-            <iframe
-              src="https://esceneyf.sirv.com/Spins/test2/test2.spin"
-              title="Stormbreaker21"
-              width="1000px"
-              height="1000px"
-              frameborder="0"
-              allowFullScreen
-            ></iframe>{" "}
+          <div className="package-details">
+            <p>
+              <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
+            </p>
+            <p>
+              <h3>WORTH $7000 !</h3>
+            </p>
+            <ul>
+              <li>DOMETIC FRESH JET AIRCON</li>
+              <li>188L DOMETIC COMPRESSOR FRIDGE</li>
+              <li>4 X 200W SOLAR PANELS</li>
+              <li>2 X 200AH LITHIUM BATTERIES</li>
+              <li>Raptor Painted Chassis</li>
+              <li>AuFocus Diesel Heater</li>
+              <li>2 X RECOVERY POINTS</li>
+              <li>AIRBAG READY SUSPENSION</li>
+            </ul>
           </div>
         </div>
       </div>

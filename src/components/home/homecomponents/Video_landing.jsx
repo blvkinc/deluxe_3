@@ -70,7 +70,11 @@ function VideoLanding() {
         </div>
         <div className="text-overlay">
           <div className="hero-content">
-            <h1 className="hero-title revealUp">Deluxe Caravans X Infinite RV</h1>
+            <h1 className="hero-title revealUp">
+              <span className="hero-title-part">Deluxe Caravans</span>
+              <span className="hero-title-x"> X </span>
+              <span className="hero-title-part">Infinite RV</span>
+            </h1>
             <h2 className="hero-subtitle revealUp">A partnership creating infinite possibilities</h2>
             <div className="hero-buttons revealUp">
               <Link to="/media" className="btn modern-btn">

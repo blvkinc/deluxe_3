@@ -2,7 +2,7 @@ export const blogPosts = [
   {
     id: "xptech-construction",
     slug: "xptech-construction",
-    title: "Off-road and off-grid caravans: Built to last",
+    title: "XP-TECH CARAVANS: BUILT TO LAST",
     category: "CONSTRUCTION",
     metaDescription:
       "XP-TECH construction is Deluxe Caravans' composite fibre panel build system — frameless, bonded, and engineered for serious Australian off-grid travel. Here's what makes it different.",

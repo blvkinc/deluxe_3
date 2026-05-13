@@ -145,7 +145,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker18familyoffroad",
-                    text: "Stormbreaker 18'6",
+                    text: "STORMBREAKER 18'6\"",
                     price: "FULL OFF-ROAD: $89,900",
                   },
                   {
@@ -156,7 +156,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker19familyoffroad",
-                    text: "Stormbreaker 19'6",
+                    text: "STORMBREAKER 19'6\"",
                     price: "FULL OFF-ROAD: $92,900",
                   },
                   {
@@ -167,7 +167,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker21familyoffroad",
-                    text: "Stormbreaker 21'6",
+                    text: "STORMBREAKER 21'6\"",
                     price: "FULL OFF-ROAD: $94,900",
                   },
                   {
@@ -178,7 +178,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker23familyoffroad",
-                    text: "Stormbreaker 23'11",
+                    text: "STORMBREAKER 23'11\"",
                     price: "FULL OFF-ROAD: $96,900",
                   },
                 ],
@@ -195,7 +195,7 @@ const Header = () => {
                       />
                     ),
                     link: "/riptide20familyoffroad",
-                    text: "Riptide 20'",
+                    text: "RIPTIDE 20'",
                     price: "FULL OFF-ROAD: $96,900",
                   },
                   {
@@ -206,7 +206,7 @@ const Header = () => {
                       />
                     ),
                     link: "/riptide206familyoffroad",
-                    text: "Riptide 20'6\"",
+                    text: "RIPTIDE 20'6\"",
                     price: "FULL OFF-ROAD: $98,900",
                   },
                   {
@@ -217,7 +217,7 @@ const Header = () => {
                       />
                     ),
                     link: "/riptide22familyoffroad",
-                    text: "Riptide 22'",
+                    text: "RIPTIDE 22'",
                     price: "FULL OFF-ROAD: $98,900",
                   },
                 ],
@@ -240,7 +240,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker18familyxptech",
-                    text: "S18'6",
+                    text: "STORMBREAKER S186",
                     price: "FULL OFF-ROAD: $129,900",
                   },
                   {
@@ -251,7 +251,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker19familyxptech",
-                    text: "S19'6",
+                    text: "STORMBREAKER S196",
                     price: "FULL OFF-ROAD: $132,900",
                   },
                   {
@@ -262,7 +262,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker21familyxptech",
-                    text: "S21'6",
+                    text: "STORMBREAKER S216",
                     price: "FULL OFF-ROAD: $134,900",
                   },
                   {
@@ -273,7 +273,7 @@ const Header = () => {
                       />
                     ),
                     link: "/stormbreaker23familyxptech",
-                    text: "S23'11",
+                    text: "STORMBREAKER S2311",
                     price: "FULL OFF-ROAD: $136,900",
                   },
                 ],
@@ -290,7 +290,7 @@ const Header = () => {
                       />
                     ),
                     link: "/riptide20familyxptech",
-                    text: "R20'",
+                    text: "RIPTIDE R20",
                     price: "FULL OFF-ROAD: $136,900",
                   },
                   {
@@ -301,7 +301,7 @@ const Header = () => {
                       />
                     ),
                     link: "/riptide206familyxptech",
-                    text: "R20'6\"",
+                    text: "RIPTIDE R206",
                     price: "FULL OFF-ROAD: $138,900",
                   },
                   {
@@ -312,7 +312,7 @@ const Header = () => {
                       />
                     ),
                     link: "/riptide22familyxptech",
-                    text: "R22'",
+                    text: "RIPTIDE R22",
                     price: "FULL OFF-ROAD: $138,900",
                   },
                 ],
@@ -341,7 +341,7 @@ const Header = () => {
                       />
                     ),
                     link: "/eclipse18couplesoffroad",
-                    text: "ECLIPSE 18' 6\"",
+                    text: "ECLIPSE 18'6\"",
                     price: "$89,000",
                   },
                   {
@@ -352,7 +352,7 @@ const Header = () => {
                       />
                     ),
                     link: "/eclipse21couplesoffroad",
-                    text: "ECLIPSE 21' 6\"",
+                    text: "ECLIPSE 21'6\"",
                     price: "$96,900",
                   },
                   {
@@ -386,7 +386,7 @@ const Header = () => {
                       />
                     ),
                     link: "/eclipse18couplesxptech",
-                    text: "ECLIPSE 18' 6\"",
+                    text: "ECLIPSE E18",
                     price: "$129,900",
                   },
                   {
@@ -397,7 +397,7 @@ const Header = () => {
                       />
                     ),
                     link: "/eclipse21couplesxptech",
-                    text: "ECLIPSE 21' 6\"",
+                    text: "ECLIPSE E216",
                     price: "$136,900",
                   },
                   {
@@ -408,7 +408,7 @@ const Header = () => {
                       />
                     ),
                     link: "/eclipse22couplesxptech",
-                    text: "ECLIPSE 22'",
+                    text: "ECLIPSE E22",
                     price: "$138,900",
                   },
                 ],
@@ -553,7 +553,7 @@ const Header = () => {
         >
           <div className="header-logo" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-              <span className="header-logo-deluxe" style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em", whiteSpace: "nowrap" }}>DELUXE CARAVANS</span>
+              <span className="header-logo-deluxe" style={{ fontSize: "10px", fontWeight: 300, letterSpacing: "0.12em", whiteSpace: "nowrap" }}>DELUXE CARAVANS</span>
               <Link to="/">
                 <img
                   src="https://deluxcaravan.b-cdn.net/assets/Logo.webp"
@@ -561,13 +561,13 @@ const Header = () => {
                   height={50}
                 />
               </Link>
-              <span className="header-logo-infiniterv" style={{ fontSize: "13px", fontWeight: 700, letterSpacing: "0.08em", whiteSpace: "nowrap" }}>INFINITE RV</span>
+              <span className="header-logo-infiniterv" style={{ fontSize: "10px", fontWeight: 300, letterSpacing: "0.12em", whiteSpace: "nowrap" }}>INFINITE RV</span>
             </div>
-            <span className="header-logo-tagline" style={{ fontSize: "9px", letterSpacing: "0.04em", whiteSpace: "nowrap", opacity: 0.7 }}>
-              A partnership creating infinite possibilities
+            <span className="header-logo-tagline" style={{ fontSize: "8px", fontWeight: 300, letterSpacing: "0.06em", whiteSpace: "nowrap", opacity: 0.65, textAlign: "center", alignSelf: "stretch", paddingLeft: "25px" }}>
+              A PARTNERSHIP CREATING INFINITE POSSIBILITIES
             </span>
           </div>
-          <nav className="header-nav">
+          <nav className="header-nav" onMouseLeave={handleMenuLeave}>
             <ul className="menu">
               {menuData.map((menu, index) => (
                 <motion.li

@@ -8,7 +8,6 @@ import GoToTop from "../functions/GoToTop";
 import Rip22specs from "./Specsmenu/SpecsRiptide22xptech";
 import TechspecRiptide22xptech from "./techspecs/TechspecRiptide22xptech";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Riptide22XptechPdf from "../../assets/pdfs/Riptide R22 Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -61,35 +60,32 @@ const Riptide22FamilyXPTech = () => {
           <div className="image-overlay">
             <div className="button-container">
               <h1 className="Product-header revealUp">R22</h1>
-              <button
-                onClick={scrollToLayout}
-                className="btn hover-border-1 revealUp"
-              >
-                Layout
-              </button>
-              <button
-                onClick={scrollToSpecs}
-                className="btn hover-border-1 revealUp"
-              >
-                Specs
-              </button>
+              <div className="btn-holder">
+                <button
+                  onClick={scrollToLayout}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Layout
+                </button>
+                <button
+                  onClick={scrollToSpecs}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Specs
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="slideshowcomopnent">
+      <div className="slideshowcomopnent" id="layout">
         <EnhancedGallery
           sections={[
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/E22/1-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/3-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/4-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/5-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/6-min.webp",
+                "https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
               ],
               description: "",
             },
@@ -143,7 +139,6 @@ const Riptide22FamilyXPTech = () => {
       <div className="component">
         <div
           className="product-container"
-          id="layout"
           style={{
             gridGap: "100px",
           }}
@@ -178,7 +173,7 @@ const Riptide22FamilyXPTech = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Riptide 22 Family XP-Tech"
-                pdfUrl={Riptide22XptechPdf}
+                pdfUrl="/brochures/XPTECH_Riptide_22_brochure_2026.html"
               />
             )}
           </div>

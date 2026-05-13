@@ -9,7 +9,6 @@ import GoToTop from "../functions/GoToTop";
 import SpecsEclipse18 from "./Specsmenu/SpecsEclipse18";
 import TechspecEclipse18 from "./techspecs/TechspecEclipse18";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Eclipse18OffroadPdf from "../../assets/pdfs/Eclipse 18'6_ Couples Off-Road — Deluxe Caravans.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -81,7 +80,7 @@ const Eclipse18CouplesOffRoad = () => {
         </div>
       </div>
 
-      <div className="slideshowcomopnent">
+      <div className="slideshowcomopnent" id="layout">
         <EnhancedGallery
           sections={[
             {
@@ -126,7 +125,6 @@ const Eclipse18CouplesOffRoad = () => {
       <div className="component">
         <div
           className="product-container"
-          id="layout"
           style={{
             gridGap: "100px",
           }}
@@ -152,7 +150,7 @@ const Eclipse18CouplesOffRoad = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Eclipse 18'6 Couples Off-Road"
-                pdfUrl={Eclipse18OffroadPdf}
+                pdfUrl="/brochures/Offroad_Eclipse_18-6_brochure_2026.html"
               />
             )}
           </div>

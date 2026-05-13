@@ -60,37 +60,32 @@ const Stormbreaker18FamilyXPTech = () => {
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">S186</h1>
-              <button
-                onClick={scrollToLayout}
-                className="btn hover-border-1 revealUp"
-              >
-                Layout
-              </button>
-              <button
-                onClick={scrollToSpecs}
-                className="btn hover-border-1 revealUp"
-              >
-                Specs
-              </button>
+              <h1 className="Product-header revealUp">STORMBREAKER S186</h1>
+              <div className="btn-holder">
+                <button
+                  onClick={scrollToLayout}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Layout
+                </button>
+                <button
+                  onClick={scrollToSpecs}
+                  className="btn hover-border-1 revealUp"
+                >
+                  Specs
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="slideshowcomopnent">
+      <div className="slideshowcomopnent" id="layout">
         <EnhancedGallery
           sections={[
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Product%20renders/18des.webp",
-                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%201.webp",
-                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%202.webp",
-                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%203.webp",
-                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%204.webp",
-                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%205.webp",
-                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%206.webp",
-                "https://deluxcaravan.b-cdn.net/assets/18/18%20ex%207.webp",
+                "https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
               ],
               description: "",
             },
@@ -139,7 +134,7 @@ const Stormbreaker18FamilyXPTech = () => {
       {/* <div className='slideshowcomopnent'>
     </div> */}
       <div className="component">
-        <div className="product-container" id="layout">
+        <div className="product-container">
           <div className="description">
             <p>
               Are you looking for a small compact caravan that has everything
@@ -156,27 +151,9 @@ const Stormbreaker18FamilyXPTech = () => {
               explore with a clear conscience. Your next adventure awaits with
               the 18'6 Stormbreaker.
             </p>
-            <div className="package-details">
-              <p>
-                <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
-              </p>
-              <p>
-                <h3>WORTH $7000 !</h3>
-              </p>
-              <ul>
-                <li>DOMETIC FRESH JET AIRCON</li>
-                <li>188L DOMETIC COMPRESSOR FRIDGE</li>
-                <li>4 X 200W SOLAR PANELS</li>
-                <li>2 X 200AH LITHIUM BATTERIES</li>
-                <li>Raptor Painted Chassis</li>
-                <li>AuFocus Diesel Heater</li>
-                <li>2 X RECOVERY POINTS</li>
-           <li>AIRBAG READY SUSPENSION</li>
-              </ul>
-            </div>
             <p>
               <button className="virtual-btn">
-                <a href="/tour">Have a look at STORMBREAKER 18`6</a>
+                <a href="/tour">Have a look at STORMBREAKER S186</a>
               </button>
             </p>
             <button
@@ -193,15 +170,23 @@ const Stormbreaker18FamilyXPTech = () => {
               />
             )}
           </div>
-          <div className="image">
-            <iframe
-              src="https://esceneyf.sirv.com/Spins/18/18.spin"
-              width="1000px"
-              height="1000px"
-              frameborder="0"
-              allowFullScreen
-              title="Stormbreaker 18'6"
-            ></iframe>
+          <div className="package-details">
+            <p>
+              <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
+            </p>
+            <p>
+              <h3>WORTH $7000 !</h3>
+            </p>
+            <ul>
+              <li>DOMETIC FRESH JET AIRCON</li>
+              <li>188L DOMETIC COMPRESSOR FRIDGE</li>
+              <li>4 X 200W SOLAR PANELS</li>
+              <li>2 X 200AH LITHIUM BATTERIES</li>
+              <li>Raptor Painted Chassis</li>
+              <li>AuFocus Diesel Heater</li>
+              <li>2 X RECOVERY POINTS</li>
+              <li>AIRBAG READY SUSPENSION</li>
+            </ul>
           </div>
         </div>
       </div>
