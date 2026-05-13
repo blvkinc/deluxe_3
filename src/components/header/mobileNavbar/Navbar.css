@@ -14,9 +14,9 @@
 
 .dropdown-menu li {
   position: relative;
-  margin-top: 10px;
+  margin-top: 4px;
   text-align: center;
-  padding: 10px;
+  padding: 4px 6px;
 }
 
 .dropdown-menu a,
@@ -48,7 +48,7 @@
 }
 
 .dropdown-menu .navbar-nav .nav-item {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .dropdown-menu .navbar-nav .nav-link,
