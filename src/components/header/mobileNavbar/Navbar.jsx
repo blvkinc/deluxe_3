@@ -117,8 +117,8 @@ const Navbar = () => {
                         style={{ height: "50px", width: "auto" }}
                       />
                     </Link>
-                    <p style={{ color: "black" , fontSize: "14px" }}>DELUXE CARAVANS X INFINITE RV</p>
-                    <p style={{ color: "black" , fontSize: "12px" }}>A PARTNERSHIP CREATING INFINTE POSSIBILITIES</p>
+                    <p style={{ color: "black" , fontSize: "12px" }}>DELUXE CARAVANS X INFINITE RV</p>
+                    <p style={{ color: "black" , fontSize: "10px" }}>A PARTNERSHIP CREATING INFINTE POSSIBILITIES</p>
                   </li>
 
                   {/* FAMILY MENU */}

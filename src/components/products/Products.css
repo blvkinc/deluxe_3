@@ -295,9 +295,12 @@
     min-width: 120px;
   }
 
-  .package-details {
-    padding: 20px;
+  .package-details,
+  .product-container > .package-details {
+    width: calc(100vw - 20px);
     margin: 20px 10px;
+    margin-right: 0;
+    padding: 20px;
   }
 
   .package-details li {
