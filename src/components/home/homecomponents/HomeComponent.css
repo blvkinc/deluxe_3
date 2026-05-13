@@ -229,6 +229,10 @@
     letter-spacing: 1px;
     -webkit-text-stroke: 1px white;
   }
+  .hero-title-part,
+  .hero-title-x {
+    display: block;
+  }
   .hero-subtitle {
     font-size: 0.85rem;
     margin-top: 10px;
