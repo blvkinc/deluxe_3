@@ -89,13 +89,7 @@ const Eclipse22CouplesXPTech = () => {
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_1-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_2-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_3-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_4-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_5-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_6-min.webp",
-                "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_7-min.webp"
+                "https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
               ],
               description: "Explore the stunning exterior design and features",
             },

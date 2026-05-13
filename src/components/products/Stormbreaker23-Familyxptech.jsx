@@ -86,13 +86,7 @@ const Stormbreaker23FamilyXPTech = () => {
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(1).webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(2).webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(3).webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(5).webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(6).webp",
-                "https://deluxcaravan.b-cdn.net/assets/23/2311newex/2311%20ex%20(7).webp",
-                
+                "https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
               ],
               description: "",
             },

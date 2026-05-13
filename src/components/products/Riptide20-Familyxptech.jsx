@@ -64,13 +64,7 @@ const Riptide20FamilyXPTech = () => {
             {
               name: "Exterior",
               images: [
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(1).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(2).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(3).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(4).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(5).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(6).webp",
-                "https://deluxcaravan.b-cdn.net/assets/Rip20/exmin%20(7).webp",
+                "https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
               ],
               description: "",
             },
