@@ -81,7 +81,7 @@ const Eclipse18CouplesOffRoad = () => {
         </div>
       </div>
 
-      <div className="slideshowcomopnent">
+      <div className="slideshowcomopnent" id="layout">
         <EnhancedGallery
           sections={[
             {
@@ -126,7 +126,6 @@ const Eclipse18CouplesOffRoad = () => {
       <div className="component">
         <div
           className="product-container"
-          id="layout"
           style={{
             gridGap: "100px",
           }}

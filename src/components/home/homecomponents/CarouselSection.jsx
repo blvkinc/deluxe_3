@@ -51,19 +51,19 @@ const CarouselSection = () => {
         link: '/riptide22familyoffroad'
       },
       {
-        name: 'Eclipse 18\'6" Couples',
+        name: 'Eclipse 18\'6"',
         price: '$89,000',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
         link: '/eclipse18couplesoffroad'
       },
       {
-        name: 'Eclipse 21 Couples',
+        name: 'Eclipse 21',
         price: '$96,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
         link: '/eclipse21couplesoffroad'
       },
       {
-        name: 'Eclipse 22 Couples',
+        name: 'Eclipse 22',
         price: '$98,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
         link: '/eclipse22couplesoffroad'
@@ -200,7 +200,7 @@ const CarouselSection = () => {
         {caravanData[activeType].map((_, index) => (
           <span
             key={index}
-            className={`dot ${index === currentSlide ? 'active' : ''}`}
+            className={`carousel-dot ${index === currentSlide ? 'active' : ''}`}
             onClick={() => setCurrentSlide(index)}
           />
         ))}

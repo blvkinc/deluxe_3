@@ -81,8 +81,8 @@ const Stormbreaker23FamilyOffRoad = () => {
         </div>
       </div>
 
-      <div className="slideshowcomopnent">
-        <EnhancedGallery 
+      <div className="slideshowcomopnent" id="layout">
+        <EnhancedGallery
           sections={[
             {
               name: "Exterior",
@@ -131,7 +131,6 @@ const Stormbreaker23FamilyOffRoad = () => {
       <div className="component">
         <div
           className="product-container"
-          id="layout"
           style={{
             gridGap: "100px",
           }}

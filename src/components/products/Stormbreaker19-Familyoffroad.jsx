@@ -61,7 +61,7 @@ const Stormbreaker19FamilyOffRoad = () => {
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">Stormbreaker19`6</h1>
+              <h1 className="Product-header revealUp">STORMBREAKER 19'6"</h1>
               <div className="btn-holder">
                 <button
                   onClick={scrollToLayout}
@@ -81,8 +81,8 @@ const Stormbreaker19FamilyOffRoad = () => {
         </div>
       </div>
 
-      <div className="slideshowcomopnent">
-        <EnhancedGallery 
+      <div className="slideshowcomopnent" id="layout">
+        <EnhancedGallery
           sections={[
             {
               name: "Exterior",
@@ -128,7 +128,7 @@ const Stormbreaker19FamilyOffRoad = () => {
       {/* <div className='slideshowcomopnent'>
     </div> */}
       <div className="component">
-        <div className="product-container" id="layout">
+        <div className="product-container">
           <div className="description">
             <p>
               Searching for a compact family bunk caravan? Look no further. The
@@ -142,25 +142,9 @@ const Stormbreaker19FamilyOffRoad = () => {
               eco-friendly features, you can travel without guilt and experience
               all the joy you deserve.
             </p>
-            <div className="package-details">
-              <p>
-                <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
-              </p>
-              <p>
-                <h3>WORTH $7000 !</h3>
-              </p>
-              <ul>
-                <li>DOMETIC FRESH JET AIRCON</li>
-                <li>188L DOMETIC COMPRESSOR FRIDGE</li>
-                <li>3 X 170W SOLAR PANELS</li>
-                <li>2 X 100AH LITHIUM BATTERIES</li>
-                <li>2 X RECOVERY POINTS</li>
-         <li>AIRBAG READY SUSPENSION</li>
-              </ul>
-            </div>
             <p>
               <button className="virtual-btn">
-                <a href="/tour">Have a look at STORMBREAKER 19`6</a>
+                <a href="/tour">Have a look at STORMBREAKER 19'6"</a>
               </button>
             </p>
             <button
@@ -177,15 +161,21 @@ const Stormbreaker19FamilyOffRoad = () => {
               />
             )}
           </div>
-          <div className="image">
-            <iframe
-              src="https://esceneyf.sirv.com/Spins/SB196/SB196.spin"
-              title="Stormbreaker 19'6"
-              width="1000px"
-              height="1000px"
-              frameborder="0"
-              allowFullScreen
-            ></iframe>
+          <div className="package-details">
+            <p>
+              <h2>NOW WITH ALL 2026 ORDERS, OFF-GRID PACKAGE INCLUSIONS: </h2>
+            </p>
+            <p>
+              <h3>WORTH $7000 !</h3>
+            </p>
+            <ul>
+              <li>DOMETIC FRESH JET AIRCON</li>
+              <li>188L DOMETIC COMPRESSOR FRIDGE</li>
+              <li>3 X 170W SOLAR PANELS</li>
+              <li>2 X 100AH LITHIUM BATTERIES</li>
+              <li>2 X RECOVERY POINTS</li>
+              <li>AIRBAG READY SUSPENSION</li>
+            </ul>
           </div>
         </div>
       </div>

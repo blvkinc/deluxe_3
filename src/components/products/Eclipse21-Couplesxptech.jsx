@@ -83,8 +83,8 @@ const Eclipse21CouplesXPTech = () => {
         </div>
       </div>
 
-      <div className="slideshowcomopnent">
-        <EnhancedGallery 
+      <div className="slideshowcomopnent" id="layout">
+        <EnhancedGallery
           sections={[
             {
               name: "Exterior",
@@ -142,7 +142,6 @@ const Eclipse21CouplesXPTech = () => {
       <div className="component">
         <div
           className="product-container"
-          id="layout"
           style={{
             gridGap: "100px",
           }}

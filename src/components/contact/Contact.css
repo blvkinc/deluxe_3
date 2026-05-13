@@ -16,8 +16,9 @@
   align-items: center;
   justify-content: center;
   padding-top: 5rem;
-  margin-bottom: 3rem;
-  height: 70vh;
+  padding-bottom: 5rem;
+  margin-bottom: 4rem;
+  min-height: 70vh;
 }
 
 .contact-container {
