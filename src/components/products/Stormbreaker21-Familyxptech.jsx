@@ -10,7 +10,6 @@ import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Stormbreaker21XptechPdf from "../../assets/pdfs/Stormbreaker 21'6_ Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -171,7 +170,7 @@ const Stormbreaker21FamilyXPTech = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Stormbreaker 21'6 Family XP-Tech"
-                pdfUrl={Stormbreaker21XptechPdf}
+                pdfUrl="/brochures/XPTECH_Stormbreaker_21-6_brochure_2026.html"
               />
             )}
           </div>

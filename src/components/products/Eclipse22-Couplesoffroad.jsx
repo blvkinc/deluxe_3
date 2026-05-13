@@ -9,7 +9,6 @@ import GoToTop from "../functions/GoToTop";
 import SpecsEclipse22 from "./Specsmenu/SpecsEclipse22";
 import TechspecEclipse22 from "./techspecs/TechspecEclipse22";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Eclipse22OffroadPdf from "../../assets/pdfs/Eclipse 22' Couples Off-Road — Deluxe Caravans.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -153,7 +152,7 @@ const Eclipse22CouplesOffRoad = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Eclipse 22 Couples Off-Road"
-                pdfUrl={Eclipse22OffroadPdf}
+                pdfUrl="/brochures/Offroad_Eclipse_22_brochure_2026.html"
               />
             )}
           </div>

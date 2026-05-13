@@ -10,7 +10,6 @@ import GoToTop from "../functions/GoToTop";
 import SpecsEclipse18 from "./Specsmenu/SpecsEclipse18";
 import TechspecEclipse18 from "./techspecs/TechspecEclipse18";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Eclipse18XptechPdf from "../../assets/pdfs/Eclipse 18'6_ Couples XP-Tech — Deluxe Caravans.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -157,7 +156,7 @@ const Eclipse18CouplesXPTech = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Eclipse 18'6 Couples XP-Tech"
-                pdfUrl={Eclipse18XptechPdf}
+                pdfUrl="/brochures/XPTECH_Eclipse_18-6_brochure_2026.html"
               />
             )}
           </div>

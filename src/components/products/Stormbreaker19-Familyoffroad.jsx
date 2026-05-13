@@ -9,7 +9,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Storm19specs from "./Specsmenu/Specs19";
 import Techspec19 from "./techspecs/Techspec19";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Storm19OffroadPdf from "../../assets/pdfs/Stormbreaker 19'6_ Family Offroad — Deluxe Caravans × Infinite RV.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -157,7 +156,7 @@ const Stormbreaker19FamilyOffRoad = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Stormbreaker 19'6 Family Off-Road"
-                pdfUrl={Storm19OffroadPdf}
+                pdfUrl="/brochures/Offroad_Stormbreaker19-6_brochure_2026.html"
               />
             )}
           </div>

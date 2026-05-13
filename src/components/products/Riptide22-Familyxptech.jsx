@@ -8,7 +8,6 @@ import GoToTop from "../functions/GoToTop";
 import Rip22specs from "./Specsmenu/SpecsRiptide22xptech";
 import TechspecRiptide22xptech from "./techspecs/TechspecRiptide22xptech";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Riptide22XptechPdf from "../../assets/pdfs/Riptide R22 Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -174,7 +173,7 @@ const Riptide22FamilyXPTech = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Riptide 22 Family XP-Tech"
-                pdfUrl={Riptide22XptechPdf}
+                pdfUrl="/brochures/XPTECH_Riptide_22_brochure_2026.html"
               />
             )}
           </div>

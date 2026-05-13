@@ -8,7 +8,6 @@ import { gsap } from "gsap";
 import Storm19specs from "./Specsmenu/Specs19xptech";
 import Techspec19xptech from "./techspecs/Techspec19xptech";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Storm19XptechPdf from "../../assets/pdfs/Stormbreaker 19'6_ Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -169,7 +168,7 @@ const Stormbreaker19FamilyXPTech = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Stormbreaker 19'6 Family XP-Tech"
-                pdfUrl={Storm19XptechPdf}
+                pdfUrl="/brochures/XPTECH_Stormbreaker19-6_brochure_2026.html"
               />
             )}
           </div>

@@ -9,7 +9,6 @@ import GoToTop from "../functions/GoToTop";
 import SpecsRiptide206 from "./Specsmenu/SpecsRiptide206";
 import TechspecRiptide206 from "./techspecs/TechspecRiptide206";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Riptide206OffroadPdf from "../../assets/pdfs/Riptide 20'6_ Family Offroad — Deluxe Caravans × Infinite RV.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -152,7 +151,7 @@ const Riptide206FamilyOffRoad = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Riptide 20'6 Family Off-Road"
-                pdfUrl={Riptide206OffroadPdf}
+                pdfUrl="/brochures/Offroad_Riptide_20-6_brochure_2026.html"
               />
             )}
           </div>

@@ -9,7 +9,6 @@ import GoToTop from "../functions/GoToTop";
 import SpecsEclipse22 from "./Specsmenu/SpecsEclipse22xptech";
 import TechspecEclipse22xptech from "./techspecs/TechspecEclipse22xptech";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Eclipse22XptechPdf from "../../assets/pdfs/Eclipse 22' Couples XP-Tech — Deluxe Caravans.pdf";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 
@@ -162,7 +161,7 @@ const Eclipse22CouplesXPTech = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Eclipse 22 Couples XP-Tech"
-                pdfUrl={Eclipse22XptechPdf}
+                pdfUrl="/brochures/XPTECH_Eclipse_22_brochure_2026.html"
               />
             )}
           </div>
