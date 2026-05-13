@@ -122,7 +122,7 @@ const Stormbreaker23FamilyXPTech = () => {
               description: "",
             },
           ]}
-          productName="Riptide 20'"
+          productName="Stormbreaker 23'11 Family XP-Tech"
         />
       </div>
       <div className="component" id="xptechbanner">
