@@ -552,7 +552,7 @@ const Header = () => {
           onMouseLeave={handleMenuLeave}
         >
           <div className="header-logo" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "5px" }}>
               <span className="header-logo-deluxe" style={{ fontSize: "10px", fontWeight: 300, letterSpacing: "0.12em", whiteSpace: "nowrap" }}>DELUXE CARAVANS</span>
               <Link to="/">
                 <img
@@ -563,9 +563,7 @@ const Header = () => {
               </Link>
               <span className="header-logo-infiniterv" style={{ fontSize: "10px", fontWeight: 300, letterSpacing: "0.12em", whiteSpace: "nowrap" }}>INFINITE RV</span>
             </div>
-            <span className="header-logo-tagline" style={{ fontSize: "8px", fontWeight: 300, letterSpacing: "0.06em", whiteSpace: "nowrap", opacity: 0.65, textAlign: "center", alignSelf: "stretch", paddingLeft: "25px" }}>
-              A PARTNERSHIP CREATING INFINITE POSSIBILITIES
-            </span>
+            
           </div>
           <nav className="header-nav" onMouseLeave={handleMenuLeave}>
             <ul className="menu">
