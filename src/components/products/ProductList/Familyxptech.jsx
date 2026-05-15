@@ -7,28 +7,28 @@ import "../../home/homecomponents/HomeComponent.css";
 const productstormbreaker = [
   {
     id: 1,
-    name: "S186",
+    name: "STORMBREAKER S186",
     price: "FULL OFF-ROAD: $129,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp",
     link: "/stormbreaker18familyxptech",
   },
   {
     id: 2,
-    name: "S196",
+    name: "STORMBREAKER S196",
     price: "FULL OFF-ROAD: $132,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp",
     link: "/stormbreaker19familyxptech",
   },
   {
     id: 3,
-    name: "S216",
+    name: "STORMBREAKER S216",
     price: "FULL OFF-ROAD: $134,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/stormbreaker21familyxptech",
   },
   {
     id: 4,
-    name: "S2311",
+    name: "STORMBREAKER S2311",
     price: "FULL OFF-ROAD: $136,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/stormbreaker23familyxptech",
@@ -38,21 +38,21 @@ const productstormbreaker = [
 const productriptide = [
   {
     id: 1,
-    name: "R20'",
+    name: "RIPTIDE R20'",
     price: "FULL OFF-ROAD: $136,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/riptide20familyxptech",
   },
   {
     id: 2,
-    name: "R20'6\"",
+    name: "RIPTIDE R206",
     price: "FULL OFF-ROAD: $138,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/riptide206familyxptech",
   },
   {
     id: 3,
-    name: "R22'",
+    name: "RIPTIDE R22'",
     price: "FULL OFF-ROAD: $138,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/riptide22familyxptech",
