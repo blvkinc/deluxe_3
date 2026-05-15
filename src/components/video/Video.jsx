@@ -48,7 +48,7 @@ const Video = React.memo(() => {
     },
     {
       title: "EXTERIOR CARAVAN TOUR I 21.6 FT Deluxe Caravans - Stormbreaker",
-      description: "Check out our Stormbreaker 21`6 caravans exterior",
+      description: "Check out our STORMBREAKER 21'6\" caravan's exterior",
       videoId: "ICG-86pUr-g?si=dVW1psZGbV3h9KKN",
     },
   ];

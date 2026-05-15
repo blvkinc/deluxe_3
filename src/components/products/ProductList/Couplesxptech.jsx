@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const products = [
   {
     id: 1,
-    name: "ECLIPSE E186",
+    name: "ECLIPSE E18",
     price: "$129,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/eclipse18couplesxptech",
@@ -21,7 +21,7 @@ const products = [
   },
   {
     id: 3,
-    name: "ECLIPSE E226",
+    name: "ECLIPSE E22",
     price: "$138,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp",
     link: "/eclipse22couplesxptech",

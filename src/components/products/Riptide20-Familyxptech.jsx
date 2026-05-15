@@ -37,7 +37,7 @@ const Riptide20FamilyXPTech = () => {
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">R20</h1>
+              <h1 className="Product-header revealUp">RIPTIDE R20</h1>
               <div className="btn-holder">
                 <button
                   onClick={scrollToLayout}

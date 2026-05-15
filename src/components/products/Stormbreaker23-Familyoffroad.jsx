@@ -61,7 +61,7 @@ const Stormbreaker23FamilyOffRoad = () => {
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">Stormbreaker23`11</h1>
+              <h1 className="Product-header revealUp">STORMBREAKER 23'11"</h1>
               <div className="btn-holder">
                 <button
                   onClick={scrollToLayout}

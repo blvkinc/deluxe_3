@@ -5,28 +5,28 @@ import "./Productlist.css";
 const productstormbreaker = [
   {
     id: 1,
-    name: "STORMBREAKER 18`6",
+    name: "STORMBREAKER 18'6\"",
     price: "FULL OFF-ROAD: $89,900",
     image: "https://deluxcaravan.b-cdn.net/assets/header/186.webp",
     link: "/stormbreaker18familyoffroad",
   },
   {
     id: 2,
-    name: "STORMBREAKER 19`6",
+    name: "STORMBREAKER 19'6\"",
     price: "FULL OFF-ROAD: $92,900",
     image: "https://deluxcaravan.b-cdn.net/assets/header/196.webp",
     link: "/stormbreaker19familyoffroad",
   },
   {
     id: 3,
-    name: "STORMBREAKER 21`6",
+    name: "STORMBREAKER 21'6\"",
     price: "FULL OFF-ROAD: $94,900",
     image: "https://deluxcaravan.b-cdn.net/assets/header/216.webp",
     link: "/stormbreaker21familyoffroad",
   },
   {
     id: 4,
-    name: "STORMBREAKER 23`11",
+    name: "STORMBREAKER 23'11\"",
     price: "FULL OFF-ROAD: $96,900",
     image: "https://deluxcaravan.b-cdn.net/assets/header/2311.webp",
     link: "/stormbreaker23familyoffroad",
