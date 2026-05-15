@@ -5,28 +5,28 @@ import "./Productlist.css";
 const productstormbreaker = [
   {
     id: 1,
-    name: "STORMBREAKER 18`6FT",
+    name: "STORMBREAKER 18'6\"",
     price: "FULL OFF-ROAD: $89,900",
     image: "https://deluxcaravan.b-cdn.net/assets/header/186.webp",
     link: "/stormbreaker18familyoffroad",
   },
   {
     id: 2,
-    name: "STORMBREAKER 19`6FT",
+    name: "STORMBREAKER 19'6\"",
     price: "FULL OFF-ROAD: $92,900",
     image: "https://deluxcaravan.b-cdn.net/assets/header/196.webp",
     link: "/stormbreaker19familyoffroad",
   },
   {
     id: 3,
-    name: "STORMBREAKER 21`6FT",
+    name: "STORMBREAKER 21'6\"",
     price: "FULL OFF-ROAD: $94,900",
     image: "https://deluxcaravan.b-cdn.net/assets/header/216.webp",
     link: "/stormbreaker21familyoffroad",
   },
   {
     id: 4,
-    name: "STORMBREAKER 23`11FT",
+    name: "STORMBREAKER 23'11\"",
     price: "FULL OFF-ROAD: $96,900",
     image: "https://deluxcaravan.b-cdn.net/assets/header/2311.webp",
     link: "/stormbreaker23familyoffroad",
@@ -36,21 +36,21 @@ const productstormbreaker = [
 const productriptide = [
   {
     id: 1,
-    name: "Riptide 20FT",
+    name: "RIPTIDE 20'",
     price: "FULL OFF-ROAD: $96,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp",
     link: "/riptide20familyoffroad",
   },
   {
     id: 2,
-    name: "Riptide 20'6\"",
+    name: "RIPTIDE 20'6\"",
     price: "FULL OFF-ROAD: $98,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp",
     link: "/riptide206familyoffroad",
   },
   {
     id: 3,
-    name: "Riptide 22FT",
+    name: "RIPTIDE 22'",
     price: "FULL OFF-ROAD: $98,900",
     image: "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp",
     link: "/riptide22familyoffroad",

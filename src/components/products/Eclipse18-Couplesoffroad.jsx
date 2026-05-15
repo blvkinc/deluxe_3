@@ -60,7 +60,7 @@ const Eclipse18CouplesOffRoad = () => {
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">Eclipse 18'6"</h1>
+              <h1 className="Product-header revealUp">ECLIPSE 18'6"</h1>
               <div className="btn-holder">
                 <button
                   onClick={scrollToLayout}

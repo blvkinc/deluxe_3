@@ -9,31 +9,31 @@ const CarouselSection = () => {
   const caravanData = {
     offroad: [
       {
-        name: 'Stormbreaker 18\'6',
+        name: "STORMBREAKER 18'6\"",
         price: '$89,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/186.webp',
         link: '/stormbreaker18familyoffroad'
       },
       {
-        name: 'Stormbreaker 19\'6',
+        name: "STORMBREAKER 19'6\"",
         price: '$92,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
         link: '/stormbreaker19familyoffroad'
       },
       {
-        name: 'Stormbreaker 21\'6',
+        name: "STORMBREAKER 21'6\"",
         price: '$94,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/216.webp',
         link: '/stormbreaker21familyoffroad'
       },
       {
-        name: 'Stormbreaker 23\'11',
+        name: "STORMBREAKER 23'11\"",
         price: '$96,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/2311.webp',
         link: '/stormbreaker23familyoffroad'
       },
       {
-        name: 'Riptide 20',
+        name: "RIPTIDE 20'",
         price: '$96,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp',
         link: '/riptide20familyoffroad'
@@ -45,25 +45,25 @@ const CarouselSection = () => {
         link: '/riptide206familyoffroad'
       },
       {
-        name: 'Riptide 22',
+        name: "RIPTIDE 22'",
         price: '$98,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp',
         link: '/riptide22familyoffroad'
       },
       {
-        name: 'Eclipse 18\'6"',
+        name: 'ECLIPSE 18\'6"',
         price: '$89,000',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
         link: '/eclipse18couplesoffroad'
       },
       {
-        name: 'Eclipse 21',
+        name: 'ECLIPSE 21\'6"',
         price: '$96,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
         link: '/eclipse21couplesoffroad'
       },
       {
-        name: 'Eclipse 22',
+        name: "ECLIPSE 22'",
         price: '$98,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
         link: '/eclipse22couplesoffroad'
@@ -71,61 +71,61 @@ const CarouselSection = () => {
     ],
     xptech: [
       {
-        name: 'S186',
+        name: 'STORMBREAKER S186',
         price: '$129,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/stormbreaker18familyxptech'
       },
       {
-        name: 'S196',
+        name: 'STORMBREAKER S196',
         price: '$132,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/stormbreaker19familyxptech'
       },
       {
-        name: 'S216',
+        name: 'STORMBREAKER S216',
         price: '$134,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/stormbreaker21familyxptech'
       },
       {
-        name: 'S2311',
+        name: 'STORMBREAKER S2311',
         price: '$136,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/stormbreaker23familyxptech'
       },
       {
-        name: 'R22',
+        name: 'RIPTIDE R22',
         price: '$138,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/riptide22familyxptech'
       },
       {
-        name: 'R20',
+        name: 'RIPTIDE R20',
         price: '$136,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
         link: '/riptide20familyxptech'
       },
       {
-        name: "R20'6\"",
+        name: 'RIPTIDE R206',
         price: '$138,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/riptide206familyxptech'
       },
       {
-        name: 'E186',
+        name: 'ECLIPSE E18',
         price: '$129,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/eclipse18couplesxptech'
       },
       {
-        name: 'E21',
+        name: 'ECLIPSE E216',
         price: '$136,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/eclipse21couplesxptech'
       },
       {
-        name: 'E22',
+        name: 'ECLIPSE E22',
         price: '$138,900',
         image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-Newer.webp',
         link: '/eclipse22couplesxptech'

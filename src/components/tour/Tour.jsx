@@ -5,46 +5,46 @@ import "./Tour.css";
 import GoToTop from "../functions/GoToTop";
 
 const Tour = React.memo(() => {
-  const [selectedTour, setSelectedTour] = useState("Storm Breaker 21'6 FT");
+  const [selectedTour, setSelectedTour] = useState("STORMBREAKER 21'6\"");
   const [isLoading, setIsLoading] = useState(true);
 
   const tourData = [
     {
-      name: "Eclipse 22' FT",
+      name: "ECLIPSE 22'",
       url: "https://sh.smartviewmedia.com.au/m/prb7275/?v=prb7275",
-      description: "Experience the luxury and comfort of our Eclipse 22' model",
+      description: "Experience the luxury and comfort of our ECLIPSE 22' model",
       image:
         "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_1-min.webp",
     },
     {
-      name: "Riptide 22' FT",
+      name: "RIPTIDE 22'",
       url: "https://sh.smartviewmedia.com.au/m/kyd7182/?v=kyd7182",
-      description: "Explore the spacious family-friendly Riptide 22' layout",
+      description: "Explore the spacious family-friendly RIPTIDE 22' layout",
       image:
         "https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp",
     },
     {
-      name: "Storm Breaker 23'11 FT",
+      name: "STORMBREAKER 23'11\"",
       url: "https://sh.smartviewmedia.com.au/m/xmc7473/?v=xmc7473",
-      description: "Our largest Storm Breaker model with maximum space",
+      description: "Our largest STORMBREAKER model with maximum space",
       image: "https://deluxcaravan.b-cdn.net/assets/header/2311.webp",
     },
     {
-      name: "Storm Breaker 21'6 FT",
+      name: "STORMBREAKER 21'6\"",
       url: "https://sh.smartviewmedia.com.au/m/ghk6493/?v=ghk6493",
       description: "The perfect balance of size and functionality",
       image: "https://deluxcaravan.b-cdn.net/assets/header/216.webp",
     },
     {
-      name: "Storm Breaker 19'6 FT",
+      name: "STORMBREAKER 19'6\"",
       url: "https://sh.smartviewmedia.com.au/m/xre6796/?v=xre6796",
-      description: "Compact yet feature-rich Storm Breaker model",
+      description: "Compact yet feature-rich STORMBREAKER model",
       image: "https://deluxcaravan.b-cdn.net/assets/header/196.webp",
     },
     {
-      name: "Storm Breaker 18'6 FT",
+      name: "STORMBREAKER 18'6\"",
       url: "https://sh.smartviewmedia.com.au/m/yni6491/?v=yni6491",
-      description: "Our most compact Storm Breaker with all essentials",
+      description: "Our most compact STORMBREAKER with all essentials",
       image: "https://deluxcaravan.b-cdn.net/assets/header/186.webp",
     },
   ];

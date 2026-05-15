@@ -36,15 +36,45 @@ const BlogPost = () => {
                     ))}
                   </ul>
                 )}
+                {section.groups && section.groups.map((group, j) => (
+                  <div key={j} className="blogpost-group">
+                    {group.label && <p className="blogpost-group-label">{group.label}</p>}
+                    <ul>
+                      {group.items.map((item, k) => <li key={k}>{item}</li>)}
+                    </ul>
+                  </div>
+                ))}
+                {section.table && (
+                  <div className="blogpost-table-wrap">
+                    <table className="blogpost-table">
+                      <thead>
+                        <tr>
+                          {section.table.headers.map((h, j) => (
+                            <th key={j}>{h}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {section.table.rows.map((row, j) => (
+                          <tr key={j}>
+                            {row.map((cell, k) => (
+                              <td key={k}>{cell}</td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    {section.table.footnote && (
+                      <p className="blogpost-table-footnote">{section.table.footnote}</p>
+                    )}
+                  </div>
+                )}
                 {section.cta && (
-                  <p className="blogpost-cta">
+                  <div className="blogpost-cta">
                     {section.cta.map((link, j) => (
-                      <span key={j}>
-                        {j > 0 && " | "}
-                        <a href={link.href}>{link.label}</a>
-                      </span>
+                      <a key={j} href={link.href}>{link.label}</a>
                     ))}
-                  </p>
+                  </div>
                 )}
               </div>
             ))}

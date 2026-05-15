@@ -60,7 +60,7 @@ const Stormbreaker23FamilyXPTech = () => {
           />
           <div className="image-overlay">
             <div className="button-container">
-              <h1 className="Product-header revealUp">S2311</h1>
+              <h1 className="Product-header revealUp">STORMBREAKER S2311</h1>
               <div className="btn-holder">
                 <button
                   onClick={scrollToLayout}
