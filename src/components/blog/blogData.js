@@ -25,13 +25,6 @@ export const blogPosts = [
         ],
       },
       {
-        title: "No Timber. No Rot. No Compromise.",
-        paragraphs: [
-          "Traditional framed caravans — even well-built ones — carry an inherent long-term risk: timber. Meranti frames are strong and flexible, but they are vulnerable to moisture. Once water finds its way into a framed wall, it gets absorbed into the timber silently. By the time you notice the damage, the rot has usually been there for months.",
-          "XP-TECH composite panels contain no timber. There is nothing to absorb moisture, nothing to rot, nothing to warp. If any water ever finds its way in, it dries out — because the foam core doesn't hold it. Your van stays structurally sound for the long haul.",
-        ],
-      },
-      {
         title: "Fewer Joins Means Fewer Problems",
         paragraphs: [
           "A traditionally cladded caravan has dozens of horizontal sheet joins running down its walls. Every one of those joins is sealed with silicone or tape that degrades over time — especially under the UV punishment of the Australian sun and the constant vibration of corrugated outback roads.",
