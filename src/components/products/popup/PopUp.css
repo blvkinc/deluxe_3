@@ -87,19 +87,19 @@ input {
 }
 
 .button.disabled {
-  background: #ff0000; /* Change the background color to a muted color when disabled */
+  background: #3c4c5a; /* Change the background color to a muted color when disabled */
   cursor: not-allowed; /* Change the cursor style when disabled */
   color: rgb(255, 255, 255);
 }
 
 .alert {
-  color: red;
+  color: #3c4c5a;
   font-size: 14px;
   display: none;
 }
 
 .error-message {
-  color: red;
+  color: #3c4c5a;
   font-size: 10px;
   margin-top: 4px;
   margin-bottom: 8px;
