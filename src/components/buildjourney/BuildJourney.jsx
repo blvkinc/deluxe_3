@@ -252,7 +252,6 @@ function BuildJourney() {
       <div className="bj-hero">
         <div className="bj-hero-left">
           <div>
-            <p className="bj-hero-eyebrow"><span style={{ display:'inline-block', width:'32px', height:'1px', background:'#3c4c5a', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>The Build Journey</p>
             <h1 className="bj-hero-title">
               WATCH YOUR CARAVAN<br /><em>GET BUILT</em><br />THE WHOLE WAY.
             </h1>
