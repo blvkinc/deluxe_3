@@ -5,7 +5,7 @@ import LayoutPdf from "../../assets/pdfs/Layout.pdf";
 import UpgradeListPdf from "../../assets/pdfs/UpgradeList.pdf";
 import InteriorColoursPdf from "../../assets/pdfs/Interior-Colours-2026-Deluxe Caravans-Infinite RV.pdf";
 
-const SERVICE_ID = "service_he9ijfd";
+const SERVICE_ID = "service_60prb7s";
 const TEMPLATE_ID = "template_ygh58ti";
 const CUSTOMER_TEMPLATE_ID = ""; // paste your customer-facing template ID here
 const PUBLIC_KEY = "W61evKNsxeHvEgUlN";
