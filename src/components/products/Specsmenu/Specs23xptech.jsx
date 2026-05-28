@@ -141,7 +141,7 @@ const Specs23xptech = () => {
     {
       title: "OVERALL",
       content: `Ball Weight: 200 kg
-        Tare Weight: 2810 kg
+        Tare Weight: 2970 kg
         ATM: 3500 kg`,
     },
     {
