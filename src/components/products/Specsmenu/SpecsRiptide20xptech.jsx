@@ -16,6 +16,7 @@ const SpecsRiptide20xptech = () => {
       title: "INTERIOR",
       content: `Bed - Queen East - West
         Niche - Bedside - Both Sides
+        Bunks - 2 Bunks (Length: Top Bunk - 2.0m, Middle Bunk 2.0m)
         Mattress - Innerspring with Pillow-Top
         L - Shape Lounge - with Drop Down Table with TIC Cushion
         Storage - Drawers
@@ -141,7 +142,7 @@ const SpecsRiptide20xptech = () => {
     {
       title: "OVERALL",
       content: `Approx Ball Weight: 180 kg
-        Approx Tare Weight: 2660 kg
+        Approx Tare Weight: 2800 kg
         ATM: 3500 kg`,
     },
     {

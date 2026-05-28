@@ -290,7 +290,7 @@ export const blogPosts = [
   {
     id: "family-range-comparison",
     slug: "family-range-comparison",
-    title: "FAMILY RANGE COMPARISON",
+    title: "XP-TECH FAMILY RANGE COMPARISON",
     category: "SPECIFICATIONS",
     metaDescription:
       "Side-by-side specs for every Deluxe Caravans family model — Stormbreaker 18'6, 19'6, 21'6, 23'11 and Riptide 20', 20'6, 22'. ATM, tare, ball weight, bed configurations, bunks, and more.",
@@ -306,13 +306,13 @@ export const blogPosts = [
         table: {
           headers: ["Model", "Size", "ATM", "Tare", "Ball Weight", "Ext. Length", "Sleeps", "Main Bed", "Bunks", "Lounge", "Bathroom"],
           rows: [
-            ["Stormbreaker", "18'6\"", "3,000 kg", "2,200 kg", "160 kg", "8,100 mm", "4–5", "Queen — East-West", "2 or 3 × 1.9m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
-            ["Stormbreaker", "19'6\"", "3,500 kg", "2,660 kg", "160 kg", "8,550 mm", "4–5", "Queen — East-West", "2 or 3 × 1.9m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
-            ["Stormbreaker", "21'6\"", "3,500 kg", "2,700 kg", "220 kg", "8,850 mm", "4–5", "Queen Island — Lift-Up Storage", "2 × 2.1m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
-            ["Stormbreaker", "23'11\"", "3,500 kg", "2,810 kg", "200 kg", "9,800 mm", "8–9", "Queen Island — Lift-Up Storage", "4–6 × 1.9m", "L-Shape + Drop-Down Table", "Separate Ensuite + Thetford Toilet"],
-            ["Riptide", "20'", "3,500 kg", "2,660 kg", "180 kg", "8,700 mm", "4–5", "Queen — East-West", "2 × 2.0m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
-            ["Riptide", "20'6\"", "3,500 kg", "2,840 kg", "220 kg", "8,700 mm", "4–5", "Queen — Island", "2 × 2.0m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
-            ["Riptide", "22'", "3,500 kg", "2,780 kg", "200 kg", "9,150 mm", "4–5", "Queen Island — Lift-Up Storage", "2 × 2.0m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
+            ["Stormbreaker", "18'6\"", "3,000 kg", "2,400 kg", "200 kg", "8,100 mm", "4–6", "Queen — East-West", "2 or 3 × 1.9m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
+            ["Stormbreaker", "19'6\"", "3,500 kg", "2,750 kg", "160 kg", "8,550 mm", "4–6", "Queen — East-West", "2 or 3 × 1.9m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
+            ["Stormbreaker", "21'6\"", "3,500 kg", "2,850 kg", "220 kg", "8,850 mm", "4–6", "Queen Island — Lift-Up Storage", "2 or 3 × 2.1m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
+            ["Stormbreaker", "23'11\"", "3,500 kg", "2,970 kg", "200 kg", "9,800 mm", "6–9", "Queen Island — Lift-Up Storage", "4–6 × 1.9m", "L-Shape + Drop-Down Table", "Separate Ensuite + Thetford Toilet"],
+            ["Riptide", "20'", "3,500 kg", "2,800 kg", "180 kg", "8,700 mm", "4–6", "Queen — East-West", "2 × 2.0m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
+            ["Riptide", "20'6\"", "3,500 kg", "2,840 kg", "220 kg", "8,700 mm", "4–6", "Queen — Island", "2 × 2.0m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
+            ["Riptide", "22'", "3,500 kg", "2,920 kg", "200 kg", "9,150 mm", "4–6", "Queen Island — Lift-Up Storage", "2 × 2.0m", "L-Shape + Drop-Down Table", "Split Shower + Thetford Toilet"],
           ],
           footnote: "*Specifications subject to change without notice",
         },
