@@ -16,7 +16,7 @@ const Specs21xptech = () => {
       title: "INTERIOR",
       content: `Bed - Queen Island with Lift-Up Storage 
         Niche - Bedside - Both Sides
-        Bunks - 2 Bunks (Length: Top Bunk - 2.1m, Middle Bunk 2.1m )
+        Bunks - 2 or 3 × 2.1m
         Mattress - Innerspring with Pillow-Top 
         L - Shape Lounge - with Drop Down Table with TIC Cushion
         Storage - Drawers 

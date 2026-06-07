@@ -291,6 +291,11 @@ const Navbar = () => {
                             </li>
                             <li>
                               <a href="/warranty">WARRANTY POLICY</a>
+                              <ul style={{ paddingLeft: "16px", marginTop: "6px", listStyle: "none" }}>
+                                <li>
+                                  <a href="/maintenance">SERVICE &amp; MAINTENANCE</a>
+                                </li>
+                              </ul>
                             </li>
                             <li>
                               <a href="/tour">VIRTUAL TOURS</a>
