@@ -51,7 +51,7 @@ const Footer = React.memo(() => {
           <Link to="/warranty" className="footer-link">
             Warranty policy
           </Link>
-          <Link to="/maintenance" className="footer-link">
+          <Link to="/service-maintenance" className="footer-link">
             Service & Maintenance
           </Link>
           <Link to="/Xptec" className="footer-link">

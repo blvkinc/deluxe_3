@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { blogPosts } from "./blogData";
 import "./BlogPost.css";
@@ -11,6 +12,11 @@ const BlogPost = () => {
 
   return (
     <div style={{ backgroundColor: "#fff", color: "#000" }}>
+      <Helmet>
+        <title>{post.title} | Deluxe Caravans</title>
+        {post.metaDescription && <meta name="description" content={post.metaDescription} />}
+        <link rel="canonical" href={`https://deluxecaravans.com.au/blog/${post.slug}`} />
+      </Helmet>
       <div className="blogpost-container">
         <div className="blogpost-content">
           <Link to="/blog" className="blogpost-back">

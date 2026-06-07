@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
@@ -128,7 +128,7 @@ function App() {
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/media" element={<Media />} />
             <Route path="/video" element={<Video />} />
-            <Route path="/maintenance" element={<Maintenance />} />
+            <Route path="/service-maintenance" element={<Maintenance />} />
             <Route
               path="/eclipse18couplesoffroad"
               element={<Eclipse18CouplesOffRoad />}
@@ -220,7 +220,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/tour" element={<Tour />} />
-            <Route path="/Xptec" element={<Xptec />} />
+            <Route path="/xptech" element={<Xptec />} />
+            <Route path="/Xptec" element={<Navigate to="/xptech" replace />} />
             <Route path="/warranty" element={<Warranty />} />
             <Route path="/familyoffroad" element={<Familyoffroad />} />
             <Route path="/familyxptech" element={<Familyxptech />} />

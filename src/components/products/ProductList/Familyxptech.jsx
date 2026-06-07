@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import "./Productlist.css";
 import "../../home/Home.css";
@@ -62,6 +63,11 @@ const productriptide = [
 const Familyxptech = React.memo(() => {
   return (
     <div className="productgrid-container">
+      <Helmet>
+        <title>Family XP-Tech Caravans | Stormbreaker &amp; Riptide | Deluxe Caravans</title>
+        <meta name="description" content="Family caravans built for off-grid Australia. XP Tech includes 400Ah lithium, 6 solar panels &amp; 3000W inverter. Triple bunks, composite frame. Book a factory visit." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/familyxptech" />
+      </Helmet>
       <div className="productgrid-component">
         <h1 className="product-grid-heading">FAMILY XP-TECH</h1>
         <h2 className="product-grid-subheading">STORMBREAKER</h2>

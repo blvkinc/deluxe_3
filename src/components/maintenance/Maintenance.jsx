@@ -1,10 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "../blog/Blog.css";
 import "../blog/BlogPost.css";
 
 const Maintenance = () => {
   return (
     <div className="blog-page">
+      <Helmet>
+        <title>Caravan Service and Maintenance Guide Australia | Deluxe Caravans</title>
+      </Helmet>
       <div className="blog-hero">
         <h1 className="blog-heading">SERVICE &amp; MAINTENANCE</h1>
         <p className="blog-subheading">Servicing requirements and maintenance guides</p>

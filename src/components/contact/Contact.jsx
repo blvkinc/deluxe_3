@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from "react";
+import { Helmet } from "react-helmet";
 import "./Contact.css";
 import GoToTop from "../functions/GoToTop";
 import { gsap } from "gsap";
@@ -108,6 +109,11 @@ const Contact = () => {
 
   return (
     <div className="contact__container revealUp">
+      <Helmet>
+        <title>Contact Deluxe Caravans | Book a Factory Visit | Campbellfield VIC</title>
+        <meta name="description" content="Get in touch with Deluxe Caravans. Book a factory visit, request a quote or ask about our family off road, XP Tech and luxury caravan range. Campbellfield VIC." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/contact" />
+      </Helmet>
       <h1 className={animate ? "lineUp" : ""}>Contact us</h1>
       <div className="contact-container">
         <form className="contact__form" onSubmit={handleFormSubmit}>

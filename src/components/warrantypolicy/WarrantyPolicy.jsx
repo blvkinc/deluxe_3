@@ -1,9 +1,15 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./WarrantyPolicy.css";
 
 const WarrantyPolicy = () => {
   return (
     <div style={{ backgroundColor: "#fff", color: "#000" }}>
+      <Helmet>
+        <title>Warranty Policy | Deluxe Caravans</title>
+        <meta name="description" content="Deluxe Caravans structural warranty explained. Nationwide repairers, clear claims process, and cover that travels with you anywhere in Australia. Learn more." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/warranty" />
+      </Helmet>
       <div className="maintenance-container">
         <div className="maintenance-content">
           <h1>Warranty Terms & Conditions</h1>

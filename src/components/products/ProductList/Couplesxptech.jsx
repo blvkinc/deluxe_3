@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./Productlist.css";
 import "../../home/Home.css";
 import "../../home/homecomponents/HomeComponent.css";
@@ -31,6 +32,11 @@ const products = [
 const Couplesxptech = React.memo(() => {
   return (
     <div className="productgrid-container">
+      <Helmet>
+        <title>Couples XP-Tech Caravans | Eclipse Range | Deluxe Caravans</title>
+        <meta name="description" content="Off grid doesn't mean roughing it. Eclipse XP Tech — 400Ah lithium, 6 solar panels, Dometic fridge &amp; IBIS 4 aircon. Luxury couples caravans, built in Australia." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/couplesxptech" />
+      </Helmet>
       <div className="productgrid-component">
         <h1 className="product-grid-heading">Couples XP-TECH</h1>
         <h2 className="product-grid-subheading">Eclipse</h2>

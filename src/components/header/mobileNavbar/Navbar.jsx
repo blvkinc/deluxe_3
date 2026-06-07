@@ -6,7 +6,7 @@ import { motion, AnimatePresence, color } from "framer-motion";
 const Navbar = () => {
   const location = useLocation(); // Get the current route
   const isCustomPage =
-    location.pathname === "/maintenance" ||
+    location.pathname === "/service-maintenance" ||
     location.pathname === "/warranty" ||
     location.pathname === "/Xptec" ||
     location.pathname.startsWith("/blog/");
@@ -293,7 +293,7 @@ const Navbar = () => {
                               <a href="/warranty">WARRANTY POLICY</a>
                               <ul style={{ paddingLeft: "16px", marginTop: "6px", listStyle: "none" }}>
                                 <li>
-                                  <a href="/maintenance">SERVICE &amp; MAINTENANCE</a>
+                                  <a href="/service-maintenance">SERVICE &amp; MAINTENANCE</a>
                                 </li>
                               </ul>
                             </li>

@@ -75,6 +75,11 @@ const Media = () => {
 
   return (
     <div className="media-page">
+      <Helmet>
+        <title>Media | Photos &amp; Videos | Deluxe Caravans</title>
+        <meta name="description" content="Photos, videos and media coverage of the Deluxe Caravans range. Stormbreaker, Riptide and Eclipse — Australian-made off road and luxury caravans." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/media" />
+      </Helmet>
       <div className="media-hero">
         <h1 className="media-heading">MEDIA</h1>
         <p className="media-subheading">Videos and latest updates</p>

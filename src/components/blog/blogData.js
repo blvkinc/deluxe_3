@@ -299,7 +299,7 @@ export const blogPosts = [
     date: "May 2026",
     sections: [
       {
-        note: "Choosing the right family caravan comes down to more than just length. Here's every model in one place — weights, bed configurations, bunk sizes, and bathroom layouts — so you can compare them properly before you decide.",
+        note: "Shopping for family caravans in Australia? The difference between a good trip and a great one comes down to the details. ATM weight for your tow vehicle, bunk length for growing kids, island bed or east-west queen, split bathroom or separate ensuite. This page puts every Stormbreaker and Riptide model side by side so you can compare specs, layouts, and configurations without chasing down three different brochures.",
       },
       {
         title: "Comparison Table",

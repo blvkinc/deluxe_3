@@ -428,7 +428,7 @@ const Header = () => {
           { label: "BLOGS", link: "/blog" },
           { label: "MEDIA", link: "/media" },
           { label: "WARRANTY POLICY", link: "/warranty", submenu: [
-            { label: "SERVICE & MAINTENANCE", link: "/maintenance" },
+            { label: "SERVICE & MAINTENANCE", link: "/service-maintenance" },
           ]},
           { label: "VIRTUAL TOURS", link: "/tour" },
         ],
