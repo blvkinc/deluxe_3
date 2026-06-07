@@ -30,6 +30,10 @@ const Riptide206FamilyOffRoad = () => {
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   useEffect(() => {
+    window.fbq("track", "ViewContent", { content_name: "Riptide 20.6 Family Off-Road", content_category: "Caravan" });
+  }, []);
+
+  useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
         elem,

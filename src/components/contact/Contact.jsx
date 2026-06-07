@@ -83,6 +83,7 @@ const Contact = () => {
       })
       .then(() => {
         setEmailStatus("success");
+        window.fbq("track", "Lead");
       })
       .catch(() => {
         setEmailStatus("error");

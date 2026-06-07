@@ -27,6 +27,10 @@ const scrollToLayout = () => {
 
 const Stormbreaker19FamilyXPTech = () => {
   useEffect(() => {
+    window.fbq("track", "ViewContent", { content_name: "Stormbreaker 19 Family XP-Tech", content_category: "Caravan" });
+  }, []);
+
+  useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
         elem,

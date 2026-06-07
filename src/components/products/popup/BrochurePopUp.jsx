@@ -40,6 +40,7 @@ const BrochurePopUp = ({ onClose, productName, pdfUrl }) => {
         PUBLIC_KEY
       );
 
+      window.fbq("track", "Lead");
       if (pdfUrl) {
         const link = document.createElement("a");
         link.href = pdfUrl;

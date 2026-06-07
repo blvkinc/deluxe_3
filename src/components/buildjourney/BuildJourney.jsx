@@ -236,6 +236,7 @@ function BuildJourney() {
       })
       .then(() => {
         setEmailStatus('success');
+        window.fbq('track', 'Lead');
         setFormData({ firstName: '', lastName: '', email: '', phone: '', state: '', vehicle: '', notes: '' });
         setActiveChips([]);
       })

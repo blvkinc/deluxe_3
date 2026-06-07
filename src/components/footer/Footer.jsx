@@ -69,10 +69,10 @@ const Footer = React.memo(() => {
           >
             32 Scammel Street, Campbellfield, VIC 3061
           </a>
-          <a href="tel:+61483939904" className="footer-link">
+          <a href="tel:+61483939904" className="footer-link" onClick={() => window.fbq("track", "Contact")}>
             +61 483 939 904
           </a>
-          <a href="mailto:hello@infiniterv.com.au" className="footer-link">
+          <a href="mailto:hello@infiniterv.com.au" className="footer-link" onClick={() => window.fbq("track", "Contact")}>
             hello@infiniterv.com.au
           </a>
         </div>

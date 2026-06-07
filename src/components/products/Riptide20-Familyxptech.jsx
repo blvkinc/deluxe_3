@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -26,6 +26,10 @@ const scrollToLayout = () => {
 
 const Riptide20FamilyXPTech = () => {
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
+
+  useEffect(() => {
+    window.fbq("track", "ViewContent", { content_name: "Riptide 20 Family XP-Tech", content_category: "Caravan" });
+  }, []);
 
   return (
     <div className="container">

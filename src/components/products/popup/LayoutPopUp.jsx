@@ -27,6 +27,7 @@ const LayoutPopUp = ({ onClose, popupIdentifier }) => {
 
       if (response.ok) {
         console.log("Form submitted successfully");
+        window.fbq("track", "Lead");
       }
     } catch (error) {
       console.error(error);

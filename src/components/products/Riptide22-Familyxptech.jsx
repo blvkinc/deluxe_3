@@ -27,6 +27,10 @@ const scrollToLayout = () => {
 
 const Riptide22FamilyXPTech = () => {
   useEffect(() => {
+    window.fbq("track", "ViewContent", { content_name: "Riptide 22 Family XP-Tech", content_category: "Caravan" });
+  }, []);
+
+  useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
         elem,
