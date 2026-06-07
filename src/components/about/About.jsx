@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import "../home/Home.css";
@@ -28,6 +29,11 @@ function About() {
       className="aboutcontainer"
       style={{ backgroundColor: "#fff", color: "#000" }}
     >
+      <Helmet>
+        <title>About Deluxe Caravans | Australian Caravan Manufacturer</title>
+        <meta name="description" content="Deluxe Caravans is a family owned Australian caravan manufacturer with 15 years of experience. Built in Campbellfield VIC. Off road, family &amp; luxury ranges." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/about" />
+      </Helmet>
       <div className="component">
         <div className="context">
           <h1>About Us</h1>

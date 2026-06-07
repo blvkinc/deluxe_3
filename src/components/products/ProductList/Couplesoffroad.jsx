@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import "./Productlist.css";
 import "../../home/Home.css";
@@ -31,6 +32,11 @@ const products = [
 const Couplesoffroad = React.memo(() => {
   return (
     <div className="productgrid-container">
+      <Helmet>
+        <title>Couples Off-Road Caravans | Eclipse Range | Deluxe Caravans</title>
+        <meta name="description" content="Luxury off road caravans for couples — Eclipse range. Australian-made, composite frame, queen island bed, airbag suspension. 15 years family owned. Get a quote today." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/couplesoffroad" />
+      </Helmet>
       <div className="productgrid-component">
         <h1 className="product-grid-heading">COUPLES OFF-ROAD</h1>
         <h2 className="product-grid-subheading">Eclipse</h2>

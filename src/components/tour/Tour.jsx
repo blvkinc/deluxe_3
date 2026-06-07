@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { motion, AnimatePresence } from "framer-motion";
 import "../home/Home.css";
 import "./Tour.css";
@@ -68,6 +69,11 @@ const Tour = React.memo(() => {
       className="virtual-container"
       style={{ backgroundColor: "#fff", color: "#000" }}
     >
+      <Helmet>
+        <title>Factory Tour | Deluxe Caravans Campbellfield Melbourne</title>
+        <meta name="description" content="Book a factory tour at Deluxe Caravans in Campbellfield, Melbourne. See how Australian-made off road and luxury caravans are built from the ground up." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/tour" />
+      </Helmet>
       <div className="virtual-hero">
         <div className="hero-content">
           <motion.h1

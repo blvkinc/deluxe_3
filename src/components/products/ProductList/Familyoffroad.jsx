@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import "./Productlist.css";
 
@@ -60,6 +61,11 @@ const productriptide = [
 const Familyoffroad = React.memo(() => {
   return (
     <div className="productgrid-container">
+      <Helmet>
+        <title>Family Off-Road Caravans | Stormbreaker &amp; Riptide | Deluxe Caravans</title>
+        <meta name="description" content="Australian-made family off road caravans — Stormbreaker &amp; Riptide range. Composite frame, triple bunks, airbag suspension. Built in Campbellfield. Get a quote." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/familyoffroad" />
+      </Helmet>
       <div className="productgrid-component">
         <h1 className="product-grid-heading">FAMILY OFF-ROAD</h1>
         <h2 className="product-grid-subheading">STORMBREAKER</h2>

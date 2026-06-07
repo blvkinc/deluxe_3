@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import { Helmet } from 'react-helmet';
 import emailjs from '@emailjs/browser';
 import './BuildJourney.css';
 
@@ -236,6 +237,7 @@ function BuildJourney() {
       })
       .then(() => {
         setEmailStatus('success');
+        window.fbq('track', 'Lead');
         setFormData({ firstName: '', lastName: '', email: '', phone: '', state: '', vehicle: '', notes: '' });
         setActiveChips([]);
       })
@@ -247,6 +249,11 @@ function BuildJourney() {
 
   return (
     <div className="build-journey-page">
+      <Helmet>
+        <title>Build Journey | How We Build Our Caravans | Deluxe Caravans</title>
+        <meta name="description" content="See how every Deluxe Caravan is built from the chassis up. Australian-made in Campbellfield, composite frame, quality checked before handover. Learn more." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/buildjourney" />
+      </Helmet>
 
       {/* HERO */}
       <div className="bj-hero">

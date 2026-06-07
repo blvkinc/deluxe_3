@@ -30,6 +30,10 @@ const Eclipse18CouplesOffRoad = () => {
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   useEffect(() => {
+    window.fbq("track", "ViewContent", { content_name: "Eclipse 18 Couples Off-Road", content_category: "Caravan" });
+  }, []);
+
+  useEffect(() => {
     gsap.utils.toArray(".revealUp").forEach((elem) => {
       gsap.fromTo(
         elem,

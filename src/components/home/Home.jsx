@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import "./Home.css";
 import Video from "./homecomponents/Video_landing";
 import Gallery from "./homecomponents/Gallery_landing";
@@ -37,6 +38,11 @@ function Home() {
 
   return (
     <div className="container">
+      <Helmet>
+        <title>Deluxe Caravans | Australian-Made Off Road &amp; Family Caravans</title>
+        <meta name="description" content="Australian-made off road, family &amp; luxury caravans for families, couples &amp; grey nomads. Built in Campbellfield for 15 years. Composite frame, full off-grid power, structural warranty. Book a factory visit today." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/" />
+      </Helmet>
       {isOpen && (
         <div className="ad-model">
           <Model isOpen={isOpen} onClose={handleCloseModal} />

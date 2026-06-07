@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "./Xptec.css";
 import XpTech from "../products/Specsmenu/XpTech";
 import GoToTop from "../functions/GoToTop";
@@ -9,6 +10,11 @@ const WarrantyPolicy = React.memo(() => {
       className="xptech-container"
       style={{ backgroundColor: "#fff", color: "#000" }}
     >
+      <Helmet>
+        <title>XP Tech Caravans | Off-Grid Power System | Deluxe Caravans</title>
+        <meta name="description" content="XP Tech by Deluxe Caravans — 400Ah lithium, 6 solar panels, 3000W inverter, Dometic fridge &amp; IBIS 4 aircon. Australia's premium off-grid caravan power system." />
+        <link rel="canonical" href="https://deluxecaravans.com.au/xptech" />
+      </Helmet>
       <div className="xptech-hero">
         <div className="hero-content">
           <h1 className="xptech-title">XP-TECH</h1>

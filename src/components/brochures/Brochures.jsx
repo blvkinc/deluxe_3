@@ -125,6 +125,7 @@ const Brochures = () => {
         if (b.pdfUrl) window.open(b.pdfUrl, "_blank", "noopener,noreferrer");
       });
       setSubmitted(true);
+      window.fbq("track", "Lead");
     } catch (err) {
       console.error(err);
     } finally {
