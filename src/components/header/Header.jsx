@@ -7,10 +7,8 @@ import Navbar from "./mobileNavbar/Navbar";
 
 const Header = () => {
   const location = useLocation();
-  const CUSTOM_HEADER_PAGES = ["/warranty"];
-  const isCustomHeaderPage =
-    CUSTOM_HEADER_PAGES.includes(location.pathname) ||
-    location.pathname.startsWith("/blog/");
+  const CUSTOM_HEADER_PAGES = ["/warranty", "/service-maintenance"];
+  const isCustomHeaderPage = CUSTOM_HEADER_PAGES.includes(location.pathname);
 
   const [activeMenu, setActiveMenu] = useState(null);
   const [isMobile, setIsMobile] = useState(
