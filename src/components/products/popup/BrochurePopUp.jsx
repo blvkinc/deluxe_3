@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import "./BrochurePopUp.css";
 
 const SERVICE_ID = "service_60prb7s";
-const TEMPLATE_ID = "template_651+9r2v";
+const TEMPLATE_ID = "template_6519r2v";
 const PUBLIC_KEY = "W61evKNsxeHvEgUlN";
 
 const BrochurePopUp = ({ onClose, productName, pdfUrl }) => {
