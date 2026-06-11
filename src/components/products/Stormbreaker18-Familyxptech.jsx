@@ -88,9 +88,8 @@ const Stormbreaker18FamilyXPTech = () => {
           sections={[
             {
               name: "Exterior",
-              images: [
-                "https://deluxcaravan.b-cdn.net/assets/xp%20tec/XP-TECH%20SB186%20big%20window-min.webp"
-              ],
+              images: ["https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(1).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(2).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(3).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(4).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(5).webp"
+],
               description: "",
             },
             {
