@@ -10,17 +10,7 @@ const productData = {
       {
         name: "Exterior",
         images: [
-          "https://deluxcaravan.b-cdn.net/assets/Product%20renders/Eclipse216.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%201.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%202.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%203.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%204.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%205.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%206.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%207.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%208.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E21/E21%20ex%209.webp"
-        ]
+          "https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(1).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(2).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(3).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(4).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(5).webp"  ]
       },
       {
         name: "Layout",
@@ -47,14 +37,7 @@ const productData = {
       {
         name: "Exterior",
         images: [
-          "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_1-min.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_2-min.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_3-min.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_4-min.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_5-min.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_6-min.webp",
-          "https://deluxcaravan.b-cdn.net/assets/E22/eclipse22_ex_7-min.webp"
-        ]
+          "https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(1).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(2).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(3).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(4).webp","https://deluxcaravan.b-cdn.net/assets/E23new/E23%20(5).webp"  ]
       },
       {
         name: "Layout",
