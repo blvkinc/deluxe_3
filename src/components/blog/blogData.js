@@ -4,6 +4,8 @@ export const blogPosts = [
     slug: "xptech-construction",
     title: "XP-TECH CARAVANS: BUILT TO LAST",
     category: "CONSTRUCTION",
+    tags: ["Composite Build", "XP-TECH", "Off-Grid", "Melbourne Made"],
+    strip: ["Composite fibre panels", "No timber framing", "Bonded cabinetry", "XPS foam insulation", "3-year structural warranty", "Built in Campbellfield"],
     metaDescription:
       "XP-TECH construction is Deluxe Caravans' composite fibre panel build system — frameless, bonded, and engineered for serious Australian off-grid travel. Here's what makes it different.",
     excerpt:
@@ -79,6 +81,9 @@ export const blogPosts = [
     slug: "frequently-asked-questions",
     title: "FREQUENTLY ASKED QUESTIONS",
     category: "GENERAL",
+    template: "faq",
+    tags: ["Warranty", "Customisation", "Towing", "Finance", "Servicing"],
+    strip: ["16 years building", "100% Australian made", "Custom builds in-house", "3-year structural warranty", "Finance available", "Australia-wide delivery"],
     metaDescription:
       "General FAQ for Deluxe Caravans — covering warranties, customisation, towing, servicing, finance, off-road capability, build times, and after-sales support.",
     excerpt:
@@ -292,6 +297,8 @@ export const blogPosts = [
     slug: "family-range-comparison",
     title: "XP-TECH FAMILY RANGE COMPARISON",
     category: "SPECIFICATIONS",
+    tags: ["Stormbreaker", "Riptide", "Specifications", "Family Caravans", "Bunks"],
+    strip: ["7 models compared", "Stormbreaker & Riptide", "ATM from 3,000 kg", "Sleeps up to 9", "Bunks to 2.1m", "XP-TECH composite build"],
     metaDescription:
       "Side-by-side specs for every Deluxe Caravans family model — Stormbreaker 18'6, 19'6, 21'6, 23'11 and Riptide 20', 20'6, 22'. ATM, tare, ball weight, bed configurations, bunks, and more.",
     excerpt:
