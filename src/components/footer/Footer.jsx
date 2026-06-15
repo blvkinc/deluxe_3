@@ -2,6 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css"; // Your local CSS
 
+const handlePhoneClick = () => {
+  window.fbq("track", "Contact");
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: "phone_click" });
+};
+
+const handleEmailClick = () => {
+  window.fbq("track", "Contact");
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: "email_click" });
+};
+
 const Footer = React.memo(() => {
   return (
     <footer className="footer">
@@ -69,10 +81,10 @@ const Footer = React.memo(() => {
           >
             32 Scammel Street, Campbellfield, VIC 3061
           </a>
-          <a href="tel:+61483939904" className="footer-link" onClick={() => window.fbq("track", "Contact")}>
+          <a href="tel:+61483939904" className="footer-link" onClick={handlePhoneClick}>
             +61 483 939 904
           </a>
-          <a href="mailto:hello@infiniterv.com.au" className="footer-link" onClick={() => window.fbq("track", "Contact")}>
+          <a href="mailto:hello@infiniterv.com.au" className="footer-link" onClick={handleEmailClick}>
             hello@infiniterv.com.au
           </a>
         </div>
