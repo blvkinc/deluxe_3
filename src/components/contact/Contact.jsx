@@ -83,9 +83,13 @@ const Contact = () => {
         message: message,
       })
       .then(() => {
-        setEmailStatus("success");
-        window.fbq("track", "Lead");
-      })
+  setEmailStatus("success");
+  window.fbq("track", "Lead");
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "generate_lead",
+  });
+})
       .catch(() => {
         setEmailStatus("error");
       });
