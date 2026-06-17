@@ -143,7 +143,7 @@ const Eclipse22CouplesXPTech = () => {
         >
           <div className="description">
             <p>
-              Introducing our biggest ans most spacious 2 Berth Caravan.An
+              Introducing our biggest and most spacious 2 Berth Caravan.An
               impressive feature is the seperate main bed and the rear lounge
               area that extends the width of the caravan. Ideal for a couple who
               like to enjoy time with fellow caravaners or just like the extra
