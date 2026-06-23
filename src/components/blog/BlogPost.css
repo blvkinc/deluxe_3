@@ -54,19 +54,19 @@
 }
 
 .blogpost-page--light .blogpost-strip {
-  background: #007BFF;
+  background: #3C4C52;
 }
 
 .blogpost-page--light .blogpost-service-note {
-  border-left-color: #007BFF;
+  border-left-color: #3C4C52;
 }
 
 .blogpost-page--light .blogpost-entry--intro .blogpost-service-note {
-  border-left-color: #007BFF;
+  border-left-color: #3C4C52;
 }
 
 .blogpost-page--light .blogpost-entry-body ul li::before {
-  color: #007BFF;
+  color: #3C4C52;
 }
 
 /* ── HERO ── */
