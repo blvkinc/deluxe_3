@@ -6,6 +6,7 @@ import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
+import HandoverSection from "./HandoverSection";
 import SpecsEclipse18 from "./Specsmenu/SpecsEclipse18";
 import TechspecEclipse18 from "./techspecs/TechspecEclipse18";
 import BrochurePopUp from "./popup/BrochurePopUp";
@@ -183,6 +184,7 @@ const Eclipse18CouplesOffRoad = () => {
         <h1>Specs Menu</h1>
         <SpecsEclipse18 />
       </div>
+      <HandoverSection />
       <GoToTop />
     </div>
   );

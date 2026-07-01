@@ -13,7 +13,7 @@ const tableData = [
   },
   {
     group: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
-    rows: [{ spec: "Benchtop - Laminate", value: "Benchtop - Laminate" }],
+    rows: [{ spec: "Benchtop - Laminate", value: "Benchtop - Corian and/or Laminate" }],
   },
   {
     group: "ELECTRICAL (INTERNAL)",
@@ -81,7 +81,7 @@ const tableData = [
         value: "Raptor Coated Sides 700mm (Black)",
       },
       {
-        spec: "Checker Plate Sides 900mm (Black)",
+        spec: "Checker Plate Back 900mm (Black)",
         value: "Raptor Coated Back 900mm (Black)",
       },
       {

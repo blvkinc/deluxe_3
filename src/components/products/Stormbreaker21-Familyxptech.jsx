@@ -4,6 +4,7 @@ import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
+import HandoverSection from "./HandoverSection";
 import Storm21specs from "./Specsmenu/Specs21xptech";
 import Techspec21xptech from "./techspecs/Techspec21xptech";
 import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
@@ -207,6 +208,7 @@ const Stormbreaker21FamilyXPTech = () => {
       <div>
         <ResponsiveTable />
       </div>
+      <HandoverSection />
       <GoToTop />
     </div>
   );

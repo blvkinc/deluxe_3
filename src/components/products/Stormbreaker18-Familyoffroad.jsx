@@ -3,6 +3,7 @@ import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import GoToTop from "../functions/GoToTop";
+import HandoverSection from "./HandoverSection";
 import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -190,6 +191,7 @@ const Stormbreaker18FamilyOffRoad = () => {
         <h1>Specs Menu</h1>
         <Storm18specs />
       </div>
+      <HandoverSection />
       <GoToTop />
     </div>
   );

@@ -3,6 +3,7 @@ import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import GoToTop from "../functions/GoToTop";
+import HandoverSection from "./HandoverSection";
 import { gsap } from "gsap";
 import Storm18specs from "./Specsmenu/Specs18xptech";
 import Techspec18xptech from "./techspecs/Techspec18xptech";
@@ -203,6 +204,7 @@ const Stormbreaker18FamilyXPTech = () => {
       <div>
         <ResponsiveTable />
       </div>
+      <HandoverSection />
       <GoToTop />
     </div>
   );

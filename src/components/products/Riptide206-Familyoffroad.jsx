@@ -6,6 +6,7 @@ import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
+import HandoverSection from "./HandoverSection";
 import SpecsRiptide206 from "./Specsmenu/SpecsRiptide206";
 import TechspecRiptide206 from "./techspecs/TechspecRiptide206";
 import BrochurePopUp from "./popup/BrochurePopUp";
@@ -90,10 +91,10 @@ const Riptide206FamilyOffRoad = () => {
             {
               name: "Exterior",
               images: [
-              "https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(11).webp",
-"https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(6).webp",
-"https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(7).webp",
-"https://deluxcaravan.b-cdn.net/assets/Riptide%2020ft/ripetide%2020ft%20(8).webp"
+              "https://deluxcaravan.b-cdn.net/assets/Deluxe%20OFF%20ROAD%20Riptide%2020'6/71ba4691-4c36-488c-b081-97950ca91f3b.webp",
+"https://deluxcaravan.b-cdn.net/assets/Deluxe%20OFF%20ROAD%20Riptide%2020'6/7a204269-6f00-4c12-b1df-833a52b489ca.webp",
+"https://deluxcaravan.b-cdn.net/assets/Deluxe%20OFF%20ROAD%20Riptide%2020'6/8994157a-aa92-42c5-bc0f-61add5d2f026.webp",
+"https://deluxcaravan.b-cdn.net/assets/Deluxe%20OFF%20ROAD%20Riptide%2020'6/a43b9889-a178-401b-b723-4bfb9823a6cf.webp"
               ],
               description: "Explore the stunning exterior design and features",
             },
@@ -184,6 +185,7 @@ const Riptide206FamilyOffRoad = () => {
         <h1>Specs Menu</h1>
         <SpecsRiptide206 />
       </div>
+      <HandoverSection />
       <GoToTop />
     </div>
   );

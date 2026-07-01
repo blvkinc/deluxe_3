@@ -6,6 +6,7 @@ import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
+import HandoverSection from "./HandoverSection";
 import SpecsEclipse22 from "./Specsmenu/SpecsEclipse22";
 import TechspecEclipse22 from "./techspecs/TechspecEclipse22";
 import BrochurePopUp from "./popup/BrochurePopUp";
@@ -144,7 +145,7 @@ const Eclipse22CouplesOffRoad = () => {
               exterior, and mechanical features when you embark on the open
               road. Trust us, you'll be treated to an exceptionally roomy
               layout, complete with all the amenities you'd expect
-              from a luxury RV.
+              fromÂ aÂ luxuryÂ RV.
             </p>
             <button
               className="btn hover-border-1"
@@ -185,6 +186,7 @@ const Eclipse22CouplesOffRoad = () => {
         <h1>Specs Menu</h1>
         <SpecsEclipse22 />
       </div>
+      <HandoverSection />
       <GoToTop />
     </div>
   );
