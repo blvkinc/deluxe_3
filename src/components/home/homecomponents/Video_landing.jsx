@@ -61,7 +61,7 @@ function VideoLanding() {
           <div className="video-background">
             <iframe
               className="landing_page_video"
-              src="https://player.vimeo.com/video/1192941328?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&title=0&byline=0&portrait=0&background=1"
+              src="https://player.vimeo.com/video/1204696024?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&title=0&byline=0&portrait=0&background=1"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
               title="deluxe landing"
