@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
 import HandoverSection from "./HandoverSection";
 import Storm21specs from "./Specsmenu/Specs21xptech";
 import Techspec21xptech from "./techspecs/Techspec21xptech";
-import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
+import BrochurePopUp from "./popup/BrochurePopUp";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
-import BrochurePopUp from "./popup/BrochurePopUp";
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
