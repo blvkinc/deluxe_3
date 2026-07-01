@@ -110,6 +110,16 @@ const Couplesxptech = lazy(() =>
 const Couplesoffroad = lazy(() =>
   import("./components/products/ProductList/Couplesoffroad")
 );
+const OffRoadCaravansForSale = lazy(() =>
+  import("./components/landingpages/OffRoadCaravansForSale")
+);
+const FamilyCaravansAustralia = lazy(() =>
+  import("./components/landingpages/FamilyCaravansAustralia")
+);
+const OffGridCaravansAustralia = lazy(() =>
+  import("./components/landingpages/OffGridCaravansAustralia")
+);
+const FAQPage = lazy(() => import("./components/faq/FAQ"));
 
 const MemoizedHeader = React.memo(Header);
 const MemoizedFooter = React.memo(Footer);
@@ -227,6 +237,10 @@ function App() {
             <Route path="/familyxptech" element={<Familyxptech />} />
             <Route path="/couplesxptech" element={<Couplesxptech />} />
             <Route path="/couplesoffroad" element={<Couplesoffroad />} />
+            <Route path="/off-road-caravans-for-sale" element={<OffRoadCaravansForSale />} />
+            <Route path="/family-caravans-australia" element={<FamilyCaravansAustralia />} />
+            <Route path="/off-grid-caravans-australia" element={<OffGridCaravansAustralia />} />
+            {/* <Route path="/faqs" element={<FAQPage />} /> */}
           </Routes>
         </Suspense>
         <MemoizedFooter />
