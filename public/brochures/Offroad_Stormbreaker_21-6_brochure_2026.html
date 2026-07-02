@@ -3,30 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stormbreaker 21'6" Family XP-Tech — Deluxe Caravans × Infinite RV</title>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;800&family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>  :root {
-    --black:      #0d1117;
-    --carbon:     #161c24;
-    --steel:      #1e2630;
-    --graphite:   #252f3c;
-    --mid:        #2e3a4a;
-    --chrome:     #8aacbe;
-    --silver:     #c0d4e0;
-    --white:      #e8f0f6;
-    --orange:     #e07a28;
-    --orange-dim: #b85e18;
-    --amber:      #f0a040;
-    --red:        #d44030;
+<title>Stormbreaker 21'6" Family Offroad — Deluxe Caravans × Infinite RV</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #0d1117;
+    --carbon: #111c24;
+    --steel: #182330;
+    --graphite: #1e2f3d;
+    --mid: #243850;
+    --chrome: #c0c0c0;
+    --silver: #e0e0e0;
+    --white: #f5f5f0;
+    --orange: #f05000;
+    --orange-dim: #c03e00;
+    --amber: #f0a500;
+    --red: #c0392b;
   }
-
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    background: #0f161e;
-    color: #e8f0f6;
-    font-family: 'Inter', sans-serif;
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Barlow', sans-serif;
     font-weight: 300;
     line-height: 1.6;
     overflow-x: hidden;
@@ -48,9 +48,9 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 80% 60% at 60% 40%, rgba(26,80,120,0.15) 0%, transparent 70%),
-      radial-gradient(ellipse 50% 80% at 10% 80%, rgba(26,80,120,0.10) 0%, transparent 60%),
-      linear-gradient(160deg, #0f1920 0%, #0d1520 50%, #0f1920 100%);
+      radial-gradient(ellipse 80% 60% at 60% 40%, #0a1520 0%, transparent 70%),
+      radial-gradient(ellipse 50% 80% at 10% 80%, #050d15 0%, transparent 60%),
+      linear-gradient(160deg, #0d1117 0%, #111c24 50%, #0d1117 100%);
   }
 
   /* Geometric grid overlay */
@@ -58,8 +58,8 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(26,120,176,0.10) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(26,120,176,0.10) 1px, transparent 1px);
+      linear-gradient(rgba(240,80,0,0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(240,80,0,0.07) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 70%, transparent 100%);
   }
@@ -70,7 +70,7 @@
     top: 0; right: 0;
     width: 45%;
     height: 100%;
-    background: linear-gradient(135deg, transparent 40%, rgba(26,120,176,0.10) 40%, rgba(26,120,176,0.14) 60%, transparent 60%);
+    background: linear-gradient(135deg, transparent 40%, rgba(240,80,0,0.08) 40%, rgba(240,80,0,0.12) 60%, transparent 60%);
     clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 
@@ -96,7 +96,7 @@
   }
 
   .brand-name {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
     font-size: 13px;
     letter-spacing: 0.25em;
@@ -110,7 +110,7 @@
   }
 
   .cover-eyebrow {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
     font-size: 13px;
     letter-spacing: 0.3em;
@@ -121,11 +121,11 @@
   }
 
   .cover-title {
-    font-family: 'Orbitron', sans-serif;
-    font-size: clamp(48px, 8vw, 110px);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(72px, 12vw, 160px);
     line-height: 0.88;
     letter-spacing: 0.02em;
-    color: #e8f0f6;
+    color: var(--white);
     margin-bottom: 8px;
     animation: fadeUp 1s 0.2s ease both;
   }
@@ -135,10 +135,10 @@
   }
 
   .cover-subtitle {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(28px, 4vw, 52px);
     letter-spacing: 0.08em;
-    color: #c0d4e0;
+    color: var(--chrome);
     margin-bottom: 48px;
     animation: fadeUp 1s 0.3s ease both;
   }
@@ -148,7 +148,7 @@
     gap: 48px;
     flex-wrap: wrap;
     padding-top: 32px;
-    border-top: 1px solid rgba(26,120,176,0.15);
+    border-top: 1px solid rgba(255,255,255,0.1);
     animation: fadeUp 1s 0.4s ease both;
   }
 
@@ -158,7 +158,7 @@
   }
 
   .stat-value {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 36px;
     color: var(--orange);
     letter-spacing: 0.04em;
@@ -166,7 +166,7 @@
   }
 
   .stat-label {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 11px;
     letter-spacing: 0.2em;
     color: var(--chrome);
@@ -185,7 +185,7 @@
 
   .badge-family {
     display: inline-block;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.2em;
@@ -198,7 +198,7 @@
 
   .badge-offroad {
     display: block;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 11px;
     letter-spacing: 0.2em;
     color: var(--chrome);
@@ -211,7 +211,7 @@
   }
 
   .section-label {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.3em;
@@ -232,7 +232,7 @@
   }
 
   .section-title {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(42px, 6vw, 80px);
     line-height: 0.92;
     letter-spacing: 0.02em;
@@ -260,9 +260,9 @@
     right: -20px;
     top: 50%;
     transform: translateY(-50%) rotate(-90deg);
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 120px;
-    color: rgba(26,120,176,0.06);
+    color: rgba(255,255,255,0.03);
     letter-spacing: 0.1em;
     white-space: nowrap;
   }
@@ -284,11 +284,11 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: rgba(26,120,176,0.14);
-    border: 1px solid rgba(26,120,176,0.35);
+    background: rgba(240,80,0,0.12);
+    border: 1px solid rgba(240,80,0,0.3);
     border-radius: 2px;
     padding: 10px 18px;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -350,15 +350,15 @@
     position: absolute;
     top: 24px;
     right: 28px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 48px;
-    color: rgba(26,120,176,0.08);
+    color: rgba(255,255,255,0.04);
     letter-spacing: 0.04em;
     line-height: 1;
   }
 
   .feature-title {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -369,7 +369,7 @@
 
   .feature-desc {
     font-size: 14px;
-    color: #9aaabb;
+    color: #888;
     line-height: 1.7;
   }
 
@@ -390,14 +390,14 @@
   }
 
   .specs-category-title {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.25em;
     color: var(--orange);
     text-transform: uppercase;
     padding-bottom: 12px;
-    border-bottom: 1px solid rgba(26,120,176,0.35);
+    border-bottom: 1px solid rgba(240,80,0,0.3);
     margin-bottom: 20px;
   }
 
@@ -412,13 +412,13 @@
 
   .spec-key {
     font-size: 13px;
-    color: #a0b0c0;
+    color: #777;
     letter-spacing: 0.05em;
     flex-shrink: 0;
   }
 
   .spec-val {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: var(--silver);
@@ -434,7 +434,7 @@
   .layout-wrapper {
     margin-top: 60px;
     background: var(--steel);
-    border: 1px solid rgba(26,120,176,0.12);
+    border: 1px solid rgba(255,255,255,0.06);
     padding: 48px;
     position: relative;
   }
@@ -446,7 +446,7 @@
     left: 48px;
     background: var(--orange);
     color: var(--black);
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.2em;
@@ -477,11 +477,11 @@
   .zone-tag {
     background: var(--graphite);
     padding: 16px 20px;
-    border-left: 3px solid var(--orange);
+    border-left: 3px solid rgba(240,80,0,0.35);
   }
 
   .zone-name {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -492,7 +492,7 @@
 
   .zone-desc {
     font-size: 12px;
-    color: #8a9aaa;
+    color: #666;
     letter-spacing: 0.03em;
   }
 
@@ -514,7 +514,7 @@
   }
 
   .inclusion-group-title {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -522,7 +522,7 @@
     text-transform: uppercase;
     margin-bottom: 24px;
     padding-bottom: 12px;
-    border-bottom: 1px solid rgba(42,159,214,0.2);
+    border-bottom: 1px solid rgba(240,80,0,0.2);
   }
 
   .inclusion-list {
@@ -534,7 +534,7 @@
 
   .inclusion-list li {
     font-size: 14px;
-    color: #a0b0c0;
+    color: #999;
     padding-left: 20px;
     position: relative;
     line-height: 1.5;
@@ -576,7 +576,7 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 70% 60% at 50% 50%, rgba(26,120,176,0.10) 0%, transparent 70%);
+      radial-gradient(ellipse 70% 60% at 50% 50%, rgba(240,80,0,0.08) 0%, transparent 70%);
   }
 
   .cta-content {
@@ -585,7 +585,7 @@
   }
 
   .cta-title {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: clamp(52px, 8vw, 100px);
     line-height: 0.9;
     letter-spacing: 0.04em;
@@ -600,22 +600,22 @@
 
   .cta-sub {
     font-size: 16px;
-    color: #8a9aaa;
+    color: #666;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-weight: 500;
     margin-bottom: 48px;
   }
 
   .cta-url {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.15em;
     color: var(--orange);
     text-transform: uppercase;
-    border: 1px solid rgba(26,120,176,0.45);
+    border: 1px solid rgba(240,80,0,0.4);
     display: inline-block;
     padding: 16px 40px;
     transition: background 0.3s, color 0.3s;
@@ -632,15 +632,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid rgba(26,120,176,0.12);
+    border-top: 1px solid rgba(255,255,255,0.06);
   }
 
   .footer-brand {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.2em;
-    color: #8090a0;
+    color: #555;
     text-transform: uppercase;
   }
 
@@ -648,14 +648,14 @@
 
   .footer-note {
     font-size: 11px;
-    color: #7a8a9a;
+    color: #444;
     letter-spacing: 0.05em;
   }
 
   /* ─── DIVIDER ────────────────────────────────────────────── */
   .divider {
     height: 1px;
-    background: linear-gradient(to right, transparent, rgba(26,120,176,0.45), transparent);
+    background: linear-gradient(to right, transparent, rgba(240,80,0,0.4), transparent);
     margin: 0 70px;
   }
 
@@ -671,7 +671,7 @@
   }
 
   .hero-strip-text {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 22px;
     letter-spacing: 0.12em;
     color: var(--black);
@@ -684,7 +684,7 @@
   }
 
   .strip-item {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 0.15em;
@@ -733,99 +733,6 @@
     .features-grid { grid-template-columns: 1fr; }
     .layout-zones { grid-template-columns: 1fr 1fr; }
   }
-
-  /* ─── XP-TECH BADGE ─────────────────────────────────────── */
-  .xptech-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(135deg, #1a7fad, #5ab8e8);
-    color: #fff;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    padding: 6px 16px;
-    clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%);
-    margin-bottom: 32px;
-  }
-
-  /* ─── COMPARISON TABLE ───────────────────────────────────── */
-  .compare-section {
-    background: var(--carbon);
-    padding: 100px 70px;
-  }
-
-  .compare-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0;
-    margin-top: 60px;
-    border: 1px solid rgba(42,159,214,0.15);
-  }
-
-  .compare-header {
-    padding: 20px 28px;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-  }
-
-  .compare-header.label-col { background: var(--steel); color: #8a9aaa; }
-  .compare-header.offroad-col { background: rgba(26,120,176,0.08); color: #a0b0c0; text-align: center; }
-  .compare-header.xptech-col { background: linear-gradient(135deg, rgba(26,127,173,0.3), rgba(42,159,214,0.15)); color: var(--orange); text-align: center; }
-
-  .compare-row {
-    display: contents;
-  }
-
-  .compare-cell {
-    padding: 14px 28px;
-    font-size: 13px;
-    border-top: 1px solid rgba(26,120,176,0.08);
-  }
-
-  .compare-cell.label { color: #8a9aaa; background: var(--steel); font-size: 12px; letter-spacing: 0.05em; }
-  .compare-cell.offroad { color: #9aaabb; background: rgba(255,255,255,0.02); text-align: center; }
-  .compare-cell.xptech-val { 
-    color: var(--silver); 
-    background: rgba(42,159,214,0.05); 
-    text-align: center; 
-    font-weight: 500;
-    border-left: 2px solid rgba(26,120,176,0.35);
-  }
-
-  .compare-cell.xptech-val.highlight {
-    color: var(--orange);
-    background: rgba(42,159,214,0.1);
-  }
-
-  .compare-section-head {
-    display: contents;
-  }
-
-  .compare-section-label {
-    grid-column: 1 / -1;
-    padding: 10px 28px;
-    background: rgba(26,120,176,0.10);
-    font-family: 'Exo 2', sans-serif;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--orange);
-    border-top: 1px solid rgba(42,159,214,0.15);
-  }
-
-  @media (max-width: 900px) {
-    .compare-section { padding: 70px 32px; }
-    .compare-grid { grid-template-columns: 1fr 1fr 1fr; font-size: 11px; }
-    .compare-cell, .compare-header { padding: 12px 14px; }
-  }
-
 </style>
 </head>
 <body>
@@ -837,8 +744,8 @@
   <div class="cover-slash"></div>
 
   <div class="cover-corner-badge">
-    <div class="badge-family">XP-Tech Series</div>
-    <span class="badge-offroad">XP-Tech</span>
+    <div class="badge-family">Family Caravan</div>
+    <span class="badge-offroad">Offroad</span>
   </div>
 
   <div class="cover-content">
@@ -848,8 +755,8 @@
     </div>
 
     <div class="cover-eyebrow">Introducing the</div>
-    <div class="cover-title">Storm<span>breaker S216</span></div>
-    <div class="cover-subtitle">21'6" Family XP-Tech</div>
+    <div class="cover-title">Storm<span>breaker</span></div>
+    <div class="cover-subtitle">21'6" Family Offroad</div>
 
     <div class="cover-stats">
       <div class="cover-stat">
@@ -857,7 +764,7 @@
         <div class="stat-label">Body Length</div>
       </div>
       <div class="cover-stat">
-        <div class="stat-value">4–5</div>
+        <div class="stat-value">5</div>
         <div class="stat-label">Sleeps</div>
       </div>
       <div class="cover-stat">
@@ -865,7 +772,7 @@
         <div class="stat-label">ATM</div>
       </div>
       <div class="cover-stat">
-        <div class="stat-value">2,700kg</div>
+        <div class="stat-value">2,850kg</div>
         <div class="stat-label">Tare Weight</div>
       </div>
       <div class="cover-stat">
@@ -878,12 +785,12 @@
 
 <!-- ═══════════ ORANGE STRIP ═══════════ -->
 <div class="hero-strip">
-  <div class="hero-strip-text">Australia's Most Popular XP-Tech Series — More Space, More Adventure.</div>
+  <div class="hero-strip-text">More Space. Same DNA. Built for Bigger Adventures.</div>
   <div class="hero-strip-items">
     <div class="strip-item">Queen Island Bed with Lift-Up Storage</div>
-    <div class="strip-item">800W Solar</div>
-    <div class="strip-item">Composite Fiberglass Frame</div>
-    <div class="strip-item">Electric Carefree Awning</div>
+    <div class="strip-item">Double Bunks</div>
+    <div class="strip-item">Split Bathroom</div>
+    <div class="strip-item">Full Offroad Spec</div>
   </div>
 </div>
 
@@ -894,7 +801,7 @@
       <div class="section-label">Overview</div>
       <h2 class="section-title">Compact.<br>Capable.<br>Complete.</h2>
       <p class="section-body">
-        Are you on the hunt for a more spacious family bunk caravan? The Stormbreaker 21'6" XP-Tech is the solution — offering all the remarkable features of the 21'6" elevated with full composite XP-Tech construction, Victron power management, 800W solar, and Raptor-coated protection. When you hit the open road, you'll enjoy an exceptionally roomy layout with all the amenities of a luxury RV.
+        Looking for a more spacious family bunk caravan? The Stormbreaker 21'6" is the solution — offering all the remarkable features of the 19'6" in a roomier package. Every journey transforms into an unforgettable experience, thanks to its premium built interior, exterior, and mechanical attributes. When you hit the open road with your loved ones, you'll enjoy an exceptionally roomy layout and all the amenities of a luxury RV.
       </p>
     </div>
     <div class="intro-right">
@@ -904,26 +811,18 @@
       </div>
       <div class="highlight-pill">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="4" rx="1"/><line x1="12" y1="8" x2="12" y2="21"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
-        2 Bunks — 2.1m Each
+        2 Bunks — 2.1m Each, with Windows
       </div>
       <div class="highlight-pill">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Full Offroad Ind. 3.5T (Airbag Ready)
+        6" Dura-Gal Chassis + Full Offroad Independent 3.5T Suspension
       </div>
       <div class="highlight-pill">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
-        Sleeps 4–5 — Ideal for the Whole Family
-      </div>
-      <div class="highlight-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a5 5 0 00-5 5v3H6a1 1 0 00-1 1v10a1 1 0 001 1h12a1 1 0 001-1V11a1 1 0 00-1-1h-1V7a5 5 0 00-5-5z"/></svg>
-        Diesel Heater
-      </div>
-      <div class="highlight-pill">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-        400Ah Lithium Batteries
+        Sleeps 5 — Ideal for the Whole Family
       </div>
       <p class="section-body" style="margin-top:8px; font-size:14px; color:#666;">
-        The island bed with lift-up storage is the clever space-saving secret that lets this compact 21'6" van accommodate queen island sleeping, two full bunks, and a split bathroom — all without feeling squeezed.
+        The island bed with lift-up storage is the clever space-saving secret that lets this compact 21'6" van accommodate queen sleeping, two full bunks, and a split bathroom — all without feeling squeezed.
       </p>
     </div>
   </div>
@@ -944,7 +843,7 @@
         <polyline points="9,22 9,12 15,12 15,22"/>
       </svg>
       <div class="feature-title">Smart Sleeping Layout</div>
-      <div class="feature-desc">Queen island bed with lift-up storage for the parents, plus two spacious 2.1m bunks with windows for the kids. Sleeps 4–5 comfortably in a spacious 21'6" footprint.</div>
+      <div class="feature-desc">Queen island bed with lift-up storage for the parents, plus two spacious 2.1m bunks with windows for the kids. Sleeps five comfortably in a compact footprint.</div>
     </div>
 
     <div class="feature-card">
@@ -953,7 +852,7 @@
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
       </svg>
       <div class="feature-title">Offroad Engineered</div>
-      <div class="feature-desc">Full Offroad Independent 3.5T (Airbag Ready) suspension, 16" alloy wheels with heavy-duty offroad tyres, 12" electric brake system, and Raptor coated protection front, sides and rear.</div>
+      <div class="feature-desc">6" Dura-Gal 2" Raiser chassis, Full Offroad Independent 3.5T suspension, 16" alloy wheels with heavy-duty offroad tyres, 12" electric brake system, and checkerplate protection front and sides.</div>
     </div>
 
     <div class="feature-card">
@@ -963,7 +862,7 @@
         <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
       </svg>
       <div class="feature-title">Solar Power System</div>
-      <div class="feature-desc">800W of solar (4 × 200W panels) keeps you powered off-grid. Backed by 2 × 200Ah lithium batteries.</div>
+      <div class="feature-desc">Three 170W solar panels keep you charged off-grid. Backed by 2 × 100Ah lithium batteries, twin 95L water tanks, and a 110L grey water tank.</div>
     </div>
 
     <div class="feature-card">
@@ -971,8 +870,8 @@
       <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
         <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
       </svg>
-      <div class="feature-title">Efficient Appliances for Off-Grid</div>
-      <div class="feature-desc">Full-size 188L Dometic compressor fridge &amp; brushless reverse cycle aircon, Oven (3 x Gas | 1 x Electric Burner and Grill or Induction), and 25L Microwave for effortless meal prep and a Washing machine</div>
+      <div class="feature-title">188L Dometic Fridge</div>
+      <div class="feature-desc">A full-size 188L Dometic compressor fridge keeps your family's supplies fresh, paired with a premium laminate benchtop, Oven (3 x Gas | 1 x Electric Burner and Grill), and 25L microwave.</div>
     </div>
 
     <div class="feature-card">
@@ -989,48 +888,13 @@
       <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
         <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
       </svg>
-      <div class="feature-title">Off-Grid Living</div>
-      <div class="feature-desc">Victron 3000W inverter management system with Cerbo GX 70 display, 2 x 30A MPPT, 30A DC-DC with 400Ah, LED lighting throughout, USB charging, wireless multi switches, bug lights, reverse camera, and front/rear LED light bars &amp; fans</div>
+      <div class="feature-title">Modern Electrical</div>
+      <div class="feature-desc">LED lighting throughout, USB charging points built into every reading light, Dometic Fresh Jet air conditioning, front-load washing machine, reverse camera, and front/rear LED light bars.</div>
     </div>
   </div>
 </section>
 
 <!-- ═══════════ SPECS ═══════════ -->
-
-<!-- ═══════════ XP-TECH TECHNOLOGY ═══════════ -->
-<section style="background: var(--black); padding: 80px 70px;">
-  <div class="section-label">XP-Tech Technology</div>
-  <h2 class="section-title">Innovative.<br>Timeless.<br>Tough.</h2>
-  <p class="section-body" style="margin-bottom:60px;">XP-Tech panels are advanced sandwich-structured composites combining a fiberglass-reinforced plastic surface with an XPS foam core. Unlike aluminium panels, they resist dents. Unlike wooden frames, they are moisture-resistant — no rot, no leaks. A caravan built for generations.</p>
-
-  <div style="display:grid; grid-template-columns: repeat(3,1fr); gap:2px;">
-    <div style="background:var(--carbon); padding:36px 30px; border-top:3px solid var(--orange);">
-      <div style="font-family:'Orbitron',sans-serif; font-size:13px; font-weight:700; color:var(--orange); letter-spacing:0.15em; margin-bottom:12px; text-transform:uppercase;">Lightweight</div>
-      <div style="font-size:14px; color:#777; line-height:1.7;">XP-Tech composite panels are designed to be lightweight — easier to tow, compatible with a wider range of vehicles, and more payload capacity for your belongings.</div>
-    </div>
-    <div style="background:var(--carbon); padding:36px 30px; border-top:3px solid var(--orange);">
-      <div style="font-family:'Orbitron',sans-serif; font-size:13px; font-weight:700; color:var(--orange); letter-spacing:0.15em; margin-bottom:12px; text-transform:uppercase;">Waterproof &amp; Rotproof</div>
-      <div style="font-size:14px; color:#777; line-height:1.7;">Built using seamless one-piece construction, minimising water leak risk. The ultimate solution for long-lasting protection against Australia's harsh conditions.</div>
-    </div>
-    <div style="background:var(--carbon); padding:36px 30px; border-top:3px solid var(--orange);">
-      <div style="font-family:'Orbitron',sans-serif; font-size:13px; font-weight:700; color:var(--orange); letter-spacing:0.15em; margin-bottom:12px; text-transform:uppercase;">Noise Insulation</div>
-      <div style="font-size:14px; color:#777; line-height:1.7;">Superior acoustic properties significantly reduce sound transmission from inside and out — creating a quiet, relaxing atmosphere whether in a caravan park or the outback.</div>
-    </div>
-    <div style="background:var(--carbon); padding:36px 30px; border-top:3px solid rgba(26,120,176,0.45);">
-      <div style="font-family:'Orbitron',sans-serif; font-size:13px; font-weight:700; color:var(--orange); letter-spacing:0.15em; margin-bottom:12px; text-transform:uppercase;">Thermal Insulation</div>
-      <div style="font-size:14px; color:#777; line-height:1.7;">Superior thermal efficiency helps maintain cooler interiors in summer, warmer in winter — reach your ideal temperature faster using less energy, especially off-grid.</div>
-    </div>
-    <div style="background:var(--carbon); padding:36px 30px; border-top:3px solid rgba(26,120,176,0.45);">
-      <div style="font-family:'Orbitron',sans-serif; font-size:13px; font-weight:700; color:var(--orange); letter-spacing:0.15em; margin-bottom:12px; text-transform:uppercase;">Superior Strength</div>
-      <div style="font-size:14px; color:#777; line-height:1.7;">CFRT skins use thermoplastic properties laminated with continuous fiber-reinforced unidirectional tapes — unparalleled toughness, high durability, and exceptional impact damage tolerance.</div>
-    </div>
-    <div style="background:var(--carbon); padding:36px 30px; border-top:3px solid rgba(26,120,176,0.45);">
-      <div style="font-family:'Orbitron',sans-serif; font-size:13px; font-weight:700; color:var(--orange); letter-spacing:0.15em; margin-bottom:12px; text-transform:uppercase;">Cost Effective</div>
-      <div style="font-size:14px; color:#777; line-height:1.7;">Lighter construction reduces fuel consumption for your tow vehicle — saving you money on every trip while minimising your environmental impact across Australia's roads.</div>
-    </div>
-  </div>
-</section>
-
 <section class="specs">
   <div class="section-label">Specifications</div>
   <h2 class="section-title">The Numbers<br>That Matter.</h2>
@@ -1039,10 +903,10 @@
     <div>
       <div class="specs-category">
         <div class="specs-category-title">Weights &amp; Dimensions</div>
-        <div class="spec-row"><span class="spec-key">External Length</span><span class="spec-val">8,850 mm</span></div>
+        <div class="spec-row"><span class="spec-key">External Length</span><span class="spec-val">9,150 mm</span></div>
         <div class="spec-row"><span class="spec-key">Internal Height</span><span class="spec-val">2,000 mm</span></div>
         <div class="spec-row"><span class="spec-key">External Height</span><span class="spec-val">3,200 mm</span></div>
-        <div class="spec-row"><span class="spec-key">Tare Weight</span><span class="spec-val">2,700 kg</span></div>
+        <div class="spec-row"><span class="spec-key">Tare Weight</span><span class="spec-val">2,850 kg</span></div>
         <div class="spec-row"><span class="spec-key">ATM</span><span class="spec-val">3,500 kg</span></div>
         <div class="spec-row"><span class="spec-key">Ball Weight (unladen)</span><span class="spec-val">220 kg</span></div>
         <div class="spec-row"><span class="spec-key">Axle Configuration</span><span class="spec-val">Dual Axle</span></div>
@@ -1050,42 +914,38 @@
 
       <div class="specs-category">
         <div class="specs-category-title">Chassis &amp; Suspension</div>
-        <div class="spec-row"><span class="spec-key">Chassis</span><span class="spec-val">6" Dura-Gal — Truss Chassis 6' Raiser</span></div>
+        <div class="spec-row"><span class="spec-key">Chassis</span><span class="spec-val">6" Dura-Gal 2" Raiser</span></div>
         <div class="spec-row"><span class="spec-key">Suspension</span><span class="spec-val">Full Offroad Independent 3.5T</span></div>
         
-        <div class="spec-row"><span class="spec-key">Front Protection</span><span class="spec-val">Raptor Coated 900mm (Black)</span></div>
-        <div class="spec-row"><span class="spec-key">Side Protection</span><span class="spec-val">Raptor Coated 700mm (Black)</span></div>
-        <div class="spec-row"><span class="spec-key">Rear Protection</span><span class="spec-val">Raptor Coated 900mm (Black)</span></div>
-        <div class="spec-row"><span class="spec-key">Chassis Finish</span><span class="spec-val">Raptor Coated</span></div>
         <div class="spec-row"><span class="spec-key">Brakes</span><span class="spec-val">12" Electric Brake System</span></div>
         
-        <div class="spec-row"><span class="spec-key">Wheels</span><span class="spec-val">16" Alloy — 4 Wheels</span></div>
+        <div class="spec-row"><span class="spec-key">Wheels</span><span class="spec-val">16" Alloy Wheels</span></div>
         <div class="spec-row"><span class="spec-key">Tyres</span><span class="spec-val">Heavy-Duty Offroad Tyres</span></div>
-        <div class="spec-row"><span class="spec-key">Gator Jack</span><span class="spec-val">A-Frame</span></div>
       </div>
     </div>
 
     <div>
       <div class="specs-category">
         <div class="specs-category-title">Interior</div>
-        <div class="spec-row"><span class="spec-key">Sleeping Capacity</span><span class="spec-val">4-5 People</span></div>
+        <div class="spec-row"><span class="spec-key">Sleeping Capacity</span><span class="spec-val">5 People</span></div>
         <div class="spec-row"><span class="spec-key">Seating Capacity</span><span class="spec-val">4-5 People</span></div>
         <div class="spec-row"><span class="spec-key">Main Bed</span><span class="spec-val">Queen Island Bed with Lift-Up Storage</span></div>
         <div class="spec-row"><span class="spec-key">Bunks</span><span class="spec-val">2 × 2.1m with Windows</span></div>
         <div class="spec-row"><span class="spec-key">Lounge</span><span class="spec-val">L-Shape Lounge with Drop-Down Table with TIC Cushion</span></div>
-        <div class="spec-row"><span class="spec-key">Frame</span><span class="spec-val">Composite Fiberglass Sandwich Panels</span></div>
+        <div class="spec-row"><span class="spec-key">Frame</span><span class="spec-val">Meranti / CNC</span></div>
         <div class="spec-row"><span class="spec-key">Hinges</span><span class="spec-val">Concealed</span></div>
         <div class="spec-row"><span class="spec-key">Flooring</span><span class="spec-val">Durable Vinyl</span></div>
         <div class="spec-row"><span class="spec-key">Air Conditioning</span><span class="spec-val">Dometic Fresh Jet</span></div>
-        <div class="spec-row"><span class="spec-key">Stereo</span><span class="spec-val">Stereo/Speaker System &amp; 24" TV</span></div>
+        <div class="spec-row"><span class="spec-key">Stereo</span><span class="spec-val">Stereo / Speaker System &amp; 24" TV</span></div>
       </div>
 
       <div class="specs-category">
         <div class="specs-category-title">Kitchen &amp; Bathroom</div>
         <div class="spec-row"><span class="spec-key">Fridge</span><span class="spec-val">188L Dometic Compressor</span></div>
-        <div class="spec-row"><span class="spec-key">Cooktop</span><span class="spec-val">Oven (3 x Gas | 1 x Electric Burner and Grill or Induction)</span></div>
+        <div class="spec-row"><span class="spec-key">Cooktop</span><span class="spec-val">Oven (3 x Gas | 1 x Electric Burner and Grill)</span></div>
         <div class="spec-row"><span class="spec-key">Microwave</span><span class="spec-val">25L Microwave</span></div>
-        <div class="spec-row"><span class="spec-key">Benchtop</span><span class="spec-val">Corian Stone or Laminate</span></div>
+        
+        <div class="spec-row"><span class="spec-key">Benchtop</span><span class="spec-val">Premium Laminate</span></div>
         <div class="spec-row"><span class="spec-key">Taps</span><span class="spec-val">Premium Black + Water Filter</span></div>
         <div class="spec-row"><span class="spec-key">Shower</span><span class="spec-val">ABS Lightweight</span></div>
         <div class="spec-row"><span class="spec-key">Toilet</span><span class="spec-val">Thetford</span></div>
@@ -1094,20 +954,27 @@
 
       <div class="specs-category">
         <div class="specs-category-title">Power &amp; Water</div>
-        <div class="spec-row"><span class="spec-key">Solar</span><span class="spec-val">800W (4 × 200W Panels)</span></div>
-        <div class="spec-row"><span class="spec-key">Battery</span><span class="spec-val">2 × 200Ah Lithium</span></div>
+        <div class="spec-row"><span class="spec-key">Solar</span><span class="spec-val">3 × 170W Panels</span></div>
+        <div class="spec-row"><span class="spec-key">Battery</span><span class="spec-val">2 × 100Ah Lithium</span></div>
+        <div class="spec-row"><span class="spec-key">Charger</span><span class="spec-val">Projecta 30A + 30A MPPT</span></div>
+        <div class="spec-row"><span class="spec-key">Display</span><span class="spec-val">Projecta Bluetooth</span></div>
         <div class="spec-row"><span class="spec-key">Fresh Water</span><span class="spec-val">2 × 95L Tanks</span></div>
         <div class="spec-row"><span class="spec-key">Grey Water</span><span class="spec-val">110L Tank</span></div>
-        <div class="spec-row"><span class="spec-key">Hot Water</span><span class="spec-val">Instant Hot Water</span></div>
-        <div class="spec-row"><span class="spec-key">Victron System</span><span class="spec-val">3000W Inverter, 120A Charger, 2 x 30A MPPT &amp; 30A DC-DC</span></div>
-        <div class="spec-row"><span class="spec-key">Display</span><span class="spec-val">Cerbo GX 70, 7 Inch Screen</span></div>
+        <div class="spec-row"><span class="spec-key">Hot Water</span><span class="spec-val">28L Gas-Electric</span></div>
         <div class="spec-row"><span class="spec-key">Annexe Lights</span><span class="spec-val">2 × LED + 1 × LED over Tunnel Boot + LED Tunnel Boot Light</span></div>
         <div class="spec-row"><span class="spec-key">Car Plug</span><span class="spec-val">12-Pin</span></div>
         <div class="spec-row"><span class="spec-key">12V Socket</span><span class="spec-val">Weatherproof Cig</span></div>
         <div class="spec-row"><span class="spec-key">240V Outlet</span><span class="spec-val">Weatherproof</span></div>
-        <div class="spec-row"><span class="spec-key">Door Handle</span><span class="spec-val">Yes (no Blue LED)</span></div>
+        <div class="spec-row"><span class="spec-key">Blue LED Door Handle</span><span class="spec-val">Yes</span></div>
         <div class="spec-row"><span class="spec-key">Side Markers</span><span class="spec-val">With Reflectors</span></div>
-                <div class="spec-row"><span class="spec-key">Anderson Plug Solar</span><span class="spec-val">Solar Blanket</span></div>
+      </div>
+
+      <div class="specs-category">
+        <div class="specs-category-title">Protection</div>
+        <div class="spec-row"><span class="spec-key">Front</span><span class="spec-val">Checker Plate 900mm (Black)</span></div>
+        <div class="spec-row"><span class="spec-key">Sides</span><span class="spec-val">Checker Plate 900mm (Black)</span></div>
+        <div class="spec-row"><span class="spec-key">Cladding</span><span class="spec-val">Aluminium Composite</span></div>
+        <div class="spec-row"><span class="spec-key">Mudflaps</span><span class="spec-val">Yes</span></div>
       </div>
     </div>
   </div>
@@ -1117,7 +984,7 @@
 <section class="layout-section">
   <div class="section-label">Floor Plan</div>
   <h2 class="section-title">Every Inch<br>Engineered.</h2>
-  <p class="section-body">The queen island bed with lift-up storage is the key to unlocking this layout — freeing up the rear of the van for two full-length bunks, a split bathroom, and a generous lounge. Smart design, maximum space.</p>
+  <p class="section-body">The queen island bed with lift-up storage sits at the front, flowing into an L-Shape lounge and kitchen in the centre, with two 2.1m bunks and a split bathroom at the rear. Dual-axle and full offroad independent 3.5T suspension underneath.</p>
 
   <div class="layout-wrapper">
     <div class="layout-img-container">
@@ -1126,11 +993,11 @@
     <div class="layout-zones">
       <div class="zone-tag">
         <div class="zone-name">Lounge</div>
-        <div class="zone-desc">L-Shape lounge with drop-down table with TIC cushion</div>
+        <div class="zone-desc">L-Shape lounge, drop-down table, vinyl flooring</div>
       </div>
       <div class="zone-tag">
         <div class="zone-name">Kitchen</div>
-        <div class="zone-desc">Oven (3 x Gas | 1 x Electric Burner and Grill or Induction)</div>
+        <div class="zone-desc">Oven (3 x Gas | 1 x Electric Burner and Grill)</div>
       </div>
       <div class="zone-tag">
         <div class="zone-name">Bathroom</div>
@@ -1138,7 +1005,7 @@
       </div>
       <div class="zone-tag">
         <div class="zone-name">Sleeping</div>
-        <div class="zone-desc">Queen Island Bed — Lift-Up Storage + 2 × 2.1m bunks</div>
+        <div class="zone-desc">Queen Island Bed + 2 × 2.1m bunks</div>
       </div>
     </div>
   </div>
@@ -1153,15 +1020,14 @@
     <div class="inclusion-group">
       <div class="inclusion-group-title">Exterior &amp; Storage</div>
       <ul class="inclusion-list">
-        <li>Front dual bike rack (standard)</li>
-        <li>Electric Carefree Awning</li>
+        <li>17ft Roll-Out Awning</li>
         <li>Tunnel Boot — Front (Dual Access)</li>
-        <li>Custom toolbox with double slide-out &amp; wood box</li>
+        <li>Front dual bike rack (standard)</li>
+        <li>Large Toolbox with Dual Slide Out</li>
         <li>Storage Compartment Hatch (Rear, Off-Side)</li>
-        <li>Raptor Coated Front 900mm (Black)</li>
-        <li>Raptor Coated Sides 700mm (Black)</li>
-        <li>Raptor Coated Back 900mm (Black)</li>
-        <li>Fiberglass Cladding</li>
+        <li>Checker Plate Front 900mm (Black)</li>
+        <li>Checker Plate Sides 900mm (Black)</li>
+        <li>Aluminium Composite Cladding</li>
         <li>Mudflaps</li>
         <li>Dual 9kg gas cylinders</li>
         <li>Stone Mesh Guard</li>
@@ -1172,7 +1038,6 @@
         <li>Reversing camera</li>
         <li>Front and rear LED light bars</li>
         <li>Picnic Table — Fold-Out</li>
-        <li>Dometic DRS</li>
       </ul>
     </div>
 
@@ -1183,23 +1048,18 @@
         <li>Bedside niche both sides</li>
         <li>Two spacious bunks (2.1m each) with windows</li>
         <li>L-Shape lounge with drop-down table with TIC cushion</li>
-        <li>Durable vinyl flooring</li>
         <li>12V fan in bedroom</li>
         <li>Overhead lockers and wardrobe</li>
         <li>Under-bed drawers for easy access</li>
         <li>Reading lights with built-in USB charging — throughout</li>
-        <li>Sirocco fans in bunks</li>
-        <li>Wireless multi switches</li>
-        <li>Bug lights</li>
-        <li>Anderson plug + solar</li>
         <li>Powerpoint in bedroom</li>
-        <li>Entertainment locker with TV bracket</li>
+        <li>24" TV with bracket</li>
         <li>12V and 240V points + antenna connection</li>
         <li>Dometic Fresh Jet air conditioning</li>
+        <li>Stereo/Speaker System</li>
         <li>Front-load washing machine</li>
-        <li>Stereo/Speaker System &amp; 24" TV</li>
         <li>2 × LED Annexe Lights + 1 × LED over Tunnel Boot + LED Tunnel Boot Light</li>
-        <li>Door Handle (no Blue LED)</li>
+        <li>Blue LED Door Handle Light</li>
         <li>Side Markers with Reflectors</li>
       </ul>
     </div>
@@ -1207,151 +1067,31 @@
 </section>
 
 <!-- ═══════════ OUTDOOR LIVING ═══════════ -->
-
-<!-- ═══════════ XP-TECH COMPARISON ═══════════ -->
-<section class="compare-section">
-  <div class="xptech-badge">⚡ XP-Tech Exclusive Upgrades</div>
-  <div class="section-label">Off-Road vs XP-Tech</div>
-  <h2 class="section-title">What Makes<br>XP-Tech Different.</h2>
-  <p class="section-body">The Stormbreaker XP-Tech takes the proven 21'6" platform and elevates every system — from the frame construction to the electrical architecture. Here's exactly what you get over the standard Off-Road model.</p>
-
-  <div class="compare-grid">
-    <!-- Headers -->
-    <div class="compare-header label-col">Specification</div>
-    <div class="compare-header offroad-col">Off-Road</div>
-    <div class="compare-header xptech-col">⚡ XP-Tech</div>
-
-    <!-- INTERIOR -->
-    <div class="compare-section-label">Interior & Construction</div>
-    <div class="compare-cell label">Frame Construction</div>
-    <div class="compare-cell offroad">Meranti / Riveted Aluminium</div>
-    <div class="compare-cell xptech-val highlight">Composite Fiberglass Sandwich Panels</div>
-
-    <div class="compare-cell label">Benchtop</div>
-    <div class="compare-cell offroad">Laminate</div>
-    <div class="compare-cell xptech-val highlight">Corian Stone or Laminate</div>
-
-    <!-- ELECTRICAL INTERNAL -->
-    <div class="compare-section-label">Electrical — Internal</div>
-    <div class="compare-cell label">Power Management</div>
-    <div class="compare-cell offroad">Projecta 30A Charger + 30A MPPT</div>
-    <div class="compare-cell xptech-val highlight">Victron 3000W Inverter, 120A Charger, 2×30A MPPT & 30A DC-DC</div>
-
-    <div class="compare-cell label">Display</div>
-    <div class="compare-cell offroad">Projecta Bluetooth Display</div>
-    <div class="compare-cell xptech-val highlight">Cerbo GX 70, 7 Inch Screen</div>
-
-    <div class="compare-cell label">Bunk Fans</div>
-    <div class="compare-cell offroad">—</div>
-    <div class="compare-cell xptech-val highlight">Sirocco Fans in Bunks</div>
-
-    <div class="compare-cell label">Switches</div>
-    <div class="compare-cell offroad">Standard</div>
-    <div class="compare-cell xptech-val highlight">Wireless Multi Switches</div>
-
-    <div class="compare-cell label">Bug Lights</div>
-    <div class="compare-cell offroad">—</div>
-    <div class="compare-cell xptech-val highlight">Included</div>
-
-    <!-- ELECTRICAL EXTERNAL -->
-    <div class="compare-section-label">Electrical — External</div>
-    <div class="compare-cell label">Solar</div>
-    <div class="compare-cell offroad">3 × 170W (510W)</div>
-    <div class="compare-cell xptech-val highlight">4 × 200W (800W)</div>
-
-    <div class="compare-cell label">Battery</div>
-    <div class="compare-cell offroad">2 × 100Ah Lithium</div>
-    <div class="compare-cell xptech-val highlight">2 × 200Ah Lithium</div>
-
-    <div class="compare-cell label">Anderson Plug (Solar Blanket)</div>
-    <div class="compare-cell offroad">—</div>
-    <div class="compare-cell xptech-val highlight">Included</div>
-
-    <!-- APPLIANCES -->
-    <div class="compare-section-label">Appliances</div>
-    <div class="compare-cell label">Hot Water</div>
-    <div class="compare-cell offroad">28L Gas/Electric</div>
-    <div class="compare-cell xptech-val highlight">Instant Hot Water</div>
-
-    <!-- PROTECTION -->
-    <div class="compare-section-label">Protection</div>
-    <div class="compare-cell label">Front Protection</div>
-    <div class="compare-cell offroad">Checker Plate 900mm</div>
-    <div class="compare-cell xptech-val highlight">Raptor Coated 900mm</div>
-
-    <div class="compare-cell label">Side Protection</div>
-    <div class="compare-cell offroad">Checker Plate 900mm</div>
-    <div class="compare-cell xptech-val highlight">Raptor Coated 700mm</div>
-
-    <div class="compare-cell label">Rear Protection</div>
-    <div class="compare-cell offroad">Checker Plate 900mm</div>
-    <div class="compare-cell xptech-val highlight">Raptor Coated 900mm</div>
-
-    <div class="compare-cell label">Body Cladding</div>
-    <div class="compare-cell offroad">Aluminium Composite</div>
-    <div class="compare-cell xptech-val highlight">Fiberglass</div>
-
-    <!-- EXTERIOR -->
-    <div class="compare-section-label">Exterior</div>
-    <div class="compare-cell label">Awning</div>
-    <div class="compare-cell offroad">Roll-Out (Charcoal)</div>
-    <div class="compare-cell xptech-val highlight">Electric Carefree</div>
-
-    <div class="compare-cell label">Toolbox</div>
-    <div class="compare-cell offroad">Large with Double Slide Out</div>
-    <div class="compare-cell xptech-val highlight">Custom with Double Slide Out & Wood Box</div>
-
-    <div class="compare-cell label">Dometic DRS</div>
-    <div class="compare-cell offroad">—</div>
-    <div class="compare-cell xptech-val highlight">Included</div>
-
-    <!-- CHASSIS -->
-    <div class="compare-section-label">Chassis</div>
-    <div class="compare-cell label">Chassis Finish</div>
-    <div class="compare-cell offroad">Painted</div>
-    <div class="compare-cell xptech-val highlight">Raptor Coated</div>
-
-    <div class="compare-cell label">Chassis Design</div>
-    <div class="compare-cell offroad">6" Dura-Gal + 2" Raiser</div>
-    <div class="compare-cell xptech-val highlight">6" Dura-Gal Truss Chassis + 6' Raiser</div>
-
-    <div class="compare-cell label">A-Frame Jack</div>
-    <div class="compare-cell offroad">Jockey Wheel</div>
-    <div class="compare-cell xptech-val highlight">Gator Jack</div>
-
-    <!-- COLOUR -->
-    <div class="compare-section-label">Colour Selection</div>
-    <div class="compare-cell label">Internal Colours</div>
-    <div class="compare-cell offroad">Additional cost across all premium options</div>
-    <div class="compare-cell xptech-val highlight">No additional cost across all premium options</div>
-  </div>
-</section>
-
 <section class="outdoor">
   <div class="outdoor-content">
     <div>
       <div class="section-label">Outdoor Living</div>
       <h2 class="section-title">Life is Better<br>Outside.</h2>
-      <p class="section-body">The Stormbreaker's exterior setup means you're ready to set up camp the moment you arrive. An entertainment locker with TV bracket, 12V and 240V points and antenna connection lets you settle in fast. A fold-out picnic table and external shower make settling into camp easy — rinse off after a big day and enjoy the outdoors in comfort.</p>
+      <p class="section-body">The Stormbreaker's exterior setup means you're ready to set up camp the moment you arrive. An entertainment locker with TV bracket, 12V and 240V points and antenna connection lets you settle in fast. A foldable picnic table, 17ft roll-out awning, and external shower make settling into camp effortless. The tunnel boot with dual access and large toolbox with dual slide-out give you all the storage space you need for extended adventures.</p>
     </div>
     <div>
       <div style="background: var(--graphite); padding: 40px; margin-top: 20px;">
         <div class="section-label" style="margin-bottom:20px;">Also Available</div>
         <div style="display:flex; flex-direction:column; gap:16px;">
-          <div style="border-left: 3px solid rgba(42,159,214,0.35); padding-left: 20px;">
-            <div style="font-family:'Exo 2',sans-serif; font-size:16px; font-weight:700; color:var(--white); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:4px;">Stormbreaker S186 XP-Tech</div>
-            <div style="font-size:13px; color:#666;">Compact XP-Tech series</div>
+          <div style="border-left: 3px solid rgba(240,80,0,0.3); padding-left: 20px;">
+            <div style="font-family:'Rajdhani',sans-serif; font-size:16px; font-weight:700; color:var(--white); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:4px;">Stormbreaker 18'6"</div>
+            <div style="font-size:13px; color:#666;">Compact family offroad van</div>
           </div>
-          <div style="border-left: 3px solid rgba(26,120,176,0.45); padding-left: 20px;">
-            <div style="font-family:'Rajdhani',sans-serif; font-size:16px; font-weight:700; color:var(--white); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:4px;">Stormbreaker S196 XP-Tech</div>
-            <div style="font-size:13px; color:#666;">Mid-size XP-Tech series</div>
+          <div style="border-left: 3px solid var(--orange); padding-left: 20px;">
+            <div style="font-family:'Rajdhani',sans-serif; font-size:16px; font-weight:700; color:var(--white); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:4px;">Stormbreaker 19'6"</div>
+            <div style="font-size:13px; color:#666;">Mid-size family offroad van</div>
           </div>
-          <div style="border-left: 3px solid rgba(42,159,214,0.2); padding-left: 20px;">
-            <div style="font-family:'Rajdhani',sans-serif; font-size:16px; font-weight:700; color:var(--white); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:4px;">Stormbreaker S2311 XP-Tech</div>
-            <div style="font-size:13px; color:#666;">Flagship XP-Tech series</div>
+          <div style="border-left: 3px solid rgba(240,80,0,0.2); padding-left: 20px;">
+            <div style="font-family:'Rajdhani',sans-serif; font-size:16px; font-weight:700; color:var(--white); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:4px;">Stormbreaker 23'11</div>
+            <div style="font-size:13px; color:#666;">Premium family offroad van</div>
           </div>
         </div>
-        <div style="margin-top:28px; padding-top:20px; border-top:1px solid rgba(26,120,176,0.12); font-size:12px; color:#555; font-style:italic;">All Stormbreaker XP-Tech models available. Enquire for pricing.</div>
+        <div style="margin-top:28px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.06); font-size:12px; color:#555; font-style:italic;">All Stormbreaker models are offroad. Enquire for pricing.</div>
       </div>
     </div>
   </div>
@@ -1361,13 +1101,13 @@
 <section class="cta">
   <div class="cta-content">
     <div class="cta-title">Explore <em>Infinite</em><br>Possibilities.</div>
-    <div class="cta-sub">Deluxe Caravans × Infinite RV — XP-Tech Series</div>
-    <a class="cta-url" href="https://www.deluxecaravans.com.au/stormbreaker21familyxptech">www.deluxecaravans.com.au</a>
+    <div class="cta-sub">Deluxe Caravans × Infinite RV — Australian Built, Adventure Ready</div>
+    <a class="cta-url" href="https://www.deluxecaravans.com.au/stormbreaker21familyoffroad">www.deluxecaravans.com.au</a>
   </div>
 </section>
 
 <div class="footer-bar">
-  <div class="footer-brand">Deluxe Caravans <span>×</span> Infinite RV — Stormbreaker 21'6" Family XP-Tech</div>
+  <div class="footer-brand">Deluxe Caravans <span>×</span> Infinite RV — Stormbreaker 21'6" Family Offroad</div>
   <div class="footer-note">Specifications subject to change. Images indicative only. © Deluxe Caravans × Infinite RV</div>
 </div>
 

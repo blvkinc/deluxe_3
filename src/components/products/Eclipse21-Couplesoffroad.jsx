@@ -9,7 +9,6 @@ import GoToTop from "../functions/GoToTop";
 import SpecsEclipse21 from "./Specsmenu/SpecsEclipse21";
 import TechspecEclipse21 from "./techspecs/TechspecEclipse21";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import Eclipse21OffroadPdf from "../../assets/pdfs/Eclipse 21'6_ Couples Off-Road — Deluxe Caravans.pdf";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -156,7 +155,7 @@ const Eclipse21CouplesOffRoad = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Eclipse 21'6 Couples Off-Road"
-                pdfUrl={Eclipse21OffroadPdf}
+                pdfUrl="/brochures/Offroad_Eclipse_21-6_brochure_2026.html"
               />
             )}
           </div>
