@@ -109,7 +109,7 @@ const SpecsEclipse21 = () => {
       title: "PROTECTION",
       content: `Checker Plate Front 900mm (Black)
              Checker Plate Sides 900mm (Black)
-             Checker Plate Sides 900mm (Black)
+             Checker Plate Back 900mm (Black)
              Aluminium Composite Cladding
              Mudflaps
              12” Electric Brake System`,
