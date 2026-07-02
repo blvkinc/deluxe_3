@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import "./Home.css";
 import Video from "./homecomponents/Video_landing";
@@ -7,35 +7,10 @@ import Reviews from "./homecomponents/CustomerReviews";
 import Partners from "./homecomponents/Partners";
 import HomeDesc from "./homecomponents/HomeDescription";
 import CarouselSection from "./homecomponents/CarouselSection";
-import Model from "../popup-ad/model";
 import Promovid from "./homecomponents/Promovid";
 
 
 function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const showAdIfNecessary = () => {
-      const lastShownTimestamp = localStorage.getItem("adLastShownTimestamp");
-      const currentTime = Date.now();
-      const ONE_MINUTE = 60 * 1000;
-
-      if (
-        !lastShownTimestamp ||
-        currentTime - lastShownTimestamp >= ONE_MINUTE
-      ) {
-        setIsOpen(true);
-        localStorage.setItem("adLastShownTimestamp", currentTime);
-      }
-    };
-
-    showAdIfNecessary();
-  }, []);
-
-  const handleCloseModal = () => {
-    setIsOpen(false);
-  };
-
   return (
     <div className="container">
       <Helmet>
@@ -43,12 +18,6 @@ function Home() {
         <meta name="description" content="Australian-made off road, family &amp; luxury caravans for families, couples &amp; grey nomads. Built in Campbellfield for 15 years. Composite frame, full off-grid power, structural warranty. Book a factory visit today." />
         <link rel="canonical" href="https://deluxecaravans.com.au/" />
       </Helmet>
-      {isOpen && (
-        <div className="ad-model">
-          <Model isOpen={isOpen} onClose={handleCloseModal} />
-        </div>
-      )}
-      
       <div className="videocomponent">
         <Video />
       </div>
