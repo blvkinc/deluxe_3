@@ -109,7 +109,7 @@ const SpecsRiptide20 = () => {
     {
       title: "PROTECTION",
       content: `Checker Plate Front 900mm (Black)
-            Checker Plate Sides 900mm (Black)
+            Checker Plate Back 900mm (Black)
             Checker Plate Sides 700mm (Black)
             Aluminium Composite Cladding
             Mudflaps

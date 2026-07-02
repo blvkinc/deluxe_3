@@ -2,15 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
 import Storm23specs from "./Specsmenu/Specs23xptech";
 import Techspec23xptech from "./techspecs/Techspec23xptech";
+import BrochurePopUp from "./popup/BrochurePopUp";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
-import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
-import BrochurePopUp from "./popup/BrochurePopUp";
-import Stormbreaker23XptechPdf from "../../assets/pdfs/Stormbreaker 23'11_ Family XP-Tech — Deluxe Caravans × Infinite RV.pdf";
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
@@ -173,7 +172,7 @@ const Stormbreaker23FamilyXPTech = () => {
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
                 productName="Stormbreaker 23'11 Family XP-Tech"
-                pdfUrl={Stormbreaker23XptechPdf}
+                pdfUrl="/brochures/XPTECH_Stormbreaker_23-11_brochure_2026.html"
               />
             )}
           </div>
