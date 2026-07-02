@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
-import GoToTop from "../functions/GoToTop";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
+import GoToTop from "../functions/GoToTop";
 import Storm18specs from "./Specsmenu/Specs18xptech";
 import Techspec18xptech from "./techspecs/Techspec18xptech";
 import BrochurePopUp from "./popup/BrochurePopUp";
-import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
 

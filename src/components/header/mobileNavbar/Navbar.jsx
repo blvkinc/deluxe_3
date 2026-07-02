@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import { motion, AnimatePresence, color } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
   const location = useLocation(); // Get the current route

@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
+import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
 import Storm23specs from "./Specsmenu/Specs23xptech";
 import Techspec23xptech from "./techspecs/Techspec23xptech";
+import BrochurePopUp from "./popup/BrochurePopUp";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 import { Link } from "react-router-dom";
-import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
-import BrochurePopUp from "./popup/BrochurePopUp";
 
 const scrollToSpecs = () => {
   const specsDiv = document.getElementById("specs");
