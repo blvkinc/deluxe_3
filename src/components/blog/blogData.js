@@ -123,7 +123,7 @@ export const blogPosts = [
     title: "Best Family Caravans Australia 2026: What to Look For Before You Buy",
     category: "BUYING GUIDE",
     tags: ["Family Caravans", "Australia 2026", "Buying Guide", "Off Road", "Bunks"],
-    strip: ["1,800–2,400 words", "Family buying guide", "Bunk layouts", "Frame materials", "Warranty explained", "Deluxe range overview"],
+    strip: ["Family buying guide", "Bunk layouts", "Frame materials", "Warranty explained", "Deluxe range overview"],
     metaDescription:
       "Thinking about a family caravan in 2026? Here's what actually matters: bunk layouts, off road rating, warranty, and what nobody tells you about build quality.",
     excerpt:
@@ -158,7 +158,7 @@ export const blogPosts = [
           "This is the one that matters most and gets discussed least.",
           "Timber frames absorb moisture. In coastal environments, in heavy rain, or on humid trips through Queensland, a timber-framed van will flex, absorb water, and over years begin to deteriorate from the inside. You often can't see it happening until the frame has already been compromised. By that point, the repair cost is significant.",
           "A composite aluminium frame is lighter, doesn't absorb moisture, and doesn't flex the same way under the stress of off-road travel. It's not a marginal improvement. For long-term travel in Australian conditions, it's a structurally different product.",
-          "Ask any manufacturer point-blank: what is the frame made of? If the answer is timber or a timber composite, ask what their warranty covers in terms of structural deterioration.",
+          "Ask any manufacturer point-blank: what is the frame made of? If the answer is timber , ask what their warranty covers in terms of structural deterioration.",
         ],
       },
       {
@@ -230,7 +230,7 @@ export const blogPosts = [
     title: "The Big Lap with Kids: A Practical Guide for 2026",
     category: "LIFESTYLE",
     tags: ["Big Lap", "Family Travel", "Australia", "Kids", "Schooling on the Road"],
-    strip: ["2,000–2,800 words", "Practical guide", "Schooling on the road", "Route planning", "Real costs", "Van selection"],
+    strip: ["Practical guide", "Schooling on the road", "Route planning", "Real costs", "Van selection"],
     metaDescription:
       "Planning the Big Lap with kids in 2026? We cover schooling on the road, route planning, real costs, and how to choose the right van for the trip.",
     excerpt:
@@ -270,7 +270,7 @@ export const blogPosts = [
           "Off-road capability: The classic Big Lap route includes unsealed sections that will genuinely test your caravan. The Gibb River Road, sections of the Savannah Way, Cape York — these aren't roads you want to tackle in a van with standard suspension and a timber frame. Get specific answers about what your van can handle before you leave sealed roads behind.",
           "Storage: You're packing for a family for three to twelve months. The storage that felt adequate for a long weekend trip won't be. Look at actual storage volumes — not just the number of drawers, but the usable space once you've accounted for how things are packed. A rear garage for bikes, water toys and wet gear is not a luxury on the Big Lap.",
           "Bunk layouts: Your kids will spend a lot of hours in those bunks, not just sleeping but reading, watching things, having their own space. The dimensions matter. So does the ladder. Getting a tired child safely into an upper bunk in the dark at a campsite is a very practical concern.",
-          "Off-grid power: Free camping stretches your budget and gets you to places caravan parks don't go. But free camping requires power independence. 'Solar ready' means a van with the wiring for you to add solar later. An XP Tech off-grid setup means 400Ah of lithium batteries and six 190W panels already installed and tested. If you're serious about remote travel, know the difference before you buy.",
+          "Off-grid power: Free camping stretches your budget and gets you to places caravan parks don't go. But free camping requires power independence. 'Solar ready' means a van with the wiring for you to add solar later. An XP-TECH off-grid setup means 400Ah of lithium batteries and six 190W panels already installed and tested. If you're serious about remote travel, know the difference before you buy.",
           "Warranty and servicing: Something will go wrong on a trip this long. The question is what happens next. A warranty backed by a national repairer network means you're covered in Broome and Hobart, not just in the suburb where you bought the van.",
         ],
         cta: [
@@ -327,7 +327,7 @@ export const blogPosts = [
     title: "Caravanning Through Your Retirement: What to Know Before You Hit the Road",
     category: "LIFESTYLE",
     tags: ["Retirement", "Grey Nomad", "Caravanning", "Australia", "Long-Term Travel"],
-    strip: ["1,800–2,400 words", "Grey nomad guide", "Accessibility tips", "Route planning", "Community", "Van selection"],
+    strip: ["Grey nomad guide", "Accessibility tips", "Route planning", "Community", "Van selection"],
     metaDescription:
       "Retirement and caravanning are a natural fit, but getting the van right matters. Here's what to think about before you buy, from a manufacturer who builds for retirees.",
     excerpt:
@@ -406,7 +406,7 @@ export const blogPosts = [
       {
         title: "Getting the van right for retirement",
         paragraphs: [
-          "At Deluxe, most of the caravans we build for retirees fall into the Eclipse range — designed with couples in mind, with queen beds, full kitchens and enough off-grid capability for genuine remote travel. The XP Tech power system in particular suits retirees who want to be self-sufficient: 400Ah lithium, 1,140W solar, 3,000W inverter — enough to run the fridge, air conditioning, coffee maker and charge everything indefinitely in good sun.",
+          "At Deluxe, most of the caravans we build for retirees fall into the Eclipse range — designed with couples in mind, with queen beds, full kitchens and enough off-grid capability for genuine remote travel. The XP-TECH power system in particular suits retirees who want to be self-sufficient: 400Ah lithium, 1,140W solar, 3,000W inverter — enough to run the fridge, air conditioning, coffee maker and charge everything indefinitely in good sun.",
           "The best way to work out which van suits your retirement is to talk it through with someone who knows the range. We're happy to do that over Zoom — no obligation, no pressure, just a conversation about your plans.",
         ],
         cta: [

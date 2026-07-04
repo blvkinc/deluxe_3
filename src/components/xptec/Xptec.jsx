@@ -11,8 +11,8 @@ const WarrantyPolicy = React.memo(() => {
       style={{ backgroundColor: "#fff", color: "#000" }}
     >
       <Helmet>
-        <title>XP Tech Caravans | Off-Grid Power System | Deluxe Caravans</title>
-        <meta name="description" content="XP Tech by Deluxe Caravans — 400Ah lithium, 6 solar panels, 3000W inverter, Dometic fridge &amp; IBIS 4 aircon. Australia's premium off-grid caravan power system." />
+        <title>XP-TECH Caravans | Off-Grid Power System | Deluxe Caravans</title>
+        <meta name="description" content="XP-TECH by Deluxe Caravans — 400Ah lithium, 6 solar panels, 3000W inverter, Dometic fridge &amp; IBIS 4 aircon. Australia's premium off-grid caravan power system." />
         <link rel="canonical" href="https://deluxecaravans.com.au/xptech" />
       </Helmet>
       <div className="xptech-hero">
