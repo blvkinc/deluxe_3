@@ -7,9 +7,9 @@ import scenicImage08 from '../../assets/scenicimages/scenic-image-08.jpg';
 const reviews = [
   {
     stars: '★★★★★',
-    text: '"We have been travelling in our 20ft Xp Tech Deluxe Caravan for 2 months now and are absolutely in love with it!! Can\'t express my thanks enough to the team and Lakshan for making our dream van come to life!!"',
+    text: '"We have been travelling in our 20ft XP-TECH Deluxe Caravan for 2 months now and are absolutely in love with it!! Can\'t express my thanks enough to the team and Lakshan for making our dream van come to life!!"',
     author: 'Tailsdownunder',
-    detail: 'Eclipse XP Tech 20\' · 2 months full-time',
+    detail: 'Eclipse XP-TECH 20\' · 2 months full-time',
   },
   {
     stars: '★★★★★',
@@ -21,12 +21,12 @@ const reviews = [
     stars: '★★★★★',
     text: '"We also love the extras we added — pulling inspiration from all our previous setups to make this build truly tick every box, from outdoor storage and the pull-out kitchen to the creature comforts like a washing machine and a BMS that can run the aircon."',
     author: 'Julianne Schryver',
-    detail: 'Riptide 20\'6 · XP Tech owner',
+    detail: 'Riptide 20\'6 · XP-TECH owner',
   },
 ];
 
 const trustItems = [
-  '400Ah Lithium · Standard in XP Tech',
+  '400Ah Lithium · Standard in XP-TECH',
   '6 × 190W Solar Panels',
   '3,000W Pure Sine Inverter',
   'Enerdrive BmPro Battery Monitor',
@@ -58,7 +58,7 @@ const models = [
     price: 'From $98,900',
     image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
     link: '/eclipse22couplesxptech',
-    specs: ['XP Tech power — standard', '400Ah lithium · 1,140W solar', 'Couples off-grid range', 'Largest Eclipse model'],
+    specs: ['XP-TECH power — standard', '400Ah lithium · 1,140W solar', 'Couples off-grid range', 'Largest Eclipse model'],
     badge: '⭐ Hero Off-Grid Model',
   },
   {
@@ -66,28 +66,28 @@ const models = [
     price: 'From $96,900',
     image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
     link: '/eclipse21couplesxptech',
-    specs: ['XP Tech power — standard', '400Ah lithium · 1,140W solar', 'Queen bed configuration', 'Full couples fit-out'],
-    badge: 'Couples XP Tech',
+    specs: ['XP-TECH power — standard', '400Ah lithium · 1,140W solar', 'Queen bed configuration', 'Full couples fit-out'],
+    badge: 'Couples XP-TECH',
   },
   {
-    name: "STORMBREAKER XP TECH",
+    name: "STORMBREAKER XP-TECH",
     price: 'From $129,900',
     image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
     link: '/stormbreaker21familyxptech',
-    specs: ['XP Tech power on family models', 'Triple bunk available', 'Off-grid + off-road', 'Full family configuration'],
-    badge: 'Family XP Tech',
+    specs: ['XP-TECH power on family models', 'Triple bunk available', 'Off-grid + off-road', 'Full family configuration'],
+    badge: 'Family XP-TECH',
   },
 ];
 
 const faqs = [
-  { q: 'How many days can I camp fully off grid?', a: 'With the XP Tech power system (400Ah lithium, six 190W solar panels), most Deluxe owners camp indefinitely without shore power in normal conditions. In low sun periods or high consumption situations, the system typically sustains 3 to 5 days without any solar input at all.' },
-  { q: 'Can I run the air con from battery alone overnight?', a: 'Yes. The XP Tech system with 400Ah lithium can run the IBIS 4 air conditioner for approximately 4 to 6 hours overnight from battery alone, without any solar input. In most Australian conditions where some solar charging occurs during the day, overnight air con is fully manageable.' },
-  { q: 'What solar comes as standard, not as an upgrade?', a: 'On XP Tech models, six 190W solar panels are standard — not an upgrade. This is paired with 400Ah of lithium batteries, a 40A MPPT charger and a 3,000W pure sine inverter, all installed and tested before handover.' },
-  { q: 'Can I add extra batteries later?', a: 'Yes. The XP Tech system is designed to be expandable. Additional battery capacity can be added at the time of build or retrofitted later. Discuss your power requirements on a video call and we\'ll spec the right setup from the start.' },
-  { q: 'Does XP Tech work with Starlink?', a: 'Yes. The XP Tech power system fully supports Starlink. The inverter and battery capacity handle Starlink\'s power draw without any issue.' },
+  { q: 'How many days can I camp fully off grid?', a: 'With the XP-TECH power system (400Ah lithium, six 190W solar panels), most Deluxe owners camp indefinitely without shore power in normal conditions. In low sun periods or high consumption situations, the system typically sustains 3 to 5 days without any solar input at all.' },
+  { q: 'Can I run the air con from battery alone overnight?', a: 'Yes. The XP-TECH system with 400Ah lithium can run the IBIS 4 air conditioner for approximately 4 to 6 hours overnight from battery alone, without any solar input. In most Australian conditions where some solar charging occurs during the day, overnight air con is fully manageable.' },
+  { q: 'What solar comes as standard, not as an upgrade?', a: 'On XP-TECH models, six 190W solar panels are standard — not an upgrade. This is paired with 400Ah of lithium batteries, a 40A MPPT charger and a 3,000W pure sine inverter, all installed and tested before handover.' },
+  { q: 'Can I add extra batteries later?', a: 'Yes. The XP-TECH system is designed to be expandable. Additional battery capacity can be added at the time of build or retrofitted later. Discuss your power requirements on a video call and we\'ll spec the right setup from the start.' },
+  { q: 'Does XP-TECH work with Starlink?', a: 'Yes. The XP-TECH power system fully supports Starlink. The inverter and battery capacity handle Starlink\'s power draw without any issue.' },
   { q: 'What happens on cloudy days?', a: 'On overcast days, solar input is reduced but not zero. The 400Ah lithium battery bank provides a substantial buffer, and the system can also be topped up via the tow vehicle\'s alternator while driving. In extended low sun conditions, most users manage power carefully for 2 to 3 days before needing to move or use an external source.' },
-  { q: 'Is XP Tech available on family models?', a: 'Yes. The XP Tech power system is available on Stormbreaker family models, not just the Eclipse range. Ask about XP Tech availability on your preferred model during a video call.' },
-  { q: 'Can I see the XP Tech system on a video call before I buy?', a: 'Yes. Our Zoom walkthroughs specifically cover the XP Tech system — we can show you the battery setup, the monitoring panel and walk through exactly what the system runs and for how long. Book a call via the button on this page.' },
+  { q: 'Is XP-TECH available on family models?', a: 'Yes. The XP-TECH power system is available on Stormbreaker family models, not just the Eclipse range. Ask about XP-TECH availability on your preferred model during a video call.' },
+  { q: 'Can I see the XP-TECH system on a video call before I buy?', a: 'Yes. Our Zoom walkthroughs specifically cover the XP-TECH system — we can show you the battery setup, the monitoring panel and walk through exactly what the system runs and for how long. Book a call via the button on this page.' },
 ];
 
 export default function OffGridCaravansAustralia() {
@@ -116,8 +116,8 @@ export default function OffGridCaravansAustralia() {
   return (
     <div className="lp-page">
       <Helmet>
-        <title>Off Grid Caravans Australia: XP Tech Power Systems | Deluxe Caravans</title>
-        <meta name="description" content="Deluxe off grid caravans come with 400Ah lithium, 6 solar panels and a 3,000W inverter — not just 'solar ready'. Built in Australia. Book a video call to get a custom XP Tech quote." />
+        <title>Off Grid Caravans Australia: XP-TECH Power Systems | Deluxe Caravans</title>
+        <meta name="description" content="Deluxe off grid caravans come with 400Ah lithium, 6 solar panels and a 3,000W inverter — not just 'solar ready'. Built in Australia. Book a video call to get a custom XP-TECH quote." />
         <link rel="canonical" href="https://deluxecaravans.com.au/off-grid-caravans-australia" />
       </Helmet>
 
@@ -137,11 +137,11 @@ export default function OffGridCaravansAustralia() {
         <div className="lp-hero-inner">
           <p className="lp-hero-eyebrow">
             <span className="lp-eyebrow-line" />
-            XP Tech Off Grid Power · Australian Made
+            XP-TECH Off Grid Power · Australian Made
           </p>
           <h1 className="lp-hero-title">Off Grid Caravans Australia: Built for Remote Adventure</h1>
           <p className="lp-hero-intro">
-            Most caravans say "solar ready." Deluxe XP Tech models come with <strong>400Ah lithium batteries, six 190W solar panels, a 3,000W inverter, and a 40A MPPT charger</strong> — installed and tested before handover. Not an upgrade. Standard.
+            Most caravans say "solar ready." Deluxe XP-TECH models come with <strong>400Ah lithium batteries, six 190W solar panels, a 3,000W inverter, and a 40A MPPT charger</strong> — installed and tested before handover. Not an upgrade. Standard.
           </p>
           <div className="lp-cta-row">
             <a href="/appointment" className="lp-btn-primary" onClick={handleCTAClick}>Book a Video Call</a>
@@ -175,11 +175,11 @@ export default function OffGridCaravansAustralia() {
         </div>
       </div>
 
-      {/* XP TECH DEEP DIVE */}
+      {/* XP-TECH DEEP DIVE */}
       <div className="lp-section">
         <div className="lp-reveal" style={{ marginBottom: '48px' }}>
           <p className="lp-eyebrow"><span className="lp-eyebrow-line" />The full system</p>
-          <h2 className="lp-section-title">What the XP Tech power system actually gives you</h2>
+          <h2 className="lp-section-title">What the XP-TECH power system actually gives you</h2>
         </div>
         <div className="lp-two-col lp-two-col--start">
           <div className="lp-reveal">
@@ -194,7 +194,7 @@ export default function OffGridCaravansAustralia() {
             </div>
             <div style={{ marginTop: '24px' }}>
               <div className="lp-img-placeholder">
-                <img src={scenicImage08} alt="XP Tech battery bay / interior power setup" />
+                <img src={scenicImage08} alt="XP-TECH battery bay / interior power setup" />
               </div>
             </div>
           </div>
@@ -222,7 +222,7 @@ export default function OffGridCaravansAustralia() {
       {/* MODEL CARDS */}
       <div className="lp-section lp-section--panel" id="xptech-models">
         <div className="lp-reveal" style={{ marginBottom: '48px' }}>
-          <p className="lp-eyebrow"><span className="lp-eyebrow-line" />XP Tech range</p>
+          <p className="lp-eyebrow"><span className="lp-eyebrow-line" />XP-TECH range</p>
           <h2 className="lp-section-title">Choose your off-grid van</h2>
         </div>
         <div className="lp-models-grid">
@@ -248,7 +248,7 @@ export default function OffGridCaravansAustralia() {
         <div className="lp-reveal" style={{ marginBottom: '48px' }}>
           <p className="lp-eyebrow"><span className="lp-eyebrow-line" />The honest comparison</p>
           <h2 className="lp-section-title">"Solar ready" vs actually off-grid: what's the difference?</h2>
-          <p className="lp-section-body" style={{ marginTop: '16px' }}>"Solar ready" means wiring in place for you to add solar later. It's a starting point, not a system. Here's what XP Tech actually delivers.</p>
+          <p className="lp-section-body" style={{ marginTop: '16px' }}>"Solar ready" means wiring in place for you to add solar later. It's a starting point, not a system. Here's what XP-TECH actually delivers.</p>
         </div>
         <div className="lp-table-wrap lp-reveal">
           <table className="lp-table">
@@ -256,7 +256,7 @@ export default function OffGridCaravansAustralia() {
               <tr>
                 <th>System component</th>
                 <th>Standard "solar ready" van</th>
-                <th>Deluxe XP Tech</th>
+                <th>Deluxe XP-TECH</th>
               </tr>
             </thead>
             <tbody>
@@ -279,14 +279,14 @@ export default function OffGridCaravansAustralia() {
             <p className="lp-eyebrow"><span className="lp-eyebrow-line" />Common questions</p>
             <h2 className="lp-section-title">Common questions about off grid caravanning</h2>
             <p className="lp-section-body" style={{ marginTop: '16px' }}>
-              Call us on <strong style={{ color: '#f4f4f4' }}>+61 483 939 904</strong> or book a Zoom call to see the XP Tech system live.
+              Call us on <strong style={{ color: '#f4f4f4' }}>+61 483 939 904</strong> or book a Zoom call to see the XP-TECH system live.
             </p>
             <div style={{ marginTop: '32px' }}>
               <p className="lp-section-body">Also see:</p>
               <ul style={{ listStyle: 'none', padding: 0, marginTop: '12px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <li><Link to="/off-road-caravans-for-sale" style={{ color: 'var(--lp-accent)', textDecoration: 'none', fontSize: '14px' }}>→ Off Road Caravans for Sale</Link></li>
                 <li><Link to="/family-caravans-australia" style={{ color: 'var(--lp-accent)', textDecoration: 'none', fontSize: '14px' }}>→ Family Caravans Australia</Link></li>
-                <li><Link to="/xptech" style={{ color: 'var(--lp-accent)', textDecoration: 'none', fontSize: '14px' }}>→ XP Tech System Overview</Link></li>
+                <li><Link to="/xptech" style={{ color: 'var(--lp-accent)', textDecoration: 'none', fontSize: '14px' }}>→ XP-TECH System Overview</Link></li>
               </ul>
             </div>
           </div>
@@ -310,7 +310,7 @@ export default function OffGridCaravansAustralia() {
       <div className="lp-final-cta lp-reveal">
         <p className="lp-eyebrow" style={{ justifyContent: 'center' }}><span className="lp-eyebrow-line" />Go properly off grid</p>
         <h2 className="lp-section-title">Ready to go properly off grid?</h2>
-        <p className="lp-section-body">Book a Zoom call with the team. We can walk you through the XP Tech system live on screen and answer every question about what it will and won't run on your trip.</p>
+        <p className="lp-section-body">Book a Zoom call with the team. We can walk you through the XP-TECH system live on screen and answer every question about what it will and won't run on your trip.</p>
         <div className="lp-cta-row">
           <a href="/appointment" className="lp-btn-primary" onClick={handleCTAClick}>Book a Video Call</a>
           <a href="/contact" className="lp-btn-ghost">Request a Build Quote</a>

@@ -55,7 +55,7 @@ const models = [
     price: 'From $94,900',
     image: 'https://deluxcaravan.b-cdn.net/assets/header/216.webp',
     link: '/stormbreaker21familyoffroad',
-    specs: ['21\'6" body length', 'Triple bunk layout', 'Tuff Ride airbag suspension', 'XP Tech power available'],
+    specs: ['21\'6" body length', 'Triple bunk layout', 'Tuff Ride airbag suspension', 'XP-TECH power available'],
     badge: 'Most Popular',
   },
   {
@@ -63,7 +63,7 @@ const models = [
     price: 'From $96,900',
     image: 'https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp',
     link: '/riptide20familyoffroad',
-    specs: ['20\' body length', 'Heavy off-road spec', 'Tuff Ride airbag suspension', 'Full XP Tech power standard'],
+    specs: ['20\' body length', 'Heavy off-road spec', 'Tuff Ride airbag suspension', 'Full XP-TECH power standard'],
     badge: 'Serious Off Road',
   },
 ];
@@ -72,14 +72,14 @@ const features = [
   { icon: 'fa-solid fa-road', title: 'Tuff Ride Airbag Suspension', desc: 'Absorbs corrugated road impact that standard suspension wasn\'t designed to handle.' },
   { icon: 'fa-solid fa-layer-group', title: 'Composite Aluminium Frame', desc: 'Timber-free, moisture-proof, lighter and warrantied for Australian conditions.' },
   { icon: 'fa-solid fa-wind', title: 'Dust Reduction System', desc: 'Engineered to keep the interior clean on unsealed outback roads.' },
-  { icon: 'fa-solid fa-bolt', title: 'Lithium Battery Options', desc: 'XP Tech off-grid power systems available — 400Ah lithium, 6 solar panels standard.' },
+  { icon: 'fa-solid fa-bolt', title: 'Lithium Battery Options', desc: 'XP-TECH off-grid power systems available — 400Ah lithium, 6 solar panels standard.' },
   { icon: 'fa-solid fa-droplet', title: 'On-Board Water Capacity', desc: 'Generous fresh and grey water tanks for remote travel and free camping.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Structural Warranty', desc: '3-year structural warranty serviced through a national repairer network.' },
 ];
 
 const faqs = [
   { q: 'What off road rating do Deluxe caravans have?', a: 'Deluxe off road caravans are built for genuine unsealed Australian conditions, including corrugated dirt roads, creek crossings and remote outback tracks. All models feature a composite aluminium frame, Tuff Ride airbag suspension and dust reduction as standard. We don\'t use a single off road rating number because Australian road conditions vary so widely — we\'d rather walk you through what each model can handle on a video call.' },
-  { q: 'Do Deluxe caravans come with solar panels?', a: 'Yes. All Deluxe caravans come with solar as standard, not as an optional upgrade. XP Tech models include six 190W solar panels, 400Ah of lithium batteries, a 3,000W pure sine inverter and a 40A MPPT charger, all installed and tested before handover. Entry level models include a solar setup sized for everyday use.' },
+  { q: 'Do Deluxe caravans come with solar panels?', a: 'Yes. All Deluxe caravans come with solar as standard, not as an optional upgrade. XP-TECH models include six 190W solar panels, 400Ah of lithium batteries, a 3,000W pure sine inverter and a 40A MPPT charger, all installed and tested before handover. Entry level models include a solar setup sized for everyday use.' },
   { q: 'What suspension system do Deluxe off road vans use?', a: 'Deluxe off road caravans use the Tuff Ride airbag suspension system. Unlike standard independent suspension, Tuff Ride is designed to absorb the impact of corrugated dirt roads and reduce stress on the van\'s frame and fittings over long distances of unsealed travel.' },
   { q: 'What is the warranty on off road models?', a: 'Deluxe caravans come with a structural warranty backed by a national repairer network, so you\'re covered wherever you are in Australia — not just near our Campbellfield factory. Full warranty terms are available on our warranty page.' },
   { q: 'How long is the build time?', a: 'Current build times are approximately 3 to 5 months from deposit to handover, depending on the model and any custom specifications. We\'ll confirm your exact build timeline before you commit.' },

@@ -59,7 +59,7 @@ const models = [
     price: 'From $94,900',
     image: 'https://deluxcaravan.b-cdn.net/assets/header/216.webp',
     link: '/stormbreaker21familyoffroad',
-    specs: ['Triple bunk layout', 'Families of 4–5', 'Composite aluminium frame', 'XP Tech power available'],
+    specs: ['Triple bunk layout', 'Families of 4–5', 'Composite aluminium frame', 'XP-TECH power available'],
     badge: '⭐ Most Popular Family Model',
   },
   {
@@ -67,7 +67,7 @@ const models = [
     price: 'From $96,900',
     image: 'https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp',
     link: '/riptide20familyoffroad',
-    specs: ['Heavy off-road spec', 'Serious remote travel', 'Full XP Tech power standard', 'Adventure families'],
+    specs: ['Heavy off-road spec', 'Serious remote travel', 'Full XP-TECH power standard', 'Adventure families'],
     badge: 'Best for: Serious off road',
   },
 ];
@@ -255,7 +255,7 @@ export default function FamilyCaravansAustralia() {
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
           {[
-            { label: 'Off-grid school on the road', desc: 'With Starlink and the right power system, distance education is genuinely manageable from anywhere in Australia. A Deluxe with XP Tech power runs the connection indefinitely.', img: scenicImage03 },
+            { label: 'Off-grid school on the road', desc: 'With Starlink and the right power system, distance education is genuinely manageable from anywhere in Australia. A Deluxe with XP-TECH power runs the connection indefinitely.', img: scenicImage03 },
             { label: 'Enough storage for the whole family', desc: 'Three months of clothing, bikes, wetsuits, fishing gear, school materials and outdoor furniture. The rear garage and thoughtful storage design is what makes it livable rather than manageable.', img: scenicImage04 },
             { label: 'Privacy and space for parents too', desc: 'The awning, the separate sleeping areas, and a queen bed that isn\'t a double. A Deluxe is designed for adults who also need to feel comfortable — not just kids who can sleep anywhere.', img: scenicImage05 },
           ].map((item, i) => (

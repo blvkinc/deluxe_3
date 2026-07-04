@@ -3,146 +3,103 @@ import "./ResponsiveTable.css";
 
 const tableData = [
   {
-    group: "INTERIOR",
-    rows: [
-      {
-        spec: "Framing - Meranti or Henrob Rivet Aluminium",
-        value:
-          "Framing - Composite Fiberglass Sandwich Panels with XPS Foam Core",
-      },
-    ],
+    category: "Construction",
+    offRoad: "Meranti Timber OR Henrob Riveted Aluminum Framing",
+    xpTech:
+      "Sandwich-structured composites, combining a fiberglass-reinforced plastic surface with an XPS foam core.",
   },
   {
-    group: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
-    rows: [{ spec: "Benchtop - Laminate", value: "Benchtop - Corian and/or Laminate" }],
+    category: "Benchtops",
+    offRoad: "Laminate",
+    xpTech: "Corian or Laminate",
   },
   {
-    group: "ELECTRICAL (INTERNAL)",
-    rows: [
-      {
-        spec: "Projecta 30A Charger + 30A Solar Regulator",
-        value:
-          "Victron Energy System ( 3000W Inverter, 120A Charger, 2 x 30A MPPT & 30A DC-DC )",
-      },
-      {
-        spec: "Projecta Display Bluetooth",
-        value: "Cerbo GX Smart Monitoring System, 7 Inch Touch Display",
-      },
-      {
-        spec: "",
-        value: "Sirocco Fans to Bunk Area",
-      },
-      {
-        spec: "",
-        value: "Wireless Multi-Switch Control System",
-      },
-      {
-        spec: "",
-        value: "Bug Lights",
-      },
-    ],
+    category: "Electrical System",
+    offRoad: "Projecta 30A Charger + 30A Solar Regulator",
+    xpTech:
+      "Victron Energy System with 3000W Inverter, 120A Charger, Dual MPPT & DC-DC Charger",
   },
   {
-    group: "ELECTRICAL (EXTERNAL)",
-    rows: [
-      { spec: "Light - Blue LED Door Handle", value: "Door Handle" },
-      { spec: "Solar -3 x 170 watt Panel", value: "Solar - 800W" },
-      {
-        spec: "Battery - 2 x 100AH Lithium",
-        value: "Battery - 1 x 200AH Lithium",
-      },
-      {
-        spec: "",
-        value: "Starlink Ready Port",
-      },
-      {
-        spec: "",
-        value: "Anderson Plug for Solar Blanket Input",
-      },
-    ],
+    category: "Battery Monitor",
+    offRoad: "Projecta Bluetooth Display",
+    xpTech: 'Cerbo GX with 7" Touch Display',
   },
   {
-    group: "APPLIANCES",
-    rows: [
-      {
-        spec: "Hot Water Service - 28ltr Gas/Electric",
-        value: "Instant Continuous Hot Water",
-      },
-    ],
+    category: "Solar",
+    offRoad: "510W Solar (3 x 170W)",
+    xpTech: "800W Solar System",
   },
   {
-    group: "PROTECTION",
-    rows: [
-      {
-        spec: "Checker Plate Front 900mm (Black)",
-        value: "Raptor Coated Front 900mm (Black)",
-      },
-      {
-        spec: "Checker Plate Sides 900mm (Black)",
-        value: "Raptor Coated Sides 700mm (Black)",
-      },
-      {
-        spec: "Checker Plate Back 900mm (Black)",
-        value: "Raptor Coated Back 900mm (Black)",
-      },
-      {
-        spec: "Cladding - Aluminium Composite",
-        value: "Fiberglass",
-      },
-    ],
+    category: "Battery Capacity",
+    offRoad: "2 x 100Ah Lithium Batteries",
+    xpTech: "1 x 200Ah Lithium Battery",
   },
   {
-    group: "EXTERIOR",
-    rows: [
-      {
-        spec: "Awning - Manual Roll-Out (Charcoal)",
-        value: "Awning - Electric Carefree",
-      },
-      {
-        spec: "Large Toolbox with Dual Slide-Outs",
-        value: "Custom Toolbox with Dual Slide-Outs & Wood Box",
-      },
-      {
-        spec: "",
-        value: "Dometic DRS System",
-      },
-    ],
+    category: "Hot Water",
+    offRoad: "28L Gas/Electric Storage HWS",
+    xpTech: "Instant Continuous Hot Water",
   },
   {
-    group: "CHASSIS",
-    rows: [
-      {
-        spec: "Painted Chassis",
-        value: "Raptor Coated Chassis",
-      },
-      {
-        spec: "Jockey Wheel - A-Frame",
-        value: "Gator Jack",
-      },
-      {
-        spec: '2" Raiser',
-        value: 'Truss Chassis ( 6" Raiser )',
-      },
-    ],
+    category: "Awning",
+    offRoad: "Manual Roll-Out Awning",
+    xpTech: "Electric Carefree Awning",
   },
   {
-    group: "COLOUR SELECTIONS",
-    rows: [
-      {
-        spec: "",
-        value:
-          "Internal colors - No additional cost across all premium options",
-      },
-    ],
+    category: "Toolbox",
+    offRoad: "Large Toolbox with Dual Slide-Outs",
+    xpTech: "Custom Toolbox with Dual Slide-Outs & Wood Box",
   },
+  {
+    category: "Front Protection",
+    offRoad: "900mm Black Checker Plate",
+    xpTech: "900mm Black Raptor Coating",
+  },
+  {
+    category: "Side Protection",
+    offRoad: "900mm Black Checker Plate",
+    xpTech: "700mm Black Raptor Coating",
+  },
+  {
+    category: "Rear Protection",
+    offRoad: "900mm Black Checker Plate",
+    xpTech: "900mm Black Raptor Coating",
+  },
+  {
+    category: "Cladding",
+    offRoad: "Aluminium Composite",
+    xpTech: "Fiberglass",
+  },
+  {
+    category: "Chassis Finish",
+    offRoad: "Painted Chassis",
+    xpTech: "Raptor-Coated Chassis",
+  },
+  {
+    category: "Jockey Wheel",
+    offRoad: "Standard A-Frame Jockey Wheel",
+    xpTech: "Gator Jack",
+  },
+  {
+    category: "Chassis Design",
+    offRoad: '2" Raiser',
+    xpTech: 'Truss Chassis with 6" Raiser',
+  },
+];
+
+const exclusiveFeatures = [
+  "Wireless Multi-Switch Control System",
+  "Starlink Ready Port",
+  "Anderson Plug for Solar Blanket Input",
+  "Dometic DRS System",
+  "Bug Lights",
+  "Sirocco Fans to Bunk Area",
+  "Cerbo GX Smart Monitoring System",
 ];
 
 const ResponsiveTable = () => {
   return (
     <div className="table-wrapper">
-      <h1 className="main-heading">
-        Compare Off-Road vs XP-TECH Specifications
-      </h1>
+      <h1 className="main-heading">XP-TECH DIFFERENCE</h1>
       <p
         className="sub-heading"
         style={{ textAlign: "center", marginTop: "-10px" }}
@@ -155,26 +112,32 @@ const ResponsiveTable = () => {
         <table className="custom-table">
           <thead>
             <tr>
-              <th>OFF ROAD</th>
-              <th>XP - TECH</th>
+              <th>CATEGORY</th>
+              <th>OFF-ROAD</th>
+              <th>XP-TECH</th>
             </tr>
           </thead>
           <tbody>
-            {tableData.map((section, index) => (
-              <React.Fragment key={index}>
-                <tr className="subheading-row">
-                  <td colSpan="2">{section.group}</td>
-                </tr>
-                {section.rows.map((item, idx) => (
-                  <tr key={idx}>
-                    <td>{item.spec}</td>
-                    <td>{item.value}</td>
-                  </tr>
-                ))}
-              </React.Fragment>
+            {tableData.map((item, idx) => (
+              <tr key={idx}>
+                <td>{item.category}</td>
+                <td>{item.offRoad}</td>
+                <td>{item.xpTech}</td>
+              </tr>
             ))}
           </tbody>
         </table>
+      </div>
+
+      <div className="exclusive-features">
+        <h2 className="exclusive-features-heading">
+          XP-TECH Exclusive Features
+        </h2>
+        <ul className="exclusive-features-list">
+          {exclusiveFeatures.map((feature, idx) => (
+            <li key={idx}>{feature}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
