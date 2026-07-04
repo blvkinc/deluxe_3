@@ -71,4 +71,53 @@
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
+
+    <url>
+        <loc>https://www.deluxecaravans.com.au/off-road-caravans-for-sale</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.deluxecaravans.com.au/family-caravans-australia</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.deluxecaravans.com.au/off-grid-caravans-australia</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.deluxecaravans.com.au/faqs</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.deluxecaravans.com.au/blog/best-family-caravans-australia-2026</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.deluxecaravans.com.au/blog/big-lap-with-kids-guide</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.deluxecaravans.com.au/blog/caravanning-retirement-australia</loc>
+        <lastmod>2026-06-25</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

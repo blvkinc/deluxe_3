@@ -65,7 +65,7 @@ const Familyxptech = React.memo(() => {
     <div className="productgrid-container">
       <Helmet>
         <title>Family XP-Tech Caravans | Stormbreaker &amp; Riptide | Deluxe Caravans</title>
-        <meta name="description" content="Family caravans built for off-grid Australia. XP Tech includes 400Ah lithium, 6 solar panels &amp; 3000W inverter. Triple bunks, composite frame. Book a factory visit." />
+        <meta name="description" content="Family caravans built for off-grid Australia. XP-TECH includes 400Ah lithium, 6 solar panels &amp; 3000W inverter. Triple bunks, composite frame. Book a factory visit." />
         <link rel="canonical" href="https://deluxecaravans.com.au/familyxptech" />
       </Helmet>
       <div className="productgrid-component">

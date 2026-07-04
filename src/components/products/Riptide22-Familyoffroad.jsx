@@ -6,6 +6,7 @@ import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
+import HandoverSection from "./HandoverSection";
 import Rip22specs from "./Specsmenu/SpecsRiptide22";
 import TechspecRiptide22 from "./techspecs/TechspecRiptide22";
 import BrochurePopUp from "./popup/BrochurePopUp";
@@ -140,7 +141,7 @@ const Riptide22FamilyOffRoad = () => {
               Are you on the hunt for a more spacious family bunk caravan? Your
               search ends here with the Riptide 22``, the solution you've been
               seeking. This model offers all the remarkable features found in
-              our Stormbreaker range. Every journey transforms into an
+              our StormbreakerÂ range. Every journey transforms into an
               unforgettable experience, thanks to its premium built interior,
               exterior, and mechanical features. when you embark on the open
               road with your loved ones, you'll be treated to an exceptionally
@@ -194,6 +195,7 @@ const Riptide22FamilyOffRoad = () => {
         <h1>Specs Menu</h1>
         <Rip22specs />
       </div>
+      <HandoverSection />
       <GoToTop />
     </div>
   );

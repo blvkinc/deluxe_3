@@ -160,6 +160,21 @@ const Navbar = () => {
                             </button>
 
                             <ul className="range-list">
+                              <li className="nav-item" onClick={toggleMenu}>
+                                <a href="/family-caravans-australia">
+                                  <p className="social">FAMILY CARAVANS AUSTRALIA</p>
+                                </a>
+                              </li>
+                              <li className="nav-item" onClick={toggleMenu}>
+                                <a href="/off-road-caravans-for-sale">
+                                  <p className="social">OFF ROAD CARAVANS FOR SALE</p>
+                                </a>
+                              </li>
+                              <li className="nav-item" onClick={toggleMenu}>
+                                <a href="/off-grid-caravans-australia">
+                                  <p className="social">OFF GRID CARAVANS AUSTRALIA</p>
+                                </a>
+                              </li>
                               {/* FAMILY OFF-ROAD SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/familyoffroad">
@@ -221,6 +236,11 @@ const Navbar = () => {
                             </button>
 
                             <ul className="range-list">
+                              <li className="nav-item" onClick={toggleMenu}>
+                                <a href="/off-grid-caravans-australia">
+                                  <p className="social">OFF GRID CARAVANS AUSTRALIA</p>
+                                </a>
+                              </li>
                               {/* COUPLES OFF-ROAD SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/couplesoffroad">

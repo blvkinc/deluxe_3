@@ -2,6 +2,53 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "./WarrantyPolicy.css";
 
+const warrantyFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What warranty does Deluxe Caravans provide?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Deluxe Caravans provides a 12-month manufacturer warranty and a 3-year structural warranty on every van. The structural warranty covers the chassis, frame, walls, roof and floor.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is the Deluxe Caravans warranty valid across Australia?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Both the manufacturer warranty and structural warranty are honoured through authorised repairers Australia-wide. You do not need to return to the Campbellfield factory for warranty repairs.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is the Deluxe Caravans structural warranty transferable?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The structural warranty is transferable once a complete inspection of the caravan is carried out by Deluxe Caravans or an authorised inspector. The 12-month manufacturer warranty is not transferable.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What does the Deluxe Caravans structural warranty cover?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The 3-year structural warranty covers the chassis, frame, walls, roof and floor against defects in workmanship and materials. Appliances carry their own manufacturer warranties.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How do I make a warranty claim on my Deluxe Caravan?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Contact Deluxe Caravans directly. We will organise an authorised repairer to assess and repair the issue, or liaise with the appliance manufacturer for appliance-related claims. Approval is usually required before warranty repairs are completed.',
+      },
+    },
+  ],
+};
+
 const WarrantyPolicy = () => {
   return (
     <div style={{ backgroundColor: "#fff", color: "#000" }}>
@@ -9,6 +56,7 @@ const WarrantyPolicy = () => {
         <title>Warranty Policy | Deluxe Caravans</title>
         <meta name="description" content="Deluxe Caravans structural warranty explained. Nationwide repairers, clear claims process, and cover that travels with you anywhere in Australia. Learn more." />
         <link rel="canonical" href="https://deluxecaravans.com.au/warranty" />
+        <script type="application/ld+json">{JSON.stringify(warrantyFaqSchema)}</script>
       </Helmet>
       <div className="maintenance-container">
         <div className="maintenance-content">
