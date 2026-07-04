@@ -7,7 +7,8 @@ const tableData = [
     rows: [
       {
         spec: "Framing - Meranti or Henrob Rivet Aluminium",
-        value: "Framing - Composite Fiberglass Sandwich Panels",
+        value:
+          "Framing - Composite Fiberglass Sandwich Panels with XPS Foam Core",
       },
     ],
   },
@@ -21,19 +22,19 @@ const tableData = [
       {
         spec: "Projecta 30A Charger + 30A Solar Regulator",
         value:
-          "Victron Management System ( 3000W Inverter, 120A Charger, 2 x 30A MPPT & 30A DC-DC )",
+          "Victron Energy System ( 3000W Inverter, 120A Charger, 2 x 30A MPPT & 30A DC-DC )",
       },
       {
         spec: "Projecta Display Bluetooth",
-        value: "Cerbo GX 70, 7 Inch Screen",
+        value: "Cerbo GX Smart Monitoring System, 7 Inch Touch Display",
       },
       {
         spec: "",
-        value: "Sirocco Fans - Bunks",
+        value: "Sirocco Fans to Bunk Area",
       },
       {
         spec: "",
-        value: "Wireless Multi Switches",
+        value: "Wireless Multi-Switch Control System",
       },
       {
         spec: "",
@@ -52,11 +53,11 @@ const tableData = [
       },
       {
         spec: "",
-        value: "Starlink Port",
+        value: "Starlink Ready Port",
       },
       {
         spec: "",
-        value: "Anderson plug for solar blanket",
+        value: "Anderson Plug for Solar Blanket Input",
       },
     ],
   },
@@ -65,7 +66,7 @@ const tableData = [
     rows: [
       {
         spec: "Hot Water Service - 28ltr Gas/Electric",
-        value: "Instant Hot Water",
+        value: "Instant Continuous Hot Water",
       },
     ],
   },
@@ -94,16 +95,16 @@ const tableData = [
     group: "EXTERIOR",
     rows: [
       {
-        spec: "Awning - Roll-Out (Charcoal)",
+        spec: "Awning - Manual Roll-Out (Charcoal)",
         value: "Awning - Electric Carefree",
       },
       {
-        spec: "Large Toolbox with Double Slide Out",
-        value: "Custom Toolbox with Double Slide Out & Wood box",
+        spec: "Large Toolbox with Dual Slide-Outs",
+        value: "Custom Toolbox with Dual Slide-Outs & Wood Box",
       },
       {
         spec: "",
-        value: "Dometic DRS",
+        value: "Dometic DRS System",
       },
     ],
   },
@@ -116,11 +117,11 @@ const tableData = [
       },
       {
         spec: "Jockey Wheel - A-Frame",
-        value: "Gator Jack - A-Frame",
+        value: "Gator Jack",
       },
       {
         spec: '2" Raiser',
-        value: "Truss Chassis ( 6' Raiser )",
+        value: 'Truss Chassis ( 6" Raiser )',
       },
     ],
   },
