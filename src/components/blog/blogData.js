@@ -208,7 +208,7 @@ export const blogPosts = [
           "For families where off-road capability is the real priority — think Cape York, the Kimberley, serious dirt — the Riptide 20 is the answer.",
         ],
         cta: [
-          { label: "See the Full Family Range", href: "/family-caravans-australia" },
+          { label: "See the Full Family Range", href: "/familyoffroad" },
         ],
       },
       {
@@ -274,7 +274,7 @@ export const blogPosts = [
           "Warranty and servicing: Something will go wrong on a trip this long. The question is what happens next. A warranty backed by a national repairer network means you're covered in Broome and Hobart, not just in the suburb where you bought the van.",
         ],
         cta: [
-          { label: "See the Family Range", href: "/family-caravans-australia" },
+          { label: "See the Family Range", href: "/familyoffroad" },
         ],
       },
       {
@@ -316,7 +316,7 @@ export const blogPosts = [
         ],
         cta: [
           { label: "Book a Video Call", href: "/appointment" },
-          { label: "See the Family Range", href: "/family-caravans-australia" },
+          { label: "See the Family Range", href: "/familyoffroad" },
         ],
       },
     ],
