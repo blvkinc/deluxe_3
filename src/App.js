@@ -110,7 +110,6 @@ const Couplesxptech = lazy(() =>
 const Couplesoffroad = lazy(() =>
   import("./components/products/ProductList/Couplesoffroad")
 );
-
 const MemoizedHeader = React.memo(Header);
 const MemoizedFooter = React.memo(Footer);
 

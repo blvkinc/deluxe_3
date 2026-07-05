@@ -34,7 +34,7 @@ const Couplesxptech = React.memo(() => {
     <div className="productgrid-container">
       <Helmet>
         <title>Couples XP-Tech Caravans | Eclipse Range | Deluxe Caravans</title>
-        <meta name="description" content="Off grid doesn't mean roughing it. Eclipse XP Tech — 400Ah lithium, 6 solar panels, Dometic fridge &amp; IBIS 4 aircon. Luxury couples caravans, built in Australia." />
+        <meta name="description" content="Off grid doesn't mean roughing it. Eclipse XP-TECH — 400Ah lithium, 6 solar panels, Dometic fridge &amp; IBIS 4 aircon. Luxury couples caravans, built in Australia." />
         <link rel="canonical" href="https://deluxecaravans.com.au/couplesxptech" />
       </Helmet>
       <div className="productgrid-component">
