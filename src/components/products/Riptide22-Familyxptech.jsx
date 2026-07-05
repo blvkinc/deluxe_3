@@ -5,7 +5,7 @@ import "../home/homecomponents/HomeComponent.css";
 import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
-import HandoverSection from "./HandoverSection";
+
 import Rip22specs from "./Specsmenu/SpecsRiptide22xptech";
 import TechspecRiptide22xptech from "./techspecs/TechspecRiptide22xptech";
 import BrochurePopUp from "./popup/BrochurePopUp";
@@ -215,7 +215,7 @@ const Riptide22FamilyXPTech = () => {
       <div>
         <ResponsiveTable />
       </div>
-      <HandoverSection />
+      
       <GoToTop />
     </div>
   );
