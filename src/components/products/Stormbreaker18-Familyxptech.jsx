@@ -197,7 +197,7 @@ const Stormbreaker18FamilyXPTech = () => {
         <Techspec18xptech />
       </div>
       <div className="component" id="specs">
-        <h1>Specs Menu</h1>
+        <h1>Features & Specifications</h1>
         <Storm18specs />
       </div>
       <div>

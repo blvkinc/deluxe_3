@@ -181,7 +181,7 @@ const Eclipse18CouplesOffRoad = () => {
         <TechspecEclipse18 />
       </div>
       <div className="component" id="specs">
-        <h1>Specs Menu</h1>
+        <h1>Features & Specifications</h1>
         <SpecsEclipse18 />
       </div>
       

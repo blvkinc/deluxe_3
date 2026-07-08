@@ -13,134 +13,123 @@ const Specs19 = () => {
     const data = [
       {
         title: 'INTERIOR',
-        content: `Bed - Queen East - West
-         Niche - Bedside - Both Sides
-         Bunks - 2 or 3 x with Windows ( Length: Top Bunk – 1.9m,, Middle Bunk 1.9m)
-           Mattress - Innerspring with Pillow-Top
-           L - Shape Lounge - with Drop Down Table with TIC Cushion
-           Storage - Drawers
-           Windows - Double-Glazed
-           Door - Triple Lock with Separate Security Screen
-           Drawers - On Rollers
-           Floor Vinyl - Durable Modern Design
-           Hatch Roof - 700mm x 500mm
-           Hatch Roof - 450mm x 400mm
-           TV - Bracket
-           Hinges - Piano
-           Pantry - Half (Slide-Out)
-           Frame – Meranti/ CNC`,
+        content: `Main Bed: East-West Queen Bed with Lift-Up Storage
+         Bedside Storage: Bedside Niches on Both Sides
+         Bunk Beds: 2 or 3 Bunks with Windows (Length: 1.9m)
+           Mattress: Premium Innerspring Mattress with Pillow-Top Comfort Layer
+           Lounge: L-Shape Lounge with Drop-Down Table and TIC Cushions
+           Storage: Integrated Soft Close Storage Drawers
+           Windows: Double-Glazed Windows
+           Entry Door: Triple-Lock Door with Separate Security Screen
+           Drawer System: Smooth-Glide Roller Drawers
+           Flooring: Durable Modern Vinyl Flooring
+           Roof Hatch: 700mm x 500mm Roof Hatch
+           Additional Roof Hatch: 450mm x 400mm Roof Hatch
+           TV Mount: Adjustable TV Bracket
+           Cabinet Hardware: Concealed Soft Close Hinges
+           Pantry: Half-Height Slide-Out Pantry
+           Frame: Meranti Timber OR Henrob Riveted Aluminum Framing w Composite Roof
+           Benchtop: Premium Laminate Benchtop
+           Cooktop Cover: Benchtop Lid Over Stove
+           Kitchen Splashback: Full-Height Kitchen Splashback
+           Cabinetry: Premium Scratch & UV-Resistant Laminate Cupboard Doors
+           Upholstery: Premium Faux Leather Vinyl Upholstery`,
       },
         {
-          title: 'SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY',
-          content: `Bench Top - Premium Laminate 
-          Bench Top Lid - Over Stove
-          Splashback Kitchen - Full Height
-          Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) 
-          Cupboard Doors - Premium Laminate ( Scratch & UV Resistant ) `,
+          title: 'APPLIANCES',
+          content: `Air Conditioning: Dometic FreshJet Roof-Mounted Air Conditioner
+          Cooktop & Grill: 3 Gas Burners + 1 Electric Hotplate with Integrated Grill
+          Rangehood: 12V LED Rangehood with Twin Extraction Fans
+          Refrigeration: 188L Dometic Compressor Fridge/Freezer
+          Hot Water System: 28L Gas/Electric Hot Water Service
+          Microwave: 25L Microwave
+          Entertainment System: CD/DVD/MP3 Stereo with AM/FM Radio
+          Smart TV: 24" Smart Television
+          Bedroom Ventilation: Sirocco Fan to Main Bed Area
+          Washing Machine: Washing Machine`,
       },
         {
-          title: 'ELECTRICAL - INTERNAL',
-          content: `Projecta 30A charger + 30A MPPT
-          Projecta Display w Bluetooth  
-          Lighting - LED Down lights 
-          TV - Co-Ax Point  
-          TV - Aerial Point
-          Speakers - 2 x Internal
-          USB Ports - 1 x in Each Bunk (2), 2 x Bedside & 1 x Lounge 
-          Reading Lights
-          Sirocco Fan – Main bed    `,
+          title: 'INTERNAL ELECTRICAL',
+          content: `Battery Management System: Projecta 30A Battery Charger with 30A MPPT Solar Regulator
+          Battery Monitoring: Projecta Smart Display with Bluetooth Connectivity
+          Interior Lighting: LED Downlights Throughout
+          TV Connection: Coaxial TV Point
+          TV Antenna Connection: TV Aerial Point
+          Audio System: 2 x Internal Speakers
+          USB Charging: 1 x Bunk USB Ports, 2 x Bedside USB Ports & Lounge USB Charging Points
+          Reading Lights: Dedicated LED Reading Lights`,
       },
         {
-            title: 'ELECTRICAL - EXTERNAL',
-            content: ` 2 x LED Annexe Lights
-            1 x LED Annexe Light over Tunnel Boot
-            LED Tunnel Boot Light
-            Blue LED Door Handle Light
-            Blue LED Light Bar ( Front & Back)
-            12-Pin Car Plug
-            12V Weatherproof Cig Socket
-            240V Weatherproof Outlet
-            3 X 170W SOLAR PANELS
-            3 x water Tank Level Probes
-            Reverse Camera & Displayn
-            An Antenna
-            2 X 100AH LITHIUM BATTERIES
-            Side Markers with Reflector  `,
+            title: 'EXTERNAL ELECTRICAL',
+            content: `Annexe Lighting: 2 x Dual LED Awning Lights
+            Tunnel Boot Lighting: 1 x LED Tunnel Boot Lights (Over Tunnel Boot)
+            Exterior Lighting: Front & Rear LED Light Bars
+            Entry Handle Lighting: Blue LED Illuminated Door Handle
+            Vehicle Connection: 12-Pin Trailer Plug
+            12V Power Outlet: Weatherproof External 12V Socket
+            240V Power Outlet: Weatherproof External 240V Single Outlet
+            Solar System: 3 x 200W Solar Panels (600W Total)
+            Water Tank Monitoring: 3 x Water Tank Level Probes
+            Safety System: Reverse Camera with In-Cabin Display
+            TV Antenna: Multi-Directional Antenna (Horizontal & Vertical Signal Reception)
+            Lithium Battery System: 2 x 100Ah Lithium Batteries (200Ah Total Capacity)
+            Side Marker Lights: LED Side Marker Lighting with Reflectors`,
          },
           {
-            title: 'APPLIANCES',
-            content: ` Air Conditioning - DOMETIC FRESH JET AIRCON
-            Front Load Washing Machine
-            Hot water – 28-litre Gas/Electric Heating
-            Rangehood: 12V LED with Twin Fans
-            Oven (3 x Gas | 1 x Electric Burner and Grill)
-            Fridge and Freezer: 188L DOMETIC COMPRESSOR FRIDGE
-            25L Microwave
-            Stereo/Speaker System
-            24” TV `,
-          },
-          {
             title: 'PLUMBING',
-            content: `  ABS Shower
-            Thetford Toilet
-            Premium Black Kitchen Tap
-            Black Round Basin
-            Single Bowl Black Sink
-            3-Way Tap with Water Filter
-            Gas Bayonet
-            External Shower
-            Tap on A-frame
-            2 x 95-Litre Water Tanks
-            110-Litre Grey Water Tank`,
+            content: `Shower: Lightweight ABS Shower Unit
+            Toilet: Thetford Cassette Toilet
+            Tapware: Premium Black Taps Throughout
+            Bathroom Basin: Black Round Basin
+            Kitchen Sink: Single Bowl Black Sink
+            Gas Connection: External Gas Bayonet Fitting
+            Filtered Water System: 3-Way Mixer Tap with Integrated Water Filter
+            External Shower: Convenient External Shower Outlet
+            A-Frame Tap: Water Tap Mounted on A-Frame
+            Fresh Water Capacity: 2 x 110L Fresh Water Tanks
+            Grey Water Capacity: 110L Grey Water Tank`,
           },
           {
             title: 'EXTERIOR',
-            content: `15Ft Roll-Out Awning
-            Storage Compartment Hatch (Rear, Off-Side)
-            Foldable Picnic Table
-            Tunnel Boot – Front ( Dual Access )
-            2 x 9KG Gas Bottles
-            Double Pull-Out Step
-            Stone Mesh Guard
-            Large Toolbox with Dual Slide Out
-            Front Dual Bike Rack`,
+            content: `Awning: Roll-Out Awning (Charcoal)
+            Storage Hatch: Rear Off-Side Storage Compartment Hatch
+            Picnic Table: Fold-Out External Picnic Table
+            Tunnel Boot: Front Tunnel Boot with Dual-Side Access
+            Gas Storage: 2 x 9kg Gas Bottles
+            Entry Step: Double Pull-Out Step
+            Toolbox: Large Front Toolbox with Dual Slide-Out Storage
+            Bike Rack: Front Dual Bike Rack
+            TV Mount: Adjustable TV Bracket`,
           },
           {
-            title: 'PROTECTION',
-            content: `Checker Plate Front 900mm (Black)
-            Checker Plate Sides 900mm (Black)
-            Checker Plate Back 900mm (Black)
-            Aluminium Composite Cladding
-            Mudflaps
-            12” Electric Brake System`,
-          },
-          {
-            title: 'CHASSIS',
-            content: `Dual Axle
-            Hitch: D035
-            A-Frame: 6″
-            Chassis: 6″ Dura-Gal
-            2” Raiser
-            Wheels: 16″ Alloy
-            Heavy-Duty Off-Road Tires
-            1 x Spare Wheel (Mounted On Rear Bumper)
-            2 x  Jerry Can Holders (Rear Bumper)
-            Jack: CNR Supports (Drop-Down)
-            A-Frame Jockey Wheel
-            Storage Mesh Plate`,
-          },
-          {
-            title: 'OVERALL',
-            content: `Approx Ball Weight: 160 kg
-            Approx Tare Weight: 2750 kg
-            ATM: 3500 kg`,
+            title: 'CHASSIS & RUNNING GEAR',
+            content: `Axle: Dual Axle
+            Hitch: D035 Off-Road Coupling
+            A-Frame: 6" A-Frame Construction
+            Chassis: 6" Dura-Gal Chassis with 2" Raiser - Truss Flat Chassis
+            Wheels: 16" Alloy Wheels
+            Tyres: Heavy-Duty Off-Road Tyres
+            Spare Wheel: 1 x Spare Wheel Mounted on Rear Bumper
+            Jerry Can Storage: 2 x 20L Jerry Can Holders Mounted on Rear Bumper
+            Stabiliser Jacks: Drop-Down Corner Support Jacks
+            Jockey Wheel: A-Frame Mounted Jockey Wheel
+            A-Frame Storage: Mesh Storage Platform on A-Frame
+            Chassis Finish: Painted Chassis`,
           },
           {
             title: 'SUSPENSION',
-            content: `FULL OFF-ROAD - INDEPENDENT – 3.5T`,
+            content: `Suspension System: Tuffride 3.5T Independent Off-Road Suspension`,
+          },
+          {
+            title: 'PROTECTION & SAFETY',
+            content: `Front, Sides, Back Protection: 900mm Black Checker Plate
+            Cladding: Aluminium Probond Composite Cladding
+            Mudflaps: Heavy-Duty Mudflaps
+            Stone Protection: Stone Mesh Guard
+            Braking System: 12" Electric Brakes with Breakaway Safety System`,
           },
       ];
-      
+
       return (
         <div className="specs_container">
           <div className="accordion">
@@ -177,5 +166,5 @@ const Specs19 = () => {
         </div>
       );
     };
-    
+
     export default React.memo(Specs19);

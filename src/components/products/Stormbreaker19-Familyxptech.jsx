@@ -200,7 +200,7 @@ const Stormbreaker19FamilyXPTech = () => {
         <Techspec19xptech />
       </div>
       <div className="component" id="specs">
-        <h1>Specs Menu</h1>
+        <h1>Features & Specifications</h1>
         <Storm19specs />
       </div>
       <div>
