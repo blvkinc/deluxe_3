@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import GoToTop from "../functions/GoToTop";
 
 import SpecsEclipse18 from "./Specsmenu/SpecsEclipse18xptech";
-import TechspecEclipse18 from "./techspecs/TechspecEclipse18";
+import TechspecEclipse18 from "./techspecs/TechspecEclipse18xptech";
 import BrochurePopUp from "./popup/BrochurePopUp";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 

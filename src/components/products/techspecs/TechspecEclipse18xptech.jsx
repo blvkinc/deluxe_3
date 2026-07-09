@@ -11,7 +11,7 @@ const imageVariants = {
   transition: { duration: 0.5 },
 };
 
-const TechspecEclipse22xptech = () => {
+const TechspecEclipse18xptech = () => {
   const [refTechSpec, inViewTechSpec] = useInView({
     triggerOnce: true,
     threshold: 0.2,
@@ -40,12 +40,12 @@ const TechspecEclipse22xptech = () => {
 
   const images = useMemo(() => {
     return [
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/kilogram.webp", 'Bespokemodels', 'Tare Approx: 2760kg'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/chain.webp", 'Ecofriendly', 'ATM: 3500kg'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/height.webp", 'Experience', 'Internal Height: 2000mm'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/length.webp", 'Ratings', 'External Length: 9300mm'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/aim%20(1).webp", 'Ratings', 'Ball Approx: 220kg'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/exheight.webp", 'Ratings', 'External Height: 3200mm'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/kilogram.webp", 'TareWeight', 'Tare Approx: 2100kg'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/chain.webp", 'ATM', 'ATM: 3000kg'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/aim%20(1).webp", 'BallWeight', 'Ball Approx: 180kg'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/exheight.webp", 'ExternalHeight', 'External Height: 3150mm'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/height.webp", 'InternalHeight', 'Internal Height: 2000mm'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/length.webp", 'ExternalLength', 'External Length: 7700mm'),
     ];
   }, [animatedImage]);
 
@@ -57,4 +57,4 @@ const TechspecEclipse22xptech = () => {
   );
 };
 
-export default React.memo(TechspecEclipse22xptech);
+export default React.memo(TechspecEclipse18xptech);

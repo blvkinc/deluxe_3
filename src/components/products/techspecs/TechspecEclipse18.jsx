@@ -45,7 +45,7 @@ const TechspecEclipse18 = () => {
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/aim%20(1).webp", 'BallWeight', 'Ball Approx: 180kg'),
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/exheight.webp", 'ExternalHeight', 'External Height: 3150mm'),
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/height.webp", 'InternalHeight', 'Internal Height: 2000mm'),
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/length.webp", 'ExternalLength', 'External Length: 8100mm'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/length.webp", 'ExternalLength', 'External Length: 7700mm'),
     ];
   }, [animatedImage]);
 
