@@ -115,7 +115,7 @@ const Contact = () => {
     <div className="contact__container revealUp">
       <Helmet>
         <title>Contact Deluxe Caravans | Book a Factory Visit | Campbellfield VIC</title>
-        <meta name="description" content="Get in touch with Deluxe Caravans. Book a factory visit, request a quote or ask about our family off road, XP-TECH and luxury caravan range. Campbellfield VIC." />
+        <meta name="description" content="Get in touch with Deluxe Caravans. Book a factory visit, request a quote or ask about our Family Expedition, XP-TECH and luxury caravan range. Campbellfield VIC." />
         <link rel="canonical" href="https://deluxecaravans.com.au/contact" />
       </Helmet>
       <h1 className={animate ? "lineUp" : ""}>Contact us</h1>

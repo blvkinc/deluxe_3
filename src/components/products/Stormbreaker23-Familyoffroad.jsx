@@ -31,7 +31,7 @@ const Stormbreaker23FamilyOffRoad = () => {
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   useEffect(() => {
-    window.fbq("track", "ViewContent", { content_name: "Stormbreaker 23 Family Off-Road", content_category: "Caravan" });
+    window.fbq("track", "ViewContent", { content_name: "Stormbreaker 23 Family Expedition", content_category: "Caravan" });
   }, []);
 
   useEffect(() => {
@@ -161,7 +161,7 @@ const Stormbreaker23FamilyOffRoad = () => {
             {isBrochureOpen && (
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
-                productName="Stormbreaker 23'11 Family Off-Road"
+                productName="Stormbreaker 23'11 Family Expedition"
                 pdfUrl="/brochures/Offroad_Stormbreaker_23-11_brochure_2026.html"
               />
             )}

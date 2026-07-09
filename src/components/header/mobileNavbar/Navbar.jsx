@@ -167,7 +167,7 @@ const Navbar = () => {
                               </li>
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/off-road-caravans-for-sale">
-                                  <p className="social">OFF ROAD CARAVANS FOR SALE</p>
+                                  <p className="social">EXPEDITION CARAVANS FOR SALE</p>
                                 </a>
                               </li>
                               <li className="nav-item" onClick={toggleMenu}>
@@ -175,11 +175,11 @@ const Navbar = () => {
                                   <p className="social">OFF GRID CARAVANS AUSTRALIA</p>
                                 </a>
                               </li>
-                              {/* FAMILY OFF-ROAD SUBMENU */}
+                              {/* FAMILY EXPEDITION SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/familyoffroad">
                                   {" "}
-                                  <p className="social">FAMILY OFF-ROAD </p>
+                                  <p className="social">FAMILY EXPEDITION</p>
                                 </a>
                               </li>
 
@@ -241,10 +241,10 @@ const Navbar = () => {
                                   <p className="social">OFF GRID CARAVANS AUSTRALIA</p>
                                 </a>
                               </li>
-                              {/* COUPLES OFF-ROAD SUBMENU */}
+                              {/* COUPLES EXPEDITION SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/couplesoffroad">
-                                  <p className="social">COUPLES OFF-ROAD </p>
+                                  <p className="social">COUPLES EXPEDITION</p>
                                 </a>
                               </li>
 

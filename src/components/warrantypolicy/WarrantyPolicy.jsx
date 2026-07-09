@@ -122,7 +122,7 @@ const WarrantyPolicy = () => {
             <div className="service-type">
               <h2>Off-Road / Semi Off-Road Policy</h2>
               <p>
-                Deluxe Caravans off-road range of caravans have been designed
+                Deluxe Caravans Expedition range of caravans have been designed
                 and constructed to give added strength and ground clearance for
                 limited unsealed road usage. Gas venting regulations and other
                 construction restraints limit the effectiveness of these
@@ -133,15 +133,15 @@ const WarrantyPolicy = () => {
               <p>
                 We strongly recommend towing at a safe speed according to
                 travels conditions with extra care and attention required on
-                uneven surfaces. Our off-road caravans are not designed for hard
+                uneven surfaces. Our Expedition caravans are not designed for hard
                 impacts or heavy landing or severely rutted roads or tracks.
               </p>
               <p>
-                Deluxe Caravans off-road are not designed for use on
+                Deluxe Caravans Expedition are not designed for use on
                 four-wheel-drive only tracks.
               </p>
               <p>
-                The following items for off-road caravans are not covered under
+                The following items for Expedition caravans are not covered under
                 Deluxe Caravans Warranty:
               </p>
               <ul>

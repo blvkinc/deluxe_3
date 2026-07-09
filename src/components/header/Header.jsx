@@ -128,10 +128,10 @@ const Header = () => {
         label: "FAMILY",
         submenu: [
           { label: "FAMILY CARAVANS AUSTRALIA", link: "/family-caravans-australia" },
-          { label: "OFF ROAD CARAVANS FOR SALE", link: "/off-road-caravans-for-sale" },
+          { label: "EXPEDITION CARAVANS FOR SALE", link: "/off-road-caravans-for-sale" },
           { label: "OFF GRID CARAVANS AUSTRALIA", link: "/off-grid-caravans-australia" },
           {
-            label: "FAMILY OFF-ROAD",
+            label: "FAMILY EXPEDITION",
             link: "/familyoffroad",
             submenu: [
               {
@@ -328,7 +328,7 @@ const Header = () => {
         submenu: [
           { label: "OFF GRID CARAVANS AUSTRALIA", link: "/off-grid-caravans-australia" },
           {
-            label: "COUPLES OFF-ROAD",
+            label: "COUPLES EXPEDITION",
             link: "/couplesoffroad",
             submenu: [
               {

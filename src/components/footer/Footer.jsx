@@ -34,13 +34,13 @@ const Footer = React.memo(() => {
         <div className="footer-links-column">
           <div className="footer-links-header">Caravans</div>
           <Link to="/familyoffroad" className="footer-link">
-            Family Off-Road
+            Family Expedition
           </Link>
           <Link to="/familyxptech" className="footer-link">
             Family XP-TECH
           </Link>
           <Link to="/couplesoffroad" className="footer-link">
-            Couples Off-Road
+            Couples Expedition
           </Link>
           <Link to="/couplesxptech" className="footer-link">
             Couples XP-TECH

@@ -104,7 +104,7 @@ const ResponsiveTable = () => {
         className="sub-heading"
         style={{ textAlign: "center", marginTop: "-10px" }}
       >
-        Explore the detailed differences between the off-road model and the
+        Explore the detailed differences between the Expedition model and the
         XP-TECH upgrade.
       </p>
 
@@ -113,7 +113,7 @@ const ResponsiveTable = () => {
           <thead>
             <tr>
               <th>CATEGORY</th>
-              <th>OFF-ROAD</th>
+              <th>EXPEDITION</th>
               <th>XP-TECH</th>
             </tr>
           </thead>

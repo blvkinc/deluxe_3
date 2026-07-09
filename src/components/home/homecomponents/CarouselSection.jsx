@@ -159,13 +159,13 @@ const CarouselSection = () => {
           className={`toggle-button ${activeType === 'offroad' ? 'active' : ''}`}
           onClick={() => handleTypeChange('offroad')}
         >
-          OFF-ROAD
+          EXPEDITION RANGE
         </button>
         <button 
           className={`toggle-button ${activeType === 'xptech' ? 'active' : ''}`}
           onClick={() => handleTypeChange('xptech')}
         >
-          XP-TECH
+          XP-TECH RANGE
         </button>
       </div>
 

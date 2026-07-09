@@ -31,7 +31,7 @@ const Riptide20FamilyOffRoad = () => {
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   useEffect(() => {
-    window.fbq("track", "ViewContent", { content_name: "Riptide 20 Family Off-Road", content_category: "Caravan" });
+    window.fbq("track", "ViewContent", { content_name: "Riptide 20 Family Expedition", content_category: "Caravan" });
   }, []);
 
   useEffect(() => {
@@ -150,7 +150,7 @@ const Riptide20FamilyOffRoad = () => {
             {isBrochureOpen && (
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
-                productName="Riptide 20 Family Off-Road"
+                productName="Riptide 20 Family Expedition"
                 pdfUrl="/brochures/Offroad_Riptide_20_brochure_2026.html"
               />
             )}
