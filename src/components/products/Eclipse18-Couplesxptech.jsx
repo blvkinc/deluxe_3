@@ -8,8 +8,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
 import GoToTop from "../functions/GoToTop";
 
-import SpecsEclipse18 from "./Specsmenu/SpecsEclipse18";
-import TechspecEclipse18 from "./techspecs/TechspecEclipse18";
+import SpecsEclipse18 from "./Specsmenu/SpecsEclipse18xptech";
+import TechspecEclipse18 from "./techspecs/TechspecEclipse18xptech";
 import BrochurePopUp from "./popup/BrochurePopUp";
 import ResponsiveTable from "./ResponsiveTable/ResponsiveTable";
 
@@ -186,7 +186,7 @@ const Eclipse18CouplesXPTech = () => {
         <TechspecEclipse18 />
       </div>
       <div className="component" id="specs">
-        <h1>Specs Menu</h1>
+        <h1>Features & Specifications</h1>
         <SpecsEclipse18 />
       </div>
       <div>

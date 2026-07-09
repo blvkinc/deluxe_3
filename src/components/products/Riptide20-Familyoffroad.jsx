@@ -177,7 +177,7 @@ const Riptide20FamilyOffRoad = () => {
         <TechspecRiptide20 />
       </div>
       <div className="component" id="specs">
-        <h1>Specs Menu</h1>
+        <h1>Features & Specifications</h1>
         <Rip20specs />
       </div>
       

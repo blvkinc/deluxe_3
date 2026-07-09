@@ -40,7 +40,7 @@ const Techspec23xptech = () => {
 
   const images = useMemo(() => {
     return [
-      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/kilogram.webp", 'Bespokemodels', 'Tare Approx: 2970kg'),
+      animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/kilogram.webp", 'Bespokemodels', 'Tare Approx: 2810kg'),
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/chain.webp", 'Ecofriendly', 'ATM: 3500kg'),
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/height.webp", 'Experience', 'Internal Height: 2000mm'),
       animatedImage("https://deluxcaravan.b-cdn.net/assets/techspec/length.webp", 'Ratings', 'External Length: 9800mm'),

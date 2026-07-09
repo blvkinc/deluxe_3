@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import "./Specsmenu.css";
 
-const SpecsEclipse18 = () => {
+const SpecsEclipse18xptech = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = useCallback(
@@ -28,8 +28,8 @@ const SpecsEclipse18 = () => {
         TV Mount: Adjustable TV Bracket
         Cabinet Hardware: Concealed Soft Close Hinges
         Pantry: Half-Height Slide-Out Pantry
-        Frame: Meranti Timber OR Henrob Riveted Aluminum Framing w Composite Roof
-        Benchtop: Premium Laminate Benchtop
+        Frame: Sandwich-structured composites, combining a fiberglass-reinforced plastic surface with an XPS foam core.
+        Benchtop: Premium Corian or Laminate Benchtop
         Cooktop Cover: Benchtop Lid Over Stove
         Kitchen Splashback: Full-Height Kitchen Splashback
         Cabinetry: Premium Scratch & UV-Resistant Laminate Cupboard Doors
@@ -41,7 +41,7 @@ const SpecsEclipse18 = () => {
         Cooktop & Grill: 3 Gas Burners + 1 Electric Hotplate with Integrated Grill
         Rangehood: 12V LED Rangehood with Twin Extraction Fans
         Refrigeration: 188L Dometic Compressor Fridge/Freezer
-        Hot Water System: 28L Gas/Electric Hot Water Service
+        Hot Water System: Instant Continuous Hot Water
         Microwave: 25L Microwave
         Entertainment System: CD/DVD/MP3 Stereo with AM/FM Radio
         Smart TV: 24" Smart Television
@@ -50,8 +50,8 @@ const SpecsEclipse18 = () => {
     },
     {
       title: "INTERNAL ELECTRICAL",
-      content: `Battery Management System: Projecta 30A Battery Charger with 30A MPPT Solar Regulator
-        Battery Monitoring: Projecta Smart Display with Bluetooth Connectivity
+      content: `Battery Management System: Victron Energy System with 3000W Inverter, 120A Charger, Dual MPPT & DC-DC Charger
+        Battery Monitoring: Cerbo GX with 7" Touch Display
         Interior Lighting: LED Downlights Throughout
         TV Connection: Coaxial TV Point
         TV Antenna Connection: TV Aerial Point
@@ -68,11 +68,11 @@ const SpecsEclipse18 = () => {
         Vehicle Connection: 12-Pin Trailer Plug
         12V Power Outlet: Weatherproof External 12V Socket
         240V Power Outlet: Weatherproof External 240V Single Outlet
-        Solar System: 3 x 200W Solar Panels (600W Total)
+        Solar System: 4 x 200W Solar Panels (800W Total)
         Water Tank Monitoring: 3 x Water Tank Level Probes
         Safety System: Reverse Camera with In-Cabin Display
         TV Antenna: Multi-Directional Antenna (Horizontal & Vertical Signal Reception)
-        Lithium Battery System: 2 x 100Ah Lithium Batteries (200Ah Total Capacity)
+        Lithium Battery System: 1 x 200Ah Lithium Batteries (200Ah Total Capacity)
         Side Marker Lights: LED Side Marker Lighting with Reflectors`,
     },
     {
@@ -91,12 +91,12 @@ const SpecsEclipse18 = () => {
     },
     {
       title: "EXTERIOR",
-      content: `Awning: Roll-Out Awning (Charcoal)
+      content: `Awning: Electric Carefree Awning
         Picnic Table: Fold-Out External Picnic Table
         Tunnel Boot: Front Tunnel Boot with Dual-Side Access
         Gas Storage: 2 x 9kg Gas Bottles
         Entry Step: Double Pull-Out Step
-        Toolbox: Large Front Toolbox with Dual Slide-Out Storage
+        Toolbox: Custom Toolbox with Dual Slide-Outs & Wood Box
         Bike Rack: Front Dual Bike Rack
         TV Mount: Adjustable TV Bracket`,
     },
@@ -105,15 +105,15 @@ const SpecsEclipse18 = () => {
       content: `Axle: Single Axle
         Hitch: D035 Off-Road Coupling
         A-Frame: 6" A-Frame Construction
-        Chassis: 6" Dura-Gal Chassis with 2" Raiser - Truss Flat Chassis
+        Chassis: 6" Dura-Gal Chassis with 6" Raiser
         Wheels: 16" Alloy Wheels
         Tyres: Heavy-Duty Off-Road Tyres
         Spare Wheel: 1 x Spare Wheel Mounted on Rear Bumper
         Jerry Can Storage: 2 x 20L Jerry Can Holders Mounted on Rear Bumper
         Stabiliser Jacks: Drop-Down Corner Support Jacks
-        Jockey Wheel: A-Frame Mounted Jockey Wheel
+        Jockey Wheel: Electric Black Jack
         A-Frame Storage: Mesh Storage Platform on A-Frame
-        Chassis Finish: Painted Chassis`,
+        Chassis Finish: Raptor-Coated Chassis`,
     },
     {
       title: "SUSPENSION",
@@ -121,8 +121,8 @@ const SpecsEclipse18 = () => {
     },
     {
       title: "PROTECTION & SAFETY",
-      content: `Front, Sides, Back Protection: 900mm Black Checker Plate
-        Cladding: Aluminium Probond Composite Cladding
+      content: `Front, Back Protection: 900mm Black Raptor Coating. Sides Protection: 700mm Black Raptor Coating
+        Cladding: Fiberglass Cladding
         Mudflaps: Heavy-Duty Mudflaps
         Stone Protection: Stone Mesh Guard
         Braking System: 12" Electric Brakes with Breakaway Safety System`,
@@ -166,4 +166,4 @@ const SpecsEclipse18 = () => {
   );
 };
 
-export default React.memo(SpecsEclipse18);
+export default React.memo(SpecsEclipse18xptech);
