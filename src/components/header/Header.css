@@ -95,11 +95,12 @@ h5 {
   background: none;
   border: none;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   padding: 0;
   position: relative;
-  margin-right: 3rem;
+  margin-right: 1.75rem;
+  white-space: nowrap;
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
@@ -208,6 +209,11 @@ h5 {
 /* Specific styles for nested-submenu (applied to deep-nested-submenu as well) */
 .nested-submenu {
  top: 122px;
+}
+
+/* Wider gap between the social icons under the DISCOVER nested submenu */
+.nested-submenu.discover {
+  gap: 90px;
 }
 
 /* Deep nested submenu inherits nested-submenu styles */

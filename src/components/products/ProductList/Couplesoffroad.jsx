@@ -34,7 +34,7 @@ const Couplesoffroad = React.memo(() => {
     <div className="productgrid-container">
       <Helmet>
         <title>Couples Expedition Caravans | Eclipse Range | Deluxe Caravans</title>
-        <meta name="description" content="Luxury off road caravans for couples — Eclipse range. Australian-made, composite frame, queen island bed, airbag suspension. 15 years family owned. Get a quote today." />
+        <meta name="description" content="Luxury off road caravans for couples — Eclipse range. Australian-made, composite frame, queen island bed, airbag suspension. 17 years family owned. Get a quote today." />
         <link rel="canonical" href="https://deluxecaravans.com.au/couplesoffroad" />
       </Helmet>
       <div className="productgrid-component">

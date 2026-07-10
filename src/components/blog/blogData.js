@@ -215,7 +215,7 @@ export const blogPosts = [
         title: "One last thing before you decide",
         paragraphs: [
           "Visit a factory. Ours, or anyone else's. Get in the van, sit in the bunks, open the storage. A manufacturer who doesn't want you to come in is telling you something.",
-          "We offer Zoom video calls for families who can't visit in person. You can see the van live on screen, ask every question, and take your time. There's no pressure to buy on any timeline that isn't yours.",
+          "We offer Google Meet video calls for families who can't visit in person. You can see the van live on screen, ask every question, and take your time. There's no pressure to buy on any timeline that isn't yours.",
         ],
         cta: [
           { label: "Book a Video Call", href: "/appointment" },
@@ -312,7 +312,7 @@ export const blogPosts = [
         title: "Ready to start planning?",
         paragraphs: [
           "If you're seriously thinking about it, the next step isn't buying a van. It's getting specific about what the trip requires and making sure what you buy can handle it.",
-          "We offer Zoom video calls: 30 to 60 minutes, no pressure, just an honest conversation about which van suits your trip and your family. We'd rather you buy the right thing than buy from us and regret it.",
+          "We offer Google Meet video calls: 30 to 60 minutes, no pressure, just an honest conversation about which van suits your trip and your family. We'd rather you buy the right thing than buy from us and regret it.",
         ],
         cta: [
           { label: "Book a Video Call", href: "/appointment" },
@@ -407,7 +407,7 @@ export const blogPosts = [
         title: "Getting the van right for retirement",
         paragraphs: [
           "At Deluxe, most of the caravans we build for retirees fall into the Eclipse range — designed with couples in mind, with queen beds, full kitchens and enough off-grid capability for genuine remote travel. The XP-TECH power system in particular suits retirees who want to be self-sufficient: 400Ah lithium, 1,140W solar, 3,000W inverter — enough to run the fridge, air conditioning, coffee maker and charge everything indefinitely in good sun.",
-          "The best way to work out which van suits your retirement is to talk it through with someone who knows the range. We're happy to do that over Zoom — no obligation, no pressure, just a conversation about your plans.",
+          "The best way to work out which van suits your retirement is to talk it through with someone who knows the range. We're happy to do that over Google Meet — no obligation, no pressure, just a conversation about your plans.",
         ],
         cta: [
           { label: "Book a Video Call", href: "/appointment" },

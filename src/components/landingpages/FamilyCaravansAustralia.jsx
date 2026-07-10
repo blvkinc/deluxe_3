@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import './LandingPages.css';
-import familyHeroBanner from '../../assets/subpages/family-caravans-australia.jpg';
-import scenicImage01 from '../../assets/scenicimages/scenic-image-01.jpg';
+import familyHeroBanner from '../../assets/scenicimages/scenic-image-12.jpg';
+import scenicImage06 from '../../assets/scenicimages/scenic-image-06.jpg';
 import scenicImage02 from '../../assets/scenicimages/scenic-image-02.jpg';
-import scenicImage03 from '../../assets/scenicimages/scenic-image-03.jpg';
+import scenicImage07 from '../../assets/scenicimages/scenic-image-07.jpg';
 import scenicImage04 from '../../assets/scenicimages/scenic-image-04.jpg';
 import scenicImage05 from '../../assets/scenicimages/scenic-image-05.jpg';
 
@@ -14,13 +14,13 @@ const reviews = [
     stars: '★★★★★',
     text: '"We ordered our van blind as we live in QLD and couldn\'t make the trip to VIC. Lakshan FaceTimed us and did a walk through and answered any questions we had before ordering. The quality has absolutely exceeded our expectations!"',
     author: 'Darci Dixon',
-    detail: 'Stormbreaker 19\'6 · QLD',
+    detail: 'QLD . OWNER',
   },
   {
     stars: '★★★★★',
-    text: '"Nothing is too hard for the team at Deluxe Caravans. From build progress photos all the way throughout the build, endless options for additional upgrades and the quality is exemplary! Deluxe service! Deluxe Quality! Deluxe People!"',
-    author: 'Rhys, Tori, Lincoln & Florence',
-    detail: 'Stormbreaker 19\'6 · @_thesydneyswans_',
+    text: '"We have had our deluxe XP-tech for a few months and it has been great! Quality and craftsmanship is by far the best I have seen. We looked at all the “big” brands but settled on deluxe. I’m based in QLD and was worried about aftersales and warranty, but after a recent minor teething issue I had, I shouldn’t have worried. Lakshan and the team were amazing in getting a repair organised and without hassle."',
+    author: 'Danny Nightingale',
+    detail: 'XP-TECH , QLD',
   },
   {
     stars: '★★★★★',
@@ -31,10 +31,11 @@ const reviews = [
 ];
 
 const trustItems = [
-  'Triple Bunk Layouts Available',
+  'Triple bunk and even six bunks layouts available',
   'Off Road Ready · All Models',
   'Australian Made · Campbellfield',
   'Nationwide Warranty',
+  'OFF GRID READY . ALL MODELS'
 ];
 
 const models = [
@@ -43,44 +44,47 @@ const models = [
     price: 'From $89,900',
     image: 'https://deluxcaravan.b-cdn.net/assets/header/186.webp',
     link: '/stormbreaker18familyoffroad',
-    specs: ['Double bunk layout', 'Families of 3–4', 'Composite aluminium frame', 'Tuff Ride airbag suspension'],
-    badge: 'Best for: Families of 3–4',
+    xptechLink: '/stormbreaker18familyxptech',
+    specs: [
+      'Double bunk or triple bunk layout',
+      'Families of up to 5',
+      'Aluminium or composite frame (timber also available)',
+      'Tuff Ride airbag suspension ready (Cruisemaster and TerraGlide ready also available)',
+      'Heavy off road spec',
+      'Serious remote travel',
+      'Adventure families',
+      'XP-TECH off-grid power available',
+    ],
+    badge: 'Smallest Model: Families of up to 5: Adventure Families',
   },
   {
-    name: "STORMBREAKER 19'6\"",
-    price: 'From $92,900',
-    image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
-    link: '/stormbreaker19familyoffroad',
-    specs: ['Double bunk layout', 'Families of 4', 'Composite aluminium frame', 'Off-grid power options'],
-    badge: 'Best for: Families of 4',
-  },
-  {
-    name: "STORMBREAKER 21'6\"",
-    price: 'From $94,900',
-    image: 'https://deluxcaravan.b-cdn.net/assets/header/216.webp',
-    link: '/stormbreaker21familyoffroad',
-    specs: ['Triple bunk layout', 'Families of 4–5', 'Composite aluminium frame', 'XP-TECH power available'],
-    badge: '⭐ Most Popular Family Model',
-  },
-  {
-    name: "RIPTIDE 20'",
+    name: "STORMBREAKER 23'11\"",
     price: 'From $96,900',
-    image: 'https://deluxcaravan.b-cdn.net/assets/Rip22/Riptide%20header-min.webp',
-    link: '/riptide20familyoffroad',
-    specs: ['Heavy off-road spec', 'Serious remote travel', 'Full XP-TECH power standard', 'Adventure families'],
-    badge: 'Best for: Serious off road',
+    image: 'https://deluxcaravan.b-cdn.net/assets/header/2311.webp',
+    link: '/stormbreaker23familyoffroad',
+    xptechLink: '/stormbreaker23familyxptech',
+    specs: [
+      'Double bunk to six bunk layout',
+      'Families of up to 8',
+      'Aluminium or composite frame (timber also available)',
+      'Heavy off road spec',
+      'Serious remote travel',
+      'Adventure families',
+      'XP-TECH off-grid power available',
+    ],
+    badge: 'Largest Model: Families of up to 8: Adventure Families',
   },
 ];
 
 const faqs = [
-  { q: 'How does a Deluxe compare to Jayco for families?', a: 'The key differences are frame construction, off road capability and build customisation. Deluxe uses a composite aluminium frame (Jayco uses timber in most models), Tuff Ride airbag suspension for unsealed roads, and builds each van to order rather than from stock. Deluxe is an Australian family owned manufacturer, not a volume producer, so the product and the buying experience are different.' },
+  { q: 'How does a Deluxe compared to imported overseas caravans for families?', a: 'Designed, engineered and built in Australia by an Australian family-owned manufacturer. Unlike many imported overseas caravans(e.g China), every Deluxe is built to order using quality components selected for Australian off road and off grid conditions. You\'ll also benefit from an Australia-backed warranty, local factory support, easier access to parts and strong after-sales service. While imported caravans can offer a lower purchase price, Deluxe is built for families who value long-term quality, reliability and local support.' },
   { q: 'What is the build time and lead time?', a: 'Current build times are approximately 3 to 5 months from deposit to handover. We\'ll confirm your specific timeline before you sign anything.' },
   { q: 'Can I customise bunk configurations?', a: 'Yes. Bunk configuration is one of the most common customisations Deluxe families request. We build to order, so discuss what you need on a video call and we\'ll tell you what\'s possible for your chosen model.' },
   { q: 'Is there an awning included?', a: 'Yes, all Deluxe family caravans include an awning as standard.' },
   { q: 'What\'s included at handover?', a: 'Handover includes a full walkthrough of all systems, a plumber checked inspection, all manuals and a full accessories pack. It takes 2 to 3 hours. A complete handover checklist is available on request.' },
-  { q: 'How does the nationwide warranty work if we\'re in Queensland?', a: 'Deluxe\'s structural warranty is backed by a national repairer network, so warranty claims can be handled wherever you are in Australia. You don\'t need to return to Campbellfield. Contact the Deluxe team and we\'ll coordinate the nearest authorised repairer.' },
+  { q: 'How does the nationwide warranty work if we\'re in Queensland?', a: 'Deluxe\'s warranty is backed by a national repairer network, so warranty claims can be handled wherever you are in Australia. You don\'t need to return to Campbellfield. Contact the Deluxe team and we\'ll coordinate the nearest authorised repairer.' },
   { q: 'Are Deluxe caravans suitable for first time caravan buyers?', a: 'Yes. A significant number of Deluxe buyers are first time caravan owners. We offer video calls specifically to help first time buyers understand what to look for, what questions to ask, and which model suits their situation — with no pressure to buy.' },
-  { q: 'Can I do a video call to see the van before committing?', a: 'Absolutely. We offer Zoom walkthroughs of the van, the factory and the specific features relevant to your model. Many of our interstate buyers have purchased entirely via video call. Book a time via the button on this page.' },
+  { q: 'Can I do a video call to see the van before committing?', a: 'Absolutely. We offer Google Meet walkthroughs of the van, the factory and the specific features relevant to your model. Many of our interstate buyers have purchased entirely via video call. Book a time via the button on this page.' },
 ];
 
 export default function FamilyCaravansAustralia() {
@@ -120,11 +124,11 @@ export default function FamilyCaravansAustralia() {
         <div className="lp-hero-inner">
           <p className="lp-hero-eyebrow">
             <span className="lp-eyebrow-line" />
-            Australian Made · Family Off Road Range
+            Australian Made · Family Expedition Range
           </p>
-          <h1 className="lp-hero-title">Family Caravans Australia: Built for the Big Lap and Beyond</h1>
+          <h1 className="lp-hero-title">FAMILY CARAVANS: BUILT FOR THE BIG AUSTRALIAN LAP AND BEYOND.</h1>
           <p className="lp-hero-intro">
-            The Big Lap. The school holidays trip. The one where the kids finally stop asking "are we there yet?" because they're already home. <strong>Deluxe builds family caravans with triple bunk layouts, off road capability, and a structural warranty that follows you anywhere in Australia.</strong>
+            The Big Lap. The school holidays trip. The one where the kids finally stop asking "are we there yet?" because they're already home. <strong>Deluxe builds family caravans with triple bunk, quad bunk to six bunk layouts, off grid capability, and a manufacturer and a structural warranty that follows you anywhere in Australia.</strong>
           </p>
           <div className="lp-cta-row">
             <a href="#family-models" className="lp-btn-primary" onClick={handleCTAClick}>See the Family Range</a>
@@ -169,7 +173,7 @@ export default function FamilyCaravansAustralia() {
             The cost of living has changed the maths around family holidays. A return overseas trip for four people can easily run past $15,000. A caravan, amortised across five or ten years of school holiday trips, starts to look different when you run those numbers honestly. Domestic caravan travel in 2026 is a genuinely smart choice — and the infrastructure has caught up. Apps like Wikicamps have made it easier to find good free camping. More national parks have been upgraded. Remote roads that required a 4WD setup a decade ago are accessible to well-built caravans now.
           </p>
           <p className="lp-section-body lp-reveal lp-reveal-d2">
-            Deluxe is a family business. We understand the brief: enough room for everyone, a layout that survives three weeks on the road with kids, and a van that holds up when the corrugations start. We build every van to order. You choose the layout, the upgrades, the configuration that suits your family — not what's on the showroom floor. And we're in Campbellfield, VIC, with Zoom calls available for families who can't make the trip south.
+            Deluxe is a family business. We understand the brief: enough room for everyone, a layout that survives three weeks on the road with kids, and a van that holds up when the corrugations start. We build every van to order. You choose the layout, the upgrades, the configuration that suits your family — not what's on the showroom floor. And we're in Campbellfield, VIC, with video calls available for families who can't make the trip south.
           </p>
         </div>
       </div>
@@ -182,7 +186,7 @@ export default function FamilyCaravansAustralia() {
         </div>
         <div className="lp-models-grid">
           {models.map((m, i) => (
-            <Link key={i} to={m.link} className={`lp-model-card lp-reveal lp-reveal-d${(i % 2) + 1}`}>
+            <div key={i} className={`lp-model-card lp-reveal lp-reveal-d${(i % 2) + 1}`}>
               <img src={m.image} alt={m.name} className="lp-model-card-img" loading="lazy" />
               <div className="lp-model-card-body">
                 <span className="lp-model-card-badge">{m.badge}</span>
@@ -191,10 +195,20 @@ export default function FamilyCaravansAustralia() {
                   {m.specs.map((s, j) => <li key={j}>{s}</li>)}
                 </ul>
                 <div className="lp-model-card-price">{m.price}</div>
-                <div className="lp-model-card-cta">View {m.name.split(' ').slice(0, 2).join(' ')} →</div>
+                <div className="lp-model-card-cta-row">
+                  <Link to={m.link} className="lp-model-card-cta">View Expedition →</Link>
+                  <Link to={m.xptechLink} className="lp-model-card-cta">View XP-TECH →</Link>
+                </div>
               </div>
-            </Link>
+            </div>
           ))}
+        </div>
+        <div className="lp-reveal" style={{ marginTop: '40px', textAlign: 'center' }}>
+          <p className="lp-section-body" style={{ marginBottom: '16px' }}>Browse all family models</p>
+          <div className="lp-cta-row" style={{ justifyContent: 'center' }}>
+            <Link to="/familyoffroad" className="lp-btn-primary">Entire Family Expedition Range</Link>
+            <Link to="/familyxptech" className="lp-btn-ghost">Entire Family XP-TECH Range</Link>
+          </div>
         </div>
       </div>
 
@@ -206,19 +220,20 @@ export default function FamilyCaravansAustralia() {
         </div>
         <div className="lp-two-col" style={{ alignItems: 'stretch' }}>
           <div className="lp-reveal" style={{ display: 'flex', flexDirection: 'column' }}>
-            <p className="lp-eyebrow"><span className="lp-eyebrow-line" />Double Bunk (18\'6" & 19\'6")</p>
-            <p className="lp-section-body">A double bunk suits families of three or four where the kids are young enough to share without ongoing territorial disputes. Two bunks stacked is straightforward, and the floor space you save is real. The Stormbreaker 18'6" and 19'6" both run this configuration and hit the balance between size, towing weight and livability well.</p>
+            <p className="lp-eyebrow"><span className="lp-eyebrow-line" />Double Bunk  ( 18’6”, 19’6”, 21’6”,23’11”, 20’,20’6”,22’)</p>
+            <p className="lp-section-body">A double bunk suits families of three or four where the kids are young enough to share without ongoing territorial disputes. Two bunks stacked is straightforward, and the floor space you save is real. All the STormbreaker and Riptide models run this configuration and hit the balance between size, towing weight and livability well.</p>
             <br />
             <p className="lp-section-body">If you have two kids under ten and a mid-size SUV, this is likely your starting point.</p>
             <div className="lp-img-placeholder" style={{ marginTop: 'auto', paddingTop: '24px' }}>
-              <img src={scenicImage01} alt="Stormbreaker 18 or 19 bunk area" />
+              <img src={scenicImage06} alt="Stormbreaker 18 or 19 bunk area" />
             </div>
           </div>
           <div className="lp-reveal lp-reveal-d2" style={{ display: 'flex', flexDirection: 'column' }}>
-            <p className="lp-eyebrow"><span className="lp-eyebrow-line" />Triple Bunk (21\'6")</p>
-            <p className="lp-section-body">A triple bunk layout becomes necessary — not just convenient — once you've got three kids or two kids who've hit the age where sharing a bunk stops being acceptable. The Stormbreaker 21'6" is purpose-built for families who need to fit everyone comfortably for months at a time, not just weekends.</p>
+            <p className="lp-eyebrow"><span className="lp-eyebrow-line" />Triple Bunk ( 18’6”, 19’6”, 21’6”,23’11”, 20’,20’6”,22’)</p>
+            <p className="lp-section-body">A triple bunk layout becomes necessary — not just convenient — once you've got three kids or two kids who've hit the age where sharing a bunk stops being acceptable. All the Stormbreaker and Riptide models are purpose-built for families who need to fit everyone comfortably for months at a time, not just weekends.</p>
             <br />
-            <p className="lp-section-body">The extra bunk has flow-on effects: longer van, different kitchen positioning, different storage layout throughout. It's not just one more bunk — it's a different product. For families planning the Big Lap with three kids, the 21'6" is the clear recommendation.</p>
+            <p className="lp-section-body">The extra bunk has flow-on effects: longer van, different kitchen positioning, different storage layout throughout. It's not just one more bunk — it's a different product. For families planning the Big Lap with three kids, the Deluxe's Strombreaker or Riptide is the clear recommendation.</p>
+            <p>All models can be customized for bunk layouts - double bunk or triple bunk. Stormbreaker 23’11 can go upto 6 bunks.</p>
             <div className="lp-img-placeholder" style={{ marginTop: 'auto', paddingTop: '24px' }}>
               <img src={scenicImage02} alt="Stormbreaker 21 triple bunk layout" />
             </div>
@@ -235,10 +250,15 @@ export default function FamilyCaravansAustralia() {
           </div>
           <div className="lp-reveal lp-reveal-d2">
             <div className="lp-note">
-              <strong>Composite frame:</strong> lighter, moisture-proof, warrantied against structural deterioration. Timber absorbs moisture and can deteriorate invisibly under the walls of a caravan. Our composite aluminium frame doesn't.
+            <p><strong>Composite frame:</strong> lighter, moisture-proof, warrantied against structural deterioration. Timber absorbs moisture and can deteriorate invisibly under the walls of a caravan. Our composite frame doesn't.
+            </p> 
+            <p>Our aluminium frames are completely timber-free.
+</p><p>Our timber frames are also available with timber-free wall linings. 
+</p><p>Whichever frame you choose, every caravan is built to the same exceptional standard of quality and craftsmanship. 
+</p>
             </div>
             <div className="lp-note">
-              <strong>Tuff Ride airbag suspension:</strong> absorbs the corrugated road impact that standard independent suspension passes directly into the van. For families doing the Big Lap, this is the difference between arriving intact and arriving shaken.
+              <strong>Tuff Ride airbag suspension(Ready):</strong> absorbs the corrugated road impact that standard independent suspension passes directly into the van. For families doing the Big Lap, this is the difference between arriving intact and arriving shaken. Cruisemaster and Terraglide(Ready) also available.
             </div>
             <div className="lp-note">
               <strong>Dust reduction:</strong> a practical feature families notice immediately. Fine outback dust will find its way through any gap. A proper dust reduction system keeps the van livable on red dirt.
@@ -255,9 +275,9 @@ export default function FamilyCaravansAustralia() {
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
           {[
-            { label: 'Off-grid school on the road', desc: 'With Starlink and the right power system, distance education is genuinely manageable from anywhere in Australia. A Deluxe with XP-TECH power runs the connection indefinitely.', img: scenicImage03 },
-            { label: 'Enough storage for the whole family', desc: 'Three months of clothing, bikes, wetsuits, fishing gear, school materials and outdoor furniture. The rear garage and thoughtful storage design is what makes it livable rather than manageable.', img: scenicImage04 },
-            { label: 'Privacy and space for parents too', desc: 'The awning, the separate sleeping areas, and a queen bed that isn\'t a double. A Deluxe is designed for adults who also need to feel comfortable — not just kids who can sleep anywhere.', img: scenicImage05 },
+            { label: 'Off-grid school on the road', desc: 'With Starlink and the right power system, distance education is genuinely manageable from anywhere in Australia. The XP-TECH models comes with a starlink port and it’s power capabilities runs the connection indefinitely.', img: scenicImage07 },
+            { label: 'Enough storage for the whole family', desc: 'Three months of clothing, bikes, wetsuits, fishing gear, school materials and outdoor furniture. The rear storage and storage design throughout is what makes it livable rather than manageable.', img: scenicImage04 },
+            { label: 'Privacy and space for parents too', desc: 'The awning, the separate sleeping areas, and  or king bed that isn\'t a double. A Deluxe is designed for adults who also need to feel comfortable — not just kids who can sleep anywhere.', img: scenicImage05 },
           ].map((item, i) => (
             <div key={i} className={`lp-reveal lp-reveal-d${i + 1}`} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div className="lp-img-placeholder"><img src={item.img} alt={item.label} /></div>
@@ -275,7 +295,7 @@ export default function FamilyCaravansAustralia() {
             <p className="lp-eyebrow"><span className="lp-eyebrow-line" />Common questions</p>
             <h2 className="lp-section-title">Questions families ask before they buy</h2>
             <p className="lp-section-body" style={{ marginTop: '16px' }}>
-              Call us on <strong style={{ color: '#f4f4f4' }}>+61 483 939 904</strong> or book a Zoom call — no pressure, no scripts.
+              Call us on <strong style={{ color: '#f4f4f4' }}>+61 483 939 904</strong> or book a Google Meet call — no pressure, no scripts.
             </p>
             <div style={{ marginTop: '32px' }}>
               <p className="lp-section-body">Related reading:</p>
@@ -322,8 +342,8 @@ export default function FamilyCaravansAustralia() {
           </div>
           <div className="lp-reveal lp-reveal-d2">
             <p className="lp-eyebrow"><span className="lp-eyebrow-line" />Find us</p>
-            <h2 className="lp-section-title">Visit us in Campbellfield, or book a Zoom call</h2>
-            <p className="lp-section-body">Our factory and showroom is in Campbellfield VIC, 20 minutes north of Melbourne's CBD. Can't make it in person? We offer Zoom calls so you can talk through the range from wherever you are in Australia.</p>
+            <h2 className="lp-section-title">Visit us in Campbellfield, or book a Google Meet call</h2>
+            <p className="lp-section-body">Our factory and showroom is in Campbellfield VIC, 20 minutes north of Melbourne's CBD. Can't make it in person? We offer Google Meet calls so you can talk through the range from wherever you are in Australia.</p>
             <div style={{ marginTop: '32px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
               <div style={{ fontSize: '14px', color: 'var(--lp-white)', lineHeight: '1.5' }}>
                 <span style={{ verticalAlign: 'middle' }}>Campbellfield, VIC 3061</span>
@@ -341,7 +361,7 @@ export default function FamilyCaravansAustralia() {
       <div className="lp-final-cta lp-reveal">
         <p className="lp-eyebrow" style={{ justifyContent: 'center' }}><span className="lp-eyebrow-line" />Let's plan it</p>
         <h2 className="lp-section-title">Ready to plan your family's first Big Lap?</h2>
-        <p className="lp-section-body">Book a Zoom call — 30 to 60 minutes, no pressure. We'll walk you through the range, discuss your tow vehicle, and help you find the right van for your family.</p>
+        <p className="lp-section-body">Book a Google Meet call — 30 to 60 minutes, no pressure. We'll walk you through the range, discuss your tow vehicle, and help you find the right van for your family.</p>
         <div className="lp-cta-row">
           <a href="/appointment" className="lp-btn-primary" onClick={handleCTAClick}>Book a Video Call</a>
           <a href="/contact" className="lp-btn-ghost">Request a Family Build Quote</a>
