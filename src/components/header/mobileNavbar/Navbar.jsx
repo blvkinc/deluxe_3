@@ -189,14 +189,14 @@ const Navbar = () => {
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/familyoffroad">
                                   {" "}
-                                  <p className="social">FAMILY EXPEDITION</p>
+                                  <p className="social">FAMILY EXPEDITION RANGE</p>
                                 </a>
                               </li>
 
                               {/* FAMILY XP-TECH SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/familyxptech">
-                                  <p className="social">FAMILY XP-TECH </p>
+                                  <p className="social">FAMILY XP-TECH RANGE</p>
                                 </a>
                               </li>
                             </ul>
@@ -254,14 +254,14 @@ const Navbar = () => {
                               {/* COUPLES EXPEDITION SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/couplesoffroad">
-                                  <p className="social">COUPLES EXPEDITION</p>
+                                  <p className="social">COUPLES EXPEDITION RANGE</p>
                                 </a>
                               </li>
 
                               {/* COUPLES XP-TECH SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/couplesxptech">
-                                  <p className="social">COUPLES XP-TECH </p>
+                                  <p className="social">COUPLES XP-TECH RANGE</p>
                                 </a>
                               </li>
                             </ul>
@@ -313,7 +313,7 @@ const Navbar = () => {
                             <ul className="range-list">
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/off-road-caravans-for-sale">
-                                  <p className="social">OFF-ROAD CARAVANS FOR SALE</p>
+                                  <p className="social">OFF-ROAD CARAVANS</p>
                                 </a>
                               </li>
                               <li className="nav-item" onClick={toggleMenu}>

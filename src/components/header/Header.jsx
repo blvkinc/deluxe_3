@@ -129,7 +129,7 @@ const Header = () => {
         submenu: [
           { label: "FAMILY CARAVANS", link: "/family-caravans-australia" },
           {
-            label: "FAMILY EXPEDITION",
+            label: "FAMILY EXPEDITION RANGE",
             link: "/familyoffroad",
             submenu: [
               {
@@ -224,7 +224,7 @@ const Header = () => {
             ],
           },
           {
-            label: "FAMILY XP-TECH",
+            label: "FAMILY XP-TECH RANGE",
             link: "/familyxptech",
             submenu: [
               {
@@ -326,7 +326,7 @@ const Header = () => {
         submenu: [
         
           {
-            label: "COUPLES EXPEDITION",
+            label: "COUPLES EXPEDITION RANGE",
             link: "/couplesoffroad",
             submenu: [
               {
@@ -371,7 +371,7 @@ const Header = () => {
             ],
           },
           {
-            label: "COUPLES XP-TECH",
+            label: "COUPLES XP-TECH RANGE",
             link: "/couplesxptech",
             submenu: [
               {
@@ -420,7 +420,7 @@ const Header = () => {
       {
         label: "OFF ROAD AND OFF GRID",
         submenu: [
-          { label: "OFF-ROAD CARAVANS FOR SALE", link: "/off-road-caravans-for-sale" },
+          { label: "OFF-ROAD CARAVANS", link: "/off-road-caravans-for-sale" },
           { label: "OFF-GRID CARAVANS", link: "/off-grid-caravans-australia" },
         ],
       },
