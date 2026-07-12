@@ -4,7 +4,7 @@ import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
 import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import GoToTop from "../functions/GoToTop";
-import HandoverSection from "./HandoverSection";
+
 import SpecsRiptide20xptech from "./Specsmenu/SpecsRiptide20xptech";
 import TechspecRiptide20xptech from "./techspecs/TechspecRiptide20xptech";
 import BrochurePopUp from "./popup/BrochurePopUp";
@@ -174,13 +174,13 @@ const Riptide20FamilyXPTech = () => {
         <TechspecRiptide20xptech />
       </div>
       <div className="component" id="specs">
-        <h1>Specs Menu</h1>
+        <h1>Features & Specifications</h1>
         <SpecsRiptide20xptech />
       </div>
       <div>
         <ResponsiveTable />
       </div>
-      <HandoverSection />
+      
       <GoToTop />
     </div>
   );

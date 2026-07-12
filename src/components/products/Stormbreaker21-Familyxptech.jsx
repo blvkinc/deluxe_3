@@ -5,7 +5,7 @@ import "../home/homecomponents/HomeComponent.css";
 import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import GoToTop from "../functions/GoToTop";
-import HandoverSection from "./HandoverSection";
+
 import Storm21specs from "./Specsmenu/Specs21xptech";
 import Techspec21xptech from "./techspecs/Techspec21xptech";
 import BrochurePopUp from "./popup/BrochurePopUp";
@@ -202,13 +202,13 @@ const Stormbreaker21FamilyXPTech = () => {
         <Techspec21xptech />
       </div>
       <div className="component" id="specs">
-        <h1>Specs Menu</h1>
+        <h1>Features & Specifications</h1>
         <Storm21specs />
       </div>
       <div>
         <ResponsiveTable />
       </div>
-      <HandoverSection />
+      
       <GoToTop />
     </div>
   );

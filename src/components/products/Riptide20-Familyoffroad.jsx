@@ -6,7 +6,7 @@ import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
-import HandoverSection from "./HandoverSection";
+
 import Rip20specs from "./Specsmenu/SpecsRiptide20";
 import TechspecRiptide20 from "./techspecs/TechspecRiptide20";
 import BrochurePopUp from "./popup/BrochurePopUp";
@@ -177,10 +177,10 @@ const Riptide20FamilyOffRoad = () => {
         <TechspecRiptide20 />
       </div>
       <div className="component" id="specs">
-        <h1>Specs Menu</h1>
+        <h1>Features & Specifications</h1>
         <Rip20specs />
       </div>
-      <HandoverSection />
+      
       <GoToTop />
     </div>
   );

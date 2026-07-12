@@ -13,122 +13,119 @@ const Specs21 = () => {
   const data = [
     {
       title: "INTERIOR",
-      content: `Bed - Queen East - West 
-        Niche - Bedside - Both Sides
-        Bunks - 2 or 3 x with Windows ( Length: Top Bunk – 1.9m, Middle Bunk 1.9m)
-        Mattress - Innerspring with Pillow-Top 
-        Straight Lounge - with Drop Down Table
-        Storage - Drawers 
-        Windows - Double-Glazed 
-        Door - Triple Lock with sep Security Screen
-        Drawers - On Rollers 
-        Floor Vinyl - Durable Modern Design 
-        Hatch Roof - 700mm x 500mm 
-        Hatch Roof - 450mm x 400mm 
-        TV - Bracket 
-        Hinges 
-        Frame – Meranti/ CNC `,
-    },
-    {
-      title: "SPLASHBACK, BENCHTOP, CUPBOARD DOORS AND UPHOLSTERY",
-      content: `Bench Top - Laminate 
-          Bench Top Lid - Over Stove 
-          Splashback Kitchen - Full Height 
-          Cupboard Doors - Premium Laminate (Scratch & UV Resistant) 
-          Upholstery - Faux Leather Vinyl `,
-    },
-    {
-      title: "ELECTRICAL - INTERNAL",
-      content: `Projecta 30A charger + 30A MPPT
-          Projecta Display w Bluetooth  
-          Lighting - LED Down lights 
-          TV - Co-Ax Point 
-          TV - Aerial Point 
-          Speakers - 2 x Internal 
-          USB Ports - 1 x in Each Bunk (2), 2 x Bedside & Lounge 
-          Reading Lights 
-          Sirocco Fan – Main bed  `,
-    },
-    {
-      title: "ELECTRICAL - EXTERNAL",
-      content: `2 x LED Annexe ( Dual ) 
-            LED Tunnel Boot ( Dual ) 
-            Light – LED Light Bar ( Front & Back ) 
-            Light - Blue LED Door Handle 
-            Light - Blue LED Strip Light (Door Footwell) 
-            Plug Car - 12 Pin 
-            Power - 12V Weather Proof Cig Socket 
-            Power - 240V Weather Proof Outlet (Single) 
-            Solar - 3 X 170W SOLAR PANELS 
-            3 x Water Tank Level Probes 
-            Reverse Camera & Display 
-            Antenna - (Reads Horizontal & Vertical Signals) 
-            Battery - 2 X 100AH LITHIUM BATTERIES 
-            Side Markers `,
+      content: `Main Bed: East-West Queen Bed
+        Bedside Storage: Bedside Niches on Both Sides
+        Bunk Beds: 2 or 3 Bunks with Windows (Length: 2m)
+        Mattress: Premium Innerspring Mattress with Pillow-Top Comfort Layer
+        Lounge: Straight Lounge with Drop-Down Table
+        Storage: Integrated Soft Close Storage Drawers
+        Windows: Double-Glazed Windows
+        Entry Door: Triple-Lock Door with Separate Security Screen
+        Drawer System: Smooth-Glide Roller Drawers
+        Flooring: Durable Modern Vinyl Flooring
+        Roof Hatch: 700mm x 500mm Roof Hatch
+        Additional Roof Hatch: 450mm x 400mm Roof Hatch
+        TV Mount: Adjustable TV Bracket
+        Cabinet Hardware: Concealed Soft Close Hinges
+        Pantry: Half-Height Slide-Out Pantry
+        Frame: Meranti Timber OR Henrob Riveted Aluminum Framing w Composite Roof
+        Benchtop: Premium Laminate Benchtop
+        Cooktop Cover: Benchtop Lid Over Stove
+        Kitchen Splashback: Full-Height Kitchen Splashback
+        Cabinetry: Premium Scratch & UV-Resistant Laminate Cupboard Doors
+        Upholstery: Premium Faux Leather Vinyl Upholstery`,
     },
     {
       title: "APPLIANCES",
-      content: `Air Conditioning – DOMETIC FRESH JET AIRCON 
-            Mini Grill - 3 Gas / 1 Electric Burner & Grill 
-            Range hood - 12v LED with Twin Fans 
-            Fridge / Freezer – 188L DOMETIC COMPRESSOR FRIDGE 
-            Hot Water Service - 28ltr Gas/Electric 
-            25L Microwave 
-            Stereo CD/DVD/MP3/Radio System 
-            TV - 24" Smart `,
+      content: `Air Conditioning: Dometic FreshJet Roof-Mounted Air Conditioner
+        Cooktop & Grill: 3 Gas Burners + 1 Electric Hotplate with Integrated Grill
+        Rangehood: 12V LED Rangehood with Twin Extraction Fans
+        Refrigeration: 188L Dometic Compressor Fridge/Freezer
+        Hot Water System: 28L Gas/Electric Hot Water Service
+        Microwave: 25L Microwave
+        Entertainment System: CD/DVD/MP3 Stereo with AM/FM Radio
+        Smart TV: 24" Smart Television
+        Bedroom Ventilation: Sirocco Fan to Main Bed Area
+        Washing Machine: Washing Machine`,
+    },
+    {
+      title: "INTERNAL ELECTRICAL",
+      content: `Battery Management System: Projecta 30A Battery Charger with 30A MPPT Solar Regulator
+        Battery Monitoring: Projecta Smart Display with Bluetooth Connectivity
+        Interior Lighting: LED Downlights Throughout
+        TV Connection: Coaxial TV Point
+        TV Antenna Connection: TV Aerial Point
+        Audio System: 2 x Internal Speakers
+        USB Charging: 1 x Bunk USB Ports, 2 x Bedside USB Ports & Lounge USB Charging Points
+        Reading Lights: Dedicated LED Reading Lights`,
+    },
+    {
+      title: "EXTERNAL ELECTRICAL",
+      content: `Annexe Lighting: 2 x LED Awning Lights
+        Tunnel Boot Lighting: 1 x LED Tunnel Boot Lights (Over Tunnel Boot)
+        Exterior Lighting: Front & Rear LED Light Bars
+        Entry Handle Lighting: Blue LED Illuminated Door Handle
+        Vehicle Connection: 12-Pin Trailer Plug
+        12V Power Outlet: Weatherproof External 12V Socket
+        240V Power Outlet: Weatherproof External 240V Single Outlet
+        Solar System: 3 x 170W Solar Panels (510W Total)
+        Water Tank Monitoring: 3 x Water Tank Level Probes
+        Safety System: Reverse Camera with In-Cabin Display
+        TV Antenna: Multi-Directional Antenna (Horizontal & Vertical Signal Reception)
+        Lithium Battery System: 2 x 100Ah Lithium Batteries (200Ah Total Capacity)
+        Side Marker Lights: LED Side Marker Lighting with Reflectors`,
     },
     {
       title: "PLUMBING",
-      content: `ABS Light Weight Shower 
-            Toilet - Thetford 
-            Taps - Premium Black 
-            Black Round Basin 
-            Sink - Single Black 
-            Gas Bayonet 
-            3 Way Tap with Water Filter 
-            External Shower 
-            Tap - On A-frame 
-            Water Tanks - 2 x 95Ltr 
-            Grey Water Tank - 110Ltr `,
+      content: `Shower: Lightweight ABS Shower Unit
+        Toilet: Thetford Cassette Toilet
+        Tapware: Premium Black Taps Throughout
+        Bathroom Basin: Black Round Basin
+        Kitchen Sink: Single Bowl Black Sink
+        Gas Connection: External Gas Bayonet Fitting
+        Filtered Water System: 3-Way Mixer Tap with Integrated Water Filter
+        External Shower: Convenient External Shower Outlet
+        A-Frame Tap: Water Tap Mounted on A-Frame
+        Fresh Water Capacity: 2 x 110L Fresh Water Tanks
+        Grey Water Capacity: 110L Grey Water Tank`,
     },
     {
       title: "EXTERIOR",
-      content: `Awning - Roll-Out (Charcoal) 
-            Hatch - Storage Compartment (Rear Off-Side) 
-            Picnic Table - Fold-Out 
-            Tunnel Boot - Front (Dual Access) 
-            Gas Bottles - 2 x 9kg 
-            Step - Double (Pull-Out) 
-            Large Toolbox with Dual Slide Out 
-            Front Dual Bike Rack 
-            Stone Mesh Guard `,
+      content: `Awning: Roll-Out Awning (Charcoal)
+        Picnic Table: Fold-Out External Picnic Table
+        Tunnel Boot: Front Tunnel Boot with Dual-Side Access
+        Gas Storage: 2 x 9kg Gas Bottles
+        Entry Step: Double Pull-Out Step
+        Toolbox: Large Front Toolbox with Dual Slide-Out Storage
+        Bike Rack: Front Dual Bike Rack
+        TV Mount: Adjustable TV Bracket`,
     },
     {
-      title: "PROTECTION",
-      content: `Checker Plate Front 900mm (Black) 
-            Checker Plate Sides 900mm (Black) 
-            Checker Plate Back 900mm (Black)
-            Cladding - Aluminium Composite
-            Mudflaps 
-            Brakes – 12” Electric Brakeaway System `,
-    },
-    {
-      title: "CHASSIS",
-      content: `Axle - Single 
-            Hitch - D035 
-            A-Frame - 6" 
-            Chassis - 6" Dura-Gal  2” Raiser
-            Wheels - 16" Alloy 
-            Tyres - Heavy-Duty Off-Road 
-            Spare Wheel - 1 x Mounted on (Rear Bumper) 
-            Jerry Can Holders - 2 x 20Ltr (Rear Bumper) 
-            Jack - CNR Supports (Drop Down) 
-            Jockey Wheel - A-Frame 
-            Storage Mesh Plate- A-Frame `,
+      title: "CHASSIS & RUNNING GEAR",
+      content: `Axle: Single Axle
+        Hitch: D035 Off-Road Coupling
+        A-Frame: 6" A-Frame Construction
+        Chassis: 6" Dura-Gal Chassis with 2" Raiser - Truss Flat Chassis
+        Wheels: 16" Alloy Wheels
+        Tyres: Heavy-Duty Off-Road Tyres
+        Spare Wheel: 1 x Spare Wheel Mounted on Rear Bumper
+        Jerry Can Storage: 2 x 20L Jerry Can Holders Mounted on Rear Bumper
+        Stabiliser Jacks: Drop-Down Corner Support Jacks
+        Jockey Wheel: A-Frame Mounted Jockey Wheel
+        A-Frame Storage: Mesh Storage Platform on A-Frame
+        Chassis Finish: Painted Chassis`,
     },
     {
       title: "SUSPENSION",
-      content: `TuffRide - 3.0T`,
+      content: `Suspension System: Tuffride 3.0T Independent Full Off-Road Suspension`,
+    },
+    {
+      title: "PROTECTION & SAFETY",
+      content: `Front, Sides, Back Protection: 900mm Black Checker Plate
+        Cladding: Aluminium Probond Composite Cladding
+        Mudflaps: Heavy-Duty Mudflaps
+        Stone Protection: Stone Mesh Guard
+        Braking System: 12" Electric Brakes with Breakaway Safety System`,
     },
   ];
 

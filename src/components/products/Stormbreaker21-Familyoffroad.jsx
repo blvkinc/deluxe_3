@@ -6,7 +6,7 @@ import EnhancedGallery from "../products/SlideShows/EnhancedGallery";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GoToTop from "../functions/GoToTop";
-import HandoverSection from "./HandoverSection";
+
 import Storm21specs from "./Specsmenu/Specs21";
 import Techspec21 from "./techspecs/Techspec21";
 import BrochurePopUp from "./popup/BrochurePopUp";
@@ -186,10 +186,10 @@ const Stormbreaker21FamilyOffRoad = () => {
         <Techspec21 />
       </div>
       <div className="component" id="specs">
-        <h1>Specs Menu</h1>
+        <h1>Features & Specifications</h1>
         <Storm21specs />
       </div>
-      <HandoverSection />
+      
       <GoToTop />
     </div>
   );

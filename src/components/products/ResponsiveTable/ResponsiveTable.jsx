@@ -26,8 +26,8 @@ const tableData = [
   },
   {
     category: "Solar",
-    offRoad: "510W Solar (3 x 170W)",
-    xpTech: "800W Solar System",
+    offRoad: "600W Solar (3 x 200W)",
+    xpTech: "800W Solar (4 x 200W)",
   },
   {
     category: "Battery Capacity",
@@ -66,7 +66,7 @@ const tableData = [
   },
   {
     category: "Cladding",
-    offRoad: "Aluminium Composite",
+    offRoad: "Aluminium Probond Composite",
     xpTech: "Fiberglass",
   },
   {
@@ -77,12 +77,12 @@ const tableData = [
   {
     category: "Jockey Wheel",
     offRoad: "Standard A-Frame Jockey Wheel",
-    xpTech: "Gator Jack",
+    xpTech: "Electric Black Jack",
   },
   {
     category: "Chassis Design",
-    offRoad: '2" Raiser',
-    xpTech: 'Truss Chassis with 6" Raiser',
+    offRoad: '6" Dura-Gal Chassis with 2" Raiser - Truss Flat Chassis',
+    xpTech: '6" Dura-Gal Chassis with 6" Raiser - Truss Flat Chassis',
   },
 ];
 
