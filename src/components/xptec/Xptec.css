@@ -2,13 +2,13 @@
 .xptech-container {
   /*background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);*/
   min-height: 100vh;
-  color: #333;
+  color: var(--color-text);
 }
 
 /* Hero Section */
 .xptech-hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--color-card) 0%, var(--color-card-alt) 100%);
+  color: var(--color-white);
   padding: 120px 0 80px;
   text-align: center;
   position: relative;
@@ -50,7 +50,7 @@
   font-size: 1.8rem;
   font-weight: 300;
   margin-bottom: 40px;
-  color: #e0e0e0;
+  color: var(--color-muted);
   letter-spacing: 2px;
 }
 
@@ -60,7 +60,7 @@
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
-  color: #f0f0f0;
+  color: var(--color-muted);
 }
 
 /* Main Container */
@@ -75,7 +75,7 @@
   text-align: center;
   margin-bottom: 80px;
   padding: 60px 40px;
-  background: white;
+  background: var(--color-card);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -84,7 +84,7 @@
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 40px;
-  color: #2d2d2d;
+  color: var(--color-white);
   position: relative;
 }
 
@@ -96,7 +96,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, #007bff, #0056b3);
+  background: linear-gradient(90deg, var(--color-accent), var(--color-link-hover));
   border-radius: 2px;
 }
 
@@ -109,21 +109,21 @@
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 25px;
-  color: #555;
+  color: var(--color-muted);
 }
 
 .tech-intro {
   font-size: 1.2rem;
   font-weight: 500;
   font-style: italic;
-  color: #007bff;
+  color: var(--color-accent);
   margin-top: 40px;
 }
 
 /* Technology Sections */
 .tech-section {
   margin-bottom: 80px;
-  background: white;
+  background: var(--color-card);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
@@ -159,13 +159,13 @@
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 25px;
-  color: #2d2d2d;
+  color: var(--color-white);
 }
 
 .tech-description {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #555;
+  color: var(--color-muted);
   margin-bottom: 20px;
 }
 
@@ -193,34 +193,34 @@
   align-items: center;
   gap: 15px;
   padding: 15px 20px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, var(--color-panel) 0%, var(--color-elevated) 100%);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
 
 .advantage-item:hover {
-  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  background: linear-gradient(135deg, var(--color-accent-dim) 0%, var(--color-info) 100%);
   transform: translateX(10px);
 }
 
 .checkmark {
-  color: #28a745;
+  color: var(--color-success);
   font-size: 1.2rem;
   font-weight: bold;
-  background: white;
+  background: var(--color-card);
   width: 30px;
   height: 30px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+  box-shadow: 0 2px 8px rgba(127, 174, 140, 0.3);
 }
 
 .advantage-text {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #2d2d2d;
+  color: var(--color-white);
 }
 
 /* Value Section - Consistent with other tech sections */
@@ -242,7 +242,7 @@
 .value-subtitle {
   font-size: 1.4rem;
   font-weight: 400;
-  color: #666;
+  color: var(--color-muted);
   margin-bottom: 30px;
   font-style: italic;
 }
@@ -250,14 +250,14 @@
 .highlights-wrapper {
   margin-top: 50px;
   padding-top: 40px;
-  border-top: 2px solid #e9ecef;
+  border-top: 2px solid var(--color-border-strong);
 }
 
 .highlights-subtitle {
   font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 30px;
-  color: #2d2d2d;
+  color: var(--color-white);
   position: relative;
 }
 
@@ -269,7 +269,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background: linear-gradient(90deg, #007bff, #0056b3);
+  background: linear-gradient(90deg, var(--color-accent), var(--color-link-hover));
   border-radius: 2px;
 }
 

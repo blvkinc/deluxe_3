@@ -1,6 +1,6 @@
 .br-page {
   min-height: 100vh;
-  background: #000;
+  background: var(--color-bg);
   padding-top: 100px;
   padding-bottom: 80px;
 }
@@ -21,7 +21,7 @@
   font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 3px;
-  color: #fff;
+  color: var(--color-white);
   margin: 0 0 0.6rem;
   text-transform: uppercase;
   position: relative;
@@ -36,13 +36,13 @@
   transform: translateX(-50%);
   width: 50px;
   height: 2px;
-  background: #fff;
+  background: var(--color-white);
   border-radius: 2px;
 }
 
 .br-header p {
   font-size: 0.88rem;
-  color: #ababab;
+  color: var(--color-muted);
   margin: 1.2rem 0 0;
   letter-spacing: 0.5px;
   line-height: 1.6;
@@ -58,7 +58,7 @@
 }
 
 .br-card {
-  background: #0a0a0a;
+  background: var(--color-card);
   border: none;
   padding: 1.4rem;
   cursor: pointer;
@@ -71,11 +71,11 @@
 }
 
 .br-card:hover {
-  background: #141414;
+  background: var(--color-panel);
 }
 
 .br-card--selected {
-  background: #141414;
+  background: var(--color-panel);
   outline: 1.5px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -88,7 +88,7 @@
 .br-card-icon {
   width: 40px;
   height: 40px;
-  background: #1a1a1a;
+  background: var(--color-card);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 6px;
   display: flex;
@@ -115,14 +115,14 @@
 }
 
 .br-check--active {
-  background: #fff;
-  border-color: #fff;
+  background: var(--color-white);
+  border-color: var(--color-white);
 }
 
 .br-card h3 {
   font-size: 0.85rem;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-white);
   margin: 0;
   line-height: 1.4;
   letter-spacing: 0.5px;
@@ -130,7 +130,7 @@
 
 .br-card p {
   font-size: 0.75rem;
-  color: #666;
+  color: var(--color-muted);
   margin: 0;
   line-height: 1.6;
 }
@@ -138,7 +138,7 @@
 /* Error message */
 .br-error-msg {
   font-size: 0.78rem;
-  color: #ababab;
+  color: var(--color-muted);
   text-align: center;
   margin-bottom: 1rem;
   letter-spacing: 1px;
@@ -148,7 +148,7 @@
 
 /* Form wrapper */
 .br-form-wrapper {
-  background: #0a0a0a;
+  background: var(--color-card);
   border: 1px solid rgba(255, 255, 255, 0.08);
   padding: 2rem;
 }
@@ -156,7 +156,7 @@
 .br-form-area h3 {
   font-size: 1rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-white);
   margin: 0 0 0.4rem;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -164,7 +164,7 @@
 
 .br-form-area > p {
   font-size: 0.8rem;
-  color: #666;
+  color: var(--color-muted);
   margin: 0 0 1.5rem;
   line-height: 1.65;
 }
@@ -184,7 +184,7 @@
 
 .br-field label {
   font-size: 0.68rem;
-  color: #666;
+  color: var(--color-muted);
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
@@ -194,8 +194,8 @@
   font-size: 0.85rem;
   padding: 9px 12px;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  background: #141414;
-  color: #fff;
+  background: var(--color-panel);
+  color: var(--color-text);
   outline: none;
   width: 100%;
   box-sizing: border-box;
@@ -206,7 +206,7 @@
 }
 
 .br-field input::placeholder {
-  color: #333;
+  color: var(--color-muted);
 }
 
 .br-field input:focus,
@@ -219,8 +219,8 @@
 }
 
 .br-field select option {
-  background: #141414;
-  color: #fff;
+  background: var(--color-panel);
+  color: var(--color-text);
 }
 
 .br-consent {
@@ -229,13 +229,13 @@
   gap: 10px;
   margin: 14px 0 18px;
   font-size: 0.75rem;
-  color: #666;
+  color: var(--color-muted);
   line-height: 1.6;
 }
 
 .br-consent input[type="checkbox"] {
   margin-top: 2px;
-  accent-color: #fff;
+  accent-color: var(--color-accent);
   flex-shrink: 0;
 }
 
@@ -246,15 +246,15 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  background: #fff;
-  color: #000;
+  background: var(--color-accent);
+  color: var(--color-bg);
   border: none;
   cursor: pointer;
   transition: background 0.2s, transform 0.1s;
 }
 
 .br-btn:hover {
-  background: #e8e8e8;
+  background: var(--color-link-hover);
 }
 
 .br-btn:active {
@@ -262,8 +262,8 @@
 }
 
 .br-btn:disabled {
-  background: #222;
-  color: #555;
+  background: var(--color-card-alt);
+  color: var(--color-muted);
   cursor: not-allowed;
 }
 
@@ -290,13 +290,13 @@
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--color-white);
   margin: 0 0 0.6rem;
 }
 
 .br-success p {
   font-size: 0.8rem;
-  color: #666;
+  color: var(--color-muted);
   margin: 0 0 1.5rem;
   line-height: 1.65;
 }
@@ -315,23 +315,23 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   font-size: 0.8rem;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-white);
   letter-spacing: 1px;
   cursor: pointer;
-  background: #141414;
+  background: var(--color-panel);
   text-decoration: none;
   transition: background 0.2s, border-color 0.2s;
 }
 
 .br-link-btn:hover {
-  background: #1a1a1a;
+  background: var(--color-card);
   border-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Footer note */
 .br-note {
   font-size: 0.7rem;
-  color: #333;
+  color: var(--color-muted);
   text-align: center;
   margin-top: 1.4rem;
   letter-spacing: 0.5px;

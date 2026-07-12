@@ -46,7 +46,7 @@
 
 /* Partners Section - White Background */
 .partnercomponent {
-  background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-panel) 100%);
   padding: 80px 40px;
   position: relative;
   box-shadow: 
@@ -61,7 +61,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #000000, #333333, #000000);
+  background: linear-gradient(90deg, var(--color-bg), var(--color-muted), var(--color-bg));
 }
 
 /* Video Component Enhancements */
@@ -85,7 +85,7 @@
 
 /* Modern Section Transitions */
 .component + .component {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--color-border);
 }
 
 /* Responsive Enhancements */

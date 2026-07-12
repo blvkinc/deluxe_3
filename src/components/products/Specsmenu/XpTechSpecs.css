@@ -6,9 +6,9 @@
 }
 
 .xptech_accordionTitle {
-  background-color: #fff;
+  background-color: var(--color-card);
   width: 100%;
-  color: #000;
+  color: var(--color-white);
   padding: 2em;
   display: flex;
   justify-content: left;
@@ -34,13 +34,13 @@
 }
 
 .xptech_accordionTitle:hover {
-  background-color: #cdcdcd;
-  color: #000000;
+  background-color: var(--color-elevated);
+  color: var(--color-white);
 }
 
 .xptech_accordionTitleActive {
-  background-color: #fafafa;
-  color: #000000;
+  background-color: var(--color-elevated);
+  color: var(--color-white);
 }
 
 .xptech_accordionTitleActive:before {
@@ -50,8 +50,8 @@
 }
 
 .xptech_accordionItem {
-  background-color: #fafafa;
-  color: #000;
+  background-color: var(--color-panel);
+  color: var(--color-text);
   font-size: 1em;
   line-height: 1.5em;
   padding: 1em 2em 1em 2em;

@@ -2,7 +2,7 @@
 #email,
 #mobile,
 #message {
-  background-color: #ffffff;
+  background-color: var(--color-card);
 }
 
 #desc {
@@ -51,8 +51,8 @@
   grid-template-columns: 1fr 1fr; /* Two columns */
   grid-gap: 10px; /* Add some spacing between columns */
   width: 600px;
-  background-color: #000000;
-  border: 0px solid #ccc;
+  background-color: var(--color-bg);
+  border: 0px solid var(--color-border-strong);
   border-radius: 10px;
   padding: 20px;
 }
@@ -74,7 +74,7 @@
 .input__group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-border-strong);
   border-radius: 5px;
 }
 
@@ -88,8 +88,8 @@
 
 button {
   padding: 10px 20px;
-  background-color: #141414;
-  color: #fff;
+  background-color: var(--color-panel);
+  color: var(--color-white);
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -99,8 +99,8 @@ button {
 
 .book {
   padding: 10px 20px;
-  background-color: #3c4c5a;
-  color: #fff;
+  background-color: var(--color-elevated);
+  color: var(--color-white);
   border: none;
   border-radius: 5px;
   font-size: 16px;
@@ -109,15 +109,15 @@ button {
 }
 
 .book:hover {
-  background-color: #dedede;
-  color: #ffffff;
-  color: #7a0202;
+  background-color: var(--color-link-hover);
+  color: var(--color-white);
+  color: var(--color-danger);
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #dedede;
-  color: #141414;
+  background-color: var(--color-link-hover);
+  color: var(--color-panel);
   cursor: pointer;
 }
 

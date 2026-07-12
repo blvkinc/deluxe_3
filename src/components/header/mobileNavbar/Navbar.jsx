@@ -137,7 +137,7 @@ const Navbar = () => {
                         style={{ height: "50px", width: "auto" }}
                       />
                     </Link>
-                    <p style={{ color: "black" , fontSize: "12px" }}>DELUXE CARAVANS X INFINITE RV</p>
+                    <p style={{ color: "white" , fontSize: "12px" }}>DELUXE CARAVANS X INFINITE RV</p>
                    </li>
 
                   {/* FAMILY MENU */}

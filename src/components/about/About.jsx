@@ -27,7 +27,7 @@ function About() {
   return (
     <div
       className="aboutcontainer"
-      style={{ backgroundColor: "#fff", color: "#000" }}
+      style={{ backgroundColor: "var(--color-bg)", color: "var(--color-text)" }}
     >
       <Helmet>
         <title>About Deluxe Caravans | Australian Caravan Manufacturer</title>

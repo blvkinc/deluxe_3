@@ -324,7 +324,7 @@ function BuildJourney() {
       <section className="bj-journey" id="bj-journey">
         <div className="bj-journey-intro">
           <div className="bj-reveal">
-            <p className="bj-section-label"><span style={{ display:'inline-block', width:'24px', height:'1px', background:'#3c4c5a', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>From first message to open road</p>
+            <p className="bj-section-label"><span style={{ display:'inline-block', width:'24px', height:'1px', background:'var(--color-accent)', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>From first message to open road</p>
             <h2 className="bj-section-title">HOW YOUR BUILD WORKS</h2>
           </div>
           <p className="bj-section-body bj-reveal bj-reveal-delay-1">
@@ -359,7 +359,7 @@ function BuildJourney() {
       <section className="bj-build-window">
         <div className="bj-bw-grid">
           <div className="bj-bw-left bj-reveal">
-            <p className="bj-section-label"><span style={{ display:'inline-block', width:'24px', height:'1px', background:'#3c4c5a', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>Our signature program</p>
+            <p className="bj-section-label"><span style={{ display:'inline-block', width:'24px', height:'1px', background:'var(--color-accent)', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>Our signature program</p>
             <h2 className="bj-section-title">THE BUILD<br />WINDOW</h2>
             <p className="bj-section-body">No other Australian manufacturer gives you this level of access to your own build. It's not just a feature — it's the reason our customers describe buying remotely as one of the best decisions they've made.</p>
             <div className="bj-bw-features">
@@ -401,7 +401,7 @@ function BuildJourney() {
       <section className="bj-reviews">
         <div className="bj-reviews-header">
           <div className="bj-reveal">
-            <p className="bj-section-label"><span style={{ display:'inline-block', width:'24px', height:'1px', background:'#3c4c5a', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>From people who bought exactly this way</p>
+            <p className="bj-section-label"><span style={{ display:'inline-block', width:'24px', height:'1px', background:'var(--color-accent)', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>From people who bought exactly this way</p>
             <h2 className="bj-section-title">WHAT OUR<br />OWNERS SAY</h2>
           </div>
           <div className="bj-reviews-rating bj-reveal bj-reveal-delay-2">
@@ -435,7 +435,7 @@ function BuildJourney() {
       {/* ENQUIRY */}
       <section className="bj-enquiry" id="bj-enquiry">
         <div className="bj-enquiry-left bj-reveal">
-          <p className="bj-section-label"><span style={{ display:'inline-block', width:'24px', height:'1px', background:'#3c4c5a', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>Start your build</p>
+          <p className="bj-section-label"><span style={{ display:'inline-block', width:'24px', height:'1px', background:'var(--color-accent)', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>Start your build</p>
           <h2 className="bj-section-title">READY TO<br />SEE INSIDE?</h2>
           <p className="bj-section-body">Fill in the form and your dedicated Deluxe contact will be in touch within 24 hours. No scripts, no call centres — just a real conversation about your next adventure.</p>
           <div className="bj-trust-signals">
@@ -511,11 +511,11 @@ function BuildJourney() {
       <section className="bj-faq">
         <div className="bj-faq-grid">
           <div className="bj-reveal">
-            <p className="bj-section-label"><span style={{ display:'inline-block', width:'24px', height:'1px', background:'#3c4c5a', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>Common questions</p>
+            <p className="bj-section-label"><span style={{ display:'inline-block', width:'24px', height:'1px', background:'var(--color-accent)', marginRight:'12px', flexShrink:0, verticalAlign:'middle' }}></span>Common questions</p>
             <h2 className="bj-section-title">THINGS PEOPLE<br />ASK US</h2>
             <p className="bj-section-body" style={{ marginTop: '20px' }}>
               If your question isn't here, call us directly on{' '}
-              <strong style={{ color: '#ffffff' }}>+61 483 939 904</strong> or start an enquiry above.
+              <strong style={{ color: 'var(--color-white)' }}>+61 483 939 904</strong> or start an enquiry above.
             </p>
           </div>
           <div className="bj-faq-list bj-reveal bj-reveal-delay-1">

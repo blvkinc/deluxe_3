@@ -40,19 +40,37 @@
 
 
 :root{
-  --primary-bg: #000000;
-  --secondary-bg: #141414;
-  --text-primary: #ffffff;
-  --text-secondary: #ababab;
-  --accent-color: #ffffff;
-  --border-color: rgba(255, 255, 255, 0.2);
-  --overlay-bg: rgba(0, 0, 0, 0.7);
+  --color-bg: #3C4C52;
+  --color-panel: #344049;
+  --color-card: #2d373d;
+  --color-card-alt: #222b30;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-strong: rgba(255, 255, 255, 0.2);
+  --color-accent: #c3beb6;
+  --color-accent-dim: rgba(195, 190, 182, 0.12);
+  --color-link-hover: #e4e0da;
+  --color-elevated: #3f4d55;
+  --color-muted: #b8b4ae;
+  --color-text: #d9d9d9;
+  --color-white: #f4f4f4;
+  --color-overlay: rgba(0, 0, 0, 0.7);
+  --color-danger: #b3554b;
+  --color-success: #7fae8c;
+  --color-info: #8fa8c9;
+
+  --primary-bg: var(--color-bg);
+  --secondary-bg: var(--color-panel);
+  --text-primary: var(--color-white);
+  --text-secondary: var(--color-muted);
+  --accent-color: var(--color-accent);
+  --border-color: var(--color-border-strong);
+  --overlay-bg: var(--color-overlay);
 }
 
-/* Force black background on body and html */
+/* Force theme background on body and html */
 html, body {
-  background-color: #000000 !important;
-  color: #ffffff !important;
+  background-color: var(--color-bg) !important;
+  color: var(--color-text) !important;
 }
 
 /* Reset any white backgrounds that might persist */

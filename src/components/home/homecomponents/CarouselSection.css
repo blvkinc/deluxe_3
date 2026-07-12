@@ -3,8 +3,8 @@
   max-width: 1600px;
   margin: 0 auto;
   padding: 40px 20px;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   margin-top: 15%;
 }
 
@@ -19,8 +19,8 @@
   padding: 15px 30px;
   font-size: 1.2rem;
   background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
@@ -28,8 +28,8 @@
 }
 
 .toggle-button.active {
-  background: #fff;
-  color: #000;
+  background: var(--color-white);
+  color: var(--color-bg);
 }
 
 .toggle-button:hover {
@@ -59,7 +59,7 @@
   height: 100%;
   transition: transform 0.5s ease;
   text-decoration: none;
-  color: #fff;
+  color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,7 @@
   height: 100%;
   object-fit: contain;
   border-radius: 8px;
-  background-color: #000;
+  background-color: var(--color-bg);
   padding: 20px;
 }
 
@@ -102,7 +102,7 @@
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: var(--color-white);
   border: none;
   width: 60px;
   height: 60px;
@@ -142,7 +142,7 @@
 }
 
 .carousel-dot.active {
-  background: #fff;
+  background: var(--color-white);
 }
 
 @media (max-width: 1200px) {

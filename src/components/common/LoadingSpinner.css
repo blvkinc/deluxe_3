@@ -36,7 +36,7 @@
 }
 
 .loading-spinner.white .spinner-ring {
-  border-top-color: #ffffff;
+  border-top-color: var(--color-white);
 }
 
 .loading-spinner.accent .spinner-ring {

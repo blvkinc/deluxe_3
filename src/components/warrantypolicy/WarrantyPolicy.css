@@ -58,7 +58,7 @@
 
 .service-type ul li:before {
   content: "•";
-  color: #000;
+  color: var(--color-muted);
   font-weight: bold;
   position: absolute;
   left: -20px;

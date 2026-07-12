@@ -1,14 +1,14 @@
 /* Footer Container */
 .footer {
-  background-color: #000000;
-  color: white;
+  background-color: var(--color-card);
+  color: var(--color-white);
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center; /* Center the content horizontally */
   text-align: left; /* Align the text to the left */
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  /* margin-top: 10vh;
+  margin-bottom: 10vh; */
 }
 
 /* Logo */
@@ -42,7 +42,7 @@
 }
 
 .social-links a {
-  color: white;
+  color: var(--color-white);
   font-size: 20px;
   text-decoration: none;
 }
@@ -55,13 +55,13 @@
 .footer-partnership {
   font-size: 14px;
   font-weight: bold;
-  color: white;
+  color: var(--color-white);
   margin-top: 8px;
 }
 
 .footer-tagline {
   font-size: 12px;
-  color: #aaaaaa;
+  color: var(--color-muted);
   margin-top: 4px;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .footer-link {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   margin-bottom: 5px;
   font-size: 14px;

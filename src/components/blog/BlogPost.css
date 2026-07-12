@@ -2,17 +2,17 @@
 
 /* ── Page shell ── */
 .blogpost-page {
-  --bp-bg:           #3c4c52;
-  --bp-panel:        #3c4c5a;
-  --bp-card:         #4d4c4c;
-  --bp-border:       rgba(255, 255, 255, 0.1);
-  --bp-border-str:   rgba(255, 255, 255, 0.2);
-  --bp-accent:       #c3beb6;
-  --bp-accent-dim:   rgba(195, 179, 182, 0.15);
-  --bp-secondary:    #4d4c4c;
-  --bp-muted:        #c3beb6;
-  --bp-text:         #d9d9d9;
-  --bp-white:        #f4f4f4;
+  --bp-bg:           var(--color-bg);
+  --bp-panel:        var(--color-panel);
+  --bp-card:         var(--color-card);
+  --bp-border:       var(--color-border);
+  --bp-border-str:   var(--color-border-strong);
+  --bp-accent:       var(--color-accent);
+  --bp-accent-dim:   var(--color-accent-dim);
+  --bp-secondary:    var(--color-panel);
+  --bp-muted:        var(--color-muted);
+  --bp-text:         var(--color-text);
+  --bp-white:        var(--color-white);
   --bp-font-display: 'Bebas Neue', sans-serif;
   --bp-font-body:    'DM Sans', sans-serif;
   --bp-font-mono:    'DM Mono', monospace;
@@ -28,45 +28,45 @@
 
 /* ── Light variant (e.g. Maintenance page) ── */
 .blogpost-page--light {
-  --bp-bg:         #000000;
-  --bp-panel:      #0a0a0a;
-  --bp-card:       #111111;
-  --bp-border:     rgba(255, 255, 255, 0.1);
-  --bp-border-str: rgba(255, 255, 255, 0.18);
-  --bp-accent-dim: rgba(60, 76, 82, 0.18);
-  --bp-secondary:  #4d4c4c;
-  --bp-muted:      #ffffff;
-  --bp-text:       #d9d9d9;
-  --bp-white:      #ffffff;
+  --bp-bg:         var(--color-bg);
+  --bp-panel:      var(--color-card);
+  --bp-card:       var(--color-card);
+  --bp-border:     var(--color-border);
+  --bp-border-str: var(--color-border-strong);
+  --bp-accent-dim: var(--color-accent-dim);
+  --bp-secondary:  var(--color-panel);
+  --bp-muted:      var(--color-muted);
+  --bp-text:       var(--color-text);
+  --bp-white:      var(--color-white);
 }
 
 .blogpost-page--light .blogpost-accordionTitle {
-  background-color: #111111;
+  background-color: var(--color-card);
 }
 
 .blogpost-page--light .blogpost-accordionTitleActive,
 .blogpost-page--light .blogpost-accordionTitle:hover {
-  background-color: #1a1a1a;
+  background-color: var(--color-elevated);
 }
 
 .blogpost-page--light .blogpost-accordionItem {
-  background-color: #0a0a0a;
+  background-color: var(--color-card);
 }
 
 .blogpost-page--light .blogpost-strip {
-  background: #3C4C52;
+  background: var(--color-bg);
 }
 
 .blogpost-page--light .blogpost-service-note {
-  border-left-color: #3C4C52;
+  border-left-color: var(--color-bg);
 }
 
 .blogpost-page--light .blogpost-entry--intro .blogpost-service-note {
-  border-left-color: #3C4C52;
+  border-left-color: var(--color-bg);
 }
 
 .blogpost-page--light .blogpost-entry-body ul li::before {
-  color: #3C4C52;
+  color: var(--color-bg);
 }
 
 /* ── HERO ── */

@@ -51,7 +51,7 @@ const warrantyFaqSchema = {
 
 const WarrantyPolicy = () => {
   return (
-    <div style={{ backgroundColor: "#fff", color: "#000" }}>
+    <div style={{ backgroundColor: "var(--color-bg)", color: "var(--color-text)" }}>
       <Helmet>
         <title>Warranty Policy | Deluxe Caravans</title>
         <meta name="description" content="Deluxe Caravans structural warranty explained. Nationwide repairers, clear claims process, and cover that travels with you anywhere in Australia. Learn more." />
