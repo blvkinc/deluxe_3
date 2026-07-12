@@ -68,7 +68,7 @@ const Specs21 = () => {
         Vehicle Connection: 12-Pin Trailer Plug
         12V Power Outlet: Weatherproof External 12V Socket
         240V Power Outlet: Weatherproof External 240V Single Outlet
-        Solar System: 3 x 170W Solar Panels (510W Total)
+        Solar System: 3 x 200W Solar Panels (600W Total)
         Water Tank Monitoring: 3 x Water Tank Level Probes
         Safety System: Reverse Camera with In-Cabin Display
         TV Antenna: Multi-Directional Antenna (Horizontal & Vertical Signal Reception)
