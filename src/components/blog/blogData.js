@@ -166,7 +166,7 @@ export const blogPosts = [
         paragraphs: [
           "'Off road capable' is not a regulated term. Any manufacturer can use it.",
           "The questions that actually tell you something: what suspension system? What's the ground clearance when loaded? What's the chassis rated to? Has anyone independently tested it on unsealed roads?",
-          "Tuff Ride airbag suspension, which Deluxe uses, absorbs the kind of corrugated road impact that standard independent suspension wasn't designed for. That's a specific, verifiable claim. 'Off road capable' is not.",
+          "Tuffride airbag suspension, which Deluxe uses, absorbs the kind of corrugated road impact that standard independent suspension wasn't designed for. That's a specific, verifiable claim. 'Off road capable' is not.",
           "If you're planning to go anywhere unsealed — and if you're doing the Big Lap with kids you almost certainly are — get specific answers before you buy.",
         ],
       },
@@ -374,7 +374,7 @@ export const blogPosts = [
         title: "Suspension and ride comfort",
         paragraphs: [
           "Long days on unsealed roads are part of Australian travel. Standard suspension handles sealed highways fine. On a corrugated dirt track, everything in the van vibrates, dishes break, joints loosen, and the cumulative stress on the structure is significant.",
-          "Airbag suspension — like the Tuff Ride system in Deluxe vans — genuinely absorbs more of that impact. It's not a gimmick. For retirees who want to get off sealed roads and see the country properly, it makes a material difference to both the van's longevity and the comfort of the trip.",
+          "Airbag suspension — like the Tuffride system in Deluxe vans — genuinely absorbs more of that impact. It's not a gimmick. For retirees who want to get off sealed roads and see the country properly, it makes a material difference to both the van's longevity and the comfort of the trip.",
         ],
       },
       {

@@ -131,7 +131,7 @@ const SpecsEclipse22 = () => {
     },
     {
       title: "SUSPENSION",
-      content: `Tuff Ride - 3.5T`,
+      content: `Tuffride - 3.5T`,
     },
   ];
 

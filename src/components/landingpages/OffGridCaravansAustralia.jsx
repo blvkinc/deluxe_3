@@ -26,7 +26,7 @@ const reviews = [
 ];
 
 const trustItems = [
-  '200Ah Lithium · 100% DoD · Standard in XP-TECH',
+  '200Ah Lithium · Standard in XP-TECH',
   '4 × 200W Solar Panels',
   '3,000W Pure Sine Inverter',
   'Enerdrive or Victron Battery Monitor',
@@ -54,28 +54,40 @@ const powerCapability = [
 
 const models = [
   {
+    name: "STORMBREAKER 18'6\"",
+    price: 'From $89,900',
+    image: 'https://deluxcaravan.b-cdn.net/assets/header/186.webp',
+    xptechLink: '/stormbreaker18familyxptech',
+    expeditionLink: '/stormbreaker18familyoffroad',
+    specs: ['XP-TECH power available', '200Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Double bunk or triple bunk fit-out'],
+    badge: 'Smallest Family Model · Serious Off-Grid Travel',
+  },
+  {
+    name: "STORMBREAKER 23'11\"",
+    price: 'From $96,900',
+    image: 'https://deluxcaravan.b-cdn.net/assets/header/2311.webp',
+    xptechLink: '/stormbreaker23familyxptech',
+    expeditionLink: '/stormbreaker23familyoffroad',
+    specs: ['XP-TECH power available', '200Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Up to 6 bunks'],
+    badge: 'Largest Family Model · Off-Grid Family Adventures',
+  },
+  {
+    name: "ECLIPSE 18'6\"",
+    price: 'From $89,000',
+    image: 'https://deluxcaravan.b-cdn.net/assets/header/216.webp',
+    xptechLink: '/eclipse18couplesxptech',
+    expeditionLink: '/eclipse18couplesoffroad',
+    specs: ['XP-TECH power available', '200Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Full couples fit-out'],
+    badge: 'Smallest Couples Model · Serious Off-Grid Couples',
+  },
+  {
     name: "ECLIPSE 22'",
     price: 'From $98,900',
     image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
-    link: '/eclipse22couplesxptech',
-    specs: ['XP-TECH power — standard', '200Ah lithium · 800W solar', 'Couples off-grid range', 'Largest Eclipse model'],
-    badge: '⭐ Hero Off-Grid Model',
-  },
-  {
-    name: "ECLIPSE 21'6\"",
-    price: 'From $96,900',
-    image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
-    link: '/eclipse21couplesxptech',
-    specs: ['XP-TECH power — standard', '200Ah lithium · 800W solar', 'Queen bed configuration', 'Full couples fit-out'],
-    badge: 'Couples XP-TECH',
-  },
-  {
-    name: "STORMBREAKER XP-TECH",
-    price: 'From $129,900',
-    image: 'https://deluxcaravan.b-cdn.net/assets/Carousel/XP-TECH-SB186-header%5B2%5Dnewer.webp',
-    link: '/stormbreaker21familyxptech',
-    specs: ['XP-TECH power on family models', 'Triple bunk available', 'Off-grid + off-road', 'Full family configuration'],
-    badge: 'Family XP-TECH',
+    xptechLink: '/eclipse22couplesxptech',
+    expeditionLink: '/eclipse22couplesoffroad',
+    specs: ['XP-TECH power available', '200Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Queen or king bed layout'],
+    badge: 'Largest Couples Model · Serious Off-Grid Travel',
   },
 ];
 
@@ -145,7 +157,7 @@ export default function OffGridCaravansAustralia() {
           </p>
           <div className="lp-cta-row">
             <a href="/appointment" className="lp-btn-primary" onClick={handleCTAClick}>Book a Video Call</a>
-            <a href="#xptech-models" className="lp-btn-ghost">View the Off gride range</a>
+            <a href="#xptech-models" className="lp-btn-ghost">View the Off grid range</a>
           </div>
         </div>
       </div>
@@ -227,7 +239,7 @@ export default function OffGridCaravansAustralia() {
         </div>
         <div className="lp-models-grid">
           {models.map((m, i) => (
-            <Link key={i} to={m.link} className={`lp-model-card lp-reveal lp-reveal-d${(i % 2) + 1}`}>
+            <div key={i} className={`lp-model-card lp-reveal lp-reveal-d${(i % 2) + 1}`}>
               <img src={m.image} alt={m.name} className="lp-model-card-img" loading="lazy" />
               <div className="lp-model-card-body">
                 <span className="lp-model-card-badge">{m.badge}</span>
@@ -236,10 +248,22 @@ export default function OffGridCaravansAustralia() {
                   {m.specs.map((s, j) => <li key={j}>{s}</li>)}
                 </ul>
                 <div className="lp-model-card-price">{m.price}</div>
-                <div className="lp-model-card-cta">View {m.name.split(' ').slice(0, 2).join(' ')} →</div>
+                <div className="lp-model-card-cta-row">
+                  <Link to={m.expeditionLink} className="lp-model-card-cta">View Expedition →</Link>
+                  <Link to={m.xptechLink} className="lp-model-card-cta">View XP-TECH →</Link>
+                </div>
               </div>
-            </Link>
+            </div>
           ))}
+        </div>
+        <div className="lp-reveal" style={{ marginTop: '40px', textAlign: 'center' }}>
+          <p className="lp-section-body" style={{ marginBottom: '16px' }}>Browse all off-grid models</p>
+          <div className="lp-cta-row" style={{ justifyContent: 'center', flexWrap: 'wrap' }}>
+            <Link to="/familyoffroad" className="lp-btn-primary">Entire Family Expedition Range</Link>
+            <Link to="/familyxptech" className="lp-btn-ghost">Entire Family XP-TECH Range</Link>
+            <Link to="/couplesoffroad" className="lp-btn-primary">Entire Couples Expedition Range</Link>
+            <Link to="/couplesxptech" className="lp-btn-ghost">Entire Couples XP-TECH Range</Link>
+          </div>
         </div>
       </div>
 
@@ -248,7 +272,7 @@ export default function OffGridCaravansAustralia() {
         <div className="lp-reveal" style={{ marginBottom: '48px' }}>
           <p className="lp-eyebrow"><span className="lp-eyebrow-line" />The honest comparison</p>
           <h2 className="lp-section-title">"Solar ready" vs actually off-grid: what's the difference?</h2>
-          <p className="lp-section-body" style={{ marginTop: '16px' }}>"Solar ready" means wiring in place for you to add solar later. It's a starting point, not a system. Here's what XP-TECH range actually delivers.</p>
+          <p className="lp-section-body" style={{ marginTop: '16px' }}>"Solar ready" means wiring in place for you to add solar later. It's a starting point, not a system. Here's what the XP-TECH range actually delivers.</p>
         </div>
         <div className="lp-table-wrap lp-reveal">
           <table className="lp-table">
@@ -310,7 +334,7 @@ export default function OffGridCaravansAustralia() {
       <div className="lp-final-cta lp-reveal">
         <p className="lp-eyebrow" style={{ justifyContent: 'center' }}><span className="lp-eyebrow-line" />Go properly off grid</p>
         <h2 className="lp-section-title">Ready to go properly off grid?</h2>
-        <p className="lp-section-body">Book a Google Meet call with the team. We can walk you through the XP-TECH system live on screen and answer every question about what it will and won't run on your trip.</p>
+        <p className="lp-section-body">Book a video call with the team. We can walk you through the OFF-GRID range live on screen and answer every question about what it will and won't run on your trip.</p>
         <div className="lp-cta-row">
           <a href="/appointment" className="lp-btn-primary" onClick={handleCTAClick}>Book a Video Call</a>
           <a href="/contact" className="lp-btn-ghost">Request a Build Quote</a>

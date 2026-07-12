@@ -49,7 +49,7 @@ const models = [
       'Double bunk or triple bunk layout',
       'Families of up to 5',
       'Aluminium or composite frame (timber also available)',
-      'Tuff Ride airbag suspension ready (Cruisemaster and TerraGlide ready also available)',
+      'Tuffride airbag suspension(Ready) (Cruisemaster and TerraGlide(Ready) also available)',
       'Heavy off road spec',
       'Serious remote travel',
       'Adventure families',
@@ -124,7 +124,7 @@ export default function FamilyCaravansAustralia() {
         <div className="lp-hero-inner">
           <p className="lp-hero-eyebrow">
             <span className="lp-eyebrow-line" />
-            Australian Made · Family Expedition Range
+            Australian Made · Family Range
           </p>
           <h1 className="lp-hero-title">FAMILY CARAVANS: BUILT FOR THE BIG AUSTRALIAN LAP AND BEYOND.</h1>
           <p className="lp-hero-intro">
@@ -221,7 +221,7 @@ export default function FamilyCaravansAustralia() {
         <div className="lp-two-col" style={{ alignItems: 'stretch' }}>
           <div className="lp-reveal" style={{ display: 'flex', flexDirection: 'column' }}>
             <p className="lp-eyebrow"><span className="lp-eyebrow-line" />Double Bunk  ( 18’6”, 19’6”, 21’6”,23’11”, 20’,20’6”,22’)</p>
-            <p className="lp-section-body">A double bunk suits families of three or four where the kids are young enough to share without ongoing territorial disputes. Two bunks stacked is straightforward, and the floor space you save is real. All the STormbreaker and Riptide models run this configuration and hit the balance between size, towing weight and livability well.</p>
+            <p className="lp-section-body">A double bunk suits families of three or four where the kids are young enough to share without ongoing territorial disputes. Two bunks stacked is straightforward, and the floor space you save is real. All the Stormbreaker and Riptide models run this configuration and hit the balance between size, towing weight and livability well.</p>
             <br />
             <p className="lp-section-body">If you have two kids under ten and a mid-size SUV, this is likely your starting point.</p>
             <div className="lp-img-placeholder" style={{ marginTop: 'auto', paddingTop: '24px' }}>
@@ -232,7 +232,7 @@ export default function FamilyCaravansAustralia() {
             <p className="lp-eyebrow"><span className="lp-eyebrow-line" />Triple Bunk ( 18’6”, 19’6”, 21’6”,23’11”, 20’,20’6”,22’)</p>
             <p className="lp-section-body">A triple bunk layout becomes necessary — not just convenient — once you've got three kids or two kids who've hit the age where sharing a bunk stops being acceptable. All the Stormbreaker and Riptide models are purpose-built for families who need to fit everyone comfortably for months at a time, not just weekends.</p>
             <br />
-            <p className="lp-section-body">The extra bunk has flow-on effects: longer van, different kitchen positioning, different storage layout throughout. It's not just one more bunk — it's a different product. For families planning the Big Lap with three kids, the Deluxe's Strombreaker or Riptide is the clear recommendation.</p>
+            <p className="lp-section-body">The extra bunk has flow-on effects: longer van, different kitchen positioning, different storage layout throughout. It's not just one more bunk — it's a different product. For families planning the Big Lap with three kids, Deluxe's Stormbreaker or Riptide is the clear recommendation.</p>
             <p>All models can be customized for bunk layouts - double bunk or triple bunk. Stormbreaker 23’11 can go upto 6 bunks.</p>
             <div className="lp-img-placeholder" style={{ marginTop: 'auto', paddingTop: '24px' }}>
               <img src={scenicImage02} alt="Stormbreaker 21 triple bunk layout" />
@@ -250,15 +250,10 @@ export default function FamilyCaravansAustralia() {
           </div>
           <div className="lp-reveal lp-reveal-d2">
             <div className="lp-note">
-            <p><strong>Composite frame:</strong> lighter, moisture-proof, warrantied against structural deterioration. Timber absorbs moisture and can deteriorate invisibly under the walls of a caravan. Our composite frame doesn't.
-            </p> 
-            <p>Our aluminium frames are completely timber-free.
-</p><p>Our timber frames are also available with timber-free wall linings. 
-</p><p>Whichever frame you choose, every caravan is built to the same exceptional standard of quality and craftsmanship. 
-</p>
+            <p><strong>Composite frame:</strong> lighter, moisture-proof, warrantied against structural deterioration. Timber absorbs moisture and can deteriorate invisibly under the walls of a caravan. Our composite frame doesn't. Our aluminium frames are also completely timber-free. Our timber frames are also available with timber-free wall linings. Whichever frame you choose, every caravan is built to the same exceptional standard of quality and craftsmanship.</p>
             </div>
             <div className="lp-note">
-              <strong>Tuff Ride airbag suspension(Ready):</strong> absorbs the corrugated road impact that standard independent suspension passes directly into the van. For families doing the Big Lap, this is the difference between arriving intact and arriving shaken. Cruisemaster and Terraglide(Ready) also available.
+              <strong>Tuffride airbag suspension(Ready):</strong> absorbs the corrugated road impact that standard independent suspension passes directly into the van. For families doing the Big Lap, this is the difference between arriving intact and arriving shaken. Cruisemaster and Terraglide(Ready) also available.
             </div>
             <div className="lp-note">
               <strong>Dust reduction:</strong> a practical feature families notice immediately. Fine outback dust will find its way through any gap. A proper dust reduction system keeps the van livable on red dirt.
@@ -277,7 +272,7 @@ export default function FamilyCaravansAustralia() {
           {[
             { label: 'Off-grid school on the road', desc: 'With Starlink and the right power system, distance education is genuinely manageable from anywhere in Australia. The XP-TECH models comes with a starlink port and it’s power capabilities runs the connection indefinitely.', img: scenicImage07 },
             { label: 'Enough storage for the whole family', desc: 'Three months of clothing, bikes, wetsuits, fishing gear, school materials and outdoor furniture. The rear storage and storage design throughout is what makes it livable rather than manageable.', img: scenicImage04 },
-            { label: 'Privacy and space for parents too', desc: 'The awning, the separate sleeping areas, and  or king bed that isn\'t a double. A Deluxe is designed for adults who also need to feel comfortable — not just kids who can sleep anywhere.', img: scenicImage05 },
+            { label: 'Privacy and space for parents too', desc: 'The awning, the separate sleeping areas, and queen or king bed that isn\'t a double. A Deluxe is designed for adults who also need to feel comfortable — not just kids who can sleep anywhere.', img: scenicImage05 },
           ].map((item, i) => (
             <div key={i} className={`lp-reveal lp-reveal-d${i + 1}`} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div className="lp-img-placeholder"><img src={item.img} alt={item.label} /></div>

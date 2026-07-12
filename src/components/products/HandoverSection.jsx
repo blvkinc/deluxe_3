@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 
 const checklist = [
-  { title: 'Water System', detail: 'Fresh tank, grey tank, hot water system — operation and capacity explained.' },
+  { title: 'Water System', detail: 'Fresh water tanks, grey water tanks, hot water system — operation and capacity explained.' },
   { title: 'Electrical & Off-Grid', detail: 'Solar, inverter, battery monitor, 240V hookup and 12V circuits demonstrated.' },
   { title: 'Gas System', detail: 'Gas safety check, regulator, and appliance operation briefing.' },
   { title: 'Hitch & Coupling', detail: 'Coupling, breakaway cable, safety chains and correct towing setup.' },
   { title: 'Awning', detail: 'Electric or manual awning operation and tie-down procedure.' },
   { title: 'Documentation', detail: 'All manuals, warranty cards, registration papers and compliance certificates.' },
-  { title: 'Keys & Locks', detail: 'Spare key, wheel lock key and any security system codes.' },
+  { title: 'Keys & Locks', detail: 'Spare key, and any security system codes.' },
   { title: 'Tyre Pressure Check', detail: 'All tyres including spare checked and set to correct pressures.' },
   { title: 'Plumber Certification', detail: 'Signed plumbing compliance documentation — all water and gas systems certified.' },
-  { title: 'Dust Reduction System', detail: 'How the system works and maintenance tips for unsealed road travel.' },
+  { title: 'Dust Reduction System', detail: 'How the system works and maintenance tips for unsealed road travel. Standard in XP-TECH range and customizable in EXPEDITION range' },
 ];
 
 export default function HandoverSection() {

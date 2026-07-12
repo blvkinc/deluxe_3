@@ -139,7 +139,7 @@ ATM: 3500 kg`,
     },
     {
       title: "SUSPENSION",
-      content: `FULL OFF-ROAD - TUFF RIDE – 3.5T`,
+      content: `FULL OFF-ROAD - Tuffride – 3.5T`,
     },
   ];
 
