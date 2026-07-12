@@ -8,8 +8,10 @@
   font-size: 20px;
 }
 
-.dropdown-menu ul {
+.dropdown-menu ul,
+.dropdown-menu ol {
   padding: 10px;
+  list-style: none;
 }
 
 .dropdown-menu li {
@@ -117,6 +119,7 @@
   width: 15px;
   height: 15px;
   margin-right: 10px;
+  filter: brightness(0) invert(1); /* Convert icon to white */
 }
 
 .greatericon {
