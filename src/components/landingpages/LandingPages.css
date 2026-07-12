@@ -2,17 +2,17 @@
 
 /* ── Page shell ── */
 .lp-page {
-  --lp-bg:          #3C4C52;
-  --lp-panel:       #344049;
-  --lp-card:        #2d373d;
-  --lp-border:      rgba(255, 255, 255, 0.1);
-  --lp-border-str:  rgba(255, 255, 255, 0.2);
-  --lp-accent:      #c3beb6;
-  --lp-accent-dim:  rgba(195, 190, 182, 0.12);
-  --lp-muted:       #b8b4ae;
-  --lp-text:        #d9d9d9;
-  --lp-white:       #f4f4f4;
-  --lp-brand:       #3C4C52;
+  --lp-bg:          var(--color-bg);
+  --lp-panel:       var(--color-panel);
+  --lp-card:        var(--color-card);
+  --lp-border:      var(--color-border);
+  --lp-border-str:  var(--color-border-strong);
+  --lp-accent:      var(--color-accent);
+  --lp-accent-dim:  var(--color-accent-dim);
+  --lp-muted:       var(--color-muted);
+  --lp-text:        var(--color-text);
+  --lp-white:       var(--color-white);
+  --lp-brand:       var(--color-bg);
 
   --lp-font-display: 'Bebas Neue', sans-serif;
   --lp-font-body:    'DM Sans', sans-serif;
@@ -470,20 +470,27 @@
   margin-bottom: 16px;
 }
 
-.lp-model-card-cta {
+.lp-model-card-cta-row {
   margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+
+.lp-model-card-cta {
   font-family: var(--lp-font-mono);
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--lp-accent);
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 8px;
   transition: gap 0.2s, color 0.2s;
 }
 
-.lp-model-card:hover .lp-model-card-cta {
+.lp-model-card-cta:hover {
   gap: 14px;
   color: var(--lp-white);
 }
