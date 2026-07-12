@@ -7,9 +7,9 @@
 
 /* Accordion heading styles */
 .accordionTitle {
-  background-color: #000000;
+  background-color: var(--color-bg);
   width: 75vw;
-  color: #fff;
+  color: var(--color-white);
   padding: 2em;
   display: flex;
   justify-content: left;
@@ -39,14 +39,14 @@
 
 /* Hover effect for accordion headings */
 .accordionTitle:hover {
-  background-color: #cdcdcd;
-  color: #000000;
+  background-color: var(--color-elevated);
+  color: var(--color-white);
 }
 
 /* Active (open) accordion heading styles */
 .accordionTitleActive {
-  background-color: #fafafa;
-  color: #000000;
+  background-color: var(--color-elevated);
+  color: var(--color-white);
 }
 
 /* Rotated plus/minus icon for active accordion headings */
@@ -58,8 +58,8 @@
 
 /* Accordion content styles */
 .accordionItem {
-  background-color: #000000;
-  color: #fafafa;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-size: 1em;
   line-height: 1.5em;
   padding: 1em 2em 1em 2em;

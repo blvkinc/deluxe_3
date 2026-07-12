@@ -13,7 +13,7 @@ const Appointment = () => {
   return (
     <div className="calendly_container">
       <div className="calendly_component">
-        <h1 className="title">Schedule a visit with us</h1>
+        <h1 className="title">Schedule a virtual or in person walkthrough with us</h1>
         <div className="calendly__form">
           <div className="calendly-inline-widget">
             <InlineWidget

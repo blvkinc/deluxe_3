@@ -27,11 +27,11 @@ function About() {
   return (
     <div
       className="aboutcontainer"
-      style={{ backgroundColor: "#fff", color: "#000" }}
+      style={{ backgroundColor: "var(--color-bg)", color: "var(--color-text)" }}
     >
       <Helmet>
         <title>About Deluxe Caravans | Australian Caravan Manufacturer</title>
-        <meta name="description" content="Deluxe Caravans is a family owned Australian caravan manufacturer with 15 years of experience. Built in Campbellfield VIC. Off road, family &amp; luxury ranges." />
+        <meta name="description" content="Deluxe Caravans is a family owned Australian caravan manufacturer with 17 years of experience. Built in Campbellfield VIC. Off road, family &amp; luxury ranges." />
         <link rel="canonical" href="https://deluxecaravans.com.au/about" />
       </Helmet>
       <div className="component">
@@ -42,7 +42,7 @@ function About() {
           </p>
           <p>
             At Deluxe Caravans, our story starts with an all-consuming passion
-            for life on the road. For over 15 years, we’ve helped families enjoy
+            for life on the road. For over 17 years, we’ve helped families enjoy
             the beauty of Australia while creating the joy and kinship you can
             only forge on long road trips together. Our dedication to this stems
             from our wonderful experiences exploring the outback or roasting

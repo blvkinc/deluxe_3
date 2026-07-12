@@ -1,9 +1,9 @@
 .aboutcontainer {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    color: black;
-  
+    background-color: var(--color-bg);
+    color: var(--color-text);
+
   }
   
   
@@ -25,7 +25,7 @@
     .context h1{
       font-size: 75.76px;
       margin: 10px;
-      color: black;
+      color: var(--color-white);
     }
   
     .context h2{

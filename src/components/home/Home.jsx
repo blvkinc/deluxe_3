@@ -15,7 +15,7 @@ function Home() {
     <div className="container">
       <Helmet>
         <title>Deluxe Caravans | Australian-Made Off Road &amp; Family Caravans</title>
-        <meta name="description" content="Australian-made off road, family &amp; luxury caravans for families, couples &amp; grey nomads. Built in Campbellfield for 15 years. Composite frame, full off-grid power, structural warranty. Book a factory visit today." />
+        <meta name="description" content="Australian-made off road, family &amp; luxury caravans for families, couples &amp; grey nomads. Built in Campbellfield for 17 years. Composite frame, full off-grid power, structural warranty. Book a factory visit today." />
         <link rel="canonical" href="https://deluxecaravans.com.au/" />
       </Helmet>
       <div className="videocomponent">

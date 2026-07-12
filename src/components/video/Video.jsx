@@ -56,7 +56,7 @@ const Video = React.memo(() => {
   return (
     <div
       className="vidcontainer"
-      style={{ backgroundColor: "#fff", color: "#000" }}
+      style={{ backgroundColor: "var(--color-bg)", color: "var(--color-text)" }}
     >
       <div className="vidcomponent">
         <h1>Our Videos</h1>

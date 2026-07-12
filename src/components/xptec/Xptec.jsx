@@ -8,7 +8,7 @@ const WarrantyPolicy = React.memo(() => {
   return (
     <div
       className="xptech-container"
-      style={{ backgroundColor: "#fff", color: "#000" }}
+      style={{ backgroundColor: "var(--color-bg)", color: "var(--color-text)" }}
     >
       <Helmet>
         <title>XP-TECH Caravans | Off-Grid Power System | Deluxe Caravans</title>

@@ -31,7 +31,7 @@ const Eclipse21CouplesOffRoad = () => {
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   useEffect(() => {
-    window.fbq("track", "ViewContent", { content_name: "Eclipse 21 Couples Off-Road", content_category: "Caravan" });
+    window.fbq("track", "ViewContent", { content_name: "Eclipse 21 Couples Expedition", content_category: "Caravan" });
   }, []);
 
   useEffect(() => {
@@ -155,7 +155,7 @@ const Eclipse21CouplesOffRoad = () => {
             {isBrochureOpen && (
               <BrochurePopUp
                 onClose={() => setIsBrochureOpen(false)}
-                productName="Eclipse 21'6 Couples Off-Road"
+                productName="Eclipse 21'6 Couples Expedition"
                 pdfUrl="/brochures/Offroad_Eclipse_21-6_brochure_2026.html"
               />
             )}

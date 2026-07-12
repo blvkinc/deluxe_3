@@ -127,8 +127,9 @@ const Header = () => {
       {
         label: "FAMILY",
         submenu: [
+          { label: "FAMILY CARAVANS", link: "/family-caravans-australia" },
           {
-            label: "FAMILY OFF-ROAD",
+            label: "FAMILY EXPEDITION RANGE",
             link: "/familyoffroad",
             submenu: [
               {
@@ -223,7 +224,7 @@ const Header = () => {
             ],
           },
           {
-            label: "FAMILY XP-TECH",
+            label: "FAMILY XP-TECH RANGE",
             link: "/familyxptech",
             submenu: [
               {
@@ -323,8 +324,9 @@ const Header = () => {
       {
         label: "COUPLES",
         submenu: [
+        
           {
-            label: "COUPLES OFF-ROAD",
+            label: "COUPLES EXPEDITION RANGE",
             link: "/couplesoffroad",
             submenu: [
               {
@@ -369,7 +371,7 @@ const Header = () => {
             ],
           },
           {
-            label: "COUPLES XP-TECH",
+            label: "COUPLES XP-TECH RANGE",
             link: "/couplesxptech",
             submenu: [
               {
@@ -416,6 +418,13 @@ const Header = () => {
         ],
       },
       {
+        label: "OFF ROAD AND OFF GRID",
+        submenu: [
+          { label: "OFF-ROAD CARAVANS", link: "/off-road-caravans-for-sale" },
+          { label: "OFF-GRID CARAVANS", link: "/off-grid-caravans-australia" },
+        ],
+      },
+      {
         label: "BUILD JOURNEY",
         link: "/buildjourney",
       },
@@ -432,87 +441,94 @@ const Header = () => {
         ],
       },
       {
-        label: "DISCOVER",
+        label: "CONTACT",
         submenu: [
+          { label: "CONTACT US", link: "/contact" },
           {
-            label: (
-              <a
-                href="https://www.instagram.com/deluxecaravansaustralia/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://deluxcaravan.b-cdn.net/assets/icons/instagramh.webp"
-                  alt="Instagram"
-                  className="iconh"
-                />
-              </a>
-            ),
-            link: "https://www.instagram.com/deluxecaravansaustralia/",
-          },
-          {
-            label: (
-              <a
-                href="https://www.facebook.com/deluxecaravansaustralia"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://deluxcaravan.b-cdn.net/assets/icons/facebookh.webp"
-                  alt="Facebook"
-                  className="iconh"
-                />
-              </a>
-            ),
-            link: "https://www.facebook.com/deluxecaravansaustralia",
-          },
-          {
-            label: (
-              <a
-                href="https://twitter.com/CaravansDeluxe"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://deluxcaravan.b-cdn.net/assets/icons/twitterh.webp"
-                  alt="Twitter"
-                  className="iconh"
-                />
-              </a>
-            ),
-            link: "https://twitter.com/CaravansDeluxe",
-          },
-          {
-            label: (
-              <a
-                href="https://www.tiktok.com/@deluxecaravansaustralia"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://deluxcaravan.b-cdn.net/assets/icons/tik-tokh.webp"
-                  alt="TikTok"
-                  className="iconh"
-                />
-              </a>
-            ),
-            link: "https://www.tiktok.com/@deluxecaravansaustralia",
-          },
-          {
-            label: (
-              <a
-                href="https://www.youtube.com/watch?v=a_KE1CVPT48"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="https://deluxcaravan.b-cdn.net/assets/icons/youtubeh.webp"
-                  alt="YouTube"
-                  className="iconh"
-                />
-              </a>
-            ),
-            link: "https://www.youtube.com/watch?v=a_KE1CVPT48",
+            label: "DISCOVER",
+            link: "",
+            submenu: [
+              {
+                label: (
+                  <a
+                    href="https://www.instagram.com/deluxecaravansaustralia/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://deluxcaravan.b-cdn.net/assets/icons/instagramh.webp"
+                      alt="Instagram"
+                      className="iconh"
+                    />
+                  </a>
+                ),
+                link: "https://www.instagram.com/deluxecaravansaustralia/",
+              },
+              {
+                label: (
+                  <a
+                    href="https://www.facebook.com/deluxecaravansaustralia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://deluxcaravan.b-cdn.net/assets/icons/facebookh.webp"
+                      alt="Facebook"
+                      className="iconh"
+                    />
+                  </a>
+                ),
+                link: "https://www.facebook.com/deluxecaravansaustralia",
+              },
+              {
+                label: (
+                  <a
+                    href="https://twitter.com/CaravansDeluxe"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://deluxcaravan.b-cdn.net/assets/icons/twitterh.webp"
+                      alt="Twitter"
+                      className="iconh"
+                    />
+                  </a>
+                ),
+                link: "https://twitter.com/CaravansDeluxe",
+              },
+              {
+                label: (
+                  <a
+                    href="https://www.tiktok.com/@deluxecaravansaustralia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://deluxcaravan.b-cdn.net/assets/icons/tik-tokh.webp"
+                      alt="TikTok"
+                      className="iconh"
+                    />
+                  </a>
+                ),
+                link: "https://www.tiktok.com/@deluxecaravansaustralia",
+              },
+              {
+                label: (
+                  <a
+                    href="https://www.youtube.com/watch?v=a_KE1CVPT48"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="https://deluxcaravan.b-cdn.net/assets/icons/youtubeh.webp"
+                      alt="YouTube"
+                      className="iconh"
+                    />
+                  </a>
+                ),
+                link: "https://www.youtube.com/watch?v=a_KE1CVPT48",
+              },
+            ],
           },
         ],
       },
@@ -633,7 +649,9 @@ const Header = () => {
                                 {hoveredSubMenu === subitem.label &&
                                   subitem.submenu && (
                                     <motion.div
-                                      className="nested-submenu"
+                                      className={`nested-submenu ${String(
+                                        subitem.label
+                                      ).toLowerCase()}`}
                                       initial={{ opacity: 0 }}
                                       animate={{ opacity: 1 }}
                                       exit={{ opacity: 0 }}
@@ -766,13 +784,6 @@ const Header = () => {
                 <Link to="/Xptec">
                   <button onMouseEnter={() => handleMenuHover("XP-TECH")}>
                     XP-TECH
-                  </button>
-                </Link>
-              </li>
-              <li className="menu-item">
-                <Link to="/contact">
-                  <button onMouseEnter={() => handleMenuHover("CONTACT")}>
-                    CONTACT
                   </button>
                 </Link>
               </li>

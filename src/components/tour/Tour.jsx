@@ -67,7 +67,7 @@ const Tour = React.memo(() => {
   return (
     <div
       className="virtual-container"
-      style={{ backgroundColor: "#fff", color: "#000" }}
+      style={{ backgroundColor: "var(--color-bg)", color: "var(--color-text)" }}
     >
       <Helmet>
         <title>Factory Tour | Deluxe Caravans Campbellfield Melbourne</title>

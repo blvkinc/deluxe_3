@@ -18,6 +18,7 @@ const Navbar = () => {
   const [ourFamilyVisible, setOurFamilyVisible] = useState(false);
   const [ourCouplesVisible, setOurCouplesVisible] = useState(false);
   const [resourcesVisible, setResourcesVisible] = useState(false);
+  const [offRoadOffGridVisible, setOffRoadOffGridVisible] = useState(false);
 
   // Icon rotation states
   const [resourcesIconRotation, setResourcesIconRotation] =
@@ -25,6 +26,8 @@ const Navbar = () => {
   const [ourFamilyIconRotation, setOurFamilyIconRotation] =
     useState("rotate(0deg)");
   const [ourCouplesIconRotation, setOurCouplesIconRotation] =
+    useState("rotate(0deg)");
+  const [offRoadOffGridIconRotation, setOffRoadOffGridIconRotation] =
     useState("rotate(0deg)");
 
   // Resources menu handlers
@@ -63,6 +66,18 @@ const Navbar = () => {
     setOurCouplesIconRotation("rotate(0deg)");
   };
 
+  // Off Road and Off Grid menu handlers
+  const showOffRoadOffGrid = () => {
+    setOffRoadOffGridVisible(true);
+    setOffRoadOffGridIconRotation("rotate(90deg)");
+    resetOtherMenus("offroadoffgrid");
+  };
+
+  const hideOffRoadOffGrid = () => {
+    setOffRoadOffGridVisible(false);
+    setOffRoadOffGridIconRotation("rotate(0deg)");
+  };
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -82,6 +97,11 @@ const Navbar = () => {
     if (currentMenu !== "couples") {
       setOurCouplesVisible(false);
       setOurCouplesIconRotation("rotate(0deg)");
+    }
+
+    if (currentMenu !== "offroadoffgrid") {
+      setOffRoadOffGridVisible(false);
+      setOffRoadOffGridIconRotation("rotate(0deg)");
     }
   };
 
@@ -117,7 +137,7 @@ const Navbar = () => {
                         style={{ height: "50px", width: "auto" }}
                       />
                     </Link>
-                    <p style={{ color: "black" , fontSize: "12px" }}>DELUXE CARAVANS X INFINITE RV</p>
+                    <p style={{ color: "white" , fontSize: "12px" }}>DELUXE CARAVANS X INFINITE RV</p>
                    </li>
 
                   {/* FAMILY MENU */}
@@ -160,18 +180,23 @@ const Navbar = () => {
                             </button>
 
                             <ul className="range-list">
-                              {/* FAMILY OFF-ROAD SUBMENU */}
+                              <li className="nav-item" onClick={toggleMenu}>
+                                <a href="/family-caravans-australia">
+                                  <p className="social">FAMILY CARAVANS</p>
+                                </a>
+                              </li>
+                              {/* FAMILY EXPEDITION SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/familyoffroad">
                                   {" "}
-                                  <p className="social">FAMILY OFF-ROAD </p>
+                                  <p className="social">FAMILY EXPEDITION RANGE</p>
                                 </a>
                               </li>
 
                               {/* FAMILY XP-TECH SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/familyxptech">
-                                  <p className="social">FAMILY XP-TECH </p>
+                                  <p className="social">FAMILY XP-TECH RANGE</p>
                                 </a>
                               </li>
                             </ul>
@@ -221,17 +246,22 @@ const Navbar = () => {
                             </button>
 
                             <ul className="range-list">
-                              {/* COUPLES OFF-ROAD SUBMENU */}
+                              <li className="nav-item" onClick={toggleMenu}>
+                                <a href="/off-grid-caravans-australia">
+                                  <p className="social">OFF GRID CARAVANS AUSTRALIA</p>
+                                </a>
+                              </li>
+                              {/* COUPLES EXPEDITION SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/couplesoffroad">
-                                  <p className="social">COUPLES OFF-ROAD </p>
+                                  <p className="social">COUPLES EXPEDITION RANGE</p>
                                 </a>
                               </li>
 
                               {/* COUPLES XP-TECH SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/couplesxptech">
-                                  <p className="social">COUPLES XP-TECH </p>
+                                  <p className="social">COUPLES XP-TECH RANGE</p>
                                 </a>
                               </li>
                             </ul>
@@ -240,6 +270,64 @@ const Navbar = () => {
                       )}
                     </AnimatePresence>
                   </li>
+
+                  {/* OFF ROAD AND OFF GRID MENU */}
+                  <li className="nav-item">
+                    <p className="social" onClick={showOffRoadOffGrid}>
+                      OFF ROAD AND OFF GRID{" "}
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
+                        alt=""
+                        className="greatericon"
+                        style={{ transform: offRoadOffGridIconRotation }}
+                      />
+                    </p>
+                    <AnimatePresence>
+                      {offRoadOffGridVisible && (
+                        <motion.div
+                          className={`social-media-container ${
+                            offRoadOffGridVisible ? "show" : ""
+                          }`}
+                          initial={{ opacity: 0, y: -20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -20 }}
+                          transition={{ duration: 0.2 }}
+                        >
+                          <div
+                            className={`social-media-container ${
+                              offRoadOffGridVisible ? "show" : ""
+                            }`}
+                          >
+                            <button
+                              onClick={hideOffRoadOffGrid}
+                              className="back-button"
+                            >
+                              <img
+                                src="https://deluxcaravan.b-cdn.net/assets/icons/lesser.webp"
+                                alt=""
+                                className="lessericon"
+                              />{" "}
+                              Back
+                            </button>
+
+                            <ul className="range-list">
+                              <li className="nav-item" onClick={toggleMenu}>
+                                <a href="/off-road-caravans-for-sale">
+                                  <p className="social">OFF-ROAD CARAVANS</p>
+                                </a>
+                              </li>
+                              <li className="nav-item" onClick={toggleMenu}>
+                                <a href="/off-grid-caravans-australia">
+                                  <p className="social">OFF-GRID CARAVANS</p>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </li>
+
                   <li className="nav-item" onClick={toggleMenu}>
                     <p className="social">
                       <Link to="/buildjourney" className="nav-link">

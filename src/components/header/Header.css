@@ -1,7 +1,7 @@
 /* Header container */
 .header {
   background: transparent;
-  color: white;
+  color: var(--color-white);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -17,8 +17,7 @@
 }
 
 .header:hover {
-  background-color: #ffffff;
-  /* color: #000000; */
+  background-color: var(--color-card);
   height: auto; /* Auto height on hover */
 }
 
@@ -28,17 +27,17 @@
 }
 
 .header.scrolled {
-  background-color: black !important;
+  background-color: var(--color-card) !important;
 }
 
 .header.scrolled:hover {
-  background-color: black !important;
+  background-color: var(--color-card) !important;
 }
 
 .header.scrolled .menu-item button,
 .header.scrolled:hover .menu-item button,
 .header:not(.custom-header).scrolled:hover .header-nav .menu-item button {
-  color: white !important;
+  color: var(--color-white) !important;
 }
 
 .header img {
@@ -55,18 +54,18 @@ h5 {
 /* Logo */
 .header-logo-deluxe,
 .header-logo-infiniterv {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .header-logo-tagline {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 
 .header:not(.custom-header):hover .header-logo-deluxe,
 .header:not(.custom-header):hover .header-logo-infiniterv,
 .header:not(.custom-header):hover .header-logo-tagline {
-  color: #000000;
+  color: var(--color-white);
 }
 
 .header.scrolled .header-logo-deluxe,
@@ -75,7 +74,7 @@ h5 {
 .header.scrolled:hover .header-logo-deluxe,
 .header.scrolled:hover .header-logo-infiniterv,
 .header.scrolled:hover .header-logo-tagline {
-  color: #ffffff !important;
+  color: var(--color-white) !important;
 }
 
 .header-logo img {
@@ -94,12 +93,13 @@ h5 {
 .header-nav .menu-item button {
   background: none;
   border: none;
-  color: #ffffff;
-  font-size: 18px;
+  color: var(--color-white);
+  font-size: 15px;
   cursor: pointer;
   padding: 0;
   position: relative;
-  margin-right: 3rem;
+  margin-right: 1.75rem;
+  white-space: nowrap;
   transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
@@ -114,29 +114,29 @@ h5 {
 
 /* General header hover rules (for non-custom headers only) */
 .header:not(.custom-header):hover .header-nav .menu-item button {
-  color: #000000 !important;
+  color: var(--color-white) !important;
 }
 
 .header:not(.custom-header):hover .menu-item.active button {
-  color: #000000 !important;
+  color: var(--color-accent) !important;
   font-weight: 700;
 }
 
 /* Custom header rules (more specific) */
 .header.custom-header:hover {
-  background-color: black !important;
-  color: white !important;
+  background-color: var(--color-card) !important;
+  color: var(--color-white) !important;
 }
 
 /* More specific selector to override the general header rule */
 .header.custom-header:hover .header-nav .menu-item button,
 .header.custom-header:hover .menu-item button {
-  color: white !important;
+  color: var(--color-white) !important;
 }
 
 /* Make sure active menu items also stay white in custom header */
 .header.custom-header:hover .menu-item.active button {
-  color: white !important;
+  color: var(--color-accent) !important;
   font-weight: 700;
 }
 
@@ -159,7 +159,7 @@ h5 {
 /* Shared styles for sub-menu and nested-submenu */
 .sub-menu,
 .nested-submenu {
-  background-color: #ffffff;
+  background-color: var(--color-card);
   z-index: 999;
   width: 100%;
   position: fixed;
@@ -173,7 +173,7 @@ h5 {
   align-items: center;
   padding: 30px;
   text-decoration: none;
-  color: #000000 !important;
+  color: var(--color-white) !important;
   pointer-events: auto;
 }
 
@@ -184,14 +184,14 @@ h5 {
   transform: translateY(-10px);
   transition: opacity 0.5s, transform 0.3s ease;
   margin-right: 30px;
-  color: #000000 !important;
+  color: var(--color-white) !important;
 }
 
 /* Hover styles for submenu items */
 .sub-menu-item:hover,
 .nested-submenu-item:hover,
 .deep-nested-submenu-item:hover {
-  color: #007bff !important; /* Blue color on hover for better visibility */
+  color: var(--color-accent) !important;
   font-weight: 700;
   cursor: pointer;
 }
@@ -210,9 +210,14 @@ h5 {
  top: 122px;
 }
 
+/* Wider gap between the social icons under the DISCOVER nested submenu */
+.nested-submenu.discover {
+  gap: 90px;
+}
+
 /* Deep nested submenu inherits nested-submenu styles */
 .deep-nested-submenu {
-  background-color: #ffffff;
+  background-color: var(--color-card);
   z-index: 999;
   width: 100%;
   position: fixed;
@@ -224,7 +229,7 @@ h5 {
   align-items: center;
   padding: 30px;
   text-decoration: none;
-  color: #000000 !important;
+  color: var(--color-white) !important;
   pointer-events: auto;
 }
 
@@ -234,7 +239,7 @@ h5 {
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
   margin-right: 30px;
-  color: #000000 !important;
+  color: var(--color-white) !important;
 }
 
 
@@ -259,16 +264,17 @@ h5 {
 
 .iconh {
   height: 27px;
+  filter: brightness(0) invert(1); /* Convert icons to white */
 }
 
 /* Custom header styles for Maintenance and Warranty pages */
 .custom-header {
   background-color: transparent !important;
-  color: white !important;
+  color: var(--color-white) !important;
 }
 
 .custom-header .menu-item button {
-  color: black !important;
+  color: var(--color-white) !important;
 }
 
 /* .custom-header:hover {
@@ -283,18 +289,14 @@ h5 {
 .custom-header .sub-menu,
 .custom-header .nested-submenu,
 .custom-header .deep-nested-submenu {
-  background-color: black !important;
-  color: white !important;
+  background-color: var(--color-card) !important;
+  color: var(--color-white) !important;
 }
 
 .custom-header .sub-menu-item,
 .custom-header .nested-submenu-item,
 .custom-header .deep-nested-submenu-item {
-  color: white !important;
-}
-
-.custom-header .iconh {
-  filter: brightness(0) invert(1); /* Convert icons to white */
+  color: var(--color-white) !important;
 }
 
 /* Media query for smaller screens */
@@ -308,7 +310,7 @@ h5 {
     position: absolute;
     top: 60px;
     right: 0;
-    background-color: #ffffff;
+    background-color: var(--color-card);
     padding: 20px;
     flex-direction: column;
     border-radius: 5px;

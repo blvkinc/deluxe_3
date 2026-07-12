@@ -13,8 +13,8 @@ const PUBLIC_KEY = "W61evKNsxeHvEgUlN";
 const brochureItems = [
   {
     id: "off-road",
-    title: "Off Road Range",
-    description: "Built tough for remote tracks — our complete off road caravan lineup",
+    title: "Expedition Range",
+    description: "Built tough for remote tracks — our complete Expedition caravan lineup",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
         <circle cx="5" cy="18" r="2" />

@@ -8,15 +8,15 @@
 .maintenance-content {
   max-width: 1200px;
   margin: 0 auto;
-  background: white;
+  background: var(--color-card);
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 .maintenance-content h1 {
-  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--color-panel) 0%, var(--color-card) 100%);
+  color: var(--color-white);
   text-align: center;
   margin: 0;
   padding: 60px 40px;
@@ -34,7 +34,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background: linear-gradient(90deg, #007bff, #0056b3);
+  background: linear-gradient(90deg, var(--color-accent), var(--color-link-hover));
   border-radius: 2px;
 }
 
@@ -43,18 +43,18 @@
 }
 
 .service-type {
-  background: #f8f9fa;
+  background: var(--color-panel);
   border-radius: 15px;
   padding: 40px;
   margin-bottom: 30px;
-  border-left: 5px solid #007bff;
+  border-left: 5px solid var(--color-accent);
   transition: all 0.3s ease;
 }
 
 .service-type:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  border-left-color: #0056b3;
+  border-left-color: var(--color-link-hover);
 }
 
 .service-type:last-child {
@@ -62,7 +62,7 @@
 }
 
 .service-type h3 {
-  color: #2d2d2d;
+  color: var(--color-white);
   margin-bottom: 20px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -78,19 +78,19 @@
   left: 0;
   width: 60px;
   height: 3px;
-  background: #007bff;
+  background: var(--color-accent);
   border-radius: 2px;
 }
 
 .service-note {
   font-style: italic;
   margin-bottom: 25px;
-  color: #666;
+  color: var(--color-muted);
   font-size: 1.1rem;
-  background: rgba(0, 123, 255, 0.1);
+  background: var(--color-accent-dim);
   padding: 15px 20px;
   border-radius: 8px;
-  border-left: 4px solid #007bff;
+  border-left: 4px solid var(--color-accent);
 }
 
 .service-type ul {
@@ -102,33 +102,33 @@
 }
 
 .service-type ul li {
-  background: white;
+  background: var(--color-card);
   padding: 15px 20px;
   border-radius: 8px;
   position: relative;
   line-height: 1.6;
   font-size: 0.95rem;
-  color: #333;
-  border: 1px solid #e9ecef;
+  color: var(--color-muted);
+  border: 1px solid var(--color-border);
   transition: all 0.3s ease;
   padding-left: 45px;
 }
 
 .service-type ul li:hover {
-  background: #f0f8ff;
-  border-color: #007bff;
+  background: var(--color-panel);
+  border-color: var(--color-link-hover);
   transform: translateX(5px);
 }
 
 .service-type ul li::before {
   content: "✓";
-  color: #007bff;
+  color: var(--color-accent);
   font-weight: bold;
   font-size: 1.1rem;
   position: absolute;
   left: 15px;
   top: 15px;
-  background: rgba(0, 123, 255, 0.1);
+  background: var(--color-accent-dim);
   width: 20px;
   height: 20px;
   border-radius: 50%;
