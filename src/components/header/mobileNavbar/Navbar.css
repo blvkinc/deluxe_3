@@ -78,7 +78,6 @@
 .dropdown-menu .social-media-list img {
   width: 20px;
   height: 20px;
-  filter: brightness(0) invert(1); /* Convert icons to white */
 }
 
 .social-media-container {

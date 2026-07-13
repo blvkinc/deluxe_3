@@ -19,9 +19,12 @@ const Navbar = () => {
   const [ourCouplesVisible, setOurCouplesVisible] = useState(false);
   const [resourcesVisible, setResourcesVisible] = useState(false);
   const [offRoadOffGridVisible, setOffRoadOffGridVisible] = useState(false);
+  const [contactVisible, setContactVisible] = useState(false);
 
   // Icon rotation states
   const [resourcesIconRotation, setResourcesIconRotation] =
+    useState("rotate(0deg)");
+  const [contactIconRotation, setContactIconRotation] =
     useState("rotate(0deg)");
   const [ourFamilyIconRotation, setOurFamilyIconRotation] =
     useState("rotate(0deg)");
@@ -78,6 +81,18 @@ const Navbar = () => {
     setOffRoadOffGridIconRotation("rotate(0deg)");
   };
 
+  // Contact menu handlers
+  const showContact = () => {
+    setContactVisible(true);
+    setContactIconRotation("rotate(90deg)");
+    resetOtherMenus("contact");
+  };
+
+  const hideContact = () => {
+    setContactVisible(false);
+    setContactIconRotation("rotate(0deg)");
+  };
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -102,6 +117,11 @@ const Navbar = () => {
     if (currentMenu !== "offroadoffgrid") {
       setOffRoadOffGridVisible(false);
       setOffRoadOffGridIconRotation("rotate(0deg)");
+    }
+
+    if (currentMenu !== "contact") {
+      setContactVisible(false);
+      setContactIconRotation("rotate(0deg)");
     }
   };
 
@@ -400,76 +420,115 @@ const Navbar = () => {
                       </Link>
                     </p>
                   </li>
-                  <li className="nav-item" onClick={toggleMenu}>
-                    <p className="social">
-                      <Link to="/contact" className="nav-link">
-                        CONTACT
-                      </Link>
+                  {/* CONTACT MENU */}
+                  <li className="nav-item">
+                    <p className="social" onClick={showContact}>
+                      CONTACT{" "}
+                      <img
+                        src="https://deluxcaravan.b-cdn.net/assets/icons/greater.webp"
+                        alt=""
+                        className="greatericon"
+                        style={{ transform: contactIconRotation }}
+                      />
                     </p>
-                  </li>
-                  <li className="nav-item" onClick={toggleMenu}>
-                    <ul className="social-media-list">
-                      <li>
-                        <a
-                          href="https://www.instagram.com/deluxecaravansaustralia/"
-                          target="_blank"
-                          rel="noopener noreferrer"
+                    <AnimatePresence>
+                      {contactVisible && (
+                        <motion.div
+                          className={`social-media-container ${
+                            contactVisible ? "show" : ""
+                          }`}
+                          initial={{ opacity: 0, y: -20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -20 }}
+                          transition={{ duration: 0.2 }}
                         >
-                          <img
-                            src="https://deluxcaravan.b-cdn.net/assets/icons/instagramh.webp"
-                            alt="Instagram"
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.facebook.com/deluxecaravansaustralia"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="https://deluxcaravan.b-cdn.net/assets/icons/facebookh.webp"
-                            alt="Facebook"
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://twitter.com/CaravansDeluxe"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="https://deluxcaravan.b-cdn.net/assets/icons/twitterh.webp"
-                            alt="Twitter"
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.tiktok.com/@deluxecaravansaustralia"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="https://deluxcaravan.b-cdn.net/assets/icons/tik-tokh.webp"
-                            alt="TikTok"
-                          />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.youtube.com/watch?v=a_KE1CVPT48"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            src="https://deluxcaravan.b-cdn.net/assets/icons/youtubeh.webp"
-                            alt="YouTube"
-                          />
-                        </a>
-                      </li>
-                    </ul>
+                          <button
+                            onClick={hideContact}
+                            className="back-button"
+                          >
+                            <img
+                              src="https://deluxcaravan.b-cdn.net/assets/icons/lesser.webp"
+                              alt=""
+                              className="lessericon"
+                            />{" "}
+                            Back
+                          </button>
+
+                          <ul className="range-list">
+                            <li className="nav-item" onClick={toggleMenu}>
+                              <a href="/contact">
+                                <p className="social">CONTACT US</p>
+                              </a>
+                            </li>
+                            <li className="nav-item">
+                              <p className="social">DISCOVER</p>
+                              <ul className="social-media-list">
+                                <li>
+                                  <a
+                                    href="https://www.instagram.com/deluxecaravansaustralia/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://deluxcaravan.b-cdn.net/assets/icons/instagramh.webp"
+                                      alt="Instagram"
+                                    />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.facebook.com/deluxecaravansaustralia"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://deluxcaravan.b-cdn.net/assets/icons/facebookh.webp"
+                                      alt="Facebook"
+                                    />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://twitter.com/CaravansDeluxe"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://deluxcaravan.b-cdn.net/assets/icons/twitterh.webp"
+                                      alt="Twitter"
+                                    />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.tiktok.com/@deluxecaravansaustralia"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://deluxcaravan.b-cdn.net/assets/icons/tik-tokh.webp"
+                                      alt="TikTok"
+                                    />
+                                  </a>
+                                </li>
+                                <li>
+                                  <a
+                                    href="https://www.youtube.com/watch?v=a_KE1CVPT48"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >
+                                    <img
+                                      src="https://deluxcaravan.b-cdn.net/assets/icons/youtubeh.webp"
+                                      alt="YouTube"
+                                    />
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </li>
                 </ul>
               </div>
