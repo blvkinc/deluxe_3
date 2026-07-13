@@ -72,7 +72,7 @@ const SpecsEclipse18xptech = () => {
         Water Tank Monitoring: 3 x Water Tank Level Probes
         Safety System: Reverse Camera with In-Cabin Display
         TV Antenna: Multi-Directional Antenna (Horizontal & Vertical Signal Reception)
-        Lithium Battery System: 1 x 200Ah Lithium Batteries (200Ah Total Capacity)
+        Lithium Battery System: 2 x 200Ah Lithium Batteries (400Ah Total Capacity)
         Side Marker Lights: LED Side Marker Lighting with Reflectors`,
     },
     {
