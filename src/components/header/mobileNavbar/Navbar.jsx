@@ -266,11 +266,6 @@ const Navbar = () => {
                             </button>
 
                             <ul className="range-list">
-                              <li className="nav-item" onClick={toggleMenu}>
-                                <a href="/off-grid-caravans-australia">
-                                  <p className="social">OFF GRID CARAVANS AUSTRALIA</p>
-                                </a>
-                              </li>
                               {/* COUPLES EXPEDITION SUBMENU */}
                               <li className="nav-item" onClick={toggleMenu}>
                                 <a href="/couplesoffroad">
