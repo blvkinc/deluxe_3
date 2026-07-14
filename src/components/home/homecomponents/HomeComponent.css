@@ -996,6 +996,7 @@ html {
 .video-background {
   position: absolute;
   inset: 0;
+  background-color: var(--color-card);
 }
 
 .landing_page_video {
@@ -1008,6 +1009,13 @@ html {
   min-width: 177.78vh;
   transform: translate(-50%, -50%);
   border: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.landing_page_video.is-loaded {
+  opacity: 1;
 }
 
 /* Modern gradient overlays */

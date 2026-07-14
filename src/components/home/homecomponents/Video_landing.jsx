@@ -1,9 +1,11 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import "./HomeComponent.css";
 import { gsap } from "gsap";
 
 function VideoLanding() {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   const revealUpAnimation = useMemo(() => {
     return () => {
       gsap.utils.toArray(".revealUp").forEach((elem) => {
@@ -42,16 +44,6 @@ function VideoLanding() {
         delay: 0.5,
       }
     );
-
-    // Load Vimeo Player API
-    const script = document.createElement("script");
-    script.src = "https://player.vimeo.com/api/player.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
   }, [revealUpAnimation]);
 
   return (
@@ -59,13 +51,17 @@ function VideoLanding() {
       <div className="video-overlay">
         <div className="video-container">
           <div className="video-background">
-            <iframe
-              className="landing_page_video"
-              src="https://player.vimeo.com/video/1207128223?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&loop=1&controls=0&title=0&byline=0&portrait=0&background=1"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            <video
+              className={`landing_page_video ${videoLoaded ? "is-loaded" : ""}`}
+              src="/hero-video.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
               title="deluxe landing"
-            ></iframe>
+              onLoadedData={() => setVideoLoaded(true)}
+            />
           </div>
         </div>
         <div className="text-overlay">
