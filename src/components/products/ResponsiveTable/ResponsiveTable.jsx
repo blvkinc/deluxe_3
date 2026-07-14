@@ -32,7 +32,7 @@ const tableData = [
   {
     category: "Battery Capacity",
     offRoad: "2 x 100Ah Lithium Batteries",
-    xpTech: "1 x 200Ah Lithium Battery",
+    xpTech: "2 x 200Ah Lithium Battery",
   },
   {
     category: "Hot Water",
