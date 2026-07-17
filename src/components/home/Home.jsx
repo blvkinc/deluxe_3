@@ -25,6 +25,9 @@ function Home() {
         <Promovid />
       </div>
       <div className="component">
+        <Reviews />
+      </div>
+      <div className="component">
         <CarouselSection />
       </div>
       <div className="component">
@@ -32,9 +35,6 @@ function Home() {
       </div>
       <div className="component">
         <Gallery />
-      </div>
-      <div className="component">
-        <Reviews />
       </div>
       <div className="partnercomponent">
         <Partners />
