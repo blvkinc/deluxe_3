@@ -24,10 +24,10 @@ function Home() {
       <div className="videocomponent">
         <Promovid />
       </div>
-      <div className="component">
+      <div className="component component-fit">
         <Reviews />
       </div>
-      <div className="component">
+      <div className="component component-fit">
         <CarouselSection />
       </div>
       <div className="component">

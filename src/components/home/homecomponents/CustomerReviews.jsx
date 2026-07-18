@@ -3,57 +3,64 @@ import "./HomeComponent.css";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 
-const PREVIEW_CHAR_LIMIT = 260;
+const DESKTOP_PREVIEW_CHAR_LIMIT = 260;
+const MOBILE_PREVIEW_CHAR_LIMIT = 150;
+const MOBILE_BREAKPOINT = 768;
 
-const getDisplayText = (quote, isExpanded) => {
+const getDisplayText = (quote, isExpanded, charLimit) => {
   const paragraphs = quote
     .split(/\n\s*\n/)
     .map((p) => p.trim())
     .filter(Boolean);
 
-  if (paragraphs.length > 1) {
+  const isMultiParagraph = paragraphs.length > 1;
+  const first = paragraphs[0] || quote.trim();
+
+  if (isExpanded) {
     return {
-      text: isExpanded ? paragraphs.join('\n') : paragraphs[0],
-      truncated: true,
+      text: isMultiParagraph ? paragraphs.join('\n') : first,
+      truncated: isMultiParagraph || first.length > charLimit,
     };
   }
 
-  const single = paragraphs[0] || quote.trim();
-  if (single.length <= PREVIEW_CHAR_LIMIT) {
-    return { text: single, truncated: false };
+  if (!isMultiParagraph && first.length <= charLimit) {
+    return { text: first, truncated: false };
   }
 
-  if (isExpanded) {
-    return { text: single, truncated: true };
-  }
-
-  const cut = single.slice(0, PREVIEW_CHAR_LIMIT);
+  const cut = first.slice(0, charLimit);
   const lastSpace = cut.lastIndexOf(' ');
-  const preview = `${cut.slice(0, lastSpace > 0 ? lastSpace : PREVIEW_CHAR_LIMIT)}…`;
+  const preview = `${cut.slice(0, lastSpace > 0 ? lastSpace : charLimit)}…`;
   return { text: preview, truncated: true };
 };
 
 const Testimonials = () => {
   const [expanded, setExpanded] = useState({});
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== 'undefined' && window.innerWidth <= MOBILE_BREAKPOINT
+  );
 
   const setSplideHeight = useCallback(() => {
+    const splide = document.querySelector('.splide');
+    if (!splide) return;
+
     const splideTrack = document.querySelector('.splide__track');
     if (splideTrack) {
       const currentSlide = splideTrack.querySelector('.splide__slide.is-active');
       if (currentSlide) {
         const slideHeight = currentSlide.clientHeight;
-        const splide = document.querySelector('.splide');
-        if (splide) {
-          splide.style.height = `${slideHeight}px`;
-        }
+        splide.style.height = `${slideHeight}px`;
       }
     }
   }, []);
 
   useEffect(() => {
+    const handleResize = () => {
+      setSplideHeight();
+      setIsMobile(window.innerWidth <= MOBILE_BREAKPOINT);
+    };
     setSplideHeight();
-    window.addEventListener('resize', setSplideHeight);
-    return () => window.removeEventListener('resize', setSplideHeight);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, [setSplideHeight]);
 
   useEffect(() => {
@@ -163,12 +170,14 @@ const Testimonials = () => {
             height:'auto',
             pagination:false,
             lazyLoad:true,
-            arrows:false,
+            arrows:true,
           }}
+          onMoved={setSplideHeight}
         >
           {testimonialsData.map((testimonial, index) => {
             const isExpanded = !!expanded[index];
-            const { text, truncated } = getDisplayText(testimonial.quote, isExpanded);
+            const charLimit = isMobile ? MOBILE_PREVIEW_CHAR_LIMIT : DESKTOP_PREVIEW_CHAR_LIMIT;
+            const { text, truncated } = getDisplayText(testimonial.quote, isExpanded, charLimit);
             return (
               <SplideSlide key={index}>
                 <div className="slide__item">
