@@ -26,14 +26,14 @@ const reviews = [
 ];
 
 const trustItems = [
-  '200Ah Lithium · Standard in XP-TECH',
+  '400Ah Lithium · Standard in XP-TECH',
   '4 × 200W Solar Panels',
   '3,000W Pure Sine Inverter',
   'Enerdrive or Victron Battery Monitor',
 ];
 
 const powerSpecs = [
-  { label: 'Battery', standard: '12V lead acid (if "solar ready")', xptech: '200Ah lithium (LiFePO4) — 100% DoD' },
+  { label: 'Battery', standard: '12V lead acid (if "solar ready")', xptech: '400Ah lithium (LiFePO4) — 100% DoD' },
   { label: 'Solar', standard: 'Wiring only — panels not included', xptech: '4 × 200W panels (800W total)' },
   { label: 'MPPT Charger', standard: 'Not included', xptech: '2 × 50A MPPT solar charger' },
   { label: 'Inverter', standard: 'Not included', xptech: '3,000W pure sine wave inverter' },
@@ -59,7 +59,7 @@ const models = [
     image: 'https://deluxcaravan.b-cdn.net/assets/header/186.webp',
     xptechLink: '/stormbreaker18familyxptech',
     expeditionLink: '/stormbreaker18familyoffroad',
-    specs: ['XP-TECH power available', '200Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Double bunk or triple bunk fit-out'],
+    specs: ['XP-TECH power available', '400Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Double bunk or triple bunk fit-out'],
     badge: 'Smallest Family Model · Serious Off-Grid Travel',
   },
   {
@@ -68,7 +68,7 @@ const models = [
     image: 'https://deluxcaravan.b-cdn.net/assets/header/2311.webp',
     xptechLink: '/stormbreaker23familyxptech',
     expeditionLink: '/stormbreaker23familyoffroad',
-    specs: ['XP-TECH power available', '200Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Up to 6 bunks'],
+    specs: ['XP-TECH power available', '400Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Up to 6 bunks'],
     badge: 'Largest Family Model · Off-Grid Family Adventures',
   },
   {
@@ -77,7 +77,7 @@ const models = [
     image: 'https://deluxcaravan.b-cdn.net/assets/header/216.webp',
     xptechLink: '/eclipse18couplesxptech',
     expeditionLink: '/eclipse18couplesoffroad',
-    specs: ['XP-TECH power available', '200Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Full couples fit-out'],
+    specs: ['XP-TECH power available', '400Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Full couples fit-out'],
     badge: 'Smallest Couples Model · Serious Off-Grid Couples',
   },
   {
@@ -86,18 +86,18 @@ const models = [
     image: 'https://deluxcaravan.b-cdn.net/assets/header/196.webp',
     xptechLink: '/eclipse22couplesxptech',
     expeditionLink: '/eclipse22couplesoffroad',
-    specs: ['XP-TECH power available', '200Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Queen or king bed layout'],
+    specs: ['XP-TECH power available', '400Ah lithium · 800W solar available', 'Couples off-grid range', 'Victron or Enerdrive power system', 'Queen or king bed layout'],
     badge: 'Largest Couples Model · Serious Off-Grid Travel',
   },
 ];
 
 const faqs = [
-  { q: 'How many days can I camp fully off grid?', a: 'With the XP-TECH power system (200Ah lithium, four 200W solar panels), most Deluxe owners camp indefinitely without shore power in normal conditions. In low sun periods or high consumption situations, the system typically sustains 3 to 5 days with solar input.' },
-  { q: 'Can I run the air con from battery alone overnight?', a: 'Yes. The XP-TECH range with 200Ah lithium can run the Freshjet air conditioner for approximately 4 hours plus overnight from battery alone, without any solar input. In most Australian conditions where some solar charging occurs during the day, overnight air con is fully manageable.' },
-  { q: 'What solar comes as standard, not as an upgrade?', a: 'On XP-TECH Range, four 200W solar panels are standard — not an upgrade. This is paired with 200Ah of lithium batteries, a 2 x 50A MPPT charger and a 3,000W pure sine inverter, all installed and tested before handover.' },
+  { q: 'How many days can I camp fully off grid?', a: 'With the XP-TECH power system (400Ah lithium, four 200W solar panels), most Deluxe owners camp indefinitely without shore power in normal conditions. In low sun periods or high consumption situations, the system typically sustains 3 to 5 days with solar input.' },
+  { q: 'Can I run the air con from battery alone overnight?', a: 'Yes. The XP-TECH range with 400Ah lithium can run the Freshjet air conditioner for approximately 4 hours plus overnight from battery alone, without any solar input. In most Australian conditions where some solar charging occurs during the day, overnight air con is fully manageable.' },
+  { q: 'What solar comes as standard, not as an upgrade?', a: 'On XP-TECH Range, four 200W solar panels are standard — not an upgrade. This is paired with 400Ah of lithium batteries, a 2 x 50A MPPT charger and a 3,000W pure sine inverter, all installed and tested before handover.' },
   { q: 'Can I add extra batteries later?', a: 'Yes. The Deluxe Ranges are designed to be expandable. Additional battery capacity can be added at the time of build or retrofitted later. Discuss your power requirements on a video call and we\'ll spec the right setup from the start.' },
   { q: 'Does XP-TECH work with Starlink?', a: 'Yes. The XP-TECH range fully supports Starlink. The inverter and battery capacity handle Starlink\'s power draw without any issue.' },
-  { q: 'What happens on cloudy days?', a: 'On overcast days, solar input is reduced but not zero. The 200Ah lithium battery bank provides a substantial buffer, and the system can also be topped up via the tow vehicle\'s alternator while driving. In extended low sun conditions, most users manage power carefully for 2 to 3 days before needing to move or use an external source.' },
+  { q: 'What happens on cloudy days?', a: 'On overcast days, solar input is reduced but not zero. The 400Ah lithium battery bank provides a substantial buffer, and the system can also be topped up via the tow vehicle\'s alternator while driving. In extended low sun conditions, most users manage power carefully for 2 to 3 days before needing to move or use an external source.' },
   { q: 'Is there a family XP-TECH range?', a: 'Yes. The XP-TECH power system is available on Stormbreaker and Riptide family models, not just the Eclipse range. Ask about XP-TECH power availability on your preferred model during a video call.' },
   { q: 'Can I see the XP-TECH system on a video call before I buy?', a: 'Yes. Our video walkthroughs specifically cover the XP-TECH system — we can show you the battery setup, the monitoring panel and walk through exactly what the system runs and for how long. Book a call via the button on this page.' },
 ];
@@ -129,7 +129,7 @@ export default function OffGridCaravansAustralia() {
     <div className="lp-page">
       <Helmet>
         <title>Off Grid Caravans Australia: XP-TECH Power Systems | Deluxe Caravans</title>
-        <meta name="description" content="Deluxe off grid caravans come with 200Ah lithium, 4 solar panels and a 3,000W inverter — not just 'solar ready'. Built in Australia. Book a video call to get a custom XP-TECH quote." />
+        <meta name="description" content="Deluxe off grid caravans come with 400Ah lithium, 4 solar panels and a 3,000W inverter — not just 'solar ready'. Built in Australia. Book a video call to get a custom XP-TECH quote." />
         <link rel="canonical" href="https://deluxecaravans.com.au/off-grid-caravans-australia" />
       </Helmet>
 
@@ -153,7 +153,7 @@ export default function OffGridCaravansAustralia() {
           </p>
           <h1 className="lp-hero-title">OFF GRID CARAVANS: BUILT FOR REMOTE ADVENTURE</h1>
           <p className="lp-hero-intro">
-            Most caravans say "solar ready." Deluxe's XP-TECH models come with <strong>200Ah lithium batteries, 4 x 200W solar panels, a 3,000W inverter, and a 2 x 50A MPPT charger</strong> — installed and tested before handover. Not an upgrade. Standard.
+            Most caravans say "solar ready." Deluxe's XP-TECH models come with <strong>400Ah lithium batteries, 4 x 200W solar panels, a 3,000W inverter, and a 2 x 50A MPPT charger</strong> — installed and tested before handover. Not an upgrade. Standard.
           </p>
           <div className="lp-cta-row">
             <a href="/appointment" className="lp-btn-primary" onClick={handleCTAClick}>Book a Video Call</a>
@@ -214,7 +214,7 @@ export default function OffGridCaravansAustralia() {
             <p className="lp-eyebrow"><span className="lp-eyebrow-line" /> NEW TO THIS?</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginTop: '8px' }}>
               {[
-                { label: 'Battery', value: '200Ah lithium (LiFePO4) — usable to 100% DoD' },
+                { label: 'Battery', value: '400Ah lithium (LiFePO4) — usable to 100% DoD' },
                 { label: 'Solar', value: '4 × 200W panels = 800W total rooftop solar' },
                 { label: 'MPPT Charger', value: '2 × 50A MPPT solar charger — fast, efficient recharge' },
                 { label: 'Inverter', value: '3,000W pure sine wave — runs any 240V appliance' },
