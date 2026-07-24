@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import "./Products.css";
 import "../home/Home.css";
 import "../home/homecomponents/HomeComponent.css";
@@ -57,6 +58,10 @@ const Stormbreaker21FamilyOffRoad = () => {
 
   return (
     <div className="container">
+      <Helmet>
+        <title>Stormbreaker 21 Triple Bunk Off Road Caravan | Campbellfield VIC | Deluxe Caravans</title>
+        <meta name="description" content="The Stormbreaker 21 triple bunk off road caravan, built and warrantied from our Campbellfield, Victoria factory. Family-owned, 15+ years in business, 3-year structural warranty. Enquire today." />
+      </Helmet>
       <div className="component">
         <div className="background-image">
           <img
@@ -137,14 +142,19 @@ const Stormbreaker21FamilyOffRoad = () => {
               been seeking. This model offers all the remarkable features found
               in the 19'6. Every journey transforms into an unforgettable
               experience, thanks to its premium built interior, exterior, and
-              mechanical features. when you embark on the open road with your
+              mechanical features. When you embark on the open road with your
               loved ones, you'll be treated to an exceptionally roomy layout,
               complete with all the amenities you'd expect from a luxury RV
-              adventure. But our commitment doesn't end there- we ensure your
-              adventures leave no environmental footprint. With eco-friendly
-              features, you can travel without guilt and experience all the joy
-              you deserve.
+              adventure. 
             </p>
+            <p>Built and warrantied out of our Campbellfield, Victoria
+              factory, the Stormbreaker 21 is Deluxe's flagship triple bunk off
+              road family caravan. Deluxe Caravans has been building off road
+              caravans from our Campbellfield, Victoria factory for over 17
+              years — family-owned and operated, with every Stormbreaker built
+              by the same team at the same address and backed by a 3-year
+              structural warranty serviced through a national authorised repairer
+              network, so you're covered wherever you are in Australia.</p>
             <p>
               <button className="virtual-btn">
                 <a href="/tour">Have a look at STORMBREAKER 21'6"</a>
