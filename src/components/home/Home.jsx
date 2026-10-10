@@ -86,7 +86,7 @@ function Home() {
       <div className="component component-fit">
         <CarouselSection />
       </div>
-      <div className="component">
+      <div className="component home-desc-section">
         <HomeDesc />
       </div>
       <div className="component">

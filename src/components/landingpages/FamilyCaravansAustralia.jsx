@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import './LandingPages.css';
-import familyHeroBanner from '../../assets/scenicimages/scenic-image-12.jpg';
-import scenicImage06 from '../../assets/scenicimages/scenic-image-06.jpg';
-import scenicImage02 from '../../assets/scenicimages/scenic-image-02.jpg';
-import scenicImage07 from '../../assets/scenicimages/scenic-image-07.jpg';
-import scenicImage04 from '../../assets/scenicimages/scenic-image-04.jpg';
 import scenicImage05 from '../../assets/scenicimages/scenic-image-05.jpg';
+
+const CDN_IMAGES = 'https://deluxcaravan.b-cdn.net/assets/images';
+const familyHeroBanner = `${CDN_IMAGES}/family_caravans_image05.jpg`;
+const scenicImage06 = `${CDN_IMAGES}/family_caravans_image04.jpg`;
+const scenicImage02 = `${CDN_IMAGES}/family_caravans_image03.jpg`;
+const scenicImage07 = `${CDN_IMAGES}/family_caravans_image02.jpg`;
+const scenicImage04 = `${CDN_IMAGES}/family_caravans_image01.jpg`;
 
 const reviews = [
   {

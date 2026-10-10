@@ -12,8 +12,14 @@ import "../homecomponents/HomeComponent.css";
 gsap.registerPlugin(ScrollTrigger);
 
 function Promovid() {
-  const [isTabScreen, setIsTabScreen] = useState(false);
-  const [isMobileScreen, setIsMobileScreen] = useState(false);
+  // Initialise from the real width so Swiper starts with the right effect
+  // (it does not switch effect when the prop changes after init).
+  const [isTabScreen, setIsTabScreen] = useState(
+    () => typeof window !== "undefined" && window.innerWidth <= 990
+  );
+  const [isMobileScreen, setIsMobileScreen] = useState(
+    () => typeof window !== "undefined" && window.innerWidth <= 600
+  );
   const swiperRef = useRef(null);
 
   const updateSwiperConfig = () => {
@@ -48,6 +54,7 @@ function Promovid() {
     <div className="container">
       <div className="vContainer">
         <Swiper
+          key={isTabScreen ? "slide" : "coverflow"}
           ref={swiperRef}
           navigation
           pagination={{ clickable: true }}

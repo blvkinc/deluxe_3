@@ -51,7 +51,55 @@ const videos = [
     description: "Check out our Stormbreaker 21'6 caravan's exterior.",
     videoId: "ICG-86pUr-g?si=dVW1psZGbV3h9KKN",
   },
+  // Vimeo videos, same as the homepage video carousel (Promovid.jsx)
+  {
+    title: "Deluxe Caravans - Featured Video 1",
+    description: "Take a closer look at Deluxe Caravans.",
+    provider: "vimeo",
+    videoId: "945631996?h=7774de72a1&badge=0&autopause=0&player_id=0&app_id=58479",
+  },
+  {
+    title: "Deluxe Caravans - Featured Video 2",
+    description: "Take a closer look at Deluxe Caravans.",
+    provider: "vimeo",
+    videoId: "1159488333?badge=0&autopause=0&player_id=0&app_id=58479",
+  },
+  {
+    title: "Deluxe Caravans - Featured Video 3",
+    description: "Take a closer look at Deluxe Caravans.",
+    provider: "vimeo",
+    videoId: "967528896?h=e20f28a04e&badge=0&autopause=0&player_id=0&app_id=58479",
+  },
+  {
+    title: "Deluxe Caravans - Featured Video 4",
+    description: "Take a closer look at Deluxe Caravans.",
+    provider: "vimeo",
+    videoId: "1053997518",
+  },
+  {
+    title: "Deluxe Caravans - Featured Video 5",
+    description: "Take a closer look at Deluxe Caravans.",
+    provider: "vimeo",
+    videoId: "1111652526",
+  },
+  {
+    title: "Deluxe Caravans - Featured Video 6",
+    description: "Take a closer look at Deluxe Caravans.",
+    provider: "vimeo",
+    videoId: "1210380396",
+  },
+  {
+    title: "Deluxe Caravans - Featured Video 7",
+    description: "Take a closer look at Deluxe Caravans.",
+    provider: "vimeo",
+    videoId: "1210382435",
+  },
 ];
+
+const getEmbedUrl = (video) =>
+  video.provider === "vimeo"
+    ? `https://player.vimeo.com/video/${video.videoId}`
+    : `https://www.youtube.com/embed/${video.videoId}`;
 
 const TABS = ["VIDEOS", "UPDATES"];
 
@@ -104,7 +152,7 @@ const Media = () => {
               <div key={index} className="media-video-card">
                 <iframe
                   title={video.title}
-                  src={`https://www.youtube.com/embed/${video.videoId}`}
+                  src={getEmbedUrl(video)}
                   frameBorder="0"
                   allowFullScreen
                 />

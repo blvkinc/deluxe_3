@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import './LandingPages.css';
-import scenicImage11 from '../../assets/scenicimages/scenic-image-11.png';
 
 const reviews = [
   {
@@ -206,7 +205,7 @@ export default function OffGridCaravansAustralia() {
             </div>
             <div style={{ marginTop: '24px' }}>
               <div className="lp-img-placeholder">
-                <img src={scenicImage11} alt="XP-TECH battery bay / interior power setup" />
+                <img src="https://deluxcaravan.b-cdn.net/assets/images/family_offgrid_image01.jpg" alt="XP-TECH battery bay / interior power setup" />
               </div>
             </div>
           </div>

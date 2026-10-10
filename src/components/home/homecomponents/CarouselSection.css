@@ -178,6 +178,12 @@
     font-size: 1.2rem;
   }
 
+  .carousel-toggle {
+    /* section breaks out of parent padding, so restore it here */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .toggle-button {
     padding: 12px 24px;
     font-size: 1.1rem;
@@ -200,6 +206,11 @@
     width: calc(100% + 30px);
     margin-left: -15px;
     margin-right: -15px;
+  }
+
+  .carousel-toggle {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .carousel-container {

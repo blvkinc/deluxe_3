@@ -32,8 +32,43 @@
   text-align: center;
 }
 
+.home-desc-section {
+  /* top fade, light overlay, photo filling the width and anchored to the bottom */
+  background-color: var(--color-bg);
+  background-image: linear-gradient(to bottom, var(--color-bg), transparent),
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("https://deluxcaravan.b-cdn.net/assets/images/aboutus_background_image01.jpg");
+  background-size: 100% 60px, 100% 100%, cover;
+  background-position: top, center, center bottom;
+  background-repeat: no-repeat;
+}
+
+.home-desc-section::before {
+  display: none;
+}
+
+/* drop the default section separator lines above and below the photo section */
+.component + .component.home-desc-section,
+.component.home-desc-section + .component {
+  border-top: 0;
+}
+
+.component.home-desc-section + .component::before {
+  display: none;
+}
+
+.home-desc-section .container {
+  background: transparent;
+}
+
 .desccomponent p {
   font-size: larger;
+}
+
+.home-desc-section .desccomponent h3,
+.home-desc-section .desccomponent p {
+  color: var(--color-white);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.7);
 }
 
 .desccomponent p a {
@@ -840,9 +875,6 @@
     font-size: 14px;
     letter-spacing: 0.5px;
   }
-  .vContainer {
-    padding-top: 0 !important;
-  }
 }
 
 @media (max-width: 768px) {
@@ -898,6 +930,13 @@
   height: 100%;
   width: 100%;
   padding-top: 10%;
+}
+
+@media (max-width: 768px) {
+  .vContainer {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
 }
 
 .swiper-slide iframe {
