@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 import './LandingPages.css';
 import scenicImage06 from '../../assets/scenicimages/scenic-image-06.jpg';
-import scenicImage07 from '../../assets/scenicimages/scenic-image-07.jpg';
 
 const reviews = [
   {
@@ -282,7 +281,7 @@ export default function OffRoadCaravansForSale() {
         <div className="lp-two-col">
           <div className="lp-reveal">
             <div className="lp-img-placeholder">
-              <img src={scenicImage07} alt="Campbellfield factory floor" />
+              <img src="https://deluxcaravan.b-cdn.net/assets/images/family_offroad_image01.jpg" alt="Campbellfield factory floor" />
             </div>
           </div>
           <div className="lp-reveal lp-reveal-d2">

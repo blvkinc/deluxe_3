@@ -70,7 +70,6 @@ function VideoLanding() {
               <span className="hero-title-part">Infinite RV</span>
             </h1>
             <h2 className="hero-subtitle revealUp">A partnership creating infinite possibilities</h2>
-            <p className="hero-supporting revealUp">Australian-made luxury caravans, custom built for couples and families seeking premium comfort, genuine off-road capability and the freedom to explore Australia.</p>
             <div className="hero-buttons revealUp">
               <Link to="/media" className="btn modern-btn">
                 <span>Latest Insights</span>
